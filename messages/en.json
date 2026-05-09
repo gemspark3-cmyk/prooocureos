@@ -1,0 +1,1083 @@
+{
+  "home": {
+    "protocolNotes": "AIP 103 Protocol Notes",
+    "defaults": {
+      "paymentTerm": "Cash / Payment on Delivery",
+      "supplier": "Supplier"
+    },
+    "toasts": {
+      "loginRequired": "You must log in for this action.",
+      "searchFailed": "An error occurred during search.",
+      "invalidTaxId": "Enter a valid tax ID (10-11 digits).",
+      "invalidPhone": "Enter a valid phone number.",
+      "profileUpdated": "Your profile has been successfully updated.",
+      "updateFailed": "Profile update failed.",
+      "needRequestTitle": "Please enter a title for the request.",
+      "noSuppliersFound": "No suitable suppliers found.",
+      "createIntentFailed": "Could not create request draft.",
+      "needDeliveryAddress": "Please select or enter a delivery address.",
+      "intentInfoNotFound": "Request information not found.",
+      "requestSent": "Your request has been successfully sent.",
+      "sendFailed": "Could not send request: {error}",
+      "unknownError": "An unknown error occurred.",
+      "offerAccepted": "Offer accepted.",
+      "offerRejected": "Offer rejected.",
+      "requestNotSelected": "Request not selected.",
+      "noActiveOffers": "There are no active offers to process.",
+      "bulkCounterSent": "Counter-offer sent for {count} offers.",
+      "counterSent": "Counter-offer successfully sent.",
+      "counterError": "Could not send counter-offer.",
+      "supplierAdded": "Supplier added to your list."
+    },
+    "differentCompanies": "{count} Different Companies"
+  },
+  "common": {
+    "title": "ProcureOS",
+    "buyerPortal": "Buyer Portal",
+    "howItWorks": "HOW IT WORKS?",
+    "myPanel": "My Panel",
+    "myAccount": "MY ACCOUNT",
+    "logout": "LOGOUT",
+    "login": "Login",
+    "register": "Register",
+    "allRightsReserved": "All Rights Reserved.",
+    "isSeller": "ARE YOU A SELLER?",
+    "allCategories": "ALL CATEGORIES",
+    "logoutSuccess": "Successfully logged out.",
+    "paginationTotal": "Total {total} Records",
+    "paginationPage": "Page {page}/{totalPages}",
+    "notSpecified": "Not Specified",
+    "other": "Other",
+    "errorOccurred": "An error occurred.",
+    "notifications": {
+      "systemFlow": "System & Operational Flow",
+      "new": "NEW",
+      "noNotifications": "No notifications yet",
+      "markFailed": "Could not mark notification."
+    },
+    "categories": {
+      "all": "ALL CATEGORIES",
+      "Construction & Real Estate": "Construction & Real Estate",
+      "Industrial Machinery": "Industrial Machinery",
+      "Raw Materials & Chemicals": "Raw Materials & Chemicals",
+      "Automotive & Transport": "Automotive & Transport",
+      "Electronics & Electrical": "Electronics & Electrical",
+      "Food & Agriculture": "Food & Agriculture",
+      "Textiles & Apparel": "Textiles & Apparel",
+      "Office & Stationery": "Office & Stationery",
+      "Health & Medical": "Health & Medical",
+      "Energy & Utilities": "Energy & Utilities",
+      "Professional Services": "Professional Services",
+      "General": "Other / General"
+    },
+    "statuses": {
+      "preparing": "Preparing",
+      "shipped": "On the way",
+      "delivered": "Delivered",
+      "warehouse": "In Warehouse",
+      "customs": "In Customs",
+      "local_delivery": "Local Delivery",
+      "completed": "Completed"
+    },
+    "countries": {
+      "TR": "Turkey",
+      "US": "United States",
+      "DE": "Germany",
+      "GB": "United Kingdom",
+      "FR": "France",
+      "CN": "China",
+      "AE": "United Arab Emirates",
+      "SA": "Saudi Arabia",
+      "IT": "Italy",
+      "ES": "Spain",
+      "NL": "Netherlands",
+      "BE": "Belgium",
+      "CH": "Switzerland",
+      "AT": "Austria",
+      "JP": "Japan"
+    },
+    "info": "INFORMATION",
+    "close": "CLOSE",
+    "sessionExpired": "Session expired due to inactivity."
+  },
+  "marketplace": {
+    "heroTitle": "Discover Global Supply",
+    "heroSubtitle": "Operating System",
+    "heroDescription": "Connect to thousands of verified manufacturers at the protocol level with ProcureOS Core infrastructure.",
+    "searchPlaceholder": "Product or manufacturer...",
+    "locationPlaceholder": "Destination",
+    "searchButton": "SEARCH",
+    "allCategories": "ALL CATEGORIES",
+    "noResults": "No results found for your criteria.",
+    "supplierNetworkTitle": "Join the ProcureOS Supplier Network",
+    "supplierNetworkDescription": "Reach thousands of corporate buyers. Quote the right demands in seconds and increase your sales.",
+    "startSellingNow": "START SELLING NOW",
+    "registerProductsText": "Are you a manufacturer or wholesaler? Register your products in our global network and catch sales opportunities instantly",
+    "selection": {
+      "label": "FIRM(S) SELECTED",
+      "compare": "COMPARE",
+      "bulkQuote": "REQUEST BULK QUOTE"
+    },
+    "warehouses": {
+      "title": "My Registered Warehouses",
+      "mainCompanyAddress": "Main Company Address"
+    },
+    "supplierCard": {
+      "accessRestricted": "PROTOCOL ACCESS RESTRICTED",
+      "loginToSeeDetails": "You must log in to see company details and get quotes.",
+      "loginButton": "LOGIN WITH MY ACCOUNT",
+      "verified": "VERIFIED",
+      "scores": {
+        "price": "PRICE",
+        "speed": "SPEED",
+        "trust": "TRUST"
+      },
+      "protocolCategory": "PROTOCOL CATEGORY",
+      "generalSupplier": "GENERAL SUPPLIER",
+      "getQuote": "GET QUOTE"
+    },
+    "comparison": {
+      "title": "Firm Comparison",
+      "description": "Compare your selected {count} firms in detail.",
+      "noSuppliers": "No firms found to compare.",
+      "trustScore": "Trust Score",
+      "verification": "Verification",
+      "verified": "Verified",
+      "serviceRegions": "Service Regions",
+      "removeFromList": "Remove from List",
+      "bulkQuote": "REQUEST BULK QUOTE ({count})"
+    },
+    "networkPulse": {
+      "label": "ECOSYSTEM PULSE",
+      "status": "ACTIVE",
+      "statusValue": "FULL CAPACITY",
+      "statusLabel": "NETWORK STATUS",
+      "suppliersCount": "{count} Active Suppliers"
+    }
+  },
+  "dashboard": {
+    "sections": {
+      "opsCenter": "Operations Center",
+      "logistics": "Logistics Tracking",
+      "team": "Team Management",
+      "erp": "ERP Entegrations",
+      "identity": "System Identity"
+    },
+    "descriptions": {
+      "opsCenter": "Monitor Active RFQs and Offers on the Protocol",
+      "logistics": "Track Shipments Across Global Supply Network",
+      "team": "Manage Corporate Team and Authorization Limits",
+      "erp": "Automatic Export of Purchased Items to ERP Systems",
+      "identity": "Manage Your System Identity on Global Supply Network"
+    },
+    "tabs": {
+      "requests": "REQUESTS",
+      "orders": "ORDERS",
+      "mySuppliers": "MY SUPPLIERS",
+      "team": "TEAM",
+      "integrations": "INTEGRATIONS",
+      "support": "SUPPORT",
+      "profile": "PROFILE"
+    },
+    "messages": {
+      "noDataToExport": "No data found to export."
+    },
+    "online": "ONLINE",
+    "offline": "OFFLINE",
+    "stats": {
+      "pendingRequests": "PENDING REQUESTS",
+      "noRequests": "No requests yet",
+      "active": "ACTIVE",
+      "start": "START",
+      "savings": "ESTIMATED SAVINGS",
+      "avgResponse": "AVG. RESPONSE TIME",
+      "responseTimeUnit": "Hours",
+      "spendingLimit": "Spending Limit (Monthly)",
+      "noLimit": "NONE",
+      "limitSet": "Limit",
+      "limitNotSet": "Limit Not Set"
+    },
+    "requests": {
+      "title": "Active Purchasing Requests",
+      "searchPlaceholder": "Search by request title or description...",
+      "report": "REPORT",
+      "emptyTitle": "You don't have any requests yet",
+      "emptyDescription": "Go to the marketplace and create your first request for the product or service you need.",
+      "actionLabel": "GO TO MARKETPLACE",
+      "offersReceived": "OFFERS RECEIVED",
+      "offersUnit": "UNITS",
+      "statusOpen": "OPEN",
+      "statusCompleted": "COMPLETED",
+      "aiAnalysis": "AI Analysis"
+    },
+    "orders": {
+      "title": "Shipment and Order Tracking",
+      "searchPlaceholder": "Search by supplier name...",
+      "report": "REPORT",
+      "emptyTitle": "You don't have any orders yet",
+      "emptyDescription": "When you approve one of the offers received for your requests, your order will appear here.",
+      "actionLabel": "SEE MY REQUESTS",
+      "unnamedRequest": "Unnamed Request",
+      "requestDetail": "Request Detail",
+      "totalAmount": "TOTAL AMOUNT",
+      "currentStatus": "CURRENT SHIPMENT STATUS",
+      "negotiationHistory": "NEGOTIATION HISTORY",
+      "initialOffer": "Initial Offer",
+      "agreedPrice": "Agreed",
+      "netGain": "Net Gain",
+      "processCompleted": "OFFER PROCESS COMPLETED",
+      "initialPriceOrder": "ORDER CREATED BASED ON INITIAL PRICE",
+      "shipmentDetail": "SHIPMENT DETAIL",
+      "rateExperience": "RATE EXPERIENCE",
+      "deliveryAddress": "DELIVERY ADDRESS",
+      "registeredAddress": "Registered company address..."
+    },
+    "status": {
+      "pending": "Processing",
+      "confirmed": "Confirmed",
+      "shipped": "Shipped",
+      "delivered": "Delivered",
+      "preparing": "Preparing",
+      "warehouse": "At Warehouse",
+      "customs": "At Customs",
+      "local_delivery": "In Delivery",
+      "completed": "Completed"
+    },
+    "fxTracking": "FX TRACKING",
+    "team": {
+      "title": "Team Management & Approval Hierarchy",
+      "roadmap": "Strategic Roadmap Item",
+      "description": "Invite your team to ProcureOS. Define department-based budgets, set spending limits, and take control by digitizing your multi-stage approval hierarchy.",
+      "multiUser": "MULTI-USER ACCESS",
+      "workflows": "APPROVAL WORKFLOWS"
+    },
+    "integrations": {
+      "title": "Corporate ERP Integration",
+      "roadmap": "Ecosystem Expansion Phase",
+      "description": "Purchased items are automatically processed into your inventory upon delivery. End manual data entry with full synchronization with systems like SAP, Oracle, and Logo."
+    },
+    "export": {
+      "id": "ID",
+      "date": "DATE",
+      "title": "TITLE / PRODUCT",
+      "category": "CATEGORY",
+      "quantity": "QUANTITY",
+      "status": "STATUS",
+      "offersCount": "OFFERS COUNT",
+      "bestOffer": "BEST OFFER",
+      "targetPrice": "TARGET PRICE",
+      "savings": "POTENTIAL SAVINGS (%)",
+      "orderNo": "ORDER NO",
+      "supplier": "SUPPLIER",
+      "amount": "AMOUNT",
+      "deliveryAddress": "DELIVERY ADDRESS",
+      "estDelivery": "ESTIMATED DELIVERY",
+      "trackingNo": "TRACKING NO",
+      "success": "Professional Excel report created.",
+      "error": "Failed to create report.",
+      "shipmentModal": {
+        "title": "Shipment Details",
+        "orderNo": "Order: {no}",
+        "currentStatus": "CURRENT STATUS",
+        "onWay": "ON THE WAY / SHIPPED",
+        "shipmentType": "SHIPMENT TYPE",
+        "carrier": "CARRIER COMPANY",
+        "trackingNo": "TRACKING NUMBER",
+        "estDelivery": "ESTIMATED DELIVERY",
+        "notes": "SELLER NOTES & EXTRA INFO",
+        "deliveryPoint": "DELIVERY POINT",
+        "defaultCompanyAddress": "DEFAULT COMPANY ADDRESS",
+        "sender": "SENDER",
+        "close": "CLOSE",
+        "notSpecified": "Not specified",
+        "noNotes": "No extra notes provided.",
+        "types": {
+          "cargo": "Cargo Shipping",
+          "logistics": "Logistics / Freight",
+          "ownVehicle": "Own Vehicle / Self Delivery",
+          "customerPickup": "Customer Will Pickup",
+          "standard": "Standard Shipment"
+        }
+      }
+    },
+    "categories": {
+      "general": "GENERAL"
+    },
+    "profile": {
+      "corporateAccount": "CORPORATE ACCOUNT",
+      "aipVerified": "AIP-103 VERIFIED",
+      "sections": {
+        "corporate": "Corporate Information",
+        "contact": "Contact Information",
+        "financial": "Financial Settings",
+        "warehouse": "Warehouse Management"
+      },
+      "fields": {
+        "companyName": "Official Company Name",
+        "website": "Company Website",
+        "taxId": "Tax ID / VAT",
+        "taxOffice": "Tax Office",
+        "tradeRegistry": "Trade Registry No",
+        "mersis": "MERSIS Number",
+        "industry": "Industry",
+        "employeeCount": "Employee Count",
+        "establishmentYear": "Year Established",
+        "fullAddress": "Full Address",
+        "city": "City",
+        "country": "Country",
+        "postalCode": "Postal Code",
+        "contactPerson": "Contact Person",
+        "phone": "Phone",
+        "approvalLimit": "Approval Limit (USD)",
+        "preferredCurrency": "Preferred Currency",
+        "warehouseName": "Warehouse Name"
+      },
+      "placeholders": {
+        "website": "https://www.yourcompany.com",
+        "establishmentYear": "e.g., 1995",
+        "warehouseName": "e.g., Main Warehouse",
+        "city": "London"
+      },
+      "buttons": {
+        "addWarehouse": "ADD NEW WAREHOUSE",
+        "cancel": "CANCEL",
+        "saveWarehouse": "SAVE MY WAREHOUSE",
+        "saveProfile": "SAVE UPDATES TO SYSTEM",
+        "saving": "SAVING..."
+      },
+      "messages": {
+        "fillRequired": "Please enter warehouse name and full address.",
+        "warehouseAdded": "New warehouse successfully added.",
+        "warehouseDeleted": "Warehouse deleted.",
+        "confirmDelete": "Are you sure you want to delete this warehouse?",
+        "noWarehouses": "No warehouses added yet",
+        "error": "An error occurred."
+      },
+      "default": "DEFAULT",
+      "select": "Select"
+    },
+    "suppliers": {
+      "title": "My Registered Suppliers",
+      "subtitle": "Favorite and collaborated firms",
+      "searchPlaceholder": "Search by supplier name...",
+      "emptyState": "No registered suppliers yet",
+      "removed": "Supplier removed.",
+      "error": "An error occurred.",
+      "trustedPartner": "TRUSTED PARTNER",
+      "generalSupplier": "General Supplier"
+    },
+    "support": {
+      "title": "Support Center",
+      "active": "ACTIVE",
+      "archived": "ARCHIVE",
+      "connecting": "Connecting to Support Line...",
+      "emptyStateActive": "You don't have any active support requests yet.",
+      "emptyStateArchived": "You don't have any archived tickets.",
+      "status": {
+        "open": "OPEN",
+        "inProgress": "IN PROGRESS",
+        "resolved": "RESOLVED",
+        "closed": "CLOSED"
+      },
+      "createForm": {
+        "title": "New Support Request",
+        "subtitle": "Provide detailed info for a quick solution",
+        "subject": "REQUEST SUBJECT",
+        "category": "CATEGORY",
+        "message": "YOUR MESSAGE",
+        "placeholderSubject": "e.g., About Order Status",
+        "placeholderMessage": "Please detail your issue or request...",
+        "submit": "SEND TICKET AND START",
+        "categories": {
+          "general": "General Help",
+          "technical": "Technical Error",
+          "billing": "Order & Payment",
+          "product": "Product & Stock Info"
+        }
+      },
+      "chat": {
+        "supportTeam": "ProcureOS Support Team",
+        "placeholder": "Type your message...",
+        "closeTicket": "CLOSE TICKET",
+        "priority": "{priority} PRIORITY",
+        "confirmClose": "Are you sure you want to close this ticket?",
+        "closedByUser": "--- User closed this ticket ---"
+      },
+      "main": {
+        "title": "System Support Unit",
+        "description": "Our expert team and AI assistant are at your service 24/7 for all operational, technical, or financial questions.",
+        "newRequest": "START NEW REQUEST"
+      },
+      "messages": {
+        "created": "Your support request has been successfully created.",
+        "error": "Failed to create ticket.",
+        "closed": "Ticket successfully closed.",
+        "sendError": "Message could not be sent."
+      }
+    },
+    "home": {
+      "protocolNotes": "AIP-103+ PROTOCOL (RELEASE NOTES)",
+      "toasts": {
+        "loginRequired": "Please login first.",
+        "searchFailed": "Search failed.",
+        "invalidTaxId": "Invalid Tax ID. Please enter 10 or 11 digits.",
+        "invalidPhone": "Invalid Phone Number.",
+        "profileUpdated": "Your profile has been updated.",
+        "updateFailed": "Update failed.",
+        "needRequestTitle": "Please specify what you need.",
+        "noSuppliersFound": "No suitable suppliers found.",
+        "createIntentFailed": "Failed to create request.",
+        "needDeliveryAddress": "Please specify a delivery address.",
+        "intentInfoNotFound": "Request info not found. Please search again.",
+        "requestSent": "Request successfully sent.",
+        "sendFailed": "Send failed: {error}",
+        "unknownError": "Unknown error",
+        "offerAccepted": "Offer successfully accepted!",
+        "offerRejected": "Offer rejected.",
+        "requestNotSelected": "Request not selected.",
+        "noActiveOffers": "No active offers found for negotiation.",
+        "bulkCounterSent": "Bulk counter offer sent to {count} suppliers.",
+        "counterSent": "Counter offer sent.",
+        "counterError": "Negotiation error.",
+        "supplierAdded": "Supplier added to your favorites."
+      },
+      "defaults": {
+        "supplier": "Supplier",
+        "country": "Turkey",
+        "paymentTerm": "30 Days Credit"
+      }
+    },
+    "rating": {
+      "title": "Rate Supplier",
+      "errors": {
+        "overallRating": "Please provide an overall rating.",
+        "submitFailed": "An error occurred while submitting the review."
+      },
+      "labels": {
+        "overall": "Overall Satisfaction",
+        "quality": "Product Quality",
+        "delivery": "Delivery Speed",
+        "communication": "Communication & Support",
+        "feedback": "Your Feedback"
+      },
+      "placeholders": {
+        "feedback": "Briefly describe your experience..."
+      },
+      "info": "This evaluation is not shared directly with the supplier and is used only for ProcureOS trust index calculations and improving our service quality. Your feedback is critical for our ecosystem's transparency.",
+      "submit": "SUBMIT REVIEW",
+      "submitting": "Submitting...",
+      "success": {
+        "title": "Thank You!",
+        "message": "Your review has been successfully recorded and reflected in the supplier's score."
+      },
+      "addToFavorites": "ADD SUPPLIER TO FAVORITES",
+      "messages": {
+        "added": "Supplier added to your favorites."
+      }
+    },
+    "sourcing": {
+      "steps": {
+        "form": {
+          "title": "CREATE REQUEST FOR",
+          "subtitle": "What do you need? We'll find it for you.",
+          "descriptionSingle": "Specify the product details and quantity for your selected supplier, and we'll send it in an official template.",
+          "descriptionMulti": "Specify product features and quantity, and ProcureOS Core network will filter the most suitable sellers based on logistics data in seconds.",
+          "labels": {
+            "title": "Product or Service Definition",
+            "note": "Buyer Note / Special Requests (Optional)",
+            "quantity": "Quantity Needed",
+            "currency": "Currency",
+            "paymentTerm": "Payment Term"
+          },
+          "placeholders": {
+            "title": "e.g., 100 pieces of 5m long 40mm diameter industrial metal pipe...",
+            "note": "e.g., We request delivery on pallets...",
+            "quantity": "e.g., 500 Units",
+            "currency": "e.g., AED"
+          },
+          "paymentTerms": {
+            "cash": "Cash Payment",
+            "30days": "30 Days Credit",
+            "60days": "60 Days Credit"
+          },
+          "buttons": {
+            "processing": "PROCESSING...",
+            "prepare": "PREPARE REQUEST AND PROCEED",
+            "listSuppliers": "LIST SUITABLE SUPPLIERS"
+          }
+        },
+        "matches": {
+          "titleReady": "Your Request is Ready",
+          "titleMatches": "Matching Suppliers",
+          "descriptionSingle": "Approve the official purchase request prepared for {name}.",
+          "descriptionMulti": "Core engine found the best matches based on logistics and product category.",
+          "back": "Back",
+          "noSuppliers": "No suitable suppliers found.",
+          "trustScore": "%{score} TRUST SCORE",
+          "officialRequest": "OFFICIAL PURCHASE REQUEST",
+          "docNo": "DOCUMENT NO",
+          "targetQuantity": "TARGET QUANTITY",
+          "targetCurrency": "CURRENCY",
+          "paymentTerm": "PAYMENT TERM",
+          "sendRequest": "SEND OFFICIAL REQUEST",
+          "sending": "SENDING..."
+        },
+        "success": {
+          "title": "Request Sent!",
+          "message": "Your purchase request has been sent to selected suppliers via the official protocol. You will be notified instantly when offers arrive.",
+          "backToMarketplace": "BACK TO MARKETPLACE",
+          "viewMyRequests": "VIEW MY REQUESTS"
+        }
+      },
+      "errors": {
+        "selectSupplier": "Please select at least one supplier to send a quote request."
+      },
+      "address": {
+        "change": "CHANGE",
+        "mainCompany": "Main Company Address"
+      },
+      "features": {
+        "global": {
+          "title": "Global Match",
+          "desc": "Your needs are presented to the world market without language barriers."
+        },
+        "logistics": {
+          "title": "Logistics Verification",
+          "desc": "Only sellers capable of shipping to your address are listed."
+        },
+        "standard": {
+          "title": "Corporate Standard",
+          "desc": "All communications are conducted through professional templates."
+        }
+      }
+    },
+    "requestDetails": {
+      "status": {
+        "open": "COLLECTING OFFERS",
+        "completed": "COMPLETED"
+      },
+      "tabs": {
+        "list": "List",
+        "compare": "Compare",
+        "audit": "Audit"
+      },
+      "timeline": {
+        "created": "Request (RFQ) created and saved to system.",
+        "offerReceived": "Offer submitted by {supplier} ({price}).",
+        "offerAccepted": "{supplier} offer ACCEPTED and Purchase Order (PO) process started.",
+        "offerRejected": "{supplier} offer REJECTED.",
+        "pendingApproval": "{supplier} offer submitted for manager approval (Auth limit exceeded).",
+        "supplier": "Supplier",
+        "unknownSupplier": "A supplier"
+      },
+      "details": {
+        "title": "REQUEST DETAILS",
+        "quickInfo": "QUICK INFO",
+        "quantity": "QUANTITY",
+        "paymentTerm": "PAYMENT TERM",
+        "currency": "CURRENCY",
+        "targetPrice": "TARGET PRICE",
+        "openOffer": "Open Offer",
+        "itemDetail": "Product/Service Detail",
+        "note": "Note",
+        "noDetail": "No details specified."
+      },
+      "offers": {
+        "title": "OFFERS RECEIVED",
+        "countSuffix": "ITEMS",
+        "batchNegotiation": "BATCH NEGOTIATION",
+        "noOffers": "NO OFFERS YET. SYSTEM IS MATCHING WITH SUPPLIERS.",
+        "bestMatch": "BEST MATCH",
+        "trust": "TRUST",
+        "amount": "OFFER AMOUNT",
+        "unitPrice": "UNIT PRICE",
+        "deliveryTime": "DELIVERY TIME",
+        "workingDays": "WORKING DAYS",
+        "expressDelivery": "EXPRESS DELIVERY",
+        "negotiation": "NEGOTIATE",
+        "details": "DETAILS",
+        "accept": "ACCEPT",
+        "reject": "Reject",
+        "selected": "SELECTED",
+        "rejected": "REJECTED",
+        "inNegotiation": "IN NEGOTIATION",
+        "activeOffer": "ACTIVE OFFER",
+        "pendingApproval": "PENDING APPROVAL",
+        "sendToApproval": "SEND TO APPROVAL",
+        "saveSupplier": "Save Supplier"
+      },
+      "negotiationModal": {
+        "batchTitle": "BATCH NEGOTIATION",
+        "singleTitle": "NEGOTIATION PROCESS",
+        "batchDesc": "A BATCH MESSAGE WILL BE SENT TO ALL COMPANIES ({count} ITEMS) THAT SUBMITTED OFFERS FOR THIS REQUEST.",
+        "singleDesc": "CREATE A COUNTER OFFER ON PRICE AND DELIVERY TIME WITH {supplier}.",
+        "targetPrice": "TARGET UNIT PRICE",
+        "targetDays": "REQUESTED DELIVERY (DAYS)",
+        "noteLabel": "NEGOTIATION NOTE",
+        "notePlaceholder": "Provide info about budget constraints or delivery urgency...",
+        "cancel": "CANCEL",
+        "sendBatch": "SEND BATCH MESSAGE",
+        "sendSingle": "SEND COUNTER OFFER"
+      },
+      "audit": {
+        "title": "PROCESS AUDIT TRAIL (BLOCKCHAIN VERIFIED)",
+        "verified": "SYSTEM VERIFIED"
+      },
+      "aiAnalysis": "AI Analysis"
+    },
+    "offerDocument": {
+      "print": "PRINT / DOWNLOAD",
+      "officialDoc": "OFFICIAL QUOTATION DOCUMENT",
+      "docNo": "DOCUMENT NO",
+      "sellerInfo": "SELLER INFORMATION",
+      "authorized": "Authorized",
+      "taxNo": "Tax No",
+      "buyerInfo": "BUYER INFORMATION",
+      "description": "SERVICE / PRODUCT DESCRIPTION",
+      "quantity": "QUANTITY",
+      "unitPrice": "UNIT PRICE (EXCL. VAT)",
+      "totalPrice": "TOTAL PRICE (EXCL. VAT)",
+      "category": "Category",
+      "unitAdet": "Unit",
+      "digitalNotice": "* This quote was generated digitally on ProcureOS.",
+      "grandTotal": "GRAND TOTAL",
+      "paymentTerms": "PAYMENT AND DELIVERY TERMS",
+      "paymentTermLabel": "PAYMENT TERM",
+      "deliveryTermLabel": "DELIVERY TERM",
+      "cash": "CASH",
+      "workingDays": "WORKING DAYS",
+      "digitalVerification": "DIGITAL VERIFICATION",
+      "page": "Page",
+      "supplierFirm": "SUPPLIER COMPANY",
+      "buyerFirm": "BUYER COMPANY"
+    },
+    "notifications": {
+      "title": "Notification Center"
+    }
+  },
+  "footer": {
+    "poweredBy": "Powered by AIP-103+ Autonomous Protocol",
+    "joinAsSupplier": "BECOME A SUPPLIER",
+    "faq": "FAQ",
+    "reviews": "REVIEWS",
+    "terms": "TERMS OF USE",
+    "privacy": "PRIVACY POLICY",
+    "cookies": "COOKIES"
+  },
+  "errors": {
+    "404": {
+      "title": "Lost Your Way?",
+      "description": "The supplier or page you are looking for was not found in our system. Please check the address or return to the home page.",
+      "backHome": "RETURN TO HOME"
+    }
+  },
+  "changelog": {
+    "title": "AIP Protocol Release Notes",
+    "subtitle": "Technical documentation on current developments and future projections in the ProcureOS Autonomous Intelligence Protocol (AIP) system.",
+    "backToDashboard": "Back to Dashboard",
+    "releaseNotes": "Release Notes",
+    "footerNote": "ProcureOS is an autonomous ecosystem following AIP standards.",
+    "historyTitle": "Full Commit History",
+    "historySubtitle": "Technical summary of all atomic changes in the ProcureOS AIP core infrastructure.",
+    "searchPlaceholder": "Search by commit message or version...",
+    "noResults": "No commits found matching your criteria",
+    "commitsTitle": "Commit History",
+    "fullLog": "Full Log",
+    "releaseItems": {
+      "AIP-106": {
+        "title": "Global Settlement & Escrow Layer",
+        "description": "Full integration of cross-border payments and secure trade (Escrow) into the AIP protocol.",
+        "cat1": "Financials",
+        "item1": "Multi-currency and instant exchange rate conversion engine.",
+        "item2": "ProcureOS Escrow: Smart contract based payment system.",
+        "item3": "Supplier financing and progress payment management."
+      },
+      "AIP-105": {
+        "title": "ProcureAI Insight & Forecasting",
+        "description": "Pre-detection of market trends and supply chain risks with AI.",
+        "cat1": "Intelligence",
+        "item1": "Predictive Sourcing: Capacity reservation before demand.",
+        "item2": "Market trend analysis and price fluctuation warnings.",
+        "item3": "Supplier Risk Scoring 2.0 layer."
+      },
+      "AIP-104": {
+        "title": "Enterprise Connect & ERP Integration",
+        "description": "Seamless data synchronization of ProcureOS with corporate ERP systems.",
+        "cat1": "Connectivity",
+        "item1": "Connectors for SAP, Oracle, and Microsoft Dynamics.",
+        "item2": "Hierarchical approval and budget control integration.",
+        "item3": "SSO and IAM support."
+      },
+      "AIP-103_6": {
+        "title": "Corporate Reporting & Financial Visibility",
+        "description": "Professional reporting of procurement data in operational and financial layers.",
+        "cat1": "Reporting",
+        "item1": "Professional Excel export engine and stylized tables.",
+        "item2": "Added 'Potential Savings Analysis' metric.",
+        "item3": "Advanced data filtering and date-based reporting.",
+        "cat2": "Performance",
+        "item4": "Dashboard speed increased by 70% with SWR.",
+        "item5": "Query optimization with GIN/B-Tree indexing."
+      },
+      "AIP-103_5": {
+        "title": "Performance Engine & Async Architecture",
+        "description": "ProcureOS core moved to asynchronous structure for high-density traffic.",
+        "cat1": "Architecture",
+        "item1": "AI Embedding offloaded to worker layer.",
+        "item2": "Debounced Search for marketplace searches.",
+        "item3": "Location and address formats standardized."
+      },
+      "AIP-103": {
+        "title": "Zero-Trust & Semantic Matching",
+        "description": "Stabilization of data security and AI matching engine.",
+        "cat1": "Security",
+        "item1": "Zero-Trust isolation with Supabase RLS.",
+        "item2": "Match latency reduced below 450ms."
+      },
+      "AIP-102": {
+        "title": "Smart Catalog Management",
+        "description": "Digitization of supplier catalogs and product data.",
+        "cat1": "Core",
+        "item1": "Vector-based product search and cataloging.",
+        "item2": "Optimized registration flows."
+      },
+      "AIP-101": {
+        "title": "NLP Engine & Multi-Language Support",
+        "description": "RFQ translation and analysis in 72 languages.",
+        "cat1": "Foundation",
+        "item1": "Successful demand-supplier matching with NLP.",
+        "item2": "Successful demand-supplier matching with NLP."
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about the ProcureOS autonomous procurement ecosystem.",
+    "helpCenter": "HELP CENTER",
+    "back": "Go Back",
+    "questions": {
+      "q1": "How do I create a purchase request via ProcureOS?",
+      "a1": "You can write your needs in natural language by clicking the 'Create Request' button on the home page. Our AI (AIP-103+) will convert your request into technical specifications and match it with the most suitable suppliers.",
+      "q2": "How are suppliers verified?",
+      "a2": "The ProcureOS supplier verification process is based on a 3-layer audit mechanism: 1. Corporate Verification (KYB), 2. Financial & Technical Scoring, 3. Dynamic Trust Score.",
+      "q3": "How do payment processes work?",
+      "a3": "At this stage, payments take place directly via existing commercial agreements between the buyer and the seller. Our Escrow feature will be activated soon.",
+      "q4": "Can I reach global suppliers?",
+      "a4": "Yes, the ProcureOS network covers thousands of suppliers both locally and globally."
+    }
+  },
+  "howItWorks": {
+    "title": "Discover the System.",
+    "subtitle": "Forget traditional procurement processes. Transform your supply chain into an autonomous operating system with the AIP-103+ protocol.",
+    "guide": "CORPORATE GUIDE v2.0",
+    "usageGuide": "User Guide",
+    "backToHome": "HOME SCREEN",
+    "simulator": {
+      "badge": "Live Simulator (v2.0)",
+      "title": "Multi-Supplier Management Simulation",
+      "desc": "Experience the process of sending quote requests to multiple firms simultaneously and autonomous matching.",
+      "searchPlaceholder": "What do you want to procure? (e.g., Bearings)",
+      "locationPlaceholder": "Location Filter",
+      "searchButton": "GLOBAL SEARCH",
+      "searching": "SEARCHING...",
+      "exampleScenario": "Start Example Scenario",
+      "scanning": "AIP-103 Protocol: Scanning Global Network...",
+      "matchedSuppliers": "AUTONOMOUS MATCHED SUPPLIERS ({count})",
+      "selectFirms": "Please select the firms you want to receive quotes from ({count} Selected)",
+      "supplierCard": {
+        "match": "Match",
+        "speed": "Speed",
+        "score": "Score"
+      },
+      "form": {
+        "badge": "CONCURRENT RFQ MODE",
+        "title": "BULK PURCHASE REQUEST",
+        "desc": "Will be sent to {count} selected suppliers simultaneously.",
+        "docGroup": "DOCUMENT GROUP",
+        "details": "Requirement Details",
+        "quantity": "Quantity",
+        "currency": "Currency",
+        "incoterm": "Incoterm",
+        "targetLocation": "Target Location",
+        "validity": "Quote Validity Period",
+        "submit": "SEND QUOTE REQUEST TO {count} FIRMS"
+      },
+      "success": {
+        "title": "REQUESTS SENT",
+        "desc": "Official RFQ documents and technical specifications were sent to {count} selected suppliers via the AIP-103 protocol in seconds.",
+        "register": "REGISTER TO THE SYSTEM",
+        "newSimulation": "START NEW SIMULATION"
+      },
+      "demo": {
+        "query": "SKF 6204 Deep Groove Ball Bearing 1000 units",
+        "location": "Istanbul, Turkey",
+        "quantity": "1000 Units",
+        "suppliers": [
+          {
+            "name": "TechGear Industrial Inc.",
+            "location": "Istanbul, TR",
+            "speed": "2 Days"
+          },
+          {
+            "name": "Global Bearings Co.",
+            "location": "Berlin, DE",
+            "speed": "5 Days"
+          },
+          {
+            "name": "Bearing World",
+            "location": "Bursa, TR",
+            "speed": "1 Day"
+          },
+          {
+            "name": "Anatolian Machine Ltd.",
+            "location": "Ankara, TR",
+            "speed": "3 Days"
+          }
+        ],
+        "incoterms": [
+          "DAP - Delivered at Place",
+          "EXW - Ex Works",
+          "FCA - Free Carrier"
+        ],
+        "validityPeriods": [
+          "7 Days",
+          "15 Days",
+          "30 Days"
+        ]
+      }
+    },
+    "dashboard": {
+      "title": "PROFESSIONAL OPERATION PANEL",
+      "subtitle": "Corporate management modules waiting for you when you log in.",
+      "ops": {
+        "title": "OPERATION CENTER",
+        "desc": "Manage all your active RFQ processes from a single screen.",
+        "f1": "Price Comparison",
+        "f2": "Counter-Offer",
+        "f3": "Purchase Approval"
+      },
+      "log": {
+        "title": "LOGISTICS TRACKING",
+        "desc": "Track your orders from production to delivery at your doorstep.",
+        "f1": "Shipment Details",
+        "f2": "Invoice Tracking",
+        "f3": "Delivery Confirmation"
+      },
+      "team": {
+        "title": "TEAM MANAGEMENT",
+        "desc": "Define and manage your corporate hierarchy in the system.",
+        "f1": "Approval Limits",
+        "f2": "Authority Definition",
+        "f3": "Department Reports"
+      },
+      "erp": {
+        "title": "ERP INTEGRATION",
+        "desc": "Full integration with SAP, Oracle, and MS Dynamics.",
+        "f1": "Automatic Stock Entry",
+        "f2": "API Integration",
+        "f3": "Scheduled Sync"
+      }
+    },
+    "steps": {
+      "step1": {
+        "title": "Smart Search & Discovery",
+        "desc": "Simply write your needs thanks to our natural language processing engine."
+      },
+      "step2": {
+        "title": "Autonomous RFQ Creation",
+        "desc": "The system automatically analyzes technical details of your request."
+      },
+      "step3": {
+        "title": "Real-Time Negotiation",
+        "desc": "Review quotes from suppliers from a single panel."
+      },
+      "step4": {
+        "title": "Secure Approval & Monitoring",
+        "desc": "Approve the quote you agreed on and track it transparently."
+      }
+    },
+    "questions": {
+      "q1": {
+        "title": "Could there be better than your current suppliers?",
+        "desc": "Our AI engine finds hidden giants in the global market for you."
+      },
+      "q2": {
+        "title": "Do you want to check market prices?",
+        "desc": "Benchmark your costs with real-time data."
+      },
+      "q3": {
+        "title": "Are you aware of new suppliers?",
+        "desc": "Our autonomous network analyzes thousands of data points daily."
+      }
+    },
+    "cta": "START FOR FREE NOW"
+  },
+  "reviews": {
+    "title": "Network Growing with Confidence",
+    "subtitle": "Over 500+ institutions worldwide manage their procurement operations with ProcureOS autonomous infrastructure.",
+    "badge": "USER EXPERIENCES",
+    "loading": "Loading Experiences...",
+    "back": "Go Back",
+    "ctaTitle": "Become Part of the Autonomous Network",
+    "ctaSubtitle": "Register for free now and digitalize your supply chain.",
+    "ctaButton": "REGISTER",
+    "tags": {
+      "highSatisfaction": "High Satisfaction",
+      "verified": "Verified"
+    },
+    "roles": {
+      "buyer": "Corporate Buyer",
+      "manager": "Procurement Manager",
+      "director": "Operations Director"
+    },
+    "static": [
+      {
+        "name": "Arda Yılmaz",
+        "role": "Procurement Manager",
+        "company": "Global Logistics Inc.",
+        "content": "Thanks to ProcureOS, our supplier search process dropped from weeks to days. The AI technical specification creation feature provides incredible time savings.",
+        "tag": "Corporate"
+      },
+      {
+        "name": "Selin Demir",
+        "role": "Operations Director",
+        "company": "Tech-Flow Systems",
+        "content": "The autonomous matching system brought high-quality suppliers to us that we could never reach. We are very comfortable thanks to the trust score system.",
+        "tag": "Industrial"
+      }
+    ]
+  },
+  "legal": {
+    "lastUpdate": "Last Updated: May 3, 2026",
+    "terms": {
+      "title": "Terms of Service",
+      "intro": "By accessing ProcureOS, you agree to these terms.",
+      "sections": [
+        {
+          "title": "1. Service Description",
+          "content": "ProcureOS is a digital platform facilitating procurement between buyers and suppliers."
+        },
+        {
+          "title": "2. Account Security",
+          "content": "You are responsible for your account confidentiality."
+        },
+        {
+          "title": "3. Governing Law",
+          "content": "These terms are governed by the laws of the Republic of Turkey."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": "We care about your data security.",
+      "sections": [
+        {
+          "title": "1. Data Collected",
+          "content": "We collect name, email, and company information."
+        },
+        {
+          "title": "2. Purpose",
+          "content": "We use data to optimize our services."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "intro": "We use cookies for a better experience.",
+      "sections": [
+        {
+          "title": "1. What is a Cookie?",
+          "content": "Small text files saved on your device."
+        },
+        {
+          "title": "2. Control",
+          "content": "You can manage cookies in browser settings."
+        }
+      ]
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome",
+      "subtitle": "ProcureOS Buyer Portal",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "email@company.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "••••••••",
+      "forgotPassword": "Forgot?",
+      "submit": "LOGIN TO SYSTEM",
+      "noAccount": "Don't have an account yet?",
+      "registerLink": "Register Now",
+      "success": "Successfully logged in!",
+      "errorDefault": "Login failed.",
+      "passwordError": "Password incorrect or missing.",
+      "registeredSuccess": "Your account has been successfully created. You can now log in.",
+      "termsText": "By logging in, you agree to our <terms>Terms & Conditions</terms> and <privacy>Privacy Policy</privacy>."
+    },
+    "register": {
+      "title": "Join Us",
+      "subtitle": "Step into the World of Autonomous Sourcing",
+      "companyNameLabel": "Company Name",
+      "companyNamePlaceholder": "Full Company Name",
+      "contactPersonLabel": "Contact Person",
+      "contactPersonPlaceholder": "First and Last Name",
+      "phoneLabel": "Phone Number",
+      "phonePlaceholder": "+1 xxx xxx xx xx",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "email@company.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "••••••••",
+      "confirmPasswordLabel": "Confirm Password",
+      "confirmPasswordPlaceholder": "••••••••",
+      "submit": "CREATE ACCOUNT",
+      "haveAccount": "Already have an account?",
+      "loginLink": "Login",
+      "errorMatch": "Passwords do not match.",
+      "errorLength": "Password must be at least 8 characters.",
+      "errorDefault": "Registration failed.",
+      "termsText": "By creating an account, you agree to our <terms>Terms & Conditions</terms> and <privacy>Privacy Policy</privacy>.",
+      "features": {
+        "global": "Global Access",
+        "secure": "Secure Payment",
+        "fast": "Fast Match"
+      }
+    },
+    "forgotPassword": {
+      "title": "Reset Password",
+      "subtitle": "We will send a reset link to your email address.",
+      "submit": "SEND INSTRUCTIONS",
+      "success": "Reset email sent.",
+      "error": "An error occurred."
+    },
+    "resetPassword": {
+      "title": "New Password",
+      "subtitle": "Set a new and secure password for your account.",
+      "passwordLabel": "New Password",
+      "confirmPasswordLabel": "Confirm Password",
+      "submit": "UPDATE PASSWORD",
+      "successTitle": "SUCCESS!",
+      "successMessage": "Your password has been updated. Redirecting to login...",
+      "errorMismatch": "Passwords do not match.",
+      "errorDefault": "Invalid or expired link.",
+      "errorInvalidToken": "Invalid reset link!",
+      "successToast": "Your password has been successfully updated."
+    }
+  },
+  "systemErrors": {
+    "default": "An error occurred. Please try again.",
+    "authFailed": "Login failed. Please check your credentials.",
+    "sessionExpired": "Your session has expired. Please log in again.",
+    "forbidden": "You do not have permission for this action.",
+    "serverError": "A server error occurred. Our team has been notified.",
+    "networkError": "Connection error. Please check your internet connection.",
+    "validationError": "Please correct the missing or incorrect fields in the form.",
+    "emailExists": "This email address is already in use.",
+    "tooManyRequests": "Too many requests. Please wait a moment."
+  },
+  "globalError": {
+    "title": "UNEXPECTED ERROR",
+    "subtitle": "A system interruption has occurred.",
+    "description": "The error has been automatically reported to our technical team. Please try refreshing the page.",
+    "retry": "TRY AGAIN"
+  }
+}

@@ -1,0 +1,1083 @@
+{
+  "home": {
+    "protocolNotes": "AIP 103 Protokol Notları",
+    "defaults": {
+      "paymentTerm": "Peşin / Teslimatta Ödeme",
+      "supplier": "Tedarikçi"
+    },
+    "toasts": {
+      "loginRequired": "Bu işlem için giriş yapmalısınız.",
+      "searchFailed": "Arama sırasında bir hata oluştu.",
+      "invalidTaxId": "Geçerli bir vergi numarası girin (10-11 hane).",
+      "invalidPhone": "Geçerli bir telefon numarası girin.",
+      "profileUpdated": "Profiliniz başarıyla güncellendi.",
+      "updateFailed": "Profil güncellenemedi.",
+      "needRequestTitle": "Lütfen talep için bir başlık girin.",
+      "noSuppliersFound": "Uygun tedarikçi bulunamadı.",
+      "createIntentFailed": "Talep taslağı oluşturulamadı.",
+      "needDeliveryAddress": "Lütfen bir teslimat adresi seçin veya girin.",
+      "intentInfoNotFound": "Talep bilgileri bulunamadı.",
+      "requestSent": "Talebiniz başarıyla iletildi.",
+      "sendFailed": "Talep iletilemedi: {error}",
+      "unknownError": "Bilinmeyen bir hata oluştu.",
+      "offerAccepted": "Teklif kabul edildi.",
+      "offerRejected": "Teklif reddedildi.",
+      "requestNotSelected": "Talep seçilmedi.",
+      "noActiveOffers": "İşlem yapılabilecek aktif teklif bulunmuyor.",
+      "bulkCounterSent": "{count} adet teklif için karşı teklif iletildi.",
+      "counterSent": "Karşı teklif başarıyla iletildi.",
+      "counterError": "Karşı teklif iletilemedi.",
+      "supplierAdded": "Tedarikçi listenize eklendi."
+    },
+    "differentCompanies": "{count} Farklı Firma"
+  },
+  "common": {
+    "title": "ProcureOS",
+    "buyerPortal": "Alıcı Portalı",
+    "howItWorks": "NASIL KULLANILIR?",
+    "myPanel": "Panelim",
+    "myAccount": "HESABIM",
+    "logout": "ÇIKIŞ YAP",
+    "login": "Giriş Yap",
+    "register": "Kayıt Ol",
+    "allRightsReserved": "Tüm Hakları Saklıdır.",
+    "isSeller": "SATICI MISINIZ?",
+    "allCategories": "TÜM KATEGORİLER",
+    "logoutSuccess": "Başarıyla çıkış yapıldı.",
+    "paginationTotal": "Toplam {total} Kayıt",
+    "paginationPage": "Sayfa {page}/{totalPages}",
+    "notSpecified": "Belirtilmedi",
+    "other": "Diğer",
+    "errorOccurred": "Bir hata oluştu.",
+    "notifications": {
+      "systemFlow": "Sistem ve Operasyonel Akış",
+      "new": "YENİ",
+      "noNotifications": "Henüz bildirim yok",
+      "markFailed": "Bildirim işaretlenemedi."
+    },
+    "categories": {
+      "all": "TÜM KATEGORİLER",
+      "Construction & Real Estate": "İnşaat & Gayrimenkul",
+      "Industrial Machinery": "Endüstriyel Makine",
+      "Raw Materials & Chemicals": "Hammadde & Kimyasallar",
+      "Automotive & Transport": "Otomotiv & Lojistik",
+      "Electronics & Electrical": "Elektronik & Elektrik",
+      "Food & Agriculture": "Gıda & Tarım",
+      "Textiles & Apparel": "Tekstil & Giyim",
+      "Office & Stationery": "Ofis & Kırtasiye",
+      "Health & Medical": "Sağlık & Medikal",
+      "Energy & Utilities": "Enerji & Altyapı",
+      "Professional Services": "Profesyonel Hizmetler",
+      "General": "Diğer / Genel"
+    },
+    "statuses": {
+      "preparing": "Hazırlanıyor",
+      "shipped": "Yolda",
+      "delivered": "Teslim Edildi",
+      "warehouse": "Depoda",
+      "customs": "Gümrükte",
+      "local_delivery": "Dağıtımda",
+      "completed": "Tamamlandı"
+    },
+    "countries": {
+      "TR": "Türkiye",
+      "US": "Amerika Birleşik Devletleri",
+      "DE": "Almanya",
+      "GB": "Birleşik Krallık",
+      "FR": "Fransa",
+      "CN": "Çin",
+      "AE": "Birleşik Arap Emirlikleri",
+      "SA": "Suudi Arabistan",
+      "IT": "İtalya",
+      "ES": "İspanya",
+      "NL": "Hollanda",
+      "BE": "Belçika",
+      "CH": "İsviçre",
+      "AT": "Avusturya",
+      "JP": "Japonya"
+    },
+    "info": "BİLGİLENDİRME",
+    "close": "KAPAT",
+    "sessionExpired": "Hareketsizlik nedeniyle oturum süresi doldu."
+  },
+  "marketplace": {
+    "heroTitle": "Global Tedarik",
+    "heroSubtitle": "İşletim Sistemini Keşfedin",
+    "heroDescription": "ProcureOS Çekirdek (Core) altyapısı ile binlerce doğrulanmış üreticiye protokol seviyesinde bağlanın.",
+    "searchPlaceholder": "Ürün veya üretici...",
+    "locationPlaceholder": "Varış Noktası",
+    "searchButton": "SORGULA",
+    "allCategories": "TÜM KATEGORİLER",
+    "noResults": "Aradığınız kriterlerde sonuç bulunamadı.",
+    "supplierNetworkTitle": "ProcureOS Tedarikçi Ağına Katılın",
+    "supplierNetworkDescription": "Ürünlerinizi binlerce kurumsal alıcıya ulaştırın. Doğru taleplere saniyeler içinde teklif verin ve satışlarınızı artırın.",
+    "startSellingNow": "ŞİMDİ SATIŞA BAŞLAYIN",
+    "registerProductsText": "Üretici veya toptancı mısınız? Ürünlerinizi global ağımıza kaydedin ve satış fırsatlarını anında yakalayın",
+    "selection": {
+      "label": "FİRMA SEÇİLDİ",
+      "compare": "KIYASLA",
+      "bulkQuote": "TOPLU TEKLİF İSTE"
+    },
+    "warehouses": {
+      "title": "Kayıtlı Depolarım",
+      "mainCompanyAddress": "Ana Şirket Adresi"
+    },
+    "supplierCard": {
+      "accessRestricted": "PROTOKOL ERİŞİMİ KISITLI",
+      "loginToSeeDetails": "Şirket detaylarını görmek ve teklif almak için giriş yapmalısınız.",
+      "loginButton": "HESABIMLA GİRİŞ YAP",
+      "verified": "DOĞRULANMIŞ",
+      "scores": {
+        "price": "FİYAT",
+        "speed": "TERMİN",
+        "trust": "GÜVEN"
+      },
+      "protocolCategory": "PROTOKOL KATEGORİSİ",
+      "generalSupplier": "GENEL TEDARİKÇİ",
+      "getQuote": "TEKLİF AL"
+    },
+    "comparison": {
+      "title": "Firma Kıyaslama",
+      "description": "Seçtiğiniz {count} firmayı detaylı olarak karşılaştırın.",
+      "noSuppliers": "Kıyaslanacak firma bulunamadı.",
+      "trustScore": "Güven Skoru",
+      "verification": "Doğrulama",
+      "verified": "Onaylı",
+      "serviceRegions": "Hizmet Bölgeleri",
+      "removeFromList": "Listeden Çıkar",
+      "bulkQuote": "TOPLU TEKLİF İSTE ({count})"
+    },
+    "networkPulse": {
+      "label": "EKOSİSTEM NABZI",
+      "status": "AKTİF",
+      "statusValue": "TAM KAPASİTE",
+      "statusLabel": "AĞ DURUMU",
+      "suppliersCount": "{count} Aktif Tedarikçi"
+    }
+  },
+  "dashboard": {
+    "sections": {
+      "opsCenter": "Operasyon Merkezi",
+      "logistics": "Lojistik Takibi",
+      "team": "Takım Yönetimi",
+      "erp": "ERP Entegrasyonları",
+      "identity": "Sistem Kimliği"
+    },
+    "descriptions": {
+      "opsCenter": "Protokol Üzerindeki Aktif RFQ ve Teklif İzleme",
+      "logistics": "Küresel Tedarik Ağı Üzerindeki Sevkiyat İzleme",
+      "team": "Kurumsal Ekip ve Yetki Limitlerini Yönetin",
+      "erp": "Satın Alınan Ürünlerin ERP Sistemlerine Otomatik Aktarımı",
+      "identity": "Küresel Tedarik Ağı Üzerindeki Sistem Kimliğinizi Yönetin"
+    },
+    "tabs": {
+      "requests": "TALEPLER",
+      "orders": "SİPARİŞLER",
+      "mySuppliers": "TEDARİKÇİLERİM",
+      "team": "TAKIM",
+      "integrations": "ENTEGRASYONLAR",
+      "support": "DESTEK",
+      "profile": "PROFİL"
+    },
+    "messages": {
+      "noDataToExport": "Dışa aktarılacak veri bulunamadı."
+    },
+    "online": "AKTİF",
+    "offline": "DEVRE DIŞI",
+    "stats": {
+      "pendingRequests": "BEKLEYEN TALEPLER",
+      "noRequests": "Henüz talebiniz yok",
+      "active": "AKTİF",
+      "start": "BAŞLAT",
+      "savings": "YAKALANAN TASARRUF",
+      "avgResponse": "ORT. YANIT SÜRESİ",
+      "responseTimeUnit": "Saat",
+      "spendingLimit": "Harcama Limiti (Aylık)",
+      "noLimit": "YOK",
+      "limitSet": "Limit",
+      "limitNotSet": "Limit Belirlenmedi"
+    },
+    "requests": {
+      "title": "Aktif Satınalma Talepleri",
+      "searchPlaceholder": "Talep başlığı veya açıklaması ile ara...",
+      "report": "RAPOR",
+      "emptyTitle": "Henüz bir talebiniz bulunmuyor",
+      "emptyDescription": "Pazaryerine giderek ihtiyacınız olan ürün veya hizmet için ilk talebinizi oluşturun.",
+      "actionLabel": "PAZARYERİNE GİT",
+      "offersReceived": "ALINAN TEKLİF",
+      "offersUnit": "ADET",
+      "statusOpen": "AÇIK",
+      "statusCompleted": "TAMAMLANDI",
+      "aiAnalysis": "AI Analizi"
+    },
+    "orders": {
+      "title": "Sevkiyat ve Sipariş Takibi",
+      "searchPlaceholder": "Tedarikçi adı ile ara...",
+      "report": "RAPOR",
+      "emptyTitle": "Henüz bir siparişiniz bulunmuyor",
+      "emptyDescription": "Taleplerinize gelen tekliflerden birini onayladığınızda siparişiniz burada görünecektir.",
+      "actionLabel": "TALEPLERİMİ GÖR",
+      "unnamedRequest": "İsimsiz Talep",
+      "requestDetail": "Talep Detayı",
+      "totalAmount": "TOPLAM TUTAR",
+      "currentStatus": "GÜNCEL SEVKİYAT DURUMU",
+      "negotiationHistory": "PAZARLIK GEÇMİŞİ",
+      "initialOffer": "İlk Teklif",
+      "agreedPrice": "Anlaşılan",
+      "netGain": "Net Kazanç",
+      "processCompleted": "TEKLİF SÜRECİ TAMAMLANDI",
+      "initialPriceOrder": "İLK FİYAT ÜZERİNDEN SİPARİŞ OLUŞTURULDU",
+      "shipmentDetail": "SEVKİYAT DETAYI",
+      "rateExperience": "DENEYİMİ PUANLA",
+      "deliveryAddress": "TESLİMAT ADRESİ",
+      "registeredAddress": "Kayıtlı şirket adresi..."
+    },
+    "status": {
+      "pending": "Hazırlanıyor",
+      "confirmed": "Onaylandı",
+      "shipped": "Kargolandı",
+      "delivered": "Teslim Edildi",
+      "preparing": "Hazırlanıyor",
+      "warehouse": "Depoda",
+      "customs": "Gümrükte",
+      "local_delivery": "Dağıtımda",
+      "completed": "Tamamlandı"
+    },
+    "fxTracking": "KUR TAKİBİ",
+    "team": {
+      "title": "Takım Yönetimi & Onay Hiyerarşisi",
+      "roadmap": "Stratejik Yol Haritası Öğesi",
+      "description": "Ekibinizi ProcureOS'a davet edin. Departman bazlı bütçeler tanımlayın, harcama limitleri belirleyin ve çok aşamalı onay hiyerarşinizi dijitalleştirerek kontrolü elinize alın.",
+      "multiUser": "ÇOKLU KULLANICI ERİŞİMİ",
+      "workflows": "ONAY İŞ AKIŞLARI"
+    },
+    "integrations": {
+      "title": "Kurumsal ERP Entegrasyonu",
+      "roadmap": "Ekosistem Genişleme Aşaması",
+      "description": "Satın alınan ürünler teslim edildiği anda envanterinize otomatik işlensin. SAP, Oracle ve Logo gibi sistemlerle tam senkronizasyon ile manuel veri girişine son verin."
+    },
+    "export": {
+      "id": "ID",
+      "date": "TARİH",
+      "title": "BAŞLIK / ÜRÜN",
+      "category": "KATEGORİ",
+      "quantity": "MİKTAR",
+      "status": "DURUM",
+      "offersCount": "TEKLİF SAYISI",
+      "bestOffer": "EN İYİ TEKLİF",
+      "targetPrice": "HEDEF FİYAT",
+      "savings": "POTANSİYEL TASARRUF (%)",
+      "orderNo": "SİPARİŞ NO",
+      "supplier": "TEDARİKÇİ",
+      "amount": "TUTAR",
+      "deliveryAddress": "TESLİMAT ADRESİ",
+      "estDelivery": "TAHMİNİ TESLİMAT",
+      "trackingNo": "TAKİP NO",
+      "success": "Profesyonel Excel raporu oluşturuldu.",
+      "error": "Rapor oluşturulamadı.",
+      "shipmentModal": {
+        "title": "Sevkiyat Detayları",
+        "orderNo": "Sipariş: {no}",
+        "currentStatus": "GÜNCEL DURUM",
+        "onWay": "YOLDA / SEVK EDİLDİ",
+        "shipmentType": "SEVKİYAT TİPİ",
+        "carrier": "TAŞIYICI FİRMA",
+        "trackingNo": "TAKİP NUMARASI",
+        "estDelivery": "TAHMİNİ TESLİMAT",
+        "notes": "SATICI NOTU & EK BİLGİLER",
+        "deliveryPoint": "TESLİMAT NOKTASI",
+        "defaultCompanyAddress": "VARSAYILAN ŞİRKET ADRESİ",
+        "sender": "GÖNDERİCİ",
+        "close": "KAPAT",
+        "notSpecified": "Belirtilmedi",
+        "noNotes": "Herhangi bir ek not iletilmedi.",
+        "types": {
+          "cargo": "Kargo Gönderimi",
+          "logistics": "Lojistik / Ambar",
+          "ownVehicle": "Özmal Araç / Kendi Sevkiyatımız",
+          "customerPickup": "Müşteri Teslim Alacak",
+          "standard": "Standart Sevkiyat"
+        }
+      }
+    },
+    "categories": {
+      "general": "GENEL"
+    },
+    "profile": {
+      "corporateAccount": "KURUMSAL HESAP",
+      "aipVerified": "AIP-103 DOĞRULANDI",
+      "sections": {
+        "corporate": "Kurumsal Bilgiler",
+        "contact": "İletişim Bilgileri",
+        "financial": "Finansal Ayarlar",
+        "warehouse": "Depo Yönetimi"
+      },
+      "fields": {
+        "companyName": "Şirket Resmi Adı",
+        "website": "Şirket Web Sitesi",
+        "taxId": "Vergi Numarası",
+        "taxOffice": "Vergi Dairesi",
+        "tradeRegistry": "Ticaret Sicil No",
+        "mersis": "MERSİS No",
+        "industry": "Sektör",
+        "employeeCount": "Çalışan Sayısı",
+        "establishmentYear": "Kuruluş Yılı",
+        "fullAddress": "Tam Adres",
+        "city": "Şehir",
+        "country": "Ülke",
+        "postalCode": "Posta Kodu",
+        "contactPerson": "İletişim Kişisi",
+        "phone": "Telefon",
+        "approvalLimit": "Onay Limiti (USD)",
+        "preferredCurrency": "Para Birimi",
+        "warehouseName": "Depo Adı"
+      },
+      "placeholders": {
+        "website": "https://www.sirketiniz.com",
+        "establishmentYear": "Örn: 1995",
+        "warehouseName": "Örn: Gebze Ana Depo",
+        "city": "İstanbul"
+      },
+      "buttons": {
+        "addWarehouse": "YENİ DEPO EKLE",
+        "cancel": "VAZGEÇ",
+        "saveWarehouse": "DEPOMU KAYDET",
+        "saveProfile": "GÜNCELLEMELERİ SİSTEME KAYDET",
+        "saving": "KAYDEDİLİYOR..."
+      },
+      "messages": {
+        "fillRequired": "Lütfen depo adı ve açık adres girin.",
+        "warehouseAdded": "Yeni depo başarıyla eklendi.",
+        "warehouseDeleted": "Depo silindi.",
+        "confirmDelete": "Bu depoyu silmek istediğinize emin misiniz?",
+        "noWarehouses": "Henüz eklenmiş depo bulunmuyor",
+        "error": "Hata oluştu."
+      },
+      "default": "VARSAYILAN",
+      "select": "Seçiniz"
+    },
+    "suppliers": {
+      "title": "Kayıtlı Tedarikçilerim",
+      "subtitle": "Favori ve çalışılan firmalar",
+      "searchPlaceholder": "Tedarikçi adı ile ara...",
+      "emptyState": "Henüz kayıtlı tedarikçi yok",
+      "removed": "Tedarikçi çıkarıldı.",
+      "error": "Hata oluştu.",
+      "trustedPartner": "GÜVENİLİR PARTNER",
+      "generalSupplier": "Genel Tedarikçi"
+    },
+    "support": {
+      "title": "Destek Merkezi",
+      "active": "AKTİF",
+      "archived": "ARŞİV",
+      "connecting": "Destek Hattına Bağlanılıyor...",
+      "emptyStateActive": "Henüz aktif bir destek talebiniz bulunmuyor.",
+      "emptyStateArchived": "Arşivlenmiş biletiniz bulunmuyor.",
+      "status": {
+        "open": "AÇIK",
+        "inProgress": "İNCELENİYOR",
+        "resolved": "ÇÖZÜLDÜ",
+        "closed": "KAPALI"
+      },
+      "createForm": {
+        "title": "Yeni Destek Talebi",
+        "subtitle": "Hızlı çözüm için detaylı bilgi verin",
+        "subject": "TALEP KONUSU",
+        "category": "KATEGORİ",
+        "message": "MESAJINIZ",
+        "placeholderSubject": "Örn: Sipariş Durumu Hakkında",
+        "placeholderMessage": "Lütfen sorununuzu veya talebinizi detaylandırın...",
+        "submit": "BİLETİ GÖNDER VE BAŞLAT",
+        "categories": {
+          "general": "Genel Yardım",
+          "technical": "Teknik Hata",
+          "billing": "Sipariş & Ödeme",
+          "product": "Ürün & Stok Bilgisi"
+        }
+      },
+      "chat": {
+        "supportTeam": "ProcureOS Destek Ekibi",
+        "placeholder": "Mesajınızı yazın...",
+        "closeTicket": "BİLETİ KAPAT",
+        "priority": "{priority} ÖNCELİK",
+        "confirmClose": "Bu bileti kapatmak istediğinizden emin misiniz?",
+        "closedByUser": "--- Kullanıcı bu bileti kapattı ---"
+      },
+      "main": {
+        "title": "Sistem Destek Birimi",
+        "description": "Tüm operasyonel, teknik veya finansal sorularınız için uzman ekibimiz ve AI asistanımız 7/24 hizmetinizdedir.",
+        "newRequest": "YENİ TALEP BAŞLAT"
+      },
+      "messages": {
+        "created": "Destek talebiniz başarıyla oluşturuldu.",
+        "error": "Bilet oluşturulamadı.",
+        "closed": "Bilet başarıyla kapatıldı.",
+        "sendError": "Mesaj gönderilemedi."
+      }
+    },
+    "home": {
+      "protocolNotes": "AIP-103+ PROTOKOLÜ (SÜRÜM NOTLARI)",
+      "toasts": {
+        "loginRequired": "Lütfen önce giriş yapın.",
+        "searchFailed": "Arama başarısız.",
+        "invalidTaxId": "Geçersiz Vergi Numarası. Lütfen 10 veya 11 haneli sayı girin.",
+        "invalidPhone": "Geçersiz Telefon Numarası.",
+        "profileUpdated": "Profiliniz güncellendi.",
+        "updateFailed": "Güncelleme başarısız.",
+        "needRequestTitle": "Lütfen neye ihtiyacınız olduğunu belirtin.",
+        "noSuppliersFound": "Uygun tedarikçi bulunamadı.",
+        "createIntentFailed": "Talep oluşturulamadı.",
+        "needDeliveryAddress": "Lütfen teslimat adresi belirtin.",
+        "intentInfoNotFound": "Talep bilgisi bulunamadı. Lütfen tekrar arama yapın.",
+        "requestSent": "Talep başarıyla iletildi.",
+        "sendFailed": "Gönderim başarısız: {error}",
+        "unknownError": "Bilinmeyen hata",
+        "offerAccepted": "Teklif başarıyla kabul edildi!",
+        "offerRejected": "Teklif reddedildi.",
+        "requestNotSelected": "Talep seçilmedi.",
+        "noActiveOffers": "Pazarlık yapılabilecek aktif teklif bulunamadı.",
+        "bulkCounterSent": "{count} tedarikçiye toplu karşı teklif iletildi.",
+        "counterSent": "Karşı teklif iletildi.",
+        "counterError": "Pazarlık hatası.",
+        "supplierAdded": "Tedarikçi favorilerinize eklendi."
+      },
+      "defaults": {
+        "supplier": "Tedarikçi",
+        "country": "Türkiye",
+        "paymentTerm": "30 Gün Vadeli"
+      }
+    },
+    "rating": {
+      "title": "Tedarikçiyi Değerlendir",
+      "errors": {
+        "overallRating": "Lütfen genel bir puan verin.",
+        "submitFailed": "Değerlendirme gönderilirken bir hata oluştu."
+      },
+      "labels": {
+        "overall": "Genel Memnuniyet",
+        "quality": "Ürün Kalitesi",
+        "delivery": "Teslimat Hızı",
+        "communication": "İletişim ve Destek",
+        "feedback": "Geri Bildiriminiz"
+      },
+      "placeholders": {
+        "feedback": "Deneyiminizi kısaca anlatın..."
+      },
+      "info": "Bu değerlendirme doğrudan tedarikçi ile paylaşılmamakta olup, yalnızca ProcureOS güven endeksi hesaplamaları ve hizmet kalitemizin iyileştirilmesi amacıyla kullanılmaktadır. Görüşleriniz ekosistemimizin şeffaflığı için kritik öneme sahiptir.",
+      "submit": "DEĞERLENDİRMEYİ GÖNDER",
+      "submitting": "Gönderiliyor...",
+      "success": {
+        "title": "Teşekkürler!",
+        "message": "Değerlendirmeniz başarıyla kaydedildi ve tedarikçi puanına yansıtıldı."
+      },
+      "addToFavorites": "TEDARİKÇİYİ FAVORİLERİME EKLE",
+      "messages": {
+        "added": "Tedarikçi favorilerinize eklendi."
+      }
+    },
+    "sourcing": {
+      "steps": {
+        "form": {
+          "title": "İÇİN TALEP OLUŞTURUN",
+          "subtitle": "Neye ihtiyacınız var? Sizin için bulalım.",
+          "descriptionSingle": "Seçtiğiniz tedarikçi için ürün detaylarını ve miktarını belirtin, kurumsal şablonda iletelim.",
+          "descriptionMulti": "Ürün özelliklerini ve miktarını belirtin, ProcureOS Core ağı saniyeler içinde en uygun satıcıları lojistik verilerine göre filtrelesin.",
+          "labels": {
+            "title": "Ürün veya Hizmet Tanımı",
+            "note": "Alıcı Notu / Özel İstekler (Opsiyonel)",
+            "quantity": "İhtiyaç Duyulan Miktar",
+            "currency": "Para Birimi",
+            "paymentTerm": "Ödeme Vadesi"
+          },
+          "placeholders": {
+            "title": "Örn: 100 adet 5 metre boyunda 40mm çapında sanayi tipi metal boru...",
+            "note": "Örn: Teslimatların paletli yapılmasını rica ederiz...",
+            "quantity": "Örn: 500 Adet",
+            "currency": "Örn: AED"
+          },
+          "paymentTerms": {
+            "cash": "Peşin Ödeme",
+            "30days": "30 Gün Vadeli",
+            "60days": "60 Gün Vadeli"
+          },
+          "buttons": {
+            "processing": "İŞLENİYOR...",
+            "prepare": "TALEBİ HAZIRLA VE İLERLE",
+            "listSuppliers": "UYGUN TEDARİKÇİLERİ LİSTELE"
+          }
+        },
+        "matches": {
+          "titleReady": "Talebiniz Hazır",
+          "titleMatches": "Eşleşen Tedarikçiler",
+          "descriptionSingle": "{name} için hazırlanan kurumsal satın alma talebini onaylayın.",
+          "descriptionMulti": "Core motoru lojistik ve ürün kategorisine göre en uygun eşleşmeleri buldu.",
+          "back": "Geri Dön",
+          "noSuppliers": "Uygun tedarikçi bulunamadı.",
+          "trustScore": "%{score} GÜVEN SKORU",
+          "officialRequest": "RESMİ SATIN ALMA TALEBİ",
+          "docNo": "DOKÜMAN NO",
+          "targetQuantity": "HEDEF MİKTAR",
+          "targetCurrency": "PARA BİRİMİ",
+          "paymentTerm": "ÖDEME VADESİ",
+          "sendRequest": "KURUMSAL TALEBİ GÖNDER",
+          "sending": "İLETİLİYOR..."
+        },
+        "success": {
+          "title": "Talep İletildi!",
+          "message": "Satın alma talebiniz seçilen tedarikçilere resmi protokol üzerinden iletildi. Teklifler geldiğinde anlık olarak bilgilendirileceksiniz.",
+          "backToMarketplace": "MARKETPLACE'E DÖN",
+          "viewMyRequests": "TALEPLERİMİ GÖRÜNTÜLE"
+        }
+      },
+      "errors": {
+        "selectSupplier": "Lütfen teklif gönderilecek en az bir tedarikçi seçin."
+      },
+      "address": {
+        "change": "DEĞİŞTİR",
+        "mainCompany": "Ana Şirket Adresi"
+      },
+      "features": {
+        "global": {
+          "title": "Global Eşleşme",
+          "desc": "Dil bariyeri olmadan, ihtiyacınız dünya pazarına sunulur."
+        },
+        "logistics": {
+          "title": "Lojistik Doğrulama",
+          "desc": "Sadece sizin adresinize gönderim yapabilen satıcılar listelenir."
+        },
+        "standard": {
+          "title": "Kurumsal Standart",
+          "desc": "Tüm yazışmalar profesyonel şablonlar üzerinden yürütülür."
+        }
+      }
+    },
+    "requestDetails": {
+      "status": {
+        "open": "TEKLİF TOPLANIYOR",
+        "completed": "TAMAMLANDI"
+      },
+      "tabs": {
+        "list": "Liste",
+        "compare": "Kıyasla",
+        "audit": "Denetim"
+      },
+      "timeline": {
+        "created": "Talep (RFQ) oluşturuldu ve sisteme kaydedildi.",
+        "offerReceived": "{supplier} tarafından teklif iletildi ({price}).",
+        "offerAccepted": "{supplier} teklifi KABUL EDİLDİ ve Sipariş (PO) süreci başlatıldı.",
+        "offerRejected": "{supplier} teklifi REDDEDİLDİ.",
+        "pendingApproval": "{supplier} teklifi yönetici onayına sunuldu (Yetki limiti aşıldı).",
+        "supplier": "Tedarikçi",
+        "unknownSupplier": "Bir tedarikçi"
+      },
+      "details": {
+        "title": "TALEP AYRINTILARI",
+        "quickInfo": "HIZLI BİLGİLER",
+        "quantity": "MİKTAR",
+        "paymentTerm": "ÖDEME VADESİ",
+        "currency": "PARA BİRİMİ",
+        "targetPrice": "HEDEF FİYAT",
+        "openOffer": "Açık Teklif",
+        "itemDetail": "Ürün/Hizmet Detayı",
+        "note": "Not",
+        "noDetail": "Detay belirtilmemiş."
+      },
+      "offers": {
+        "title": "ALINAN TEKLİFLER",
+        "countSuffix": "ADET",
+        "batchNegotiation": "TOPLU PAZARLIK",
+        "noOffers": "HENÜZ TEKLİF GELMEDİ. SİSTEM TEDARİKÇİLERLE EŞLEŞMEYİ SÜRDÜRÜYOR.",
+        "bestMatch": "EN İYİ EŞLEŞME",
+        "trust": "GÜVEN",
+        "amount": "TEKLİF TUTARI",
+        "unitPrice": "BİRİM FİYAT",
+        "deliveryTime": "TERMİN SÜRESİ",
+        "workingDays": "İŞ GÜNÜ",
+        "expressDelivery": "EKSPRES TESLİMAT",
+        "negotiation": "PAZARLIK",
+        "details": "DETAYLAR",
+        "accept": "KABUL ET",
+        "reject": "Reddet",
+        "selected": "SEÇİLDİ",
+        "rejected": "REDDEDİLDİ",
+        "inNegotiation": "PAZARLIKTA",
+        "activeOffer": "AKTİF TEKLİF",
+        "pendingApproval": "ONAY BEKLİYOR",
+        "sendToApproval": "ONAYA GÖNDER",
+        "saveSupplier": "Tedarikçiyi Kaydet"
+      },
+      "negotiationModal": {
+        "batchTitle": "TOPLU PAZARLIK",
+        "singleTitle": "PAZARLIK SÜRECİ",
+        "batchDesc": "BU TALEP İÇİN TEKLİF VEREN TÜM FİRMALARA ({count} ADET) TOPLU MESAJ GÖNDERİLECEKTİR.",
+        "singleDesc": "{supplier} İLE FİYAT VE TERMİN ÜZERİNE KARŞI TEKLİF OLUŞTURUN.",
+        "targetPrice": "HEDEF BİRİM FİYAT",
+        "targetDays": "İSTENEN TERMİN (GÜN)",
+        "noteLabel": "PAZARLIK NOTU",
+        "notePlaceholder": "Bütçe kısıtı veya teslimat aciliyeti hakkında bilgi verin...",
+        "cancel": "VAZGEÇ",
+        "sendBatch": "TOPLU MESAJI GÖNDER",
+        "sendSingle": "KARŞI TEKLİFİ İLET"
+      },
+      "audit": {
+        "title": "SÜREÇ DENETİM İZİ (BLOCKCHAIN VERIFIED)",
+        "verified": "SİSTEM ONAYLI"
+      },
+      "aiAnalysis": "AI Analizi"
+    },
+    "offerDocument": {
+      "print": "YAZDIR / İNDİR",
+      "officialDoc": "RESMİ TEKLİF BELGESİ",
+      "docNo": "BELGE NO",
+      "sellerInfo": "SATICI BİLGİLERİ",
+      "authorized": "Yetkili",
+      "taxNo": "Vergi No",
+      "buyerInfo": "ALICI BİLGİLERİ",
+      "description": "HİZMET / ÜRÜN AÇIKLAMASI",
+      "quantity": "MİKTAR",
+      "unitPrice": "BİRİM FİYAT (KDV HARİÇ)",
+      "totalPrice": "TOPLAM (KDV HARİÇ)",
+      "category": "Kategori",
+      "unitAdet": "Adet",
+      "digitalNotice": "* Bu teklif dijital olarak ProcureOS üzerinde oluşturulmuştur.",
+      "grandTotal": "GENEL TOPLAM",
+      "paymentTerms": "ÖDEME VE TESLİMAT ŞARTLARI",
+      "paymentTermLabel": "ÖDEME VADESİ",
+      "deliveryTermLabel": "TESLİMAT TERMİNİ",
+      "cash": "PEŞİN",
+      "workingDays": "İŞ GÜNÜ",
+      "digitalVerification": "DİJİTAL DOĞRULAMA",
+      "page": "Sayfa",
+      "supplierFirm": "TEDARİKÇİ FİRMA",
+      "buyerFirm": "ALICI FİRMA"
+    },
+    "notifications": {
+      "title": "Bildirim Merkezi"
+    }
+  },
+  "footer": {
+    "poweredBy": "AIP-103+ Otonom Protokolü ile Güçlendirilmiştir",
+    "joinAsSupplier": "TEDARİKÇİ OLUN",
+    "faq": "SSS",
+    "reviews": "YORUMLAR",
+    "terms": "KULLANIM ŞARTLARI",
+    "privacy": "GİZLİLİK POLİTİKASI",
+    "cookies": "ÇEREZLER"
+  },
+  "errors": {
+    "404": {
+      "title": "Yolunuzu mu Kaybettiniz?",
+      "description": "Aradığınız tedarikçi veya sayfa sistemimizde bulunamadı. Lütfen adresi kontrol edin veya ana sayfaya dönün.",
+      "backHome": "ANA SAYFAYA DÖN"
+    }
+  },
+  "changelog": {
+    "title": "AIP Protokolü Sürüm Notları",
+    "subtitle": "ProcureOS Otonom İstihbarat Protokolü (AIP) sistemindeki güncel geliştirmeler ve gelecek projeksiyonları hakkında teknik dökümantasyon.",
+    "backToDashboard": "Panele Dön",
+    "releaseNotes": "Sürüm Notları",
+    "footerNote": "ProcureOS, AIP standartlarını takip eden otonom bir ekosistemdir.",
+    "historyTitle": "Tam Kod Geçmişi",
+    "historySubtitle": "ProcureOS AIP çekirdek altyapısındaki tüm atomik değişikliklerin teknik özeti.",
+    "searchPlaceholder": "Commit mesajı veya sürüm ile ara...",
+    "noResults": "Aradığınız kriterde commit bulunamadı",
+    "commitsTitle": "Commit Geçmişi",
+    "fullLog": "Tam Kayıt",
+    "releaseItems": {
+      "AIP-106": {
+        "title": "Global Settlement & Escrow Katmanı",
+        "description": "Sınır ötesi ödemelerin ve güvenli ticaretin (Escrow) AIP protokolüne tam entegrasyonu.",
+        "cat1": "Finansallar",
+        "item1": "Çoklu para birimi ve anlık kur dönüşüm motoru.",
+        "item2": "ProcureOS Escrow: Mal teslimatı onaylı akıllı sözleşme tabanlı ödeme sistemi.",
+        "item3": "Tedarikçi finansmanı ve hakediş yönetim paneli."
+      },
+      "AIP-105": {
+        "title": "ProcureAI Insight & Tahminleme",
+        "description": "Pazar trendleri ve tedarik zinciri risklerinin yapay zeka ile önceden tespiti.",
+        "cat1": "İstihbarat",
+        "item1": "Predictive Sourcing: Talep gelmeden önce tedarikçi kapasite rezervasyonu.",
+        "item2": "Pazar trend analizi ve dinamik fiyat dalgalanma uyarıları.",
+        "item3": "Tedarikçi risk skorlama (Risk Scoring) 2.0 katmanı."
+      },
+      "AIP-104": {
+        "title": "Enterprise Connect & ERP Entegrasyonu",
+        "description": "ProcureOS'un mevcut kurumsal ERP sistemleri ile kusursuz veri senkronizasyonu.",
+        "cat1": "Bağlantı",
+        "item1": "SAP, Oracle ve Microsoft Dynamics için hazır veri konnektörleri.",
+        "item2": "Hiyerarşik onay mekanizması ve kurumsal bütçe kontrol entegrasyonu.",
+        "item3": "Tekil oturum açma (SSO) ve kurumsal kimlik yönetimi (IAM) desteği."
+      },
+      "AIP-103_6": {
+        "title": "Kurumsal Raporlama & Finansal Görünürlük",
+        "description": "Satınalma verilerinin operasyonel ve finansal katmanlarda profesyonel raporlanması sağlandı.",
+        "cat1": "Raporlama",
+        "item1": "Profesyonel Excel (.xlsx) dışa aktarım motoru ve stilize tablolar.",
+        "item2": "Raporlara 'Potansiyel Tasarruf Analizi' metriği eklendi.",
+        "item3": "Gelişmiş veri filtreleme ve tarih bazlı raporlama altyapısı.",
+        "cat2": "Performans",
+        "item4": "Dashboard veri yükleme süreleri SWR ile %70 hızlandırıldı.",
+        "item5": "Veri tabanı indekslemeleri ile sorgu optimizasyonu tamamlandı."
+      },
+      "AIP-103_5": {
+        "title": "Performans Motoru & Asenkron Mimari",
+        "description": "ProcureOS çekirdek altyapısı, yüksek yoğunluklu trafik için asenkron yapıya geçirildi.",
+        "cat1": "Mimari",
+        "item1": "AI Embedding üretimi worker katmanına offload edildi.",
+        "item2": "Pazaryeri aramaları için 'Debounced Search' altyapısı devreye alındı.",
+        "item3": "Konum ve adres formatları tüm modüllerde standart hale getirildi."
+      },
+      "AIP-103": {
+        "title": "Zero-Trust & Anlamsal Eşleşme",
+        "description": "Veri güvenliği ve yapay zeka eşleştirme motorunun temel stabilizasyonu.",
+        "cat1": "Güvenlik",
+        "item1": "Supabase RLS ile Zero-Trust izolasyonu sağlandı.",
+        "item2": "Anlamsal eşleşme motoru 450ms gecikme süresinin altına düşürüldü."
+      },
+      "AIP-102": {
+        "title": "Akıllı Katalog Yönetimi",
+        "description": "Tedarikçi kataloglarının ve ürün verilerinin dijitalleştirilmesi.",
+        "cat1": "Çekirdek",
+        "item1": "Vektör tabanlı ürün arama ve kataloglama sistemi.",
+        "item2": "Tedarikçi kayıt ve doğrulama akışları optimize edildi."
+      },
+      "AIP-101": {
+        "title": "NLP Engine & Çoklu Dil Desteği",
+        "description": "Prototip aşamasından ilk üretim sürümüne geçiş.",
+        "cat1": "Temel",
+        "item1": "72 dilde anlık RFQ çeviri ve analiz motoru.",
+        "item2": "Doğal dil işleme (NLP) ile ilk başarılı talep-tedarikçi eşleşmesi."
+      }
+    }
+  },
+  "faq": {
+    "title": "Sıkça Sorulan Sorular",
+    "subtitle": "ProcureOS otonom satınalma ekosistemi hakkında merak ettiğiniz her şey.",
+    "helpCenter": "YARDIM MERKEZİ",
+    "back": "Geri Dön",
+    "questions": {
+      "q1": "ProcureOS üzerinden nasıl satınalma talebi oluştururum?",
+      "a1": "Ana sayfada bulunan 'Talep Oluştur' butonuna tıklayarak ihtiyacınızı doğal dille yazabilirsiniz. Yapay zekamız (AIP-103+), talebinizi teknik özelliklere dönüştürecek ve en uygun tedarikçilerle eşleştirecektir.",
+      "q2": "Tedarikçiler nasıl doğrulanıyor?",
+      "a2": "ProcureOS tedarikçi doğrulama süreci 3 katmanlı bir denetim mekanizmasına dayanır: 1. Kurumsal Doğrulama (KYB), 2. Finansal & Teknik Skorlama, 3. Dinamik Güven Skoru.",
+      "q3": "Ödeme süreçleri nasıl işliyor?",
+      "a3": "Şu anki aşamada ödemeler, alıcı ve satıcı arasındaki mevcut ticari anlaşmalar üzerinden gerçekleşmektedir. Yakında Escrow özelliğimiz devreye alınacaktır.",
+      "q4": "Global tedarikçilere ulaşabilir miyim?",
+      "a4": "Evet, ProcureOS ağı hem yerel hem de global binlerce tedarikçiyi kapsar."
+    }
+  },
+  "howItWorks": {
+    "title": "Sistemi Keşfedin.",
+    "subtitle": "Geleneksel satın alma süreçlerini unutun. AIP-103+ protokolü ile tedarik zincirinizi otonom bir işletim sistemine dönüştürün.",
+    "guide": "KURUMSAL REHBER v2.0",
+    "usageGuide": "Kullanım Kılavuzu",
+    "backToHome": "GİRİŞ EKRANI",
+    "simulator": {
+      "badge": "Canlı Simülatör (v2.0)",
+      "title": "Çoklu Tedarikçi Yönetim Simülasyonu",
+      "desc": "Birden fazla firmaya aynı anda teklif talebi gönderme ve otonom eşleşme sürecini deneyimleyin.",
+      "searchPlaceholder": "Ne tedarik etmek istiyorsunuz? (Örn: Rulman)",
+      "locationPlaceholder": "Lokasyon Filtresi",
+      "searchButton": "GLOBAL ARA",
+      "searching": "TARANIYOR...",
+      "exampleScenario": "Örnek Senaryoyu Başlat",
+      "scanning": "AIP-103 Protokolü: Küresel Ağ Taranıyor...",
+      "matchedSuppliers": "OTONOM EŞLEŞEN TEDARİKÇİLER ({count})",
+      "selectFirms": "Lütfen teklif almak istediğiniz firmaları seçin ({count} Seçili)",
+      "supplierCard": {
+        "match": "Eşleşme",
+        "speed": "Hız",
+        "score": "Skor"
+      },
+      "form": {
+        "badge": "CONCURRENT RFQ MODE (EŞZAMANLI TALEP)",
+        "title": "TOPLU SATIN ALMA TALEBİ",
+        "desc": "Seçilen {count} tedarikçiye aynı anda iletilecektir.",
+        "docGroup": "DOKÜMAN GRUBU",
+        "details": "İhtiyaç Detayları",
+        "quantity": "Miktar",
+        "currency": "Para Birimi",
+        "incoterm": "Teslimat Şartı (Incoterm)",
+        "targetLocation": "Hedef Lokasyon",
+        "validity": "Teklif Geçerlilik Süresi",
+        "submit": "{count} FİRMAYA TEKLİF TALEBİNİ İLET"
+      },
+      "success": {
+        "title": "TALEPLER İLETİLDİ",
+        "desc": "Seçilen {count} tedarikçiye resmi RFQ dökümanları ve teknik spesifikasyonlar AIP-103 protokolü üzerinden saniyeler içinde iletildi.",
+        "register": "SİSTEME KAYIT OLUN",
+        "newSimulation": "YENİ SİMÜLASYON BAŞLAT"
+      },
+      "demo": {
+        "query": "SKF 6204 Derin Yivli Bilyalı Rulman 1000 adet",
+        "location": "İstanbul, Türkiye",
+        "quantity": "1000 Adet",
+        "suppliers": [
+          {
+            "name": "TechGear Endüstriyel A.Ş.",
+            "location": "İstanbul, TR",
+            "speed": "2 Gün"
+          },
+          {
+            "name": "Global Bearings Co.",
+            "location": "Berlin, DE",
+            "speed": "5 Gün"
+          },
+          {
+            "name": "Rulman Dünyası",
+            "location": "Bursa, TR",
+            "speed": "1 Gün"
+          },
+          {
+            "name": "Anadolu Makina Ltd.",
+            "location": "Ankara, TR",
+            "speed": "3 Gün"
+          }
+        ],
+        "incoterms": [
+          "DAP - Adrese Teslim",
+          "EXW - Fabrika Çıkış",
+          "FCA - Nakliyeciye Teslim"
+        ],
+        "validityPeriods": [
+          "7 Gün",
+          "15 Gün",
+          "30 Gün"
+        ]
+      }
+    },
+    "dashboard": {
+      "title": "PROFESYONEL OPERASYON PANELİ",
+      "subtitle": "Sisteme giriş yaptığınızda sizi bekleyen kurumsal yönetim modülleri.",
+      "ops": {
+        "title": "OPERASYON MERKEZİ",
+        "desc": "Tüm aktif RFQ süreçlerinizi tek bir ekrandan yönetin.",
+        "f1": "Fiyat Karşılaştırma",
+        "f2": "Karşı Teklif",
+        "f3": "Satın Alma Onayı"
+      },
+      "log": {
+        "title": "LOJİSTİK TAKİBİ",
+        "desc": "Siparişlerinizin üretimden teslimine kadar tüm süreci izleyin.",
+        "f1": "Sevkiyat Detayları",
+        "f2": "İrsaliye Takibi",
+        "f3": "Teslimat Onayı"
+      },
+      "team": {
+        "title": "TAKIM YÖNETİMİ",
+        "desc": "Kurumsal hiyerarşinizi sisteme tanımlayın ve yönetin.",
+        "f1": "Onay Limitleri",
+        "f2": "Yetki Tanımlama",
+        "f3": "Departman Raporları"
+      },
+      "erp": {
+        "title": "ERP ENTEGRASYONU",
+        "desc": "SAP, Oracle ve MS Dynamics ile tam entegrasyon.",
+        "f1": "Otomatik Stok Kaydı",
+        "f2": "API Entegrasyonu",
+        "f3": "Zamanlanmış Senkronizasyon"
+      }
+    },
+    "steps": {
+      "step1": {
+        "title": "Akıllı Arama & Keşif",
+        "desc": "Doğal dil işleme motorumuz sayesinde sadece ihtiyacınızı yazın."
+      },
+      "step2": {
+        "title": "Otonom RFQ Oluşturma",
+        "desc": "Talebinizi oluşturduğunuzda, sistem teknik detayları analiz eder."
+      },
+      "step3": {
+        "title": "Gerçek Zamanlı Müzakere",
+        "desc": "Tedarikçilerden gelen teklifleri tek bir panelden inceleyin."
+      },
+      "step4": {
+        "title": "Güvenli Onay & İzleme",
+        "desc": "Anlaştığınız teklifi onaylayın ve şeffaf şekilde izleyin."
+      }
+    },
+    "questions": {
+      "q1": {
+        "title": "Mevcut tedarikçilerinizden daha iyisi olabilir mi?",
+        "desc": "AI motorumuz, global pazardaki gizli devleri sizin için bulur."
+      },
+      "q2": {
+        "title": "Piyasa fiyat kontrolü yapmak ister misiniz?",
+        "desc": "Gerçek zamanlı verilerle maliyetlerinizi benchmark edin."
+      },
+      "q3": {
+        "title": "Yeni tedarikçilerden haberiniz var mı?",
+        "desc": "Otonom ağımız her gün binlerce veri noktasını analiz eder."
+      }
+    },
+    "cta": "HEMEN ÜCRETSİZ BAŞLAYIN"
+  },
+  "reviews": {
+    "title": "Güvenle Büyüyen Ağ",
+    "subtitle": "Dünya genelinde 500+ kurum, satınalma operasyonlarını ProcureOS otonom altyapısı ile yönetiyor.",
+    "badge": "KULLANICI DENEYİMLERİ",
+    "loading": "Deneyimler Yükleniyor...",
+    "back": "Geri Dön",
+    "ctaTitle": "Siz de Otonom Ağın Parçası Olun",
+    "ctaSubtitle": "Hemen ücretsiz kayıt olun ve tedarik zincirinizi dijitalleştirin.",
+    "ctaButton": "KAYIT OL",
+    "tags": {
+      "highSatisfaction": "Yüksek Memnuniyet",
+      "verified": "Doğrulanmış"
+    },
+    "roles": {
+      "buyer": "Kurumsal Alıcı",
+      "manager": "Satınalma Müdürü",
+      "director": "Operasyon Direktörü"
+    },
+    "static": [
+      {
+        "name": "Arda Yılmaz",
+        "role": "Satınalma Müdürü",
+        "company": "Global Lojistik A.Ş.",
+        "content": "ProcureOS sayesinde tedarikçi arama sürecimiz haftalardan günlere düştü. Yapay zeka ile teknik şartname oluşturma özelliği inanılmaz bir zaman tasarrufu sağlıyor.",
+        "tag": "Kurumsal"
+      },
+      {
+        "name": "Selin Demir",
+        "role": "Operasyon Direktörü",
+        "company": "Tech-Flow Systems",
+        "content": "Otonom eşleşme sistemi, bizim hiç ulaşamadığımız yüksek kaliteli tedarikçileri ayağımıza getirdi. Güven skoru sistemi sayesinde içimiz çok rahat.",
+        "tag": "Endüstriyel"
+      }
+    ]
+  },
+  "legal": {
+    "lastUpdate": "Son Güncelleme: 3 Mayıs 2026",
+    "terms": {
+      "title": "Kullanım Şartları",
+      "intro": "ProcureOS platformuna erişerek aşağıdaki şartları kabul etmiş sayılırsınız.",
+      "sections": [
+        {
+          "title": "1. Hizmet Tanımı",
+          "content": "ProcureOS, alıcılar ve tedarikçiler arasında satın alma süreçlerini kolaylaştıran dijital bir platformdur."
+        },
+        {
+          "title": "2. Hesap Güvenliği",
+          "content": "Hesap bilgilerinizin gizliliğinden siz sorumlusunuz."
+        },
+        {
+          "title": "3. Uygulanacak Hukuk",
+          "content": "Bu şartlar Türkiye Cumhuriyeti yasalarına tabidir."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Gizlilik Politikası",
+      "intro": "Verilerinizin güvenliğine önem veriyoruz.",
+      "sections": [
+        {
+          "title": "1. Toplanan Veriler",
+          "content": "İsim, e-posta ve şirket bilgilerinizi topluyoruz."
+        },
+        {
+          "title": "2. Kullanım Amacı",
+          "content": "Hizmetlerimizi optimize etmek için verilerinizi kullanıyoruz."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Çerez Politikası",
+      "intro": "Daha iyi bir deneyim için çerezleri kullanıyoruz.",
+      "sections": [
+        {
+          "title": "1. Çerez Nedir?",
+          "content": "Cihazınıza kaydedilen küçük metin dosyalarıdır."
+        },
+        {
+          "title": "2. Kontrol",
+          "content": "Tarayıcı ayarlarından çerezleri yönetebilirsiniz."
+        }
+      ]
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Hoş Geldiniz",
+      "subtitle": "ProcureOS Alıcı Portalı",
+      "emailLabel": "E-Posta Adresi",
+      "emailPlaceholder": "e-posta@sirket.com",
+      "passwordLabel": "Şifre",
+      "passwordPlaceholder": "••••••••",
+      "forgotPassword": "Unuttum?",
+      "submit": "SİSTEME GİRİŞ",
+      "noAccount": "Henüz hesabınız yok mu?",
+      "registerLink": "Kayıt Olun",
+      "success": "Başarıyla giriş yapıldı!",
+      "errorDefault": "Giriş işlemi başarısız oldu.",
+      "passwordError": "Şifre hatalı veya eksik.",
+      "registeredSuccess": "Hesabınız başarıyla oluşturuldu. Şimdi giriş yapabilirsiniz.",
+      "termsText": "Giriş yaparak <terms>Kullanım Koşulları</terms> ve <privacy>Gizlilik Politikası</privacy> politikalarımızı kabul etmiş olursunuz."
+    },
+    "register": {
+      "title": "Bize Katılın",
+      "subtitle": "Otonom Tedarik Dünyasına Adım Atın",
+      "companyNameLabel": "Şirket Adı",
+      "companyNamePlaceholder": "Şirket Tam Adı",
+      "contactPersonLabel": "Yetkili Kişi",
+      "contactPersonPlaceholder": "Ad Soyad",
+      "phoneLabel": "Telefon Numarası",
+      "phonePlaceholder": "+90 5xx xxx xx xx",
+      "emailLabel": "E-Posta Adresi",
+      "emailPlaceholder": "e-posta@sirket.com",
+      "passwordLabel": "Şifre",
+      "passwordPlaceholder": "••••••••",
+      "confirmPasswordLabel": "Şifre Onay",
+      "confirmPasswordPlaceholder": "••••••••",
+      "submit": "HESAP OLUŞTUR",
+      "haveAccount": "Zaten hesabınız var mı?",
+      "loginLink": "Giriş Yapın",
+      "errorMatch": "Şifreler birbiriyle eşleşmiyor.",
+      "errorLength": "Şifreniz en az 8 karakter olmalıdır.",
+      "errorDefault": "Kayıt işlemi başarısız oldu.",
+      "termsText": "Hesap oluşturarak <terms>Kullanım Koşulları</terms> ve <privacy>Gizlilik Politikası</privacy> politikalarımızı kabul etmiş olursunuz.",
+      "features": {
+        "global": "Global Erişim",
+        "secure": "Güvenli Ödeme",
+        "fast": "Hızlı Eşleşme"
+      }
+    },
+    "forgotPassword": {
+      "title": "Şifre Sıfırlama",
+      "subtitle": "E-posta adresinize bir sıfırlama linki göndereceğiz.",
+      "submit": "TALİMATLARI GÖNDER",
+      "success": "Sıfırlama e-postası gönderildi.",
+      "error": "Hata oluştu."
+    },
+    "resetPassword": {
+      "title": "Yeni Şifre",
+      "subtitle": "Hesabınız için yeni ve güvenli bir şifre belirleyin.",
+      "passwordLabel": "Yeni Şifre",
+      "confirmPasswordLabel": "Şifre Tekrar",
+      "submit": "ŞİFREYİ GÜNCELLE",
+      "successTitle": "BAŞARILI!",
+      "successMessage": "Şifreniz güncellendi. Giriş sayfasına yönlendiriliyorsunuz...",
+      "errorMismatch": "Şifreler eşleşmiyor.",
+      "errorDefault": "Geçersiz veya süresi dolmuş link.",
+      "errorInvalidToken": "Geçersiz sıfırlama linki!",
+      "successToast": "Şifreniz başarıyla güncellendi."
+    }
+  },
+  "systemErrors": {
+    "default": "Bir hata oluştu. Lütfen tekrar deneyin.",
+    "authFailed": "Giriş başarısız. Lütfen bilgilerinizi kontrol edin.",
+    "sessionExpired": "Oturum süreniz doldu. Lütfen tekrar giriş yapın.",
+    "forbidden": "Bu işlem için yetkiniz bulunmuyor.",
+    "serverError": "Sunucu hatası oluştu. Teknik ekip bilgilendirildi.",
+    "networkError": "Bağlantı hatası. İnternet bağlantınızı kontrol edin.",
+    "validationError": "Lütfen formdaki eksik veya hatalı alanları düzeltin.",
+    "emailExists": "Bu e-posta adresi zaten kullanımda.",
+    "tooManyRequests": "Çok fazla istek yapıldı. Lütfen biraz bekleyin."
+  },
+  "globalError": {
+    "title": "BEKLENMEDİK BİR HATA",
+    "subtitle": "Sistem üzerinde bir kesinti oluştu.",
+    "description": "Hata otomatik olarak teknik ekibimize raporlandı. Lütfen sayfayı yenilemeyi deneyin.",
+    "retry": "TEKRAR DENE"
+  }
+}

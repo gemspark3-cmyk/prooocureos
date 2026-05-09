@@ -1,0 +1,1112 @@
+{
+  "common": {
+    "title": "ProcureOS",
+    "buyerPortal": "Käuferportal",
+    "howItWorks": "WIE FUNKTIONIERT ES?",
+    "myPanel": "Mein Panel",
+    "myAccount": "MEIN KONTO",
+    "logout": "ABMELDEN",
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "allRightsReserved": "Alle Rechte vorbehalten.",
+    "isSeller": "SIND SIE VERKÄUFER?",
+    "allCategories": "ALLE KATEGORIEN",
+    "logoutSuccess": "Erfolgreich abgemeldet.",
+    "paginationTotal": "Gesamt {total} Datensätze",
+    "paginationPage": "Seite {page}/{totalPages}",
+    "notSpecified": "Nicht angegeben",
+    "other": "Andere",
+    "errorOccurred": "Ein Fehler ist aufgetreten.",
+    "notifications": {
+      "systemFlow": "System- & Betriebsablauf",
+      "new": "NEU",
+      "noNotifications": "Noch keine Benachrichtigungen",
+      "markFailed": "Markierung fehlgeschlagen"
+    },
+    "categories": {
+      "all": "ALLE KATEGORIEN",
+      "Construction & Real Estate": "Bau & Immobilien",
+      "Industrial Machinery": "Industriemaschinen",
+      "Raw Materials & Chemicals": "Rohstoffe & Chemikalien",
+      "Automotive & Transport": "Automobil & Transport",
+      "Electronics & Electrical": "Elektronik & Elektro",
+      "Food & Agriculture": "Lebensmittel & Landwirtschaft",
+      "Textiles & Apparel": "Textilien & Bekleidung",
+      "Office & Stationery": "Büro & Schreibwaren",
+      "Health & Medical": "Gesundheit & Medizin",
+      "Energy & Utilities": "Energie & Versorgung",
+      "Professional Services": "Professionelle Dienstleistungen",
+      "General": "Sonstiges / Allgemein"
+    },
+    "statuses": {
+      "preparing": "In Vorbereitung",
+      "shipped": "Versandt",
+      "delivered": "Geliefert",
+      "warehouse": "Im Lager",
+      "customs": "Im Zoll",
+      "local_delivery": "In Zustellung",
+      "completed": "Abgeschlossen"
+    },
+    "countries": {
+      "TR": "Türkei",
+      "US": "USA",
+      "DE": "Deutschland",
+      "GB": "Großbritannien",
+      "FR": "Frankreich",
+      "CN": "China",
+      "AE": "VAE",
+      "SA": "Saudi-Arabien",
+      "IT": "Italien",
+      "ES": "Spanien",
+      "NL": "Niederlande",
+      "BE": "Belgien",
+      "CH": "Schweiz",
+      "AT": "Österreich",
+      "JP": "Japan"
+    },
+    "info": "INFORMATION",
+    "close": "SCHLIESSEN"
+  },
+  "marketplace": {
+    "heroTitle": "Globalen Einkauf entdecken",
+    "heroSubtitle": "Betriebssystem",
+    "heroDescription": "Verbinden Sie sich über die ProcureOS Core-Infrastruktur auf Protokollebene mit Tausenden von verifizierten Herstellern.",
+    "searchPlaceholder": "Produkt oder Hersteller...",
+    "locationPlaceholder": "Bestimmungsort",
+    "searchButton": "SUCHEN",
+    "allCategories": "ALLE KATEGORIEN",
+    "noResults": "Keine Ergebnisse für Ihre Kriterien gefunden.",
+    "supplierNetworkTitle": "Treten Sie dem ProcureOS Lieferantennetzwerk bei",
+    "supplierNetworkDescription": "Erreichen Sie Tausende von Unternehmenskäufern. Geben Sie in Sekundenschnelle Angebote für die richtigen Anfragen ab.",
+    "startSellingNow": "JETZT MIT DEM VERKAUF BEGINNEN",
+    "registerProductsText": "Sind Sie Hersteller oder Großhändler? Registrieren Sie Ihre Produkte in unserem globalen Netzwerk.",
+    "networkPulse": {
+      "label": "AIP-103+ Netznabz",
+      "status": "Echtzeitverbindung Aktiv",
+      "statusLabel": "Netzwerkstatus",
+      "statusValue": "Optimiert",
+      "suppliersCount": "{count} aktive Lieferanten"
+    },
+    "selection": {
+      "label": "FIRMA/EN AUSGEWÄHLT",
+      "compare": "VERGLEICHEN",
+      "bulkQuote": "SAMMELANGEBOT ANFORDERN"
+    },
+    "warehouses": {
+      "title": "Meine Lager",
+      "mainCompanyAddress": "Hauptadresse"
+    },
+    "supplierCard": {
+      "accessRestricted": "ZUGRIFF EINGESCHRÄNKT",
+      "loginToSeeDetails": "Anmelden für Details",
+      "loginButton": "ANMELDEN",
+      "verified": "VERIFIZIERT",
+      "scores": {
+        "price": "PREIS",
+        "speed": "TERMIN",
+        "trust": "GÜVEN"
+      },
+      "protocolCategory": "PROTOKOLLKATEGORIE",
+      "generalSupplier": "ALLGEMEINER LIEFERANT",
+      "getQuote": "ANGEBOT EINHOLEN"
+    },
+    "comparison": {
+      "title": "Firmenvergleich",
+      "description": "{count} Firmen vergleichen.",
+      "noSuppliers": "Keine Firmen gefunden.",
+      "trustScore": "Vertrauensscore",
+      "verification": "Verifizierung",
+      "verified": "Verifiziert",
+      "serviceRegions": "Dienstleistungsregionen",
+      "removeFromList": "Entfernen",
+      "bulkQuote": "Sammelangebot ({count})"
+    }
+  },
+  "dashboard": {
+    "sections": {
+      "opsCenter": "Operationszentrum",
+      "logistics": "Logistikverfolgung",
+      "team": "Teamverwaltung",
+      "erp": "ERP-Integrationen",
+      "identity": "Systemidentität"
+    },
+    "descriptions": {
+      "opsCenter": "Aktive RFQs und Angebote auf dem Protokoll überwachen",
+      "logistics": "Sendungen im globalen Versorgungsnetzwerk verfolgen",
+      "team": "Unternehmens-Team und Berechtigungsgrenzen verwalten",
+      "erp": "Automatischer Export gekaufter Artikel in ERP-Systeme",
+      "identity": "Verwalten Sie Ihre Systemidentität im globalen Versorgungsnetzwerk"
+    },
+    "tabs": {
+      "requests": "ANFRAGEN",
+      "orders": "BESTELLUNGEN",
+      "mySuppliers": "MEINE LIEFERANTEN",
+      "team": "TEAM",
+      "integrations": "INTEGRATIONEN",
+      "support": "SUPPORT",
+      "profile": "PROFIL"
+    },
+    "fxTracking": "WÄHRUNGS-TRACKING",
+    "team": {
+      "title": "Team-Management",
+      "roadmap": "Roadmap",
+      "description": "Laden Sie Ihr Team zu ProcureOS ein. Definieren Sie abteilungsbezogene Budgets, legen Sie Ausgabenlimits fest und übernehmen Sie die Kontrolle, indem Sie Ihre mehrstufige Genehmigungshierarchie digitalisieren.",
+      "multiUser": "MEHRBENUTZER",
+      "workflows": "WORKFLOWS"
+    },
+    "integrations": {
+      "title": "Unternehmens-ERP-Integration",
+      "roadmap": "Ökosystem-Erweiterungsphase",
+      "description": "Gekaufte Produkte werden bei Lieferung automatisch in Ihren Bestand eingebucht. Beenden Sie die manuelle Dateneingabe durch vollständige Synchronisation mit Systemen wie SAP, Oracle und Logo."
+    },
+    "export": {
+      "id": "ID",
+      "date": "DATUM",
+      "title": "TITEL",
+      "category": "KATEGORIE",
+      "quantity": "MENGE",
+      "status": "STATUS",
+      "offersCount": "ANGEBOTE",
+      "bestOffer": "BESTES ANGEBOT",
+      "targetPrice": "ZIELPREIS",
+      "savings": "EINSPARUNG (%)",
+      "orderNo": "BESTELL-NR",
+      "supplier": "LIEFERANT",
+      "amount": "BETRAG",
+      "deliveryAddress": "LIEFERADRESSE",
+      "estDelivery": "LIEFERTERMIN",
+      "trackingNo": "TRACKING-NR",
+      "success": "Excel-Bericht erstellt.",
+      "error": "Fehler beim Erstellen.",
+      "shipmentModal": {
+        "title": "Versanddetails",
+        "orderNo": "Bestellung: {no}",
+        "currentStatus": "AKTUELLER STATUS",
+        "onWay": "UNTERWEGS",
+        "shipmentType": "VERSANDART",
+        "carrier": "SPEDITEUR",
+        "trackingNo": "TRACKING-NR",
+        "estDelivery": "LIEFERTERMIN",
+        "notes": "HINWEISE",
+        "deliveryPoint": "LIEFERORT",
+        "defaultCompanyAddress": "STANDARD-ADRESSE",
+        "sender": "ABSENDER",
+        "close": "SCHLIESSEN",
+        "notSpecified": "Nicht angegeben",
+        "noNotes": "Keine Hinweise.",
+        "types": {
+          "cargo": "Fracht",
+          "logistics": "Logistik",
+          "ownVehicle": "Eigenes Fahrzeug",
+          "customerPickup": "Abholung",
+          "standard": "Standard"
+        }
+      }
+    },
+    "categories": {
+      "general": "ALLGEMEIN"
+    },
+    "messages": {
+      "noDataToExport": "Keine Daten zum Exportieren."
+    },
+    "online": "ONLINE",
+    "offline": "OFFLINE",
+    "stats": {
+      "pendingRequests": "AUSSTEHENDE ANFRAGEN",
+      "noRequests": "Keine Anfragen",
+      "active": "AKTIV",
+      "start": "START",
+      "savings": "EINSPARUNGEN",
+      "avgResponse": "DURCHSCHN. ANTWORT",
+      "responseTimeUnit": "Std",
+      "spendingLimit": "Ausgabenlimit",
+      "noLimit": "KEIN",
+      "limitSet": "Limit",
+      "limitNotSet": "Nicht festgelegt"
+    },
+    "requests": {
+      "title": "Aktive Einkaufsanfragen",
+      "searchPlaceholder": "Suchen...",
+      "report": "BERICHT",
+      "emptyTitle": "Keine Anfragen",
+      "emptyDescription": "Gehen Sie zum Marktplatz",
+      "actionLabel": "ZUM MARKTPLATZ",
+      "offersReceived": "ANGEBOTE",
+      "offersUnit": "STK",
+      "statusOpen": "OFFEN",
+      "statusCompleted": "ERLEDIGT",
+      "aiAnalysis": "AI-Analyse"
+    },
+    "orders": {
+      "title": "Versand- und Bestellverfolgung",
+      "searchPlaceholder": "Suche nach Lieferantenname...",
+      "report": "BERICHT",
+      "emptyTitle": "Sie haben noch keine Bestellungen",
+      "emptyDescription": "Wenn Sie eines der Angebote für Ihre Anfragen annehmen, erscheint Ihre Bestellung hier.",
+      "actionLabel": "MEINE ANFRAGEN ANSEHEN",
+      "unnamedRequest": "Unbenannte Anfrage",
+      "requestDetail": "Anfragedetail",
+      "totalAmount": "GESAMTBETRAG",
+      "currentStatus": "AKTUELLER STATUS",
+      "negotiationHistory": "VERHANDLUNGSVERLAUF",
+      "initialOffer": "Erstangebot",
+      "agreedPrice": "Vereinbart",
+      "netGain": "Nettogewinn",
+      "processCompleted": "PROZESS ABGESCHLOSSEN",
+      "initialPriceOrder": "BESTELLUNG ZUM ERSTPREIS",
+      "shipmentDetail": "VERSANDDETAIL",
+      "rateExperience": "BEWERTEN",
+      "deliveryAddress": "LIEFERADRESSE",
+      "registeredAddress": "Registrierte Adresse"
+    },
+    "status": {
+      "pending": "Ausstehend",
+      "confirmed": "Bestätigt",
+      "shipped": "Versand",
+      "delivered": "Geliefert",
+      "preparing": "Vorbereitung",
+      "warehouse": "Im Lager",
+      "customs": "Beim Zoll",
+      "local_delivery": "In Zustellung",
+      "completed": "Abgeschlossen"
+    },
+    "profile": {
+      "corporateAccount": "FIRMENKONTO",
+      "aipVerified": "AIP-103 VERIFIZIERT",
+      "sections": {
+        "corporate": "Firma",
+        "contact": "Kontakt",
+        "financial": "Finanzen",
+        "warehouse": "Lager"
+      },
+      "fields": {
+        "companyName": "Name",
+        "website": "Website",
+        "taxId": "USt-IdNr.",
+        "taxOffice": "Finanzamt",
+        "tradeRegistry": "Handelsregister",
+        "mersis": "MERSIS",
+        "industry": "Branche",
+        "employeeCount": "Mitarbeiter",
+        "establishmentYear": "Gründung",
+        "fullAddress": "Adresse",
+        "city": "Stadt",
+        "country": "Land",
+        "postalCode": "PLZ",
+        "contactPerson": "Kontakt",
+        "phone": "Telefon",
+        "approvalLimit": "Limit (USD)",
+        "preferredCurrency": "Währung",
+        "warehouseName": "Lagername"
+      },
+      "placeholders": {
+        "website": "https://...",
+        "establishmentYear": "1995",
+        "warehouseName": "Hauptlager",
+        "city": "Berlin"
+      },
+      "buttons": {
+        "addWarehouse": "LAGER HINZUFÜGEN",
+        "cancel": "ABBRECHEN",
+        "saveWarehouse": "LAGER SPEICHERN",
+        "saveProfile": "PROFIL SPEICHERN",
+        "saving": "SPEICHERN..."
+      },
+      "messages": {
+        "fillRequired": "Bitte Felder ausfüllen.",
+        "warehouseAdded": "Lager hinzugefügt.",
+        "warehouseDeleted": "Lager gelöscht.",
+        "confirmDelete": "Löschen bestätigen?",
+        "noWarehouses": "Keine Lager.",
+        "error": "Fehler."
+      },
+      "default": "STANDARD",
+      "select": "Wählen"
+    },
+    "suppliers": {
+      "title": "Registrierte Lieferanten",
+      "subtitle": "Favoriten und Partnerfirmen",
+      "searchPlaceholder": "Suche nach Lieferantenname...",
+      "emptyState": "Noch keine registrierten Lieferanten",
+      "removed": "Tedarikçi çıkarıldı.",
+      "error": "Hata oluştu.",
+      "trustedPartner": "GÜVENİLİR PARTNER",
+      "generalSupplier": "Genel Tedarikçi"
+    },
+    "support": {
+      "title": "SUPPORT CENTER",
+      "active": "AKTIV",
+      "archived": "ARCHIV",
+      "connecting": "Verbindung zum Support...",
+      "emptyStateActive": "Sie haben derzeit keine aktiven Support-Anfragen.",
+      "emptyStateArchived": "Keine archivierten Tickets vorhanden.",
+      "status": {
+        "open": "OFFEN",
+        "inProgress": "IN BEARBEITUNG",
+        "resolved": "GELÖST",
+        "closed": "GESCHLOSSEN"
+      },
+      "createForm": {
+        "title": "Neue Support-Anfrage",
+        "subtitle": "Geben Sie detaillierte Informationen für eine schnelle Lösung an",
+        "subject": "BETREFF",
+        "category": "KATEGORIE",
+        "message": "IHRE NACHRICHT",
+        "placeholderSubject": "Z.B.: Über den Bestellstatus",
+        "placeholderMessage": "Bitte beschreiben Sie Ihr Problem oder Ihre Anfrage im Detail...",
+        "submit": "TICKET SENDEN UND STARTEN",
+        "categories": {
+          "general": "Allgemeine Hilfe",
+          "technical": "Technischer Fehler",
+          "billing": "Bestellung & Zahlung",
+          "product": "Produkt- & Lagerinfo"
+        }
+      },
+      "chat": {
+        "supportTeam": "ProcureOS Support-Team",
+        "placeholder": "Schreiben Sie Ihre Nachricht...",
+        "closeTicket": "TICKET SCHLIESSEN",
+        "priority": "{priority} PRIORITÄT",
+        "confirmClose": "Sind Sie sicher, dass Sie dieses Ticket schließen möchten?",
+        "closedByUser": "--- Benutzer hat dieses Ticket geschlossen ---"
+      },
+      "main": {
+        "title": "System-Support-Einheit",
+        "description": "Unser Expertenteam und unser KI-Assistent stehen Ihnen rund um die Uhr für alle betrieblichen, technischen oder finanziellen Fragen zur Verfügung.",
+        "newRequest": "EINE NEUE ANFRAGE STARTEN"
+      },
+      "messages": {
+        "created": "Ihre Support-Anfrage wurde erfolgreich erstellt.",
+        "error": "Ticket konnte nicht erstellt werden.",
+        "closed": "Ticket erfolgreich geschlossen.",
+        "sendError": "Nachricht konnte nicht gesendet werden."
+      }
+    },
+    "home": {
+      "protocolNotes": "AIP-103+ PROTOKOLÜ (SÜRÜM NOTLARI)",
+      "toasts": {
+        "loginRequired": "Lütfen önce giriş yapın.",
+        "searchFailed": "Arama başarısız.",
+        "invalidTaxId": "Geçersiz Vergi Numarası. Lütfen 10 veya 11 haneli sayı girin.",
+        "invalidPhone": "Geçersiz Telefon Numarası.",
+        "profileUpdated": "Profiliniz güncellendi.",
+        "updateFailed": "Güncelleme başarısız.",
+        "needRequestTitle": "Lütfen neye ihtiyacınız olduğunu belirtin.",
+        "noSuppliersFound": "Uygun tedarikçi bulunamadı.",
+        "createIntentFailed": "Talep oluşturulamadı.",
+        "needDeliveryAddress": "Lütfen teslimat adresi belirtin.",
+        "intentInfoNotFound": "Talep bilgisi bulunamadı. Lütfen tekrar arama yapın.",
+        "requestSent": "Talep başarıyla iletildi.",
+        "sendFailed": "Gönderim başarısız: {error}",
+        "unknownError": "Bilinmeyen hata",
+        "offerAccepted": "Teklif başarıyla kabul edildi!",
+        "offerRejected": "Teklif reddedildi.",
+        "requestNotSelected": "Talep seçilmedi.",
+        "noActiveOffers": "Pazarlık yapılabilecek aktif teklif bulunamadı.",
+        "bulkCounterSent": "{count} tedarikçiye toplu karşı teklif iletildi.",
+        "counterSent": "Karşı teklif iletildi.",
+        "counterError": "Pazarlık hatası.",
+        "supplierAdded": "Tedarikçi favorilerinize eklendi."
+      },
+      "defaults": {
+        "supplier": "Tedarikçi",
+        "country": "Türkiye",
+        "paymentTerm": "30 Gün Vadeli"
+      }
+    },
+    "rating": {
+      "title": "Lieferanten bewerten",
+      "errors": {
+        "overallRating": "Lütfen genel bir puan verin.",
+        "submitFailed": "Değerlendirme gönderilirken bir hata oluştu."
+      },
+      "labels": {
+        "overall": "Genel Memnuniyet",
+        "quality": "Ürün Kalitesi",
+        "delivery": "Teslimat Hızı",
+        "communication": "İletişim ve Destek",
+        "feedback": "Geri Bildiriminiz"
+      },
+      "placeholders": {
+        "feedback": "Deneyiminizi kısaca anlatın..."
+      },
+      "info": "Bu değerlendirme doğrudan tedarikçi ile paylaşılmamakta olup, yalnızca ProcureOS güven endeksi hesaplamaları ve hizmet kalitemizin iyileştirilmesi amacıyla kullanılmaktadır. Görüşleriniz ekosistemimizin şeffaflığı için kritik öneme sahiptir.",
+      "submit": "BEWERTUNG SENDEN",
+      "submitting": "Gönderiliyor...",
+      "success": {
+        "title": "Teşekkürler!",
+        "message": "Değerlendirmeniz başarıyla kaydedildi ve tedarikçi puanına yansıtıldı."
+      },
+      "addToFavorites": "TEDARİKÇİYİ FAVORİLERİME EKLE",
+      "messages": {
+        "added": "Tedarikçi favorilerinize eklendi."
+      }
+    },
+    "sourcing": {
+      "steps": {
+        "form": {
+          "title": "ANFRAGE FÜR",
+          "subtitle": "Was benötigen Sie?",
+          "descriptionSingle": "Details für den gewählten Lieferanten.",
+          "descriptionMulti": "Suchen Sie im Netzwerk.",
+          "labels": {
+            "title": "Beschreibung",
+            "note": "Hinweis",
+            "quantity": "Menge",
+            "currency": "Währung",
+            "paymentTerm": "Zahlung"
+          },
+          "placeholders": {
+            "title": "Z.B. 100 Rohre...",
+            "note": "Hinweis...",
+            "quantity": "Z.B. 500",
+            "currency": "AED"
+          },
+          "paymentTerms": {
+            "cash": "Bar",
+            "30days": "30 Tage",
+            "60days": "60 Tage"
+          },
+          "buttons": {
+            "processing": "LÄDT...",
+            "prepare": "VORBEREITEN",
+            "listSuppliers": "LIEFERANTEN LISTE"
+          }
+        },
+        "matches": {
+          "titleReady": "Bereit",
+          "titleMatches": "Treffer",
+          "descriptionSingle": "Bestätigen.",
+          "descriptionMulti": "Gefunden.",
+          "back": "Zurück",
+          "noSuppliers": "Keine Treffer.",
+          "trustScore": "{score} VERTRAUEN",
+          "officialRequest": "OFFIZIELLE ANFRAGE",
+          "docNo": "DOK-NR",
+          "targetQuantity": "MENGE",
+          "targetCurrency": "WÄHRUNG",
+          "paymentTerm": "ZAHLUNG",
+          "sendRequest": "SENDEN",
+          "sending": "SENDET...",
+          "title": "GEEIGNETE LIEFERANTEN GEFUNDEN"
+        },
+        "success": {
+          "title": "Gesendet!",
+          "message": "Anfrage erfolgreich übermittelt.",
+          "backToMarketplace": "ZUM MARKTPLATZ",
+          "viewMyRequests": "MEINE ANFRAGEN"
+        }
+      },
+      "errors": {
+        "selectSupplier": "Wählen Sie einen Lieferanten."
+      },
+      "address": {
+        "change": "ÄNDERN",
+        "mainCompany": "Hauptadresse"
+      },
+      "features": {
+        "global": {
+          "title": "Global",
+          "desc": "Weltweit suchen."
+        },
+        "logistics": {
+          "title": "Logistik",
+          "desc": "Verifizierter Versand."
+        },
+        "standard": {
+          "title": "Standard",
+          "desc": "Professionell."
+        }
+      }
+    },
+    "requestDetails": {
+      "status": {
+        "open": "ANGEBOTE SAMMELN",
+        "completed": "ABGESCHLOSSEN"
+      },
+      "tabs": {
+        "list": "Liste",
+        "compare": "Vergleichen",
+        "audit": "Prüfung"
+      },
+      "timeline": {
+        "created": "Anfrage (RFQ) erstellt und im System gespeichert.",
+        "offerReceived": "Angebot von {supplier} eingereicht ({price}).",
+        "offerAccepted": "Angebot von {supplier} ANGENOMMEN und Bestellung (PO) gestartet.",
+        "offerRejected": "Angebot von {supplier} ABGELEHNT.",
+        "pendingApproval": "Angebot von {supplier} zur Genehmigung vorgelegt (Limit überschritten).",
+        "supplier": "Lieferant",
+        "unknownSupplier": "Ein Lieferant"
+      },
+      "details": {
+        "title": "ANFRAGEDETAILS",
+        "quickInfo": "SCHNELLINFOS",
+        "quantity": "MENGE",
+        "paymentTerm": "ZAHLUNGSZIEL",
+        "currency": "WÄHRUNG",
+        "targetPrice": "ZIELPREIS",
+        "openOffer": "Offenes Angebot",
+        "itemDetail": "Produkt/Dienstleistungsdetail",
+        "note": "Hinweis",
+        "noDetail": "Keine Details angegeben."
+      },
+      "offers": {
+        "title": "ERHALTENE ANGEBOTE",
+        "countSuffix": "STÜCK",
+        "batchNegotiation": "SAMMELVERHANDLUNG",
+        "noOffers": "NOCH KEINE ANGEBOTE. SYSTEM GLEICHT MIT LIEFERANTEN AB.",
+        "bestMatch": "BESTE ÜBEREINSTIMMUNG",
+        "trust": "VERTRAUEN",
+        "amount": "ANGEBOTSSUMME",
+        "unitPrice": "EINZELPREIS",
+        "deliveryTime": "LIEFERZEIT",
+        "workingDays": "WERKTAGE",
+        "expressDelivery": "EXPRESSLIEFERUNG",
+        "negotiation": "VERHANDELN",
+        "details": "DETAILS",
+        "accept": "ANNEHMEN",
+        "reject": "Ablehnen",
+        "selected": "AUSGEWÄHLT",
+        "rejected": "ABGELEHNT",
+        "inNegotiation": "IN VERHANDLUNG",
+        "activeOffer": "AKTIVES ANGEBOT",
+        "pendingApproval": "WARTET AUF GENEHMIGUNG",
+        "sendToApproval": "ZUR GENEHMIGUNG SENDEN",
+        "saveSupplier": "Lieferant speichern"
+      },
+      "negotiationModal": {
+        "batchTitle": "SAMMELVERHANDLUNG",
+        "singleTitle": "VERHANDLUNGSPROZESS",
+        "batchDesc": "EINE SAMMELNACHRICHT WIRD AN ALLE FIRMEN ({count} STÜCK) GESENDET, DIE ANGEBOTE ABGEGEBEN HABEN.",
+        "singleDesc": "ERSTELLEN SIE EIN GEGENANGEBOT ZU PREIS UND LIEFERZEIT MIT {supplier}.",
+        "targetPrice": "ZIEL-EINZELPREIS",
+        "targetDays": "GEWÜNSCHTE LIEFERUNG (TAGE)",
+        "noteLabel": "VERHANDLUNGSNOTIZ",
+        "notePlaceholder": "Infos zu Budgetbeschränkungen oder Lieferdringlichkeit...",
+        "cancel": "ABBRECHEN",
+        "sendBatch": "SAMMELNACHRICHT SENDEN",
+        "sendSingle": "GEGENANGEBOT SENDEN"
+      },
+      "audit": {
+        "title": "PROZESS-AUDIT-TRAIL (BLOCKCHAIN VERIFIED)",
+        "verified": "SYSTEMVERIFIZIERT"
+      },
+      "aiAnalysis": "AI-Analyse"
+    },
+    "offerDocument": {
+      "print": "DRUCKEN / HERUNTERLADEN",
+      "officialDoc": "OFFIZIELLES ANGEBOTSDOKUMENT",
+      "docNo": "DOKUMENTEN-NR.",
+      "sellerInfo": "VERKÄUFERINFORMATIONEN",
+      "authorized": "Bevollmächtigt",
+      "taxNo": "Steuer-Nr.",
+      "buyerInfo": "KÄUFERINFORMATIONEN",
+      "description": "DIENSTLEISTUNG / PRODUKTBESCHREIBUNG",
+      "quantity": "MENGE",
+      "unitPrice": "EINZELPREIS (ZZGL. MWST)",
+      "totalPrice": "GESAMTPREIS (ZZGL. MWST)",
+      "category": "Kategorie",
+      "unitAdet": "Stück",
+      "digitalNotice": "* Dieses Angebot wurde digital auf ProcureOS erstellt.",
+      "grandTotal": "GESAMTSUMME",
+      "paymentTerms": "ZAHLUNGS- UND LIEFERBEDINGUNGEN",
+      "paymentTermLabel": "ZAHLUNGSZIEL",
+      "deliveryTermLabel": "LIEFERTERMIN",
+      "cash": "BARZAHLUNG",
+      "workingDays": "WERKTAGE",
+      "digitalVerification": "DIGITALE VERIFIZIERUNG",
+      "page": "Seite",
+      "supplierFirm": "LIEFERANTENFIRMA",
+      "buyerFirm": "KÄUFERFIRMA"
+    },
+    "notifications": {
+      "title": "Benachrichtigungszentrum"
+    }
+  },
+  "footer": {
+    "poweredBy": "Powered by AIP-103+",
+    "joinAsSupplier": "LIEFERANT WERDEN",
+    "faq": "FAQ",
+    "reviews": "BEWERTUNGEN",
+    "terms": "NUTZUNGSBEDINGUNGEN",
+    "privacy": "DATENSCHUTZERKLÄRUNG",
+    "cookies": "COOKIES"
+  },
+  "errors": {
+    "404": {
+      "title": "Verloren?",
+      "description": "Seite nicht gefunden.",
+      "backHome": "ZURÜCK"
+    }
+  },
+  "home": {
+    "protocolNotes": "AIP-103+ PROTOKOLL (RELEASE NOTES)",
+    "defaults": {
+      "supplier": "Lieferant",
+      "country": "Deutschland",
+      "paymentTerm": "30 Tage Zahlungsziel"
+    },
+    "toasts": {
+      "loginRequired": "Bitte loggen Sie sich zuerst ein.",
+      "searchFailed": "Suche fehlgeschlagen.",
+      "invalidTaxId": "Ungültige Steuernummer. Bitte geben Sie 10 oder 11 Ziffern ein.",
+      "invalidPhone": "Ungültige Telefonnummer.",
+      "profileUpdated": "Profil erfolgreich aktualisiert.",
+      "updateFailed": "Aktualisierung fehlgeschlagen.",
+      "needRequestTitle": "Bitte geben Sie an, was Sie benötigen.",
+      "noSuppliersFound": "Keine passenden Lieferanten gefunden.",
+      "createIntentFailed": "Anfrage konnte nicht erstellt werden.",
+      "needDeliveryAddress": "Bitte geben Sie eine Lieferadresse an.",
+      "intentInfoNotFound": "Anfrageinformationen nicht gefunden. Bitte suchen Sie erneut.",
+      "requestSent": "Anfrage erfolgreich gesendet.",
+      "sendFailed": "Versand fehlgeschlagen: {error}",
+      "unknownError": "Unbekannter Fehler",
+      "offerAccepted": "Angebot erfolgreich angenommen!",
+      "offerRejected": "Angebot abgelehnt.",
+      "requestNotSelected": "Anfrage nicht ausgewählt.",
+      "noActiveOffers": "Keine aktiven Angebote für Verhandlungen gefunden.",
+      "bulkCounterSent": "Sammel-Gegenangebot an {count} Lieferanten gesendet.",
+      "counterSent": "Gegenangebot gesendet.",
+      "counterError": "Verhandlungsfehler.",
+      "supplierAdded": "Lieferant zu Favoriten hinzugefügt."
+    },
+    "differentCompanies": "{count} Verschiedene Firmen"
+  },
+  "changelog": {
+    "title": "AIP Protokoll Versionshinweise",
+    "subtitle": "Technische Dokumentation zu aktuellen Entwicklungen und Zukunftsprognosen im ProcureOS AIP-System.",
+    "backToDashboard": "Zurück zum Dashboard",
+    "releaseNotes": "Versionshinweise",
+    "footerNote": "ProcureOS ist ein autonomes Ökosystem, das den AIP-Standards folgt.",
+    "historyTitle": "Vollständiger Commit-Verlauf",
+    "historySubtitle": "Technische Zusammenfassung aller atomaren Änderungen in der ProcureOS AIP Kerninfrastruktur.",
+    "searchPlaceholder": "Suche nach Commit-Nachricht oder Version...",
+    "noResults": "Keine Commits gefunden",
+    "commitsTitle": "Commit-Verlauf",
+    "fullLog": "Vollständiges Log",
+    "releaseItems": {
+      "AIP-106": {
+        "title": "Global Settlement & Escrow Layer",
+        "description": "Vollständige Integration von grenzüberschreitenden Zahlungen und sicherem Handel (Escrow).",
+        "cat1": "Finanzen",
+        "item1": "Multiwährungs-Engine und sofortige Wechselkursumrechnung.",
+        "item2": "ProcureOS Escrow: Smart-Contract-basiertes Zahlungssystem.",
+        "item3": "Lieferantenfinanzierung und Abschlagszahlungsverwaltung."
+      },
+      "AIP-105": {
+        "title": "ProcureAI Insight & Prognose",
+        "description": "Früherkennung von Markttrends und Lieferkettenrisiken mit KI.",
+        "cat1": "Intelligenz",
+        "item1": "Predictive Sourcing: Kapazitätsreservierung vor Bedarf.",
+        "item2": "Markttrendanalyse und Warnungen bei Preisschwankungen.",
+        "item3": "Supplier Risk Scoring 2.0 Layer."
+      },
+      "AIP-104": {
+        "title": "Enterprise Connect & ERP-Integration",
+        "description": "Nahtlose Datensynchronisation mit bestehenden ERP-Systemen.",
+        "cat1": "Konnektivität",
+        "item1": "Datenkonnektoren für SAP, Oracle und Microsoft Dynamics.",
+        "item2": "Hierarchischer Genehmigungsmechanismus.",
+        "item3": "SSO- und IAM-Unterstützung."
+      },
+      "AIP-103_6": {
+        "title": "Unternehmensberichterstattung",
+        "description": "Professionelle Berichterstattung über Beschaffungsdaten.",
+        "cat1": "Berichterstattung",
+        "item1": "Professionelle Excel-Export-Engine (.xlsx).",
+        "item2": "Metrik 'Analyse potenzieller Einsparungen' hinzugefügt.",
+        "item3": "Erweiterte Datenfilterung.",
+        "cat2": "Leistung",
+        "item4": "Dashboard-Ladezeiten um 70% beschleunigt.",
+        "item5": "Abfrageoptimierung mit GIN/B-Tree."
+      },
+      "AIP-103_5": {
+        "title": "Performance Engine & Async Architecture",
+        "description": "ProcureOS core moved to asynchronous structure for high-density traffic.",
+        "cat1": "Architecture",
+        "item1": "AI Embedding offloaded to worker layer.",
+        "item2": "Debounced Search for marketplace searches.",
+        "item3": "Location and address formats standardized."
+      },
+      "AIP-103": {
+        "title": "Zero-Trust & Semantic Matching",
+        "description": "Stabilization of data security and AI matching engine.",
+        "cat1": "Security",
+        "item1": "Zero-Trust isolation with Supabase RLS.",
+        "item2": "Match latency reduced below 450ms."
+      },
+      "AIP-102": {
+        "title": "Smart Catalog Management",
+        "description": "Digitization of supplier catalogs and product data.",
+        "cat1": "Core",
+        "item1": "Vector-based product search and cataloging.",
+        "item2": "Optimized registration flows."
+      },
+      "AIP-101": {
+        "title": "NLP Engine & Multi-Language Support",
+        "description": "RFQ translation and analysis in 72 languages.",
+        "cat1": "Foundation",
+        "item1": "Successful demand-supplier matching with NLP.",
+        "item2": "Successful demand-supplier matching with NLP."
+      }
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Alles, was Sie über das autonome Beschaffungsökosystem ProcureOS wissen müssen.",
+    "helpCenter": "HILFEZENTRUM",
+    "back": "Zurück",
+    "questions": {
+      "q1": "Wie erstelle ich eine Kaufanfrage über ProcureOS?",
+      "a1": "Sie können Ihre Bedürfnisse in natürlicher Sprache eingeben, indem Sie auf der Startseite auf die Schaltfläche 'Anfrage erstellen' klicken.",
+      "q2": "Wie werden Lieferanten verifiziert?",
+      "a2": "Der ProcureOS-Lieferantenverifizierungsprozess basiert auf einem 3-stufigen Audit-Mechanismus.",
+      "q3": "Wie funktionieren die Zahlungsprozesse?",
+      "a3": "In dieser Phase erfolgen die Zahlungen direkt über bestehende kommerzielle Vereinbarungen zwischen Käufer und Verkäufer.",
+      "q4": "Kann ich globale Lieferanten erreichen?",
+      "a4": "Ja, das ProcureOS-Netzwerk umfasst Tausende von Lieferanten sowohl lokal als auch global."
+    }
+  },
+  "howItWorks": {
+    "title": "Entdecken Sie das System.",
+    "subtitle": "Vergessen Sie traditionelle Beschaffungsprozesse. Verwandeln Sie Ihre Lieferkette mit dem AIP-103+ Protokoll in ein autonomes Betriebssystem.",
+    "guide": "UNTERNEHMENSLEITFADEN v2.0",
+    "usageGuide": "Benutzerhandbuch",
+    "backToHome": "STARTBILDSCHIRM",
+    "simulator": {
+      "badge": "Live-Simulator (v2.0)",
+      "title": "Multi-Lieferanten-Management-Simulation",
+      "desc": "Erleben Sie den Prozess des gleichzeitigen Versendens von Angebotsanfragen an mehrere Unternehmen.",
+      "searchPlaceholder": "Suchen...",
+      "locationPlaceholder": "Zielort",
+      "searchButton": "GLOBALE SUCHE",
+      "searching": "SUCHE LÄUFT...",
+      "exampleScenario": "Beispielszenario Starten",
+      "scanning": "AIP-103 Protokoll: Globales Netzwerk wird gescannt...",
+      "matchedSuppliers": "AUTONOM ABGEGLICHENE LIEFERANTEN ({count})",
+      "selectFirms": "Bitte wählen Sie die Firmen aus ({count} Ausgewählt)",
+      "supplierCard": {
+        "match": "Abgleich",
+        "speed": "Tempo",
+        "score": "Score"
+      },
+      "form": {
+        "badge": "CONCURRENT RFQ MODE",
+        "title": "SAMMELBESTELLANFRAGE",
+        "desc": "Wird gleichzeitig an {count} ausgewählte Lieferanten gesendet.",
+        "docGroup": "DOKUMENTENGRUPPE",
+        "details": "Bedarfsdetails",
+        "quantity": "Menge",
+        "currency": "Währung",
+        "incoterm": "Lieferbedingung (Incoterm)",
+        "targetLocation": "Zielstandort",
+        "validity": "Gültigkeit des Angebots",
+        "submit": "ANFRAGE AN {count} FIRMEN SENDEN"
+      },
+      "success": {
+        "title": "ANFRAGEN GESENDET",
+        "desc": "Offizielle RFQ-Dokumente wurden in Sekundenschnelle über das AIP-103-Protokoll an {count} Lieferanten gesendet.",
+        "register": "IM SYSTEM REGISTRIEREN",
+        "newSimulation": "NEUE SIMULATION STARTEN"
+      },
+      "demo": {
+        "query": "SKF 6204 Rillenkugellager 1000 Stück",
+        "location": "Istanbul, Türkei",
+        "quantity": "1000 Stück",
+        "suppliers": [
+          {
+            "name": "TechGear Industrie AG",
+            "location": "Istanbul, TR",
+            "speed": "2 Tage"
+          },
+          {
+            "name": "Global Bearings Co.",
+            "location": "Berlin, DE",
+            "speed": "5 Tage"
+          },
+          {
+            "name": "Lager Welt",
+            "location": "Bursa, TR",
+            "speed": "1 Tag"
+          },
+          {
+            "name": "Anatolien Maschinen GmbH",
+            "location": "Ankara, TR",
+            "speed": "3 Tage"
+          }
+        ],
+        "incoterms": [
+          "DAP - Geliefert benannter Ort",
+          "EXW - Ab Werk",
+          "FCA - Frei Frachtführer"
+        ],
+        "validityPeriods": [
+          "7 Tage",
+          "15 Tage",
+          "30 Tage"
+        ]
+      }
+    },
+    "dashboard": {
+      "title": "PROFESSIONELLES OPERATIONSPANEL",
+      "subtitle": "Unternehmensmanagement-Module, die nach dem Login auf Sie warten.",
+      "ops": {
+        "title": "OPERATIONSZENTRUM",
+        "desc": "Verwalten Sie alle aktiven RFQ-Prozesse über einen einzigen Bildschirm.",
+        "f1": "Preisvergleich",
+        "f2": "Gegenangebot",
+        "f3": "Kaufgenehmigung"
+      },
+      "log": {
+        "title": "LOGISTIK-TRACKING",
+        "desc": "Verfolgen Sie den gesamten Prozess von der Produktion bis zur Lieferung.",
+        "f1": "Versanddetails",
+        "f2": "Rechnungsverfolgung",
+        "f3": "Lieferbestätigung"
+      },
+      "team": {
+        "title": "TEAM-MANAGEMENT",
+        "desc": "Definieren und verwalten Sie Ihre Unternehmenshierarchie im System.",
+        "f1": "Genehmigungslimits",
+        "f2": "Autoritätsdefinition",
+        "f3": "Abteilungsberichte"
+      },
+      "erp": {
+        "title": "ERP-INTEGRATION",
+        "desc": "Vollständige Integration mit SAP, Oracle und MS Dynamics.",
+        "f1": "Automatische Lagerbuchung",
+        "f2": "API-Integration",
+        "f3": "Geplante Synchronisation"
+      }
+    },
+    "steps": {
+      "step1": {
+        "title": "Intelligente Suche & Entdeckung",
+        "desc": "Schreiben Sie Ihren Bedarf einfach dank unserer Engine für natürliche Sprache."
+      },
+      "step2": {
+        "title": "Autonome RFQ-Erstellung",
+        "desc": "Das System analysiert automatisch die technischen Details Ihrer Anfrage."
+      },
+      "step3": {
+        "title": "Echtzeit-Verhandlung",
+        "desc": "Prüfen Sie Angebote von Lieferanten über ein einziges Panel."
+      },
+      "step4": {
+        "title": "Sichere Genehmigung & Überwachung",
+        "desc": "Genehmigen Sie das vereinbarte Angebot und verfolgen Sie es transparent."
+      }
+    },
+    "questions": {
+      "q1": {
+        "title": "Gibt es Besseres als Ihre aktuellen Lieferanten?",
+        "desc": "Unsere KI-Engine findet die verborgenen Riesen des globalen Marktes für Sie."
+      },
+      "q2": {
+        "title": "Möchten Sie Marktpreise prüfen?",
+        "desc": "Benchmarken Sie Ihre Kosten mit Echtzeitdaten."
+      },
+      "q3": {
+        "title": "Kennen Sie neue Lieferanten?",
+        "desc": "Unser autonomes Netzwerk analysiert täglich Tausende von Datenpunkten."
+      }
+    },
+    "cta": "JETZT KOSTENLOS STARTEN"
+  },
+  "reviews": {
+    "title": "Network Growing with Confidence",
+    "subtitle": "Over 500+ institutions worldwide manage their procurement operations with ProcureOS autonomous infrastructure.",
+    "badge": "USER EXPERIENCES",
+    "loading": "Loading Experiences...",
+    "back": "Go Back",
+    "ctaTitle": "Become Part of the Autonomous Network",
+    "ctaSubtitle": "Register for free now and digitalize your supply chain.",
+    "ctaButton": "REGISTER",
+    "tags": {
+      "highSatisfaction": "High Satisfaction",
+      "verified": "Verified"
+    },
+    "roles": {
+      "buyer": "Corporate Buyer",
+      "manager": "Procurement Manager",
+      "director": "Operations Director"
+    },
+    "static": [
+      {
+        "name": "Arda Yılmaz",
+        "role": "Procurement Manager",
+        "company": "Global Logistics Inc.",
+        "content": "Thanks to ProcureOS, our supplier search process dropped from weeks to days. The AI technical specification creation feature provides incredible time savings.",
+        "tag": "Corporate"
+      },
+      {
+        "name": "Selin Demir",
+        "role": "Operations Director",
+        "company": "Tech-Flow Systems",
+        "content": "The autonomous matching system brought high-quality suppliers to us that we could never reach. We are very comfortable thanks to the trust score system.",
+        "tag": "Industrial"
+      }
+    ]
+  },
+  "legal": {
+    "lastUpdate": "Zuletzt aktualisiert: 3. Mai 2026",
+    "terms": {
+      "title": "Nutzungsbedingungen",
+      "intro": "Durch den Zugriff auf ProcureOS stimmen Sie diesen Bedingungen zu.",
+      "sections": [
+        {
+          "title": "1. Leistungsbeschreibung",
+          "content": "ProcureOS ist eine digitale Plattform, die die Beschaffung zwischen Käufern und Lieferanten erleichtert."
+        },
+        {
+          "title": "2. Kontosicherheit",
+          "content": "Sie sind für die Vertraulichkeit Ihres Kontos verantwortlich."
+        },
+        {
+          "title": "3. Anwendbares Recht",
+          "content": "Diese Bedingungen unterliegen den Gesetzen der Republik Türkei."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Datenschutzrichtlinie",
+      "intro": "Wir legen Wert auf Ihre Datensicherheit.",
+      "sections": [
+        {
+          "title": "1. Erhobene Daten",
+          "content": "Wir sammeln Name, E-Mail und Unternehmensinformationen."
+        },
+        {
+          "title": "2. Zweck",
+          "content": "Wir nutzen Daten zur Optimierung unserer Dienste."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie-Richtlinie",
+      "intro": "Wir verwenden Cookies für ein besseres Erlebnis.",
+      "sections": [
+        {
+          "title": "1. Was ist ein Cookie?",
+          "content": "Kleine Textdateien, die auf Ihrem Gerät gespeichert werden."
+        },
+        {
+          "title": "2. Kontrolle",
+          "content": "Sie können Cookies in den Browsereinstellungen verwalten."
+        }
+      ]
+    }
+  },
+  "rating": {
+    "title": "Lieferanten bewerten",
+    "errors": {
+      "overallRating": "Bitte geben Sie eine Gesamtbewertung ab.",
+      "submitFailed": "Fehler beim Senden der Bewertung."
+    },
+    "labels": {
+      "overall": "Gesamtzufriedenheit",
+      "quality": "Produktqualität",
+      "delivery": "Liefergeschwindigkeit",
+      "communication": "Kommunikation & Support",
+      "feedback": "Ihr Feedback"
+    },
+    "placeholders": {
+      "feedback": "Beschreiben Sie kurz Ihre Erfahrung..."
+    },
+    "info": "Diese Bewertung wird nicht direkt an den Lieferanten weitergegeben, sondern dient nur zur Berechnung des ProcureOS-Vertrauensindex und zur Verbesserung unserer Servicequalität. Ihre Meinungen sind entscheidend für die Transparenz unseres Ökosystems.",
+    "submit": "BEWERTUNG SENDEN",
+    "submitting": "Wird gesendet...",
+    "success": {
+      "title": "Vielen Dank!",
+      "message": "Ihre Bewertung wurde erfolgreich gespeichert und in der Lieferantenbewertung berücksichtigt."
+    },
+    "addToFavorites": "LIEFERANT ZU MEINEN FAVORITEN HINZUFÜGEN",
+    "messages": {
+      "added": "Lieferant zu Ihren Favoriten hinzugefügt."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Willkommen",
+      "subtitle": "ProcureOS Käuferportal",
+      "emailLabel": "E-Mail-Adresse",
+      "emailPlaceholder": "e-mail@unternehmen.com",
+      "passwordLabel": "Passwort",
+      "passwordPlaceholder": "••••••••",
+      "forgotPassword": "Vergessen?",
+      "submit": "IM SYSTEM ANMELDEN",
+      "noAccount": "Noch kein Konto?",
+      "registerLink": "Jetzt registrieren",
+      "success": "Erfolgreich angemeldet!",
+      "errorDefault": "Anmeldung fehlgeschlagen.",
+      "passwordError": "Passwort falsch oder fehlt.",
+      "registeredSuccess": "Ihr Konto wurde erfolgreich erstellt. Sie können sich jetzt anmelden.",
+      "termsText": "Mit der Anmeldung stimmen Sie unseren <terms>Allgemeine Geschäftsbedingungen</terms> und <privacy>Datenschutzerklärung</privacy> zu."
+    },
+    "register": {
+      "title": "Machen Sie mit",
+      "subtitle": "Treten Sie ein in die Welt der autonomen Beschaffung",
+      "companyNameLabel": "Firmenname",
+      "companyNamePlaceholder": "Vollständiger Firmenname",
+      "contactPersonLabel": "Ansprechpartner",
+      "contactPersonPlaceholder": "Vor- und Nachname",
+      "phoneLabel": "Telefonnummer",
+      "phonePlaceholder": "+49 xxx xxx xx xx",
+      "emailLabel": "E-Mail-Adresse",
+      "emailPlaceholder": "e-mail@unternehmen.com",
+      "passwordLabel": "Passwort",
+      "passwordPlaceholder": "••••••••",
+      "confirmPasswordLabel": "Passwort bestätigen",
+      "confirmPasswordPlaceholder": "••••••••",
+      "submit": "KONTO ERSTELLEN",
+      "haveAccount": "Haben Sie bereits ein Konto?",
+      "loginLink": "Anmelden",
+      "errorMatch": "Passwörter stimmen nicht überein.",
+      "errorLength": "Passwort muss mindestens 8 Zeichen lang sein.",
+      "errorDefault": "Registrierung fehlgeschlagen.",
+      "termsText": "Mit der Erstellung eines Kontos stimmen Sie unseren <terms>Allgemeine Geschäftsbedingungen</terms> und <privacy>Datenschutzerklärung</privacy> zu.",
+      "features": {
+        "global": "Globaler Zugang",
+        "secure": "Sichere Zahlung",
+        "fast": "Schneller Abgleich"
+      }
+    },
+    "forgotPassword": {
+      "title": "Passwort zurücksetzen",
+      "subtitle": "Wir senden einen Link zum Zurücksetzen an Ihre E-Mail-Adresse.",
+      "submit": "ANWEISUNGEN SENDEN",
+      "success": "E-Mail zum Zurücksetzen gesendet.",
+      "error": "Ein Fehler ist aufgetreten."
+    },
+    "resetPassword": {
+      "title": "Neues Passwort",
+      "subtitle": "Legen Sie ein neues ve sicheres Passwort für Ihr Konto fest.",
+      "passwordLabel": "Neues Passwort",
+      "confirmPasswordLabel": "Passwort bestätigen",
+      "submit": "PASSWORT AKTUALISIEREN",
+      "successTitle": "ERFOLG!",
+      "successMessage": "Ihr Passwort wurde aktualisiert. Weiterleitung zum Login...",
+      "errorMismatch": "Passwörter stimmen nicht überein.",
+      "errorDefault": "Ungültiger oder abgelaufener Link.",
+      "errorInvalidToken": "Ungültiger Reset-Link!",
+      "successToast": "Ihr Passwort wurde erfolgreich aktualisiert."
+    }
+  },
+  "systemErrors": {
+    "default": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+    "authFailed": "Login fehlgeschlagen. Bitte überprüfen Sie Ihre Daten.",
+    "sessionExpired": "Ihre Sitzung ist abgelaufen. Bitte melden Sie sich erneut an.",
+    "forbidden": "Sie haben keine Berechtigung für diese Aktion.",
+    "serverError": "Ein Serverfehler ist aufgetreten. Unser Team wurde benachrichtigt.",
+    "networkError": "Verbindungsfehler. Bitte überprüfen Sie Ihre Internetverbindung.",
+    "validationError": "Bitte korrigieren Sie die fehlenden oder falschen Felder im Formular.",
+    "emailExists": "Diese E-Mail-Adresse wird bereits verwendet.",
+    "tooManyRequests": "Zu viele Anfragen. Bitte warten Sie einen Moment."
+  },
+  "globalError": {
+    "title": "UNERWARTETER FEHLER",
+    "subtitle": "Eine Systemunterbrechung ist aufgetreten.",
+    "description": "Der Fehler wurde automatisch an unser technisches Team gemeldet. Bitte versuchen Sie, die Seite neu zu laden.",
+    "retry": "ERNEUT VERSUCHEN"
+  }
+}

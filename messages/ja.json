@@ -1,0 +1,1162 @@
+{
+  "common": {
+    "title": "ProcureOS",
+    "buyerPortal": "バイヤーポータル",
+    "howItWorks": "利用方法",
+    "myPanel": "マイパネル",
+    "myAccount": "マイアカウント",
+    "logout": "ログアウト",
+    "login": "ログイン",
+    "register": "新規登録",
+    "allRightsReserved": "全著作権所有。",
+    "isSeller": "販売者ですか？",
+    "allCategories": "全カテゴリ",
+    "logoutSuccess": "ログアウトしました。",
+    "paginationTotal": "合計 {total} 件",
+    "paginationPage": "ページ {page}/{totalPages}",
+    "notSpecified": "未指定",
+    "other": "その他",
+    "errorOccurred": "エラーが発生しました。",
+    "notifications": {
+      "systemFlow": "システムフロー",
+      "new": "新規",
+      "noNotifications": "通知なし",
+      "markFailed": "失敗"
+    },
+    "categories": {
+      "all": "全カテゴリ",
+      "Construction & Real Estate": "建設・不動産",
+      "Industrial Machinery": "産業機械",
+      "Raw Materials & Chemicals": "原材料・化学",
+      "Automotive & Transport": "自動車・輸送",
+      "Electronics & Electrical": "電子・電気",
+      "Food & Agriculture": "食品・農業",
+      "Textiles & Apparel": "繊維・アパレル",
+      "Office & Stationery": "オフィス・文具",
+      "Health & Medical": "ヘルスケア・医療",
+      "Energy & Utilities": "エネルギー・公益",
+      "Professional Services": "専門サービス",
+      "General": "一般"
+    },
+    "statuses": {
+      "preparing": "準備中",
+      "shipped": "発送済み",
+      "delivered": "配達済み",
+      "warehouse": "倉庫内",
+      "customs": "通関中",
+      "local_delivery": "配送中",
+      "completed": "完了"
+    },
+    "countries": {
+      "TR": "トルコ",
+      "US": "アメリカ",
+      "DE": "ドイツ",
+      "GB": "イギリス",
+      "FR": "フランス",
+      "CN": "中国",
+      "AE": "Birleşik Arap Emirlikleri",
+      "SA": "Suudi Arabistan",
+      "IT": "İtalya",
+      "ES": "İspanya",
+      "NL": "Hollanda",
+      "BE": "Belçika",
+      "CH": "İsviçre",
+      "AT": "Avusturya",
+      "JP": "日本"
+    },
+    "info": "お知らせ",
+    "close": "閉じる"
+  },
+  "marketplace": {
+    "heroTitle": "グローバル供給の発見",
+    "heroSubtitle": "オペレーティングシステム",
+    "heroDescription": "ProcureOS Coreで数千のサプライヤーと接続。",
+    "searchPlaceholder": "製品またはサプライヤー...",
+    "locationPlaceholder": "目的地",
+    "searchButton": "検索",
+    "allCategories": "全カテゴリ",
+    "noResults": "結果なし。",
+    "supplierNetworkTitle": "ProcureOSサプライヤーネットワークに参加する",
+    "supplierNetworkDescription": "数千の法人バイヤーにリーチしましょう。",
+    "startSellingNow": "今すぐ販売を開始する",
+    "registerProductsText": "メーカーまたは卸売業者ですか？製品を登録してください。",
+    "networkPulse": {
+      "label": "AIP-103+ ネットワークパルス",
+      "status": "リアルタイム接続アクティブ",
+      "statusLabel": "ネットワークステータス",
+      "statusValue": "最適化済み",
+      "suppliersCount": "{count} Aktif Tedarikçi"
+    },
+    "selection": {
+      "label": "選択済み",
+      "compare": "比較",
+      "bulkQuote": "一括見積"
+    },
+    "warehouses": {
+      "title": "登録倉庫",
+      "mainCompanyAddress": "本社住所"
+    },
+    "supplierCard": {
+      "accessRestricted": "アクセス制限",
+      "loginToSeeDetails": "詳細を表示するにはログイン",
+      "loginButton": "ログイン",
+      "verified": "認証済み",
+      "scores": {
+        "price": "価格",
+        "speed": "スピード",
+        "trust": "信頼"
+      },
+      "protocolCategory": "カテゴリ",
+      "generalSupplier": "一般サプライヤー",
+      "getQuote": "見積依頼"
+    },
+    "comparison": {
+      "title": "企業比較",
+      "description": "選択した {count} 社の詳細比較。",
+      "noSuppliers": "比較対象の企業が見つかりませんでした。",
+      "trustScore": "信頼スコア",
+      "verification": "認証ステータス",
+      "verified": "認証済み",
+      "serviceRegions": "サービス地域",
+      "removeFromList": "リストから削除",
+      "bulkQuote": "一括見積もり依頼 ({count})"
+    }
+  },
+  "dashboard": {
+    "sections": {
+      "opsCenter": "運営センター",
+      "logistics": "物流追跡",
+      "team": "チーム管理",
+      "erp": "ERP連携",
+      "identity": "システムID"
+    },
+    "descriptions": {
+      "opsCenter": "プロトコル上のアクティブなRFQとオファーを監視",
+      "logistics": "グローバル供給ネットワーク全体の出荷を追跡",
+      "team": "企業のチームと権限制限を管理",
+      "erp": "購入したアイテムをERPシステムに自動エクスポート",
+      "identity": "グローバルネットワーク上のシステムIDを管理"
+    },
+    "tabs": {
+      "requests": "依頼",
+      "orders": "注文",
+      "mySuppliers": "取引先",
+      "team": "チーム",
+      "integrations": "連携",
+      "support": "サポート",
+      "profile": "プロフ"
+    },
+    "fxTracking": "為替追跡",
+    "team": {
+      "title": "チーム管理と承認フロー",
+      "roadmap": "戦略的ロードマップ項目",
+      "description": "チームを ProcureOS に招待します。部署ごとの予算を定義し、支出制限を設定し、多段階の承認階層をデジタル化して管理を強化します。",
+      "multiUser": "マルチユーザーアクセス",
+      "workflows": "承認ワークフロー"
+    },
+    "integrations": {
+      "title": "企業ERP連携",
+      "roadmap": "エコ系统拡張フェーズ",
+      "description": "購入した商品は納品時に自動的に在庫に反映されます。SAP、Oracle、Logo などのシステムと完全に同期し、手動のデータ入力を排除します。"
+    },
+    "export": {
+      "id": "ID",
+      "date": "日付",
+      "title": "タイトル / 製品",
+      "category": "カテゴリ",
+      "quantity": "数量",
+      "status": "ステータス",
+      "offersCount": "オファー数",
+      "bestOffer": "ベストオファー",
+      "targetPrice": "目標価格",
+      "savings": "潜在的節約 (%)",
+      "orderNo": "注文番号",
+      "supplier": "サプライヤー",
+      "amount": "金額",
+      "deliveryAddress": "配送先住所",
+      "estDelivery": "配送予定日",
+      "trackingNo": "追跡番号",
+      "success": "Profesyonel Excel raporu oluşturuldu.",
+      "error": "Rapor oluşturulamadı.",
+      "shipmentModal": {
+        "title": "Sevkiyat Detayları",
+        "orderNo": "Sipariş: {no}",
+        "currentStatus": "GÜNCEL DURUM",
+        "onWay": "YOLDA / SEVK EDİLDİ",
+        "shipmentType": "SEVKİYAT TİPİ",
+        "carrier": "TAŞIYICI FİRMA",
+        "trackingNo": "TAKİP NUMARASI",
+        "estDelivery": "TAHMİNİ TESLİMAT",
+        "notes": "SATICI NOTU & EK BİLGİLER",
+        "deliveryPoint": "TESLİMAT NOKTASI",
+        "defaultCompanyAddress": "VARSAYILAN ŞİRKET ADRESİ",
+        "sender": "GÖNDERİCİ",
+        "close": "KAPAT",
+        "notSpecified": "Belirtilmedi",
+        "noNotes": "Herhangi bir ek not iletilmedi.",
+        "types": {
+          "cargo": "Kargo Gönderimi",
+          "logistics": "Lojistik / Ambar",
+          "ownVehicle": "Özmal Araç / Kendi Sevkiyatımız",
+          "customerPickup": "Müşteri Teslim Alacak",
+          "standard": "Standart Sevkiyat"
+        }
+      }
+    },
+    "categories": {
+      "general": "一般"
+    },
+    "messages": {
+      "noDataToExport": "Dışa aktarılacak veri bulunamadı."
+    },
+    "online": "AKTİF",
+    "offline": "DEVRE DIŞI",
+    "stats": {
+      "pendingRequests": "待機中の依頼",
+      "noRequests": "依頼なし",
+      "active": "アクティブ",
+      "start": "開始",
+      "savings": "節約額",
+      "avgResponse": "平均応答",
+      "responseTimeUnit": "時間",
+      "spendingLimit": "支出制限",
+      "noLimit": "なし",
+      "limitSet": "Limit",
+      "limitNotSet": "Limit Belirlenmedi"
+    },
+    "requests": {
+      "title": "アクティブな依頼",
+      "searchPlaceholder": "検索...",
+      "report": "レポート",
+      "emptyTitle": "依頼なし",
+      "emptyDescription": "Pazaryerine giderek ihtiyacınız olan ürün veya hizmet için ilk talebinizi oluşturun.",
+      "actionLabel": "マーケットへ",
+      "offersReceived": "オファー受信",
+      "offersUnit": "件",
+      "statusOpen": "公開中",
+      "statusCompleted": "完了",
+      "aiAnalysis": "AI分析"
+    },
+    "orders": {
+      "title": "出荷および注文追跡",
+      "searchPlaceholder": "サプライヤー名で検索...",
+      "report": "レポート",
+      "emptyTitle": "注文はまだありません",
+      "emptyDescription": "リクエストに対して受け取ったオファーの1つを承認すると、ここに注文が表示されます。",
+      "actionLabel": "リクエストを見る",
+      "unnamedRequest": "名称未設定",
+      "requestDetail": "依頼詳細",
+      "totalAmount": "総額",
+      "currentStatus": "現在のステータス",
+      "negotiationHistory": "交渉履歴",
+      "initialOffer": "初回提示",
+      "agreedPrice": "合意価格",
+      "netGain": "純利益",
+      "processCompleted": "プロセス完了",
+      "initialPriceOrder": "初回価格での注文作成",
+      "shipmentDetail": "配送詳細",
+      "rateExperience": "評価",
+      "deliveryAddress": "配送先",
+      "registeredAddress": "登録済みの会社住所...",
+      "supplier": "サプライヤー"
+    },
+    "status": {
+      "pending": "準備中",
+      "confirmed": "確定",
+      "shipped": "発送済み",
+      "delivered": "配達済み",
+      "preparing": "準備中",
+      "warehouse": "倉庫内",
+      "customs": "税関通過中",
+      "local_delivery": "配送中",
+      "completed": "完了"
+    },
+    "profile": {
+      "corporateAccount": "企業アカウント",
+      "aipVerified": "AIP-103 認証済み",
+      "sections": {
+        "corporate": "企業情報",
+        "contact": "連絡先情報",
+        "financial": "財務設定",
+        "warehouse": "倉庫管理"
+      },
+      "fields": {
+        "companyName": "会社正式名称",
+        "website": "会社ウェブサイト",
+        "taxId": "納税者番号",
+        "taxOffice": "税務署",
+        "tradeRegistry": "商業登記番号",
+        "mersis": "MERSIS番号",
+        "industry": "業種",
+        "employeeCount": "従業員数",
+        "establishmentYear": "設立年",
+        "fullAddress": "住所",
+        "city": "市区町村",
+        "country": "国",
+        "postalCode": "郵便番号",
+        "contactPerson": "担当者",
+        "phone": "電話番号",
+        "approvalLimit": "承認限度額 (USD)",
+        "preferredCurrency": "通貨",
+        "warehouseName": "倉庫名"
+      },
+      "placeholders": {
+        "website": "https://www.yourcompany.com",
+        "establishmentYear": "例: 1995",
+        "warehouseName": "例: 東京メイン倉庫",
+        "city": "東京都"
+      },
+      "buttons": {
+        "addWarehouse": "新規倉庫追加",
+        "cancel": "キャンセル",
+        "saveWarehouse": "倉庫を保存",
+        "saveProfile": "プロフィール保存",
+        "saving": "保存中..."
+      },
+      "messages": {
+        "fillRequired": "倉庫名と住所を入力してください。",
+        "warehouseAdded": "新しい倉庫が正常に追加されました。",
+        "warehouseDeleted": "倉庫を削除しました。",
+        "confirmDelete": "この倉庫を削除してもよろしいですか？",
+        "noWarehouses": "登録済みの倉庫はありません",
+        "error": "エラーが発生しました。"
+      },
+      "default": "デフォルト",
+      "select": "選択してください"
+    },
+    "suppliers": {
+      "title": "登録済みサプライヤー",
+      "subtitle": "お気に入りおよび取引先企業",
+      "searchPlaceholder": "サプライヤー名で検索...",
+      "emptyState": "登録済みのサプライヤーはありません",
+      "removed": "サプライヤーを削除しました。",
+      "error": "エラーが発生しました。",
+      "trustedPartner": "信頼できるパートナー",
+      "generalSupplier": "一般サプライヤー"
+    },
+    "support": {
+      "title": "サポートセンター",
+      "active": "アクティブ",
+      "archived": "アーカイブ",
+      "connecting": "サポートに接続中...",
+      "emptyStateActive": "現在、アクティブなサポートリクエストはありません。",
+      "emptyStateArchived": "アーカイブされたチケットはありません。",
+      "status": {
+        "open": "オープン",
+        "inProgress": "進行中",
+        "resolved": "解決済み",
+        "closed": "クローズ"
+      },
+      "createForm": {
+        "title": "新しいサポートリクエスト",
+        "subtitle": "迅速な解決のために詳細な情報を提供してください",
+        "subject": "件名",
+        "category": "カテゴリー",
+        "message": "メッセージ",
+        "placeholderSubject": "例：注文ステータスについて",
+        "placeholderMessage": "問題やリクエストの詳細を入力してください...",
+        "submit": "チケットを送信して開始",
+        "categories": {
+          "general": "一般的なヘルプ",
+          "technical": "技術的なエラー",
+          "billing": "注文と支払い",
+          "product": "製品と在庫情報"
+        }
+      },
+      "chat": {
+        "supportTeam": "ProcureOSサポートチーム",
+        "placeholder": "メッセージを入力...",
+        "closeTicket": "チケットを閉じる",
+        "priority": "優先度：{priority}",
+        "confirmClose": "このチケットを閉じてもよろしいですか？",
+        "closedByUser": "--- ユーザーがこのチケットを閉じました ---"
+      },
+      "main": {
+        "title": "システムサポートユニット",
+        "description": "当社の専門家チームとAIアシスタントが、運用、技術、または財務に関するあらゆる質問に対して24時間365日対応いたします。",
+        "newRequest": "新しいリクエストを開始"
+      },
+      "messages": {
+        "created": "サポートリクエストが正常に作成されました。",
+        "error": "チケットを作成できませんでした。",
+        "closed": "チケットが正常に閉じられました。",
+        "sendError": "メッセージを送信できませんでした。"
+      }
+    },
+    "home": {
+      "protocolNotes": "AIP-103+ PROTOKOLÜ (SÜRÜM NOTLARI)",
+      "toasts": {
+        "loginRequired": "Lütfen önce giriş yapın.",
+        "searchFailed": "Arama başarısız.",
+        "invalidTaxId": "Geçersiz Vergi Numarası. Lütfen 10 veya 11 haneli sayı girin.",
+        "invalidPhone": "Geçersiz Telefon Numarası.",
+        "profileUpdated": "Profiliniz güncellendi.",
+        "updateFailed": "Güncelleme başarısız.",
+        "needRequestTitle": "Lütfen neye ihtiyacınız olduğunu belirtin.",
+        "noSuppliersFound": "Uygun tedarikçi bulunamadı.",
+        "createIntentFailed": "Talep oluşturulamadı.",
+        "needDeliveryAddress": "Lütfen teslimat adresi belirtin.",
+        "intentInfoNotFound": "Talep bilgisi bulunamadı. Lütfen tekrar arama yapın.",
+        "requestSent": "Talep başarıyla iletildi.",
+        "sendFailed": "Gönderim başarısız: {error}",
+        "unknownError": "Bilinmeyen hata",
+        "offerAccepted": "Teklif başarıyla kabul edildi!",
+        "offerRejected": "Teklif reddedildi.",
+        "requestNotSelected": "Talep seçilmedi.",
+        "noActiveOffers": "Pazarlık yapılabilecek aktif teklif bulunamadı.",
+        "bulkCounterSent": "{count} tedarikçiye toplu karşı teklif iletildi.",
+        "counterSent": "Karşı teklif iletildi.",
+        "counterError": "Pazarlık hatası.",
+        "supplierAdded": "Tedarikçi favorilerinize eklendi."
+      },
+      "defaults": {
+        "supplier": "Tedarikçi",
+        "country": "Türkiye",
+        "paymentTerm": "30 Gün Vadeli"
+      }
+    },
+    "rating": {
+      "title": "Tedarikçiyi Değerlendir",
+      "errors": {
+        "overallRating": "Lütfen genel bir puan verin.",
+        "submitFailed": "Değerlendirme gönderilirken bir hata oluştu."
+      },
+      "labels": {
+        "overall": "Genel Memnuniyet",
+        "quality": "Ürün Kalitesi",
+        "delivery": "Teslimat Hızı",
+        "communication": "İletişim ve Destek",
+        "feedback": "Geri Bildiriminiz"
+      },
+      "placeholders": {
+        "feedback": "Deneyiminizi kısaca anlatın..."
+      },
+      "info": "Bu değerlendirme doğrudan tedarikçi ile paylaşılmamakta olup, yalnızca ProcureOS güven endeksi hesaplamaları ve hizmet kalitemizin iyileştirilmesi amacıyla kullanılmaktadır. Görüşleriniz ekosistemimizin şeffaflığı için kritik öneme sahiptir.",
+      "submit": "DEĞERLENDİRMEYİ GÖNDER",
+      "submitting": "Gönderiliyor...",
+      "success": {
+        "title": "Teşekkürler!",
+        "message": "Değerlendirmeniz başarıyla kaydedildi ve tedarikçi puanına yansıtıldı."
+      },
+      "addToFavorites": "TEDARİKÇİYİ FAVORİLERİME EKLE",
+      "messages": {
+        "added": "Tedarikçi favorilerinize eklendi."
+      }
+    },
+    "sourcing": {
+      "steps": {
+        "form": {
+          "title": "依頼作成",
+          "subtitle": "何が必要ですか？",
+          "descriptionSingle": "Seçtiğiniz tedarikçi için ürün detaylarını ve miktarını belirtin, kurumsal şablonda iletelim.",
+          "descriptionMulti": "Ürün özelliklerini ve miktarını belirtin, ProcureOS Core ağı saniyeler içinde en uygun satıcıları lojistik verilerine göre filtrelesin.",
+          "labels": {
+            "title": "説明",
+            "note": "Alıcı Notu / Özel İstekler (Opsiyonel)",
+            "quantity": "数量",
+            "currency": "通貨",
+            "paymentTerm": "支払条件"
+          },
+          "placeholders": {
+            "title": "Örn: 100 adet 5 metre boyunda 40mm çapında sanayi tipi metal boru...",
+            "note": "Örn: Teslimatların paletli yapılmasını rica ederiz...",
+            "quantity": "Örn: 500 Adet",
+            "currency": "Örn: AED"
+          },
+          "paymentTerms": {
+            "cash": "Peşin Ödeme",
+            "30days": "30 Gün Vadeli",
+            "60days": "60 Gün Vadeli"
+          },
+          "buttons": {
+            "processing": "İŞLENİYOR...",
+            "prepare": "準備",
+            "listSuppliers": "サプライヤー一覧"
+          }
+        },
+        "matches": {
+          "titleReady": "Talebiniz Hazır",
+          "titleMatches": "Eşleşen Tedarikçiler",
+          "descriptionSingle": "{name} için hazırlanan kurumsal satın alma talebini onaylayın.",
+          "descriptionMulti": "Core motoru lojistik ve ürün kategorisine göre en uygun eşleşmeleri buldu.",
+          "back": "Geri Dön",
+          "noSuppliers": "Uygun tedarikçi bulunamadı.",
+          "trustScore": "%{score} GÜVEN SKORU",
+          "officialRequest": "RESMİ SATIN ALMA TALEBİ",
+          "docNo": "DOKÜMAN NO",
+          "targetQuantity": "HEDEF MİKTAR",
+          "targetCurrency": "PARA BİRİMİ",
+          "paymentTerm": "ÖDEME VADESİ",
+          "sendRequest": "KURUMSAL TALEBİ GÖNDER",
+          "sending": "İLETİLİYOR..."
+        },
+        "success": {
+          "title": "送信完了",
+          "message": "依頼が送信されました。",
+          "backToMarketplace": "マーケットへ",
+          "viewMyRequests": "マイ依頼"
+        }
+      },
+      "errors": {
+        "selectSupplier": "Lütfen teklif gönderilecek en az bir tedarikçi seçin."
+      },
+      "address": {
+        "change": "DEĞİŞTİR",
+        "mainCompany": "Ana Şirket Adresi"
+      },
+      "features": {
+        "global": {
+          "title": "Global Eşleşme",
+          "desc": "Dil bariyeri olmadan, ihtiyacınız dünya pazarına sunulur."
+        },
+        "logistics": {
+          "title": "Lojistik Doğrulama",
+          "desc": "Sadece sizin adresinize gönderim yapabilen satıcılar listelenir."
+        },
+        "standard": {
+          "title": "Kurumsal Standart",
+          "desc": "Tüm yazışmalar profesyonel şablonlar üzerinden yürütülür."
+        }
+      }
+    },
+    "requestDetails": {
+      "status": {
+        "open": "見積もり収集中",
+        "completed": "完了"
+      },
+      "tabs": {
+        "list": "リスト",
+        "compare": "比較",
+        "audit": "監査"
+      },
+      "timeline": {
+        "created": "見積依頼（RFQ）が作成され、システムに保存されました。",
+        "offerReceived": "{supplier} から見積もりが提出されました（{price}）。",
+        "offerAccepted": "{supplier} の見積もりが承認され、注文（PO）プロセスが開始されました。",
+        "offerRejected": "{supplier} の見積もりが拒否されました。",
+        "pendingApproval": "{supplier} の見積もりが承認待ちです（権限制限超過）。",
+        "supplier": "サプライヤー",
+        "unknownSupplier": "サプライヤー"
+      },
+      "details": {
+        "title": "リクエスト詳細",
+        "quickInfo": "クイック情報",
+        "quantity": "数量",
+        "paymentTerm": "支払い条件",
+        "currency": "通貨",
+        "targetPrice": "目標価格",
+        "openOffer": "オープンオファー",
+        "itemDetail": "製品/サービス詳細",
+        "note": "備考",
+        "noDetail": "詳細なし"
+      },
+      "offers": {
+        "title": "受信した見積もり",
+        "countSuffix": "件",
+        "batchNegotiation": "一括交渉",
+        "noOffers": "見積もりはまだありません。システムがサプライヤーとマッチング中です。",
+        "bestMatch": "ベストマッチ",
+        "trust": "信頼度",
+        "amount": "見積金額",
+        "unitPrice": "単価",
+        "deliveryTime": "納期",
+        "workingDays": "営業日",
+        "expressDelivery": "急ぎ配送",
+        "negotiation": "交渉する",
+        "details": "詳細",
+        "accept": "承認",
+        "reject": "拒否",
+        "selected": "選択済み",
+        "rejected": "拒否済み",
+        "inNegotiation": "交渉中",
+        "activeOffer": "有効な見積もり",
+        "pendingApproval": "承認待ち",
+        "sendToApproval": "承認に回す",
+        "saveSupplier": "サプライヤーを保存"
+      },
+      "negotiationModal": {
+        "batchTitle": "一括交渉",
+        "singleTitle": "交渉プロセス",
+        "batchDesc": "このリクエストに見積もりを提出したすべての企業（{count} 件）に一括メッセージが送信されます。",
+        "singleDesc": "{supplier} と価格および納期についてカウンターオファーを作成します。",
+        "targetPrice": "目標単価",
+        "targetDays": "希望納期（日）",
+        "noteLabel": "交渉メモ",
+        "notePlaceholder": "予算の制約や納期の緊急性について入力してください...",
+        "cancel": "キャンセル",
+        "sendBatch": "一括メッセージを送信",
+        "sendSingle": "カウンターオファーを送信"
+      },
+      "audit": {
+        "title": "プロセス監査証跡（ブロックチェーン検証済み）",
+        "verified": "システム検証済み"
+      },
+      "aiAnalysis": "AI分析"
+    },
+    "offerDocument": {
+      "print": "印刷 / ダウンロード",
+      "officialDoc": "公式見積書",
+      "docNo": "書類番号",
+      "sellerInfo": "販売者情報",
+      "authorized": "担当者",
+      "taxNo": "登録番号",
+      "buyerInfo": "購入者情報",
+      "description": "サービス / 製品内容",
+      "quantity": "数量",
+      "unitPrice": "単価（税抜）",
+      "totalPrice": "合計金額（税抜）",
+      "category": "カテゴリー",
+      "unitAdet": "個",
+      "digitalNotice": "* この見積書は ProcureOS でデジタル作成されました。",
+      "grandTotal": "総合計",
+      "paymentTerms": "支払いおよび配送条件",
+      "paymentTermLabel": "支払い期限",
+      "deliveryTermLabel": "納期",
+      "cash": "現金払い",
+      "workingDays": "営業日",
+      "digitalVerification": "デジタル検証",
+      "page": "ページ",
+      "supplierFirm": "サプライヤー企業",
+      "buyerFirm": "購入者企業"
+    },
+    "notifications": {
+      "title": "通知センター"
+    }
+  },
+  "footer": {
+    "poweredBy": "AIP-103+ 搭載",
+    "joinAsSupplier": "サプライヤーになる",
+    "faq": "よくある質問",
+    "reviews": "レビュー",
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー",
+    "cookies": "クッキー"
+  },
+  "errors": {
+    "404": {
+      "title": "道に迷いましたか？",
+      "description": "ページが見つかりません。アドレスを確認してください。",
+      "backHome": "ホームに戻る"
+    }
+  },
+  "home": {
+    "protocolNotes": "AIP-103+ プロトコル (リリースノート)",
+    "defaults": {
+      "supplier": "サプライヤー",
+      "country": "日本",
+      "paymentTerm": "30日以内支払い"
+    },
+    "toasts": {
+      "loginRequired": "まずログインしてください。",
+      "searchFailed": "検索に失敗しました。",
+      "invalidTaxId": "無効な納税者番号です。10桁または11桁の数字を入力してください。",
+      "invalidPhone": "無効な電話番号です。",
+      "profileUpdated": "プロフィールが正常に更新されました。",
+      "updateFailed": "更新に失敗しました。",
+      "needRequestTitle": "必要なものを指定してください。",
+      "noSuppliersFound": "適切なサプライヤーが見つかりませんでした。",
+      "createIntentFailed": "リクエストを作成できませんでした。",
+      "needDeliveryAddress": "配送先住所を指定してください。",
+      "intentInfoNotFound": "リクエスト情報が見つかりませんでした。再度検索してください。",
+      "requestSent": "リクエストが正常に送信されました。",
+      "sendFailed": "送信失敗: {error}",
+      "unknownError": "不明なエラー",
+      "offerAccepted": "オファーが正常に承認されました！",
+      "offerRejected": "オファーが拒否されました。",
+      "requestNotSelected": "リクエストが選択されていません。",
+      "noActiveOffers": "交渉可能なアクティブなオファーが見つかりませんでした。",
+      "bulkCounterSent": "{count}件のサプライヤーに一括カウンターオファーを送信しました。",
+      "counterSent": "カウンターオファーが送信されました。",
+      "counterError": "交渉エラー。",
+      "supplierAdded": "サプライヤーがお気に入りに追加されました。"
+    },
+    "differentCompanies": "{count} つの異なる企業"
+  },
+  "changelog": {
+    "title": "AIP プロトコル リリースノート",
+    "subtitle": "ProcureOS 自律型インテリジェンス プロトコル (AIP) システムの現在の開発と将来の予測に関する技術ドキュメント。",
+    "backToDashboard": "ダッシュボードに戻る",
+    "releaseNotes": "リリースノート",
+    "footerNote": "ProcureOS は、AIP 標準に従う自律型エコシステムです。",
+    "historyTitle": "完全なコミット履歴",
+    "historySubtitle": "ProcureOS AIP コア インフラストラクチャにおけるすべての原子的な変更の技術的概要。",
+    "searchPlaceholder": "コミット メッセージまたはバージョンで検索...",
+    "noResults": "条件に一致するコミットは見つかりませんでした",
+    "commitsTitle": "コミット履歴",
+    "fullLog": "完全なログ",
+    "releaseItems": {
+      "AIP-106": {
+        "title": "グローバル決済＆エスクロー層",
+        "description": "国際決済と安全な取引（エスクロー）を AIP プロトコルに完全統合。",
+        "cat1": "財務",
+        "item1": "多通貨および即時為替換算エンジン。",
+        "item2": "ProcureOS エスクロー：納品確認付きのスマートコントラクトベースの決済システム。",
+        "item3": "サプライヤーファイナンスおよび出来高管理パネル。"
+      },
+      "AIP-105": {
+        "title": "ProcureAI インサイト＆予測",
+        "description": "AIによる市場動向とサプライチェーンリスクの事前検知。",
+        "cat1": "インテリジェンス",
+        "item1": "予測ソーシング：需要が発生する前のサプライヤーキャパシティ予約。",
+        "item2": "市場動向分析と動的な価格変動アラート。",
+        "item3": "サプライヤーリスクスコアリング 2.0 レイヤー。"
+      },
+      "AIP-104": {
+        "title": "エンタープライズコネクト＆ERP統合",
+        "description": "既存の企業ERPシステムと ProcureOS のシームレスなデータ同期。",
+        "cat1": "接続性",
+        "item1": "SAP、Oracle、Microsoft Dynamics 用の既製データコネクタ。",
+        "item2": "階層的な承認メカニズムと企業予算管理の統合。",
+        "item3": "シングルサインオン (SSO) と ID アクセス管理 (IAM) のサポート。"
+      },
+      "AIP-103_6": {
+        "title": "企業レポート＆財務可視化",
+        "description": "運用および財務レイヤーにおける調達データのプロフェッショナルなレポート提供。",
+        "cat1": "レポート",
+        "item1": "プロフェッショナルな Excel (.xlsx) エクスポートエンジンとスタイル付きテーブル。",
+        "item2": "レポートに「潜在的な節約分析」指標を追加。",
+        "item3": "高度なデータフィルタリングと日付ベースのレポートインフラ。",
+        "cat2": "Performance",
+        "item4": "Dashboard speed increased by 70% with SWR.",
+        "item5": "Query optimization with GIN/B-Tree indexing."
+      },
+      "AIP-103_5": {
+        "title": "パフォーマンスエンジン＆非同期アーキテクチャ",
+        "description": "高密度トラフィックに対応するため、ProcureOS コアを非同期構造に移行。",
+        "cat1": "アーキテクチャ",
+        "item1": "AI エンベディング生成をワーカーレイヤーにオフロード。",
+        "item2": "マーケットプレイス検索用のデバウンス検索インフラを開始。",
+        "item3": "すべてのモジュールで位置と住所の形式を標準化。"
+      },
+      "AIP-103": {
+        "title": "ゼロトラスト＆意味的マッチング",
+        "description": "データセキュリティと AI マッチングエンジンの基本的な安定化。",
+        "cat1": "セキュリティ",
+        "item1": "Supabase RLS によるゼロトラスト分離。",
+        "item2": "意味的マッチングエンジンのレイテンシを 450ms 未満に短縮。"
+      },
+      "AIP-102": {
+        "title": "スマートカタログ管理",
+        "description": "サプライヤーカタログと製品データのデジタル化。",
+        "cat1": "コア",
+        "item1": "ベクトルベースの製品検索とカタログシステム。",
+        "item2": "サプライヤー登録と検証フローの最適化。"
+      },
+      "AIP-101": {
+        "title": "NLP エンジン＆多言語サポート",
+        "description": "プロトタイプから最初の製品バージョンへの移行。",
+        "cat1": "基盤",
+        "item1": "72言語対応のリアルタイム RFQ 翻訳および分析エンジン。",
+        "item2": "自然言語処理 (NLP) による初の需要・サプライヤーマッチング成功。"
+      }
+    }
+  },
+  "faq": {
+    "title": "よくある質問",
+    "subtitle": "ProcureOS 自律型調達エコシステムについて知っておくべきことすべて。",
+    "helpCenter": "ヘルプセンター",
+    "back": "戻る",
+    "questions": {
+      "q1": "ProcureOS で購入リクエストを作成するにはどうすればよいですか？",
+      "a1": "ホームページの [リクエストの作成] ボタンをクリックして、必要な内容を自然言語で入力できます。",
+      "q2": "サプライヤーはどのように検証されますか？",
+      "a2": "ProcureOS のサプライヤー検証プロセスは、3 層の監査メカニズムに基づいています。",
+      "q3": "支払いプロセスはどのように機能しますか？",
+      "a3": "現段階では、支払いは購入者と販売者の間の既存の商取引契約を通じて直接行われます。",
+      "q4": "グローバルなサプライヤーに連絡できますか？",
+      "a4": "はい、ProcureOS ネットワークには、ローカルおよびグローバルの両方で数千のサプライヤーが含まれています。"
+    }
+  },
+  "howItWorks": {
+    "title": "システムを探索する。",
+    "subtitle": "従来の調達プロセスを忘れてください。AIP-103+プロトコルにより、サプライチェーンを自律的なオペレーティングシステムに変換します。",
+    "guide": "企業ガイド v2.0",
+    "usageGuide": "利用ガイド",
+    "backToHome": "ホーム画面",
+    "simulator": {
+      "badge": "ライブシミュレーター (v2.0)",
+      "title": "複数サプライヤー管理シミュレーション",
+      "desc": "複数の企業に同時に見積依頼を送信し、自律的にマッチングするプロセスを体験してください。",
+      "searchPlaceholder": "検索...",
+      "locationPlaceholder": "目的地",
+      "searchButton": "グローバル検索",
+      "searching": "検索中...",
+      "exampleScenario": "サンプルシナリオを開始",
+      "scanning": "AIP-103 プロトコル: グローバルネットワークをスキャン中...",
+      "matchedSuppliers": "自律マッチングされたサプライヤー ({count})",
+      "selectFirms": "見積もりを受け取りたい企業を選択してください ({count} 選択済み)",
+      "supplierCard": {
+        "match": "一致度",
+        "speed": "速度",
+        "score": "スコア"
+      },
+      "form": {
+        "badge": "並行 RFQ モード",
+        "title": "一括購入リクエスト",
+        "desc": "選択された {count} 社のサプライヤーに同時に送信されます。",
+        "docGroup": "ドキュメントグループ",
+        "details": "必要事項の詳細",
+        "quantity": "数量",
+        "currency": "通貨",
+        "incoterm": "配送条件 (Incoterm)",
+        "targetLocation": "配送先",
+        "validity": "見積有効期限",
+        "submit": "{count} 社に見積依頼を送信"
+      },
+      "success": {
+        "title": "リクエスト送信完了",
+        "desc": "公式な RFQ ドキュメントが AIP-103 プロトコルを介して数秒で {count} 社のサプライヤーに送信されました。",
+        "register": "システムに登録する",
+        "newSimulation": "新しいシミュレーションを開始"
+      },
+      "demo": {
+        "query": "SKF 6204 深溝玉軸受 1000個",
+        "location": "イスタンブール、トルコ",
+        "quantity": "1000個",
+        "suppliers": [
+          {
+            "name": "TechGear インダストリアル",
+            "location": "イスタンブール、トルコ",
+            "speed": "2日"
+          },
+          {
+            "name": "グローバルベアリング社",
+            "location": "ベルリン、ドイツ",
+            "speed": "5日"
+          },
+          {
+            "name": "ベアリングワールド",
+            "location": "ブルサ、トルコ",
+            "speed": "1日"
+          },
+          {
+            "name": "アナトリアマシン",
+            "location": "アンカラ、トルコ",
+            "speed": "3日"
+          }
+        ],
+        "incoterms": [
+          "DAP - 指定場所配送",
+          "EXW - 工場渡",
+          "FCA - 運送人渡"
+        ],
+        "validityPeriods": [
+          "7日間",
+          "15日間",
+          "30日間"
+        ]
+      }
+    },
+    "dashboard": {
+      "title": "プロフェッショナル操作パネル",
+      "subtitle": "ログイン後に利用可能な企業管理モジュール。",
+      "ops": {
+        "title": "オペレーションセンター",
+        "desc": "すべての有効な RFQ プロセスを単一の画面から管理します。",
+        "f1": "価格比較",
+        "f2": "カウンターオファー",
+        "f3": "購入承認"
+      },
+      "log": {
+        "title": "ロジスティクス追跡",
+        "desc": "生産から玄関先までの全プロセスを追跡します。",
+        "f1": "配送詳細",
+        "f2": "請求書追跡",
+        "f3": "配送確認"
+      },
+      "team": {
+        "title": "チーム管理",
+        "desc": "システム内で企業階層を定義し管理します。",
+        "f1": "承認限度額",
+        "f2": "権限定義",
+        "f3": "部門レポート"
+      },
+      "erp": {
+        "title": "ERP 統合",
+        "desc": "SAP、Oracle、MS Dynamics との完全な統合。",
+        "f1": "自動在庫登録",
+        "f2": "API 統合",
+        "f3": "スケジュール同期"
+      }
+    },
+    "steps": {
+      "step1": {
+        "title": "スマート検索＆発見",
+        "desc": "自然言語処理エンジンにより、ニーズを書き込むだけです。"
+      },
+      "step2": {
+        "title": "自律的 RFQ 作成",
+        "desc": "リクエストを作成すると、システムが自動的に技術的な詳細を分析します。"
+      },
+      "step3": {
+        "title": "リアルタイム交渉",
+        "desc": "サプライヤーからの見積もりを単一のパネルで確認します。"
+      },
+      "step4": {
+        "title": "安全な承認＆監視",
+        "desc": "合意した見積もりを承認し、透明性を持って追跡します。"
+      }
+    },
+    "questions": {
+      "q1": {
+        "title": "現在のサプライヤーより優れた選択肢はありますか？",
+        "desc": "AIエンジンがグローバル市場に隠れた巨人をあなたのために見つけます。"
+      },
+      "q2": {
+        "title": "市場価格を確認したいですか？",
+        "desc": "リアルタイムデータでコストをベンチマークします。"
+      },
+      "q3": {
+        "title": "新しいサプライヤーをご存知ですか？",
+        "desc": "自律ネットワークが毎日数千のデータポイントを分析します。"
+      }
+    },
+    "cta": "今すぐ無料で開始"
+  },
+  "reviews": {
+    "title": "Сеть, растущая с доверием",
+    "subtitle": "Over 500+ institutions worldwide manage their procurement operations with ProcureOS autonomous infrastructure.",
+    "badge": "USER EXPERIENCES",
+    "loading": "Loading Experiences...",
+    "back": "Go Back",
+    "ctaTitle": "Become Part of the Autonomous Network",
+    "ctaSubtitle": "Register for free now and digitalize your supply chain.",
+    "ctaButton": "REGISTER",
+    "tags": {
+      "highSatisfaction": "High Satisfaction",
+      "verified": "Verified"
+    },
+    "roles": {
+      "buyer": "Corporate Buyer",
+      "manager": "Procurement Manager",
+      "director": "Operations Director"
+    },
+    "static": [
+      {
+        "name": "Arda Yılmaz",
+        "role": "Procurement Manager",
+        "company": "Global Logistics Inc.",
+        "content": "Thanks to ProcureOS, our supplier search process dropped from weeks to days. The AI technical specification creation feature provides incredible time savings.",
+        "tag": "Corporate"
+      },
+      {
+        "name": "Selin Demir",
+        "role": "Operations Director",
+        "company": "Tech-Flow Systems",
+        "content": "The autonomous matching system brought high-quality suppliers to us that we could never reach. We are very comfortable thanks to the trust score system.",
+        "tag": "Industrial"
+      }
+    ]
+  },
+  "legal": {
+    "lastUpdate": "最終更新日: 2026年5月3日",
+    "terms": {
+      "title": "利用規約",
+      "intro": "ProcureOSにアクセスすることにより、これらの条件に同意したことになります。",
+      "sections": [
+        {
+          "title": "1. サービスの説明",
+          "content": "ProcureOSは、購入者とサプライヤー間の調達を促進するデジタルプラットフォームです。"
+        },
+        {
+          "title": "2. アカウントのセキュリティ",
+          "content": "アカウントの機密保持はお客様の責任です。"
+        },
+        {
+          "title": "3. 準拠法",
+          "content": "本規約はトルコ共和国の法律に準拠します。"
+        }
+      ]
+    },
+    "privacy": {
+      "title": "プライバシーポリシー",
+      "intro": "お客様のデータの安全性を重視しています。",
+      "sections": [
+        {
+          "title": "1. 収集されるデータ",
+          "content": "氏名、メールアドレス、会社情報を収集します。"
+        },
+        {
+          "title": "2. 目的",
+          "content": "サービスの最適化のためにデータを使用します。"
+        }
+      ]
+    },
+    "cookies": {
+      "title": "クッキーポリシー",
+      "intro": "より良い体験のためにクッキーを使用しています。",
+      "sections": [
+        {
+          "title": "1. クッキーとは何ですか？",
+          "content": "デバイスに保存される小さなテキストファイルです。"
+        },
+        {
+          "title": "2. 管理",
+          "content": "ブラウザの設定でクッキーを管理できます。"
+        }
+      ]
+    }
+  },
+  "rating": {
+    "title": "サプライヤーを評価する",
+    "errors": {
+      "overallRating": "総合評価を入力してください。",
+      "submitFailed": "評価の送信中にエラーが発生しました。"
+    },
+    "labels": {
+      "overall": "総合的な満足度",
+      "quality": "製品の品質",
+      "delivery": "配送スピード",
+      "communication": "コミュニケーションとサポート",
+      "feedback": "フィードバック"
+    },
+    "placeholders": {
+      "feedback": "体験を簡単に説明してください..."
+    },
+    "info": "この評価はサプライヤーと直接共有されることはなく、ProcureOSの信頼指数の計算とサービス品質の向上のためにのみ使用されます。お客様の意見は、当社のエコシステムの透明性にとって非常に重要です。",
+    "submit": "評価を送信",
+    "submitting": "送信中...",
+    "success": {
+      "title": "ありがとうございました！",
+      "message": "評価が正常に保存され、サプライヤーのスコアに反映されました。"
+    },
+    "addToFavorites": "サプライヤーをお気に入りに追加",
+    "messages": {
+      "added": "サプライヤーがお気に入りに追加されました。"
+    }
+  },
+  "sourcing": {
+    "steps": {
+      "form": {
+        "descriptionSingle": "選択したサプライヤー向けに製品の詳細と数量を指定してください。企業テンプレートで送信します。",
+        "descriptionMulti": "製品仕様と数量を指定してください。ProcureOS Core エンジンが物流データに基づいて最適な販売者を数秒で抽出します。",
+        "labels": {
+          "note": "購入者メモ / 特記事項 (任意)"
+        },
+        "placeholders": {
+          "title": "例: 100本の5メートル長、直径40mmの工業用金属パイプ...",
+          "note": "例: パレットでの配送を希望します...",
+          "quantity": "例: 500個",
+          "currency": "例: JPY"
+        },
+        "paymentTerms": {
+          "cash": "現金払い",
+          "30days": "30日払い",
+          "60days": "60日払い"
+        },
+        "buttons": {
+          "processing": "処理中...",
+          "prepare": "準備",
+          "listSuppliers": "サプライヤー一覧"
+        }
+      },
+      "matches": {
+        "titleReady": "依頼準備完了",
+        "titleMatches": "一致したサプライヤー",
+        "descriptionSingle": "{name} 向けの正式な購入依頼を確認してください。",
+        "descriptionMulti": "Core エンジンが物流と製品カテゴリに基づいて最適な一致を見つけました。",
+        "back": "戻る",
+        "noSuppliers": "適切なサプライヤーが見つかりませんでした。",
+        "trustScore": "{score}% 信頼スコア",
+        "officialRequest": "公式購入依頼",
+        "docNo": "ドキュメント番号",
+        "targetQuantity": "目標数量",
+        "targetCurrency": "通貨",
+        "paymentTerm": "支払条件",
+        "sendRequest": "企業依頼を送信",
+        "sending": "送信中..."
+      }
+    },
+    "errors": {
+      "selectSupplier": "見積もりを送信するサプライヤーを少なくとも1つ選択してください。"
+    },
+    "address": {
+      "change": "変更",
+      "mainCompany": "会社メイン住所"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "おかえりなさい",
+      "subtitle": "ProcureOS バイヤーポータル",
+      "emailLabel": "メールアドレス",
+      "emailPlaceholder": "email@company.com",
+      "passwordLabel": "パスワード",
+      "passwordPlaceholder": "••••••••",
+      "forgotPassword": "忘れた場合",
+      "submit": "システムにログイン",
+      "noAccount": "まだアカウントをお持ちではありませんか？",
+      "registerLink": "今すぐ登録",
+      "success": "ログインに成功しました！",
+      "errorDefault": "ログインに失敗しました。",
+      "passwordError": "パスワードが正しくないか、入力されていません。",
+      "registeredSuccess": "アカウントが正常に作成されました。ログインできるようになりました。",
+      "termsText": "ログインすることにより、<terms>利用規約</terms>と<privacy>プライバシーポリシー</privacy>に同意したことになります。"
+    },
+    "register": {
+      "title": "参加する",
+      "subtitle": "自律型ソーシングの世界へ",
+      "companyNameLabel": "会社名",
+      "companyNamePlaceholder": "会社正式名称",
+      "contactPersonLabel": "担当者",
+      "contactPersonPlaceholder": "氏名",
+      "phoneLabel": "電話番号",
+      "phonePlaceholder": "+81 xxx xxx xx xx",
+      "emailLabel": "メールアドレス",
+      "emailPlaceholder": "email@company.com",
+      "passwordLabel": "パスワード",
+      "passwordPlaceholder": "••••••••",
+      "confirmPasswordLabel": "パスワード（確認）",
+      "confirmPasswordPlaceholder": "••••••••",
+      "submit": "アカウント作成",
+      "haveAccount": "すでにアカウントをお持ちですか？",
+      "loginLink": "ログイン",
+      "errorMatch": "パスワードが一致しません。",
+      "errorLength": "パスワードは8文字以上である必要があります。",
+      "errorDefault": "登録に失敗しました。",
+      "termsText": "アカウントを作成することにより、<terms>利用規約</terms>と<privacy>プライバシーポリシー</privacy>に同意したことになります。",
+      "features": {
+        "global": "グローバルアクセス",
+        "secure": "安全な決済",
+        "fast": "迅速なマッチング"
+      }
+    },
+    "forgotPassword": {
+      "title": "パスワードの再設定",
+      "subtitle": "メールアドレスに再設定リンクを送信します。",
+      "submit": "指示を送信",
+      "success": "再設定メールを送信しました。",
+      "error": "エラーが発生しました。"
+    },
+    "resetPassword": {
+      "title": "新しいパスワード",
+      "subtitle": "アカウントの新しい安全なパスワードを設定してください。",
+      "passwordLabel": "新しいパスワード",
+      "confirmPasswordLabel": "パスワード（確認）",
+      "submit": "パスワードを更新",
+      "successTitle": "成功！",
+      "successMessage": "パスワードが更新されました。ログイン画面に移動します...",
+      "errorMismatch": "パスワードが一致しません。",
+      "errorDefault": "無効または期限切れのリンクです。",
+      "errorInvalidToken": "無効な再設定リンクです！",
+      "successToast": "パスワードが正常に更新されました。"
+    }
+  },
+  "systemErrors": {
+    "default": "エラーが発生しました。もう一度お試しください。",
+    "authFailed": "ログインに失敗しました。認証情報を確認してください。",
+    "sessionExpired": "セッションの有効期限が切れました。再度ログインしてください。",
+    "forbidden": "この操作を行う権限がありません。",
+    "serverError": "サーバーエラーが発生しました。チームに通知されました。",
+    "networkError": "接続エラー。インターネット接続を確認してください。",
+    "validationError": "フォームの未入力または誤った項目を修正してください。",
+    "emailExists": "このメールアドレスは既に使用されています。",
+    "tooManyRequests": "リクエストが多すぎます。しばらくお待ちください。"
+  },
+  "globalError": {
+    "title": "予期せぬエラー",
+    "subtitle": "システムの中断が発生しました。",
+    "description": "エラーは自動的に技術チームに報告されました。ページを更新してみてください。",
+    "retry": "再試行"
+  }
+}

@@ -1,0 +1,1112 @@
+{
+  "common": {
+    "title": "ProcureOS",
+    "buyerPortal": "Покупательский портал",
+    "howItWorks": "КАК ЭТО РАБОТАЕТ?",
+    "myPanel": "Моя панель",
+    "myAccount": "МОЙ АККАУНТ",
+    "logout": "ВЫЙТИ",
+    "login": "Войти",
+    "register": "Регистрация",
+    "allRightsReserved": "Все права защищены.",
+    "isSeller": "ВЫ ПРОДАВЕЦ?",
+    "allCategories": "ВСЕ КАТЕГОРИИ",
+    "logoutSuccess": "Вы успешно вышли из системы.",
+    "paginationTotal": "Всего {total} записей",
+    "paginationPage": "Страница {page}/{totalPages}",
+    "notSpecified": "Не указано",
+    "other": "Другое",
+    "errorOccurred": "Произошла ошибка.",
+    "notifications": {
+      "systemFlow": "Системный поток",
+      "new": "НОВЫЙ",
+      "noNotifications": "Нет уведомлений",
+      "markFailed": "Ошибка пометки"
+    },
+    "categories": {
+      "all": "ВСЕ КАТЕГОРИИ",
+      "Construction & Real Estate": "Строительство и недвижимость",
+      "Industrial Machinery": "Промышленное оборудование",
+      "Raw Materials & Chemicals": "Сырье и химикаты",
+      "Automotive & Transport": "Автомобили и транспорт",
+      "Electronics & Electrical": "Электроника и электротехника",
+      "Food & Agriculture": "Продукты питания и сельское хозяйство",
+      "Textiles & Apparel": "Текстиль и одежда",
+      "Office & Stationery": "Офис и канцтовары",
+      "Health & Medical": "Здоровье и медицина",
+      "Energy & Utilities": "Энергетика и коммунальные услуги",
+      "Professional Services": "Профессиональные услуги",
+      "General": "Другое / Общее"
+    },
+    "statuses": {
+      "preparing": "Подготовка",
+      "shipped": "Отправлено",
+      "delivered": "Доставлено",
+      "warehouse": "На складе",
+      "customs": "На таможне",
+      "local_delivery": "Местная доставка",
+      "completed": "Завершено"
+    },
+    "countries": {
+      "TR": "Турция",
+      "US": "США",
+      "DE": "Германия",
+      "GB": "Великобритания",
+      "FR": "Франция",
+      "CN": "Китай",
+      "AE": "ОАЭ",
+      "SA": "Саудовская Аравия",
+      "IT": "Италия",
+      "ES": "Испания",
+      "NL": "Нидерланды",
+      "BE": "Бельгия",
+      "CH": "Швейцария",
+      "AT": "Австрия",
+      "JP": "Япония"
+    },
+    "info": "ИНФОРМАЦИЯ",
+    "close": "ЗАКРЫТЬ"
+  },
+  "marketplace": {
+    "heroTitle": "Глобальное снабжение",
+    "heroSubtitle": "Операционная система",
+    "heroDescription": "Подключайтесь к тысячам производителей через базу ProcureOS.",
+    "searchPlaceholder": "Товар или производитель...",
+    "locationPlaceholder": "Место назначения",
+    "searchButton": "ПОИСК",
+    "allCategories": "ВСЕ КАТЕГОРИИ",
+    "noResults": "Результатов не найдено.",
+    "supplierNetworkTitle": "Сеть поставщиков ProcureOS",
+    "supplierNetworkDescription": "Продавайте тысячи покупателям.",
+    "startSellingNow": "НАЧАТЬ ПРОДАВАТЬ",
+    "registerProductsText": "Вы производитель? Зарегистрируйтесь.",
+    "selection": {
+      "label": "ВЫБРАНО",
+      "compare": "СРАВНИТЬ",
+      "bulkQuote": "ЗАПРОСИТЬ ЦЕНУ"
+    },
+    "warehouses": {
+      "title": "Мои склады",
+      "mainCompanyAddress": "Главный адрес"
+    },
+    "supplierCard": {
+      "accessRestricted": "ДОСТУП ОГРАНИЧЕН",
+      "loginToSeeDetails": "Войдите для деталей",
+      "loginButton": "ВОЙТИ",
+      "verified": "ПРОВЕРЕНО",
+      "scores": {
+        "price": "ЦЕНА",
+        "speed": "СРОК",
+        "trust": "ДОВЕРИЕ"
+      },
+      "protocolCategory": "КАТЕГОРИЯ",
+      "generalSupplier": "ОБЩИЙ ПОСТАВЩИК",
+      "getQuote": "УЗНАТЬ ЦЕНУ"
+    },
+    "comparison": {
+      "title": "Сравнение фирм",
+      "description": "Сравните {count} фирм.",
+      "noSuppliers": "Фирмы не найдены.",
+      "trustScore": "Рейтинг доверия",
+      "verification": "Проверка",
+      "verified": "Подтверждено",
+      "serviceRegions": "Регионы обслуживания",
+      "removeFromList": "Удалить",
+      "bulkQuote": "Общий запрос ({count})"
+    },
+    "networkPulse": {
+      "label": "ПУЛЬС ЭКОСИСТЕМЫ",
+      "status": "АКТИВЕН",
+      "statusValue": "ПОЛНАЯ МОЩНОСТЬ",
+      "statusLabel": "СТАТУС СЕТИ",
+      "suppliersCount": "{count} активных поставщиков"
+    }
+  },
+  "dashboard": {
+    "sections": {
+      "opsCenter": "Центр операций",
+      "logistics": "Отслеживание логистики",
+      "team": "Управление командой",
+      "erp": "Интеграции ERP",
+      "identity": "Системная идентичность"
+    },
+    "descriptions": {
+      "opsCenter": "Мониторинг активных RFQ и предложений",
+      "logistics": "Отслеживание отправлений в глобальной сети",
+      "team": "Управление корпоративной командой и лимитами",
+      "erp": "Автоматический экспорт товаров в ERP-системы",
+      "identity": "Управление вашей идентичностью в сети"
+    },
+    "tabs": {
+      "requests": "ЗАПРОСЫ",
+      "orders": "ЗАКАЗЫ",
+      "mySuppliers": "МОИ ПОСТАВЩИКИ",
+      "team": "КОМАНДА",
+      "integrations": "ИНТЕГРАЦИИ",
+      "support": "ПОДДЕРЖКА",
+      "profile": "ПРОФИЛЬ"
+    },
+    "fxTracking": "ОТСЛЕЖИВАНИЕ КУРСА",
+    "team": {
+      "title": "Управление командой",
+      "roadmap": "План развития",
+      "description": "Пригласите свою команду в ProcureOS. Определяйте бюджеты по отделам, устанавливайте лимиты расходов и получите контроль, цифровизировав многоуровневую иерархию одобрения.",
+      "multiUser": "МНОГОПОЛЬЗОВАТЕЛЬСКИЙ",
+      "workflows": "РАБОЧИЕ ПРОЦЕССЫ"
+    },
+    "integrations": {
+      "title": "Интеграция ERP",
+      "roadmap": "Расширение",
+      "description": "Купленные товары автоматически заносятся в ваш инвентарь в момент доставки. Забудьте о ручном вводе данных благодаря полной синхронизации с такими системами, как SAP, Oracle и Logo."
+    },
+    "export": {
+      "id": "ID",
+      "date": "ДАТА",
+      "title": "НАЗВАНИЕ",
+      "category": "КАТЕГОРИЯ",
+      "quantity": "КОЛ-ВО",
+      "status": "СТАТУС",
+      "offersCount": "ПРЕДЛОЖЕНИЙ",
+      "bestOffer": "ЛУЧШЕЕ",
+      "targetPrice": "ЦЕЛЬ",
+      "savings": "ЭКОНОМИЯ (%)",
+      "orderNo": "ЗАКАЗ №",
+      "supplier": "ПОСТАВЩИК",
+      "amount": "СУММА",
+      "deliveryAddress": "АДРЕС",
+      "estDelivery": "СРОК",
+      "trackingNo": "ТРЕКИНГ",
+      "success": "Отчет Excel создан.",
+      "error": "Ошибка создания.",
+      "shipmentModal": {
+        "title": "Детали доставки",
+        "orderNo": "Заказ: {no}",
+        "currentStatus": "СТАТУС",
+        "onWay": "В ПУТИ",
+        "shipmentType": "ТИП",
+        "carrier": "ПЕРЕВОЗЧИК",
+        "trackingNo": "ТРЕКИНГ",
+        "estDelivery": "СРОК",
+        "notes": "ЗАМЕТКИ",
+        "deliveryPoint": "ПУНКТ",
+        "defaultCompanyAddress": "ОСНОВНОЙ АДРЕС",
+        "sender": "ОТПРАВИТЕЛЬ",
+        "close": "ЗАКРЫТЬ",
+        "notSpecified": "Не указано",
+        "noNotes": "Нет заметок.",
+        "types": {
+          "cargo": "Груз",
+          "logistics": "Логистика",
+          "ownVehicle": "Свой транспорт",
+          "customerPickup": "Самовывоз",
+          "standard": "Стандарт"
+        }
+      }
+    },
+    "categories": {
+      "general": "ОБЩЕЕ"
+    },
+    "messages": {
+      "noDataToExport": "Нет данных для экспорта."
+    },
+    "online": "ОНЛАЙН",
+    "offline": "ОФФЛАЙН",
+    "stats": {
+      "pendingRequests": "ОЖИДАЮЩИЕ ЗАПРОСЫ",
+      "noRequests": "Запросов нет",
+      "active": "АКТИВЕН",
+      "start": "НАЧАТЬ",
+      "savings": "СБЕРЕЖЕНИЯ",
+      "avgResponse": "СРЕДНИЙ ОТВЕТ",
+      "responseTimeUnit": "Ч",
+      "spendingLimit": "Лимит расходов",
+      "noLimit": "НЕТ",
+      "limitSet": "Лимит",
+      "limitNotSet": "Не установлен"
+    },
+    "requests": {
+      "title": "Активные запросы",
+      "searchPlaceholder": "Поиск...",
+      "report": "ОТЧЕТ",
+      "emptyTitle": "Запросов нет",
+      "emptyDescription": "Перейдите в маркетплейс.",
+      "actionLabel": "В МАРКЕТПЛЕЙС",
+      "offersReceived": "ПРЕДЛОЖЕНИЙ",
+      "offersUnit": "ШТ",
+      "statusOpen": "ОТКРЫТ",
+      "statusCompleted": "ЗАВЕРШЕН",
+      "aiAnalysis": "ИИ-анализ"
+    },
+    "orders": {
+      "title": "Отслеживание отгрузок и заказов",
+      "searchPlaceholder": "Поиск по названию поставщика...",
+      "report": "ОТЧЕТ",
+      "emptyTitle": "У вас пока нет заказов",
+      "emptyDescription": "Когда вы одобрите одно из предложений по вашим запросам, ваш заказ появится здесь.",
+      "actionLabel": "ПОСМОТРЕТЬ МОИ ЗАПРОСЫ",
+      "unnamedRequest": "Безымянный запрос",
+      "requestDetail": "Детали запроса",
+      "totalAmount": "ИТОГО",
+      "currentStatus": "ТЕКУЩИЙ СТАТУС",
+      "negotiationHistory": "ИСТОРИЯ ПЕРЕГОВОРОВ",
+      "initialOffer": "Первое предложение",
+      "agreedPrice": "Договорная цена",
+      "netGain": "Чистая выгода",
+      "processCompleted": "ПРОЦЕСС ЗАВЕРШЕН",
+      "initialPriceOrder": "ЗАКАЗ СОЗДАН ПО НАЧАЛЬНОЙ ЦЕНЕ",
+      "shipmentDetail": "ДЕТАЛИ ДОСТАВКИ",
+      "rateExperience": "ОЦЕНИТЬ",
+      "deliveryAddress": "АДРЕС ДОСТАВКИ",
+      "registeredAddress": "Зарегистрированный адрес..."
+    },
+    "status": {
+      "pending": "Ожидание",
+      "confirmed": "Подтверждено",
+      "shipped": "Отгружено",
+      "delivered": "Доставлено",
+      "preparing": "Подготовка",
+      "warehouse": "На складе",
+      "customs": "На таможне",
+      "local_delivery": "Доставка",
+      "completed": "Завершено"
+    },
+    "profile": {
+      "corporateAccount": "КОРПОРАТИВНЫЙ АККАУНТ",
+      "aipVerified": "ПРОВЕРЕНО AIP-103",
+      "sections": {
+        "corporate": "Компания",
+        "contact": "Контакты",
+        "financial": "Финансы",
+        "warehouse": "Склады"
+      },
+      "fields": {
+        "companyName": "Название",
+        "website": "Сайт",
+        "taxId": "ИНН",
+        "taxOffice": "Налоговая",
+        "tradeRegistry": "Рег. номер",
+        "mersis": "MERSIS",
+        "industry": "Отрасль",
+        "employeeCount": "Сотрудники",
+        "establishmentYear": "Основание",
+        "fullAddress": "Адрес",
+        "city": "Город",
+        "country": "Страна",
+        "postalCode": "Индекс",
+        "contactPerson": "Контакт",
+        "phone": "Телефон",
+        "approvalLimit": "Лимит (USD)",
+        "preferredCurrency": "Валюта",
+        "warehouseName": "Имя склада"
+      },
+      "placeholders": {
+        "website": "https://...",
+        "establishmentYear": "1995",
+        "warehouseName": "Главный склад",
+        "city": "Москва"
+      },
+      "buttons": {
+        "addWarehouse": "ДОБАВИТЬ СКЛАД",
+        "cancel": "ОТМЕНА",
+        "saveWarehouse": "СОХРАНИТЬ СКЛАД",
+        "saveProfile": "СОХРАНИТЬ ПРОФИЛЬ",
+        "saving": "СОХРАНЕНИЕ..."
+      },
+      "messages": {
+        "fillRequired": "Заполните поля.",
+        "warehouseAdded": "Склад добавлен.",
+        "warehouseDeleted": "Склад удален.",
+        "confirmDelete": "Удалить?",
+        "noWarehouses": "Нет складов.",
+        "error": "Ошибка."
+      },
+      "default": "ПО УМОЛЧАНИЮ",
+      "select": "Выбрать"
+    },
+    "suppliers": {
+      "title": "Поставщики",
+      "subtitle": "Избранные",
+      "searchPlaceholder": "Поиск по названию поставщика...",
+      "emptyState": "Нет поставщиков",
+      "removed": "Удалено.",
+      "error": "Ошибка.",
+      "trustedPartner": "НАДЕЖНЫЙ ПАРТНЕР",
+      "generalSupplier": "Общий поставщик"
+    },
+    "support": {
+      "title": "ЦЕНТР ПОДДЕРЖКИ",
+      "active": "АКТИВНЫЕ",
+      "archived": "АРХИВ",
+      "connecting": "Подключение к службе поддержки...",
+      "emptyStateActive": "У вас пока нет активных запросов в службу поддержки.",
+      "emptyStateArchived": "У вас нет архивных заявок.",
+      "status": {
+        "open": "ОТКРЫТО",
+        "inProgress": "В ОБРАБОТКЕ",
+        "resolved": "РЕШЕНО",
+        "closed": "ЗАКРЫТО"
+      },
+      "createForm": {
+        "title": "Новый запрос в службу поддержки",
+        "subtitle": "Предоставьте подробную информацию для быстрого решения",
+        "subject": "ТЕМА ЗАПРОСА",
+        "category": "КАТЕГОРИЯ",
+        "message": "ВАШЕ СООБЩЕНИЕ",
+        "placeholderSubject": "Напр.: О статусе заказа",
+        "placeholderMessage": "Пожалуйста, подробно опишите вашу проблему или запрос...",
+        "submit": "ОТПРАВИТЬ ЗАЯВКУ И НАЧАТЬ",
+        "categories": {
+          "general": "Общая помощь",
+          "technical": "Техническая ошибка",
+          "billing": "Заказ и оплата",
+          "product": "Инфо о товаре и складе"
+        }
+      },
+      "chat": {
+        "supportTeam": "Служба поддержки ProcureOS",
+        "placeholder": "Введите ваше сообщение...",
+        "closeTicket": "ЗАКРЫТЬ ЗАЯВКУ",
+        "priority": "{priority} ПРИОРИТЕТ",
+        "confirmClose": "Вы уверены, что хотите закрыть эту заявку?",
+        "closedByUser": "--- Пользователь закрыл эту заявку ---"
+      },
+      "main": {
+        "title": "Служба системной поддержки",
+        "description": "Наша команда экспертов и ИИ-помощник к вашим услугам 24/7 по всем операционным, техническим или финансовым вопросам.",
+        "newRequest": "СОЗДАТЬ НОВЫЙ ЗАПРОС"
+      },
+      "messages": {
+        "created": "Ваш запрос в службу поддержки успешно создан.",
+        "error": "Не удалось создать заявку.",
+        "closed": "Заявка успешно закрыта.",
+        "sendError": "Не удалось отправить сообщение."
+      }
+    },
+    "home": {
+      "protocolNotes": "AIP-103+ PROTOKOLÜ (SÜRÜM NOTLARI)",
+      "toasts": {
+        "loginRequired": "Lütfen önce giriş yapın.",
+        "searchFailed": "Arama başarısız.",
+        "invalidTaxId": "Geçersiz Vergi Numarası. Lütfen 10 veya 11 haneli sayı girin.",
+        "invalidPhone": "Geçersiz Telefon Numarası.",
+        "profileUpdated": "Profiliniz güncellendi.",
+        "updateFailed": "Güncelleme başarısız.",
+        "needRequestTitle": "Lütfen neye ihtiyacınız olduğunu belirtin.",
+        "noSuppliersFound": "Uygun tedarikçi bulunamadı.",
+        "createIntentFailed": "Talep oluşturulamadı.",
+        "needDeliveryAddress": "Lütfen teslimat adresi belirtin.",
+        "intentInfoNotFound": "Talep bilgisi bulunamadı. Lütfen tekrar arama yapın.",
+        "requestSent": "Talep başarıyla iletildi.",
+        "sendFailed": "Gönderim başarısız: {error}",
+        "unknownError": "Bilinmeyen hata",
+        "offerAccepted": "Teklif başarıyla kabul edildi!",
+        "offerRejected": "Teklif reddedildi.",
+        "requestNotSelected": "Talep seçilmedi.",
+        "noActiveOffers": "Pazarlık yapılabilecek aktif teklif bulunamadı.",
+        "bulkCounterSent": "{count} tedarikçiye toplu karşı teklif iletildi.",
+        "counterSent": "Karşı teklif iletildi.",
+        "counterError": "Pazarlık hatası.",
+        "supplierAdded": "Tedarikçi favorilerinize eklendi."
+      },
+      "defaults": {
+        "supplier": "Tedarikçi",
+        "country": "Türkiye",
+        "paymentTerm": "30 Gün Vadeli"
+      }
+    },
+    "rating": {
+      "title": "Оценить поставщика",
+      "errors": {
+        "overallRating": "Lütfen genel bir puan verin.",
+        "submitFailed": "Değerlendirme gönderilirken bir hata oluştu."
+      },
+      "labels": {
+        "overall": "Genel Memnuniyet",
+        "quality": "Ürün Kalitesi",
+        "delivery": "Teslimat Hızı",
+        "communication": "İletişim ve Destek",
+        "feedback": "Geri Bildiriminiz"
+      },
+      "placeholders": {
+        "feedback": "Deneyiminizi kısaca anlatın..."
+      },
+      "info": "Bu değerlendirme doğrudan tedarikçi ile paylaşılmamakta olup, yalnızca ProcureOS güven endeksi hesaplamaları ve hizmet kalitemizin iyileştirilmesi amacıyla kullanılmaktadır. Görüşleriniz ekosistemimizin şeffaflığı için kritik öneme sahiptir.",
+      "submit": "ОТПРАВИТЬ ОЦЕНКУ",
+      "submitting": "Gönderiliyor...",
+      "success": {
+        "title": "Teşekkürler!",
+        "message": "Değerlendirmeniz başarıyla kaydedildi ve tedarikçi puanına yansıtıldı."
+      },
+      "addToFavorites": "TEDARİKÇİYİ FAVORİLERİME EKLE",
+      "messages": {
+        "added": "Tedarikçi favorilerinize eklendi."
+      }
+    },
+    "sourcing": {
+      "steps": {
+        "form": {
+          "title": "СОЗДАТЬ ЗАПРОС",
+          "subtitle": "Что нужно?",
+          "descriptionSingle": "Детали.",
+          "descriptionMulti": "Поиск по сети.",
+          "labels": {
+            "title": "Описание",
+            "note": "Заметка",
+            "quantity": "Кол-во",
+            "currency": "Валюта",
+            "paymentTerm": "Оплата"
+          },
+          "placeholders": {
+            "title": "Напр. 100 труб...",
+            "note": "Заметка...",
+            "quantity": "Напр. 500",
+            "currency": "AED"
+          },
+          "paymentTerms": {
+            "cash": "Наличные",
+            "30days": "30 дней",
+            "60days": "60 дней"
+          },
+          "buttons": {
+            "processing": "ЗАГРУЗКА...",
+            "prepare": "ПОДГОТОВИТЬ",
+            "listSuppliers": "СПИСОК ПОСТАВЩИКОВ"
+          }
+        },
+        "matches": {
+          "titleReady": "Готово",
+          "titleMatches": "Матчи",
+          "descriptionSingle": "Подтвердить.",
+          "descriptionMulti": "Найдено.",
+          "back": "Назад",
+          "noSuppliers": "Нет совпадений.",
+          "trustScore": "ДОВЕРИЕ {score}",
+          "officialRequest": "ОФИЦИАЛЬНЫЙ ЗАПРОС",
+          "docNo": "ДОК №",
+          "targetQuantity": "КОЛ-ВО",
+          "targetCurrency": "ВАЛЮТА",
+          "paymentTerm": "ОПЛАТА",
+          "sendRequest": "ОТПРАВИТЬ",
+          "sending": "ОТПРАВКА...",
+          "title": "НАЙДЕНЫ ПОДХОДЯЩИЕ ПОСТАВЩИКИ"
+        },
+        "success": {
+          "title": "Отправлено!",
+          "message": "Запрос передан.",
+          "backToMarketplace": "В МАРКЕТПЛЕЙС",
+          "viewMyRequests": "МОИ ЗАПРОСЫ"
+        }
+      },
+      "errors": {
+        "selectSupplier": "Выберите поставщика."
+      },
+      "address": {
+        "change": "ИЗМЕНИТЬ",
+        "mainCompany": "Главный адрес"
+      },
+      "features": {
+        "global": {
+          "title": "Глобальный",
+          "desc": "Весь мир."
+        },
+        "logistics": {
+          "title": "Логистика",
+          "desc": "Доставка."
+        },
+        "standard": {
+          "title": "Стандарт",
+          "desc": "Профи."
+        }
+      }
+    },
+    "requestDetails": {
+      "status": {
+        "open": "СБОР ПРЕДЛОЖЕНИЙ",
+        "completed": "ЗАВЕРШЕНО"
+      },
+      "tabs": {
+        "list": "Список",
+        "compare": "Сравнить",
+        "audit": "Аудит"
+      },
+      "timeline": {
+        "created": "Запрос (RFQ) создан и сохранен в системе.",
+        "offerReceived": "Предложение отправлено {supplier} ({price}).",
+        "offerAccepted": "Предложение {supplier} ПРИНЯТО, начат процесс заказа (PO).",
+        "offerRejected": "Предложение {supplier} ОТКЛОНЕНО.",
+        "pendingApproval": "Предложение {supplier} отправлено на утверждение менеджеру (лимит превышен).",
+        "supplier": "Поставщик",
+        "unknownSupplier": "Поставщик"
+      },
+      "details": {
+        "title": "ДЕТАЛИ ЗАПРОСА",
+        "quickInfo": "БЫСТРАЯ ИНФОРМАЦИЯ",
+        "quantity": "КОЛИЧЕСТВО",
+        "paymentTerm": "УСЛОВИЯ ОПЛАТЫ",
+        "currency": "ВАЛЮТА",
+        "targetPrice": "ЦЕЛЕВАЯ ЦЕНА",
+        "openOffer": "Открытое предложение",
+        "itemDetail": "Детали продукта/услуги",
+        "note": "Заметка",
+        "noDetail": "Детали не указаны."
+      },
+      "offers": {
+        "title": "ПОЛУЧЕННЫЕ ПРЕДЛОЖЕНИЯ",
+        "countSuffix": "ШТ",
+        "batchNegotiation": "МАССОВЫЕ ПЕРЕГОВОРЫ",
+        "noOffers": "ПРЕДЛОЖЕНИЙ ПОКА НЕТ. СИСТЕМА ПОДБИРАЕТ ПОСТАВЩИКОВ.",
+        "bestMatch": "ЛУЧШЕЕ СОВПАДЕНИЕ",
+        "trust": "ДОВЕРИЕ",
+        "amount": "СУММА ПРЕДЛОЖЕНИЯ",
+        "unitPrice": "ЦЕНА ЗА ЕДИНИЦУ",
+        "deliveryTime": "СРОК ПОСТАВКИ",
+        "workingDays": "РАБОЧИХ ДНЕЙ",
+        "expressDelivery": "ЭКСПРЕСС-ДОСТАВКА",
+        "negotiation": "ТОРГОВАТЬСЯ",
+        "details": "ДЕТАЛИ",
+        "accept": "ПРИНЯТЬ",
+        "reject": "Отклонить",
+        "selected": "ВЫБРАНО",
+        "rejected": "ОТКЛОНЕНО",
+        "inNegotiation": "В ПЕРЕГОВОРАХ",
+        "activeOffer": "АКТИВНОЕ ПРЕДЛОЖЕНИЕ",
+        "pendingApproval": "ОЖИДАЕТ ОДОБРЕНИЯ",
+        "sendToApproval": "ОТПРАВИТЬ НА ОДОБРЕНИЕ",
+        "saveSupplier": "Сохранить поставщика"
+      },
+      "negotiationModal": {
+        "batchTitle": "МАССОВЫЕ ПЕРЕГОВОРЫ",
+        "singleTitle": "ПРОЦЕСС ПЕРЕГОВОРОВ",
+        "batchDesc": "МАССОВОЕ СООБЩЕНИЕ БУДЕТ ОТПРАВЛЕНО ВСЕМ КОМПАНИЯМ ({count} ШТ), ПОДАВШИМ ПРЕДЛОЖЕНИЯ.",
+        "singleDesc": "СОЗДАЙТЕ ВСТРЕЧНОЕ ПРЕДЛОЖЕНИЕ ПО ЦЕНЕ И СРОКАМ С {supplier}.",
+        "targetPrice": "ЦЕЛЕВАЯ ЦЕНА ЗА ЕД.",
+        "targetDays": "ЖЕЛАЕМЫЙ СРОК (ДНЕЙ)",
+        "noteLabel": "ЗАМЕТКА К ПЕРЕГОВОРАМ",
+        "notePlaceholder": "Укажите информацию о бюджетных ограничениях или срочности...",
+        "cancel": "ОТМЕНА",
+        "sendBatch": "ОТПРАВИТЬ МАССОВОЕ СООБЩЕНИЕ",
+        "sendSingle": "ОТПРАВИТЬ ВСТРЕЧНОЕ ПРЕДЛОЖЕНИЕ"
+      },
+      "audit": {
+        "title": "АУДИТОРСКИЙ СЛЕД ПРОЦЕССА (BLOCKCHAIN VERIFIED)",
+        "verified": "ПОДТВЕРЖДЕНО СИСТЕМОЙ"
+      },
+      "aiAnalysis": "ИИ-анализ"
+    },
+    "offerDocument": {
+      "print": "ПЕЧАТЬ / СКАЧАТЬ",
+      "officialDoc": "ОФИЦИАЛЬНЫЙ КОММЕРЧЕСКИЙ ДОКУМЕНТ",
+      "docNo": "НОМЕР ДОКУМЕНТА",
+      "sellerInfo": "ИНФОРМАЦИЯ О ПРОДАВЦЕ",
+      "authorized": "Уполномоченный",
+      "taxNo": "ИНН",
+      "buyerInfo": "ИНФОРМАЦИЯ О ПОКУПАТЕЛЕ",
+      "description": "ОПИСАНИЕ ТОВАРА / УСЛУГИ",
+      "quantity": "КОЛИЧЕСТВО",
+      "unitPrice": "ЦЕНА ЗА ЕД. (БЕЗ НДС)",
+      "totalPrice": "ИТОГО (БЕЗ НДС)",
+      "category": "Категория",
+      "unitAdet": "шт",
+      "digitalNotice": "* Это предложение было создано в цифровом виде на ProcureOS.",
+      "grandTotal": "ОБЩИЙ ИТОГ",
+      "paymentTerms": "УСЛОВИЯ ОПЛАТЫ И ДОСТАВКИ",
+      "paymentTermLabel": "СРОК ОПЛАТЫ",
+      "deliveryTermLabel": "СРОК ПОСТАВКИ",
+      "cash": "НАЛИЧНЫМИ",
+      "workingDays": "РАБОЧИХ ДНЕЙ",
+      "digitalVerification": "ЦИФРОВАЯ ПРОВЕРКА",
+      "page": "Страница",
+      "supplierFirm": "КОМПАНИЯ-ПОСТАВЩИК",
+      "buyerFirm": "КОМПАНИЯ-ПОКУПАТЕЛЬ"
+    },
+    "notifications": {
+      "title": "Центр уведомлений"
+    }
+  },
+  "footer": {
+    "poweredBy": "На базе AIP-103+",
+    "joinAsSupplier": "СТАТЬ ПОСТАВЩИКОМ",
+    "faq": "ЧАВО",
+    "reviews": "ОТЗЫВЫ",
+    "terms": "УСЛОВИЯ ИСПОЛЬЗОВАНИЯ",
+    "privacy": "ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ",
+    "cookies": "COOKIES"
+  },
+  "errors": {
+    "404": {
+      "title": "Потерялись?",
+      "description": "Страница не найдена.",
+      "backHome": "НА ГЛАВНУЮ"
+    }
+  },
+  "home": {
+    "protocolNotes": "ПРОТОКОЛ AIP-103+ (ПРИМЕЧАНИЯ К ВЫПУСКУ)",
+    "defaults": {
+      "supplier": "Поставщик",
+      "country": "Россия",
+      "paymentTerm": "Оплата через 30 дней"
+    },
+    "toasts": {
+      "loginRequired": "Пожалуйста, сначала войдите в систему.",
+      "searchFailed": "Поиск не удался.",
+      "invalidTaxId": "Неверный ИНН. Пожалуйста, введите 10 или 11 цифр.",
+      "invalidPhone": "Неверный номер телефона.",
+      "profileUpdated": "Профиль успешно обновлен.",
+      "updateFailed": "Обновление не удалось.",
+      "needRequestTitle": "Пожалуйста, укажите, что вам нужно.",
+      "noSuppliersFound": "Подходящие поставщики не найдены.",
+      "createIntentFailed": "Не удалось создать запрос.",
+      "needDeliveryAddress": "Пожалуйста, укажите адрес доставки.",
+      "intentInfoNotFound": "Информация о запросе не найдена. Пожалуйста, повторите поиск.",
+      "requestSent": "Запрос успешно отправлен.",
+      "sendFailed": "Ошибка отправки: {error}",
+      "unknownError": "Неизвестная ошибка",
+      "offerAccepted": "Предложение успешно принято!",
+      "offerRejected": "Предложение отклонено.",
+      "requestNotSelected": "Запрос не выбран.",
+      "noActiveOffers": "Активных предложений для переговоров не найдено.",
+      "bulkCounterSent": "Групповое встречное предложение отправлено {count} поставщикам.",
+      "counterSent": "Встречное предложение отправлено.",
+      "counterError": "Ошибка переговоров.",
+      "supplierAdded": "Поставщик добавлен в избранное."
+    },
+    "differentCompanies": "{count} Разные Компании"
+  },
+  "changelog": {
+    "title": "Примечания к выпуску протокола AIP",
+    "subtitle": "Техническая документация о текущих разработках и будущих прогнозах в системе ProcureOS AIP.",
+    "backToDashboard": "Вернуться к панели",
+    "releaseNotes": "Примечания к выпуску",
+    "footerNote": "ProcureOS — это автономная экосистема, соответствующая стандартам AIP.",
+    "historyTitle": "Полная история коммитов",
+    "historySubtitle": "Техническая сводка всех атомарных изменений в основной инфраструктуре ProcureOS AIP.",
+    "searchPlaceholder": "Поиск по сообщению коммита или версии...",
+    "noResults": "Коммиты не найдены",
+    "commitsTitle": "История коммитов",
+    "fullLog": "Полный лог",
+    "releaseItems": {
+      "AIP-106": {
+        "title": "Глобальные расчеты и уровень Escrow",
+        "description": "Полная интеграция трансграничных платежей и безопасной торговли (Escrow) в протокол AIP.",
+        "cat1": "Финансы",
+        "item1": "Мультивалютный движок мгновенной конвертации курсов.",
+        "item2": "ProcureOS Escrow: система платежей на базе смарт-контрактов с подтверждением доставки.",
+        "item3": "Панель финансирования поставщиков и управления выплатами."
+      },
+      "AIP-105": {
+        "title": "ProcureAI Insight и прогнозирование",
+        "description": "Предварительное обнаружение рыночных тенденций и рисков цепочки поставок с помощью ИИ.",
+        "cat1": "Интеллект",
+        "item1": "Прогнозный сорсинг: резервирование мощностей поставщиков до возникновения спроса.",
+        "item2": "Анализ рыночных тенденций и оповещения о динамических колебаниях цен.",
+        "item3": "Уровень оценки рисков поставщиков (Risk Scoring) 2.0."
+      },
+      "AIP-104": {
+        "title": "Enterprise Connect и интеграция с ERP",
+        "description": "Бесшовная синхронизация данных ProcureOS с существующими корпоративными ERP-системами.",
+        "cat1": "Связь",
+        "item1": "Готовые коннекторы данных для SAP, Oracle и Microsoft Dynamics.",
+        "item2": "Иерархический механизм утверждения и интеграция контроля корпоративного бюджета.",
+        "item3": "Поддержка единого входа (SSO) и управления идентификацией (IAM)."
+      },
+      "AIP-103_6": {
+        "title": "Корпоративная отчетность и финансовая прозрачность",
+        "description": "Обеспечена профессиональная отчетность по закупкам на операционном и финансовом уровнях.",
+        "cat1": "Отчетность",
+        "item1": "Профессиональный движок экспорта в Excel (.xlsx) и стилизованные таблицы.",
+        "item2": "В отчеты добавлен показатель «Анализ потенциальной экономии».",
+        "item3": "Расширенная фильтрация данных и инфраструктура отчетности по датам.",
+        "cat2": "Производительность",
+        "item4": "Время загрузки дашборда ускорено на 70% благодаря SWR.",
+        "item5": "Оптимизация запросов завершена с помощью индексации GIN и B-Tree."
+      },
+      "AIP-103_5": {
+        "title": "Performance Engine и асинхронная архитектура",
+        "description": "Основная инфраструктура ProcureOS переведена на асинхронную структуру для работы с интенсивным трафиком.",
+        "cat1": "Архитектура",
+        "item1": "Генерация AI-эмбеддингов вынесена в слой воркеров для ускорения системы.",
+        "item2": "Запущена инфраструктура Debounced Search для поиска на маркетплейсе.",
+        "item3": "Форматы местоположения и адресов стандартизированы во всех модулях."
+      },
+      "AIP-103": {
+        "title": "Zero-Trust и семантическое соответствие",
+        "description": "Базовая стабилизация движка безопасности данных и ИИ-подбора.",
+        "cat1": "Безопасность",
+        "item1": "Изоляция Zero-Trust обеспечена с помощью Supabase RLS.",
+        "item2": "Задержка движка семантического соответствия снижена до уровня менее 450 мс."
+      },
+      "AIP-102": {
+        "title": "Интеллектуальное управление каталогами",
+        "description": "Цифровизация каталогов поставщиков и данных о продукции.",
+        "cat1": "Ядро",
+        "item1": "Система векторного поиска товаров и каталогизации.",
+        "item2": "Оптимизированы потоки регистрации и верификации поставщиков."
+      },
+      "AIP-101": {
+        "title": "NLP Engine и многоязычная поддержка",
+        "description": "Переход от прототипа к первой производственной версии.",
+        "cat1": "Фундамент",
+        "item1": "Движок мгновенного перевода и анализа RFQ на 72 языках.",
+        "item2": "Первое успешное сопоставление спроса и предложения с помощью NLP."
+      }
+    }
+  },
+  "faq": {
+    "title": "Часто задаваемые вопросы",
+    "subtitle": "Все, что вам нужно знать об автономной экосистеме закупок ProcureOS.",
+    "helpCenter": "ЦЕНТР ПОМОЩИ",
+    "back": "Назад",
+    "questions": {
+      "q1": "Как создать запрос на покупку через ProcureOS?",
+      "a1": "Вы можете написать о своих потребностях на естественном языке, нажав кнопку 'Создать запрос' на главной странице.",
+      "q2": "Как проверяются поставщики?",
+      "a2": "Процесс проверки поставщиков ProcureOS основан на трехэтапном механизме аудита.",
+      "q3": "Как работают процессы оплаты?",
+      "a3": "На данном этапе платежи осуществляются напрямую через существующие коммерческие соглашения.",
+      "q4": "Могу ли я связаться с мировыми поставщиками?",
+      "a4": "Да, сеть ProcureOS охватывает тысячи поставщиков как на местном, так и на мировом уровне."
+    }
+  },
+  "howItWorks": {
+    "title": "Откройте для себя систему.",
+    "subtitle": "Забудьте о традиционных процессах закупок. Превратите свою цепочку поставок в автономную операционную систему с помощью протокола AIP-103+.",
+    "guide": "КОРПОРАТИВНОЕ РУКОВОДСТВО v2.0",
+    "usageGuide": "Руководство пользователя",
+    "backToHome": "ГЛАВНЫЙ ЭКРАН",
+    "simulator": {
+      "badge": "Живой симулятор (v2.0)",
+      "title": "Симуляция управления несколькими поставщиками",
+      "desc": "Опыт одновременной отправки запросов котировок нескольким компаниям и автономного сопоставления.",
+      "searchPlaceholder": "Поиск...",
+      "locationPlaceholder": "Место назначения",
+      "searchButton": "ГЛОБАЛЬНЫЙ ПОИСК",
+      "searching": "ПОИСК...",
+      "exampleScenario": "Запустить пример сценария",
+      "scanning": "Протокол AIP-103: Сканирование глобальной сети...",
+      "matchedSuppliers": "АВТОНОМНО ПОДОБРАННЫЕ ПОСТАВЩИКИ ({count})",
+      "selectFirms": "Пожалуйста, выберите компании ({count} Выбрано)",
+      "supplierCard": {
+        "match": "Совпадение",
+        "speed": "Скорость",
+        "score": "Балл"
+      },
+      "form": {
+        "badge": "РЕЖИМ ОДНОВРЕМЕННЫХ RFQ",
+        "title": "ГРУППОВОЙ ЗАПРОС НА ЗАКУПКУ",
+        "desc": "Будет отправлено одновременно {count} выбранным поставщикам.",
+        "docGroup": "ГРУППА ДОКУМЕНТОВ",
+        "details": "Детали потребности",
+        "quantity": "Количество",
+        "currency": "Валюта",
+        "incoterm": "Условие поставки (Incoterm)",
+        "targetLocation": "Целевое местоположение",
+        "validity": "Срок действия предложения",
+        "submit": "ОТПРАВИТЬ ЗАПРОС {count} КОМПАНИЯМ"
+      },
+      "success": {
+        "title": "ЗАПРОСЫ ОТПРАВЛЕНЫ",
+        "desc": "Официальные документы RFQ были отправлены {count} поставщикам через протокол AIP-103 за считанные секунды.",
+        "register": "ЗАРЕГИСТРИРОВАТЬСЯ В СИСТЕМЕ",
+        "newSimulation": "НАЧАТЬ НОВУЮ СИМУЛЯЦИЮ"
+      },
+      "demo": {
+        "query": "Радиальный шарикоподшипник SKF 6204 1000 шт.",
+        "location": "Стамбул, Турция",
+        "quantity": "1000 шт.",
+        "suppliers": [
+          {
+            "name": "TechGear Industrial ОАО",
+            "location": "Стамбул, Турция",
+            "speed": "2 дня"
+          },
+          {
+            "name": "Global Bearings Co.",
+            "location": "Берлин, Германия",
+            "speed": "5 дней"
+          },
+          {
+            "name": "Мир Подшипников",
+            "location": "Бурса, Турция",
+            "speed": "1 день"
+          },
+          {
+            "name": "Anadolu Machine Ltd.",
+            "location": "Анкара, Турция",
+            "speed": "3 дня"
+          }
+        ],
+        "incoterms": [
+          "DAP - Поставка в пункте",
+          "EXW - Франко-завод",
+          "FCA - Франко-перевозчик"
+        ],
+        "validityPeriods": [
+          "7 дней",
+          "15 дней",
+          "30 дней"
+        ]
+      }
+    },
+    "dashboard": {
+      "title": "ПРОФЕССИОНАЛЬНАЯ ОПЕРАЦИОННАЯ ПАНЕЛЬ",
+      "subtitle": "Модули корпоративного управления, ожидающие вас после входа в систему.",
+      "ops": {
+        "title": "ОПЕРАЦИОННЫЙ ЦЕНТР",
+        "desc": "Управляйте всеми активными процессами RFQ с одного экрана.",
+        "f1": "Сравнение цен",
+        "f2": "Встречное предложение",
+        "f3": "Одобрение закупки"
+      },
+      "log": {
+        "title": "ЛОГИСТИЧЕСКИЙ ТРЕКИНГ",
+        "desc": "Отслеживайте весь процесс от производства до доставки.",
+        "f1": "Детали отгрузки",
+        "f2": "Отслеживание инвойсов",
+        "f3": "Подтверждение доставки"
+      },
+      "team": {
+        "title": "УПРАВЛЕНИЕ КОМАНДОЙ",
+        "desc": "Определяйте и управляйте иерархией вашей компании в системе.",
+        "f1": "Лимиты одобрения",
+        "f2": "Определение полномочий",
+        "f3": "Отчеты по отделам"
+      },
+      "erp": {
+        "title": "ИНТЕГРАЦИЯ ERP",
+        "desc": "Полная интеграция с SAP, Oracle и MS Dynamics.",
+        "f1": "Автоматический учет запасов",
+        "f2": "Интеграция API",
+        "f3": "Плановая синхронизация"
+      }
+    },
+    "steps": {
+      "step1": {
+        "title": "Умный поиск и обнаружение",
+        "desc": "Просто напишите о своей потребности благодаря нашему движку обработки естественного языка."
+      },
+      "step2": {
+        "title": "Автономное создание RFQ",
+        "desc": "При создании запроса система автоматически анализирует технические детали."
+      },
+      "step3": {
+        "title": "Переговоры в реальном времени",
+        "desc": "Изучайте предложения поставщиков на единой панели."
+      },
+      "step4": {
+        "title": "Безопасное одобрение и мониторинг",
+        "desc": "Одобряйте согласованное предложение и прозрачно отслеживайте его."
+      }
+    },
+    "questions": {
+      "q1": {
+        "title": "Может ли быть лучше, чем ваши нынешние поставщики?",
+        "desc": "Наш ИИ-движок найдет для вас скрытых гигантов мирового рынка."
+      },
+      "q2": {
+        "title": "Хотите проверить рыночные цены?",
+        "desc": "Сравнивайте свои затраты с данными в реальном времени."
+      },
+      "q3": {
+        "title": "Знаете ли вы о новых поставщиках?",
+        "desc": "Наша автономная сеть ежедневно анализирует тысячи точек данных."
+      }
+    },
+    "cta": "НАЧНИТЕ БЕСПЛАТНО ПРЯМО СЕЙЧАС"
+  },
+  "reviews": {
+    "title": "Сеть, растущая с доверием",
+    "subtitle": "Over 500+ institutions worldwide manage their procurement operations with ProcureOS autonomous infrastructure.",
+    "badge": "USER EXPERIENCES",
+    "loading": "Loading Experiences...",
+    "back": "Go Back",
+    "ctaTitle": "Become Part of the Autonomous Network",
+    "ctaSubtitle": "Register for free now and digitalize your supply chain.",
+    "ctaButton": "REGISTER",
+    "tags": {
+      "highSatisfaction": "High Satisfaction",
+      "verified": "Verified"
+    },
+    "roles": {
+      "buyer": "Corporate Buyer",
+      "manager": "Procurement Manager",
+      "director": "Operations Director"
+    },
+    "static": [
+      {
+        "name": "Arda Yılmaz",
+        "role": "Procurement Manager",
+        "company": "Global Logistics Inc.",
+        "content": "Thanks to ProcureOS, our supplier search process dropped from weeks to days. The AI technical specification creation feature provides incredible time savings.",
+        "tag": "Corporate"
+      },
+      {
+        "name": "Selin Demir",
+        "role": "Operations Director",
+        "company": "Tech-Flow Systems",
+        "content": "The autonomous matching system brought high-quality suppliers to us that we could never reach. We are very comfortable thanks to the trust score system.",
+        "tag": "Industrial"
+      }
+    ]
+  },
+  "legal": {
+    "lastUpdate": "Последнее обновление: 3 мая 2026 г.",
+    "terms": {
+      "title": "Условия использования",
+      "intro": "Получая доступ к ProcureOS, вы соглашаетесь с этими условиями.",
+      "sections": [
+        {
+          "title": "1. Описание услуги",
+          "content": "ProcureOS — это цифровая платформа, облегчающая закупки между покупателями и поставщиками."
+        },
+        {
+          "title": "2. Безопасность аккаунта",
+          "content": "Вы несете ответственность за конфиденциальность своего аккаунта."
+        },
+        {
+          "title": "3. Применимое право",
+          "content": "Эти условия регулируются законами Турецкой Республики."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Политика конфиденциальности",
+      "intro": "Мы заботимся о безопасности ваших данных.",
+      "sections": [
+        {
+          "title": "1. Собираемые данные",
+          "content": "Мы собираем имя, адрес электронной почты и информацию о компании."
+        },
+        {
+          "title": "2. Цель",
+          "content": "Мы используем данные для оптимизации наших услуг."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Политика использования файлов cookie",
+      "intro": "Мы используем файлы cookie для улучшения вашего опыта.",
+      "sections": [
+        {
+          "title": "1. Что такое куки?",
+          "content": "Небольшие текстовые файлы, сохраненные на вашем устройстве."
+        },
+        {
+          "title": "2. Контроль",
+          "content": "Вы можете управлять файлами cookie в настройках браузера."
+        }
+      ]
+    }
+  },
+  "rating": {
+    "title": "Оценить поставщика",
+    "errors": {
+      "overallRating": "Пожалуйста, поставьте общую оценку.",
+      "submitFailed": "При отправке оценки произошла ошибка."
+    },
+    "labels": {
+      "overall": "Общая удовлетворенность",
+      "quality": "Качество продукции",
+      "delivery": "Скорость доставки",
+      "communication": "Связь и поддержка",
+      "feedback": "Ваш отзыв"
+    },
+    "placeholders": {
+      "feedback": "Кратко опишите ваш опыт..."
+    },
+    "info": "Эта оценка не передается поставщику напрямую и используется только для расчета индекса доверия ProcureOS и улучшения качества нашего обслуживания. Ваши мнения критически важны для прозрачности нашей экосистемы.",
+    "submit": "ОТПРАВИТЬ ОЦЕНКУ",
+    "submitting": "Отправка...",
+    "success": {
+      "title": "Спасибо!",
+      "message": "Ваша оценка успешно сохранена и учтена в рейтинге поставщика."
+    },
+    "addToFavorites": "ДОБАВИТЬ ПОСТАВЩИКА В ИЗБРАННОЕ",
+    "messages": {
+      "added": "Поставщик добавлен в избранное."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Добро пожаловать",
+      "subtitle": "Портал покупателя ProcureOS",
+      "emailLabel": "Адрес электронной почты",
+      "emailPlaceholder": "email@company.com",
+      "passwordLabel": "Пароль",
+      "passwordPlaceholder": "••••••••",
+      "forgotPassword": "Забыли?",
+      "submit": "ВОЙТИ В СИСТЕМУ",
+      "noAccount": "Еще нет аккаунта?",
+      "registerLink": "Зарегистрируйтесь сейчас",
+      "success": "Успешный вход!",
+      "errorDefault": "Ошибка входа.",
+      "passwordError": "Пароль неверный или отсутствует.",
+      "registeredSuccess": "Ваш аккаунт успешно создан. Теперь вы можете войти.",
+      "termsText": "Войдя в систему, вы соглашаетесь с нашими <terms>Условиями использования</terms> и <privacy>Политикой конфиденциальности</privacy>."
+    },
+    "register": {
+      "title": "Присоединяйтесь к нам",
+      "subtitle": "Шагните в мир автономного сорсинга",
+      "companyNameLabel": "Название компании",
+      "companyNamePlaceholder": "Полное название компании",
+      "contactPersonLabel": "Контактное лицо",
+      "contactPersonPlaceholder": "Имя и фамилия",
+      "phoneLabel": "Номер телефона",
+      "phonePlaceholder": "+7 xxx xxx xx xx",
+      "emailLabel": "Адрес электронной почты",
+      "emailPlaceholder": "email@company.com",
+      "passwordLabel": "Пароль",
+      "passwordPlaceholder": "••••••••",
+      "confirmPasswordLabel": "Подтвердите пароль",
+      "confirmPasswordPlaceholder": "••••••••",
+      "submit": "СОЗДАТЬ АККАУНТ",
+      "haveAccount": "Уже есть аккаунт?",
+      "loginLink": "Войти",
+      "errorMatch": "Пароли не совпадают.",
+      "errorLength": "Пароль должен содержать не менее 8 символов.",
+      "errorDefault": "Ошибка регистрации.",
+      "termsText": "Создавая аккаунт, вы соглашаетесь с нашими <terms>Условиями использования</terms> и <privacy>Политикой конфиденциальности</privacy>.",
+      "features": {
+        "global": "Глобальный доступ",
+        "secure": "Безопасная оплата",
+        "fast": "Быстрый подбор"
+      }
+    },
+    "forgotPassword": {
+      "title": "Сброс пароля",
+      "subtitle": "Мы отправим ссылку для сброса на ваш адрес электронной почты.",
+      "submit": "ОТПРАВИТЬ ИНСТРУКЦИИ",
+      "success": "Письмо для сброса отправлено.",
+      "error": "Произошла ошибка."
+    },
+    "resetPassword": {
+      "title": "Новый пароль",
+      "subtitle": "Установите новый надежный пароль для вашей учетной записи.",
+      "passwordLabel": "Новый пароль",
+      "confirmPasswordLabel": "Подтвердите пароль",
+      "submit": "ОБНОВИТЬ ПАРОЛЬ",
+      "successTitle": "УСПЕХ!",
+      "successMessage": "Ваш пароль обновлен. Перенаправление на страницу входа...",
+      "errorMismatch": "Пароли не совпадают.",
+      "errorDefault": "Недействительная или просроченная ссылка.",
+      "errorInvalidToken": "Недействительная ссылка для сброса!",
+      "successToast": "Ваш пароль был успешно обновлен."
+    }
+  },
+  "systemErrors": {
+    "default": "Произошла ошибка. Пожалуйста, попробуйте еще раз.",
+    "authFailed": "Ошибка входа. Пожалуйста, проверьте свои учетные данные.",
+    "sessionExpired": "Срок действия вашей сессии истек. Пожалуйста, войдите снова.",
+    "forbidden": "У вас нет прав для этого действия.",
+    "serverError": "Произошла ошибка сервера. Наша команда уведомлена.",
+    "networkError": "Ошибка соединения. Пожалуйста, проверьте подключение к интернету.",
+    "validationError": "Пожалуйста, исправьте пропущенные или неверные поля в форме.",
+    "emailExists": "Этот адрес электронной почты уже используется.",
+    "tooManyRequests": "Слишком много запросов. Пожалуйста, подождите немного."
+  },
+  "globalError": {
+    "title": "НЕПРЕДВИДЕННАЯ ОШИБКА",
+    "subtitle": "Произошел системный сбой.",
+    "description": "Ошибка была автоматически отправлена нашей технической группе. Пожалуйста, попробуйте обновить страницу.",
+    "retry": "ПОПРОБОВАТЬ СНОВА"
+  }
+}
