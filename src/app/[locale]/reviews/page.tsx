@@ -20,7 +20,7 @@ export default function ReviewsPage() {
         const res = await procureos.getReviews();
         if (res.reviews && res.reviews.length > 0) {
           const mapped = res.reviews.map((r: any) => ({
-            name: r.buyer_name || r.buyer?.company_name || "Gizli Kullanıcı",
+            name: r.buyer_name || r.buyer?.company_name || t('anonymousUser'),
             role: t('roles.buyer'),
             company: r.buyer?.company_name || "ProcureOS Member",
             content: r.comment || r.content,
@@ -72,7 +72,7 @@ export default function ReviewsPage() {
             className="text-5xl md:text-7xl font-black italic tracking-tighter uppercase mb-6"
           >
             {t('title').split(' ').map((word, i) => (
-               <span key={i} className={word === 'Güvenle' || word === 'Büyüyen' || word === 'Confidence' || word === 'Growing' ? "text-emerald-500" : ""}>{word} </span>
+               <span key={i} className={['GÜVENLE', 'BÜYÜYEN', 'CONFIDENCE', 'GROWING'].includes(word.toUpperCase()) ? "text-emerald-500" : ""}>{word} </span>
             ))}
           </motion.h1>
           <motion.p 

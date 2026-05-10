@@ -3,37 +3,37 @@
  */
 
 export const CATEGORIES = [
-  { id: 'all', name: 'TÜM KATEGORİLER' },
-  { id: 'Construction & Real Estate', name: 'İnşaat & Gayrimenkul' },
-  { id: 'Industrial Machinery', name: 'Endüstriyel Makine' },
-  { id: 'Raw Materials & Chemicals', name: 'Hammadde & Kimyasallar' },
-  { id: 'Automotive & Transport', name: 'Otomotiv & Lojistik' },
-  { id: 'Electronics & Electrical', name: 'Elektronik & Elektrik' },
-  { id: 'Food & Agriculture', name: 'Gıda & Tarım' },
-  { id: 'Textiles & Apparel', name: 'Tekstil & Giyim' },
-  { id: 'Office & Stationery', name: 'Ofis & Kırtasiye' },
-  { id: 'Health & Medical', name: 'Sağlık & Medikal' },
-  { id: 'Energy & Utilities', name: 'Enerji & Altyapı' },
-  { id: 'Professional Services', name: 'Profesyonel Hizmetler' },
-  { id: 'General', name: 'Diğer / Genel' }
+  { id: 'all', name: 'ALL CATEGORIES' },
+  { id: 'Construction & Real Estate', name: 'Construction & Real Estate' },
+  { id: 'Industrial Machinery', name: 'Industrial Machinery' },
+  { id: 'Raw Materials & Chemicals', name: 'Raw Materials & Chemicals' },
+  { id: 'Automotive & Transport', name: 'Automotive & Transport' },
+  { id: 'Electronics & Electrical', name: 'Electronics & Electrical' },
+  { id: 'Food & Agriculture', name: 'Food & Agriculture' },
+  { id: 'Textiles & Apparel', name: 'Textiles & Apparel' },
+  { id: 'Office & Stationery', name: 'Office & Stationery' },
+  { id: 'Health & Medical', name: 'Health & Medical' },
+  { id: 'Energy & Utilities', name: 'Energy & Utilities' },
+  { id: 'Professional Services', name: 'Professional Services' },
+  { id: 'General', name: 'Other / General' }
 ];
 
 export const ORDER_STATUS_STEPS = {
   default: [
-    { id: 'preparing', label: 'Hazırlanıyor' },
-    { id: 'shipped', label: 'Yolda' },
-    { id: 'delivered', label: 'Teslim Edildi' }
+    { id: 'preparing', label: 'Preparing' },
+    { id: 'shipped', label: 'Shipped' },
+    { id: 'delivered', label: 'Delivered' }
   ],
   logistics: [
-    { id: 'warehouse', label: 'Depoda' },
-    { id: 'customs', label: 'Gümrükte' },
-    { id: 'local_delivery', label: 'Dağıtımda' },
-    { id: 'completed', label: 'Tamamlandı' }
+    { id: 'warehouse', label: 'Warehouse' },
+    { id: 'customs', label: 'Customs' },
+    { id: 'local_delivery', label: 'Local Delivery' },
+    { id: 'completed', label: 'Completed' }
   ]
 };
 
 export const COUNTRIES = [
-  { code: 'TR', name: 'Türkiye' },
+  { code: 'TR', name: 'Turkey' },
   { code: 'US', name: 'United States' },
   { code: 'DE', name: 'Germany' },
   { code: 'GB', name: 'United Kingdom' },
@@ -49,3 +49,4 @@ export const COUNTRIES = [
   { code: 'AT', name: 'Austria' },
   { code: 'JP', name: 'Japan' }
 ];
+

@@ -8,7 +8,9 @@ import { useTranslations } from 'next-intl'
 import { useSystemError } from '../../lib/error-handler'
 import { 
   User,
-  ArrowRight
+  ArrowRight,
+  Menu,
+  X
 } from 'lucide-react'
 
 // Utilities & Hooks
@@ -35,6 +37,7 @@ import { RatingModal } from '@/components/dashboard/RatingModal'
 import { SupplierComparisonModal } from '@/components/marketplace/SupplierComparisonModal'
 import { NotificationCenter } from '@/components/layout/NotificationCenter'
 import { LanguageSwitcher } from '@/components/layout/LanguageSwitcher'
+import { ThemeToggle } from '@/components/layout/ThemeToggle'
 
 export default function Home() {
   const router = useRouter()
@@ -47,6 +50,7 @@ export default function Home() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [user, setUser] = useState<Buyer | null>(null)
   const [currentView, setCurrentView] = useState<'marketplace' | 'sourcing' | 'dashboard'>('marketplace')
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   
   // Dashboard State
   const [requestsSearch, setRequestsSearch] = useState('')
@@ -117,7 +121,7 @@ export default function Home() {
     tax_office: '',
     address_full: '',
     city: '',
-    country: 'Türkiye',
+    country: 'Turkey',
     postal_code: '',
     department: '',
     position: '',
@@ -172,7 +176,7 @@ export default function Home() {
       const res = await procureos.searchSuppliers(searchQuery, searchCategory, searchLocation)
       
       const duration = Date.now() - startTime
-      monitoring.measure('Marketplace Search', duration, 5000)
+      monitoring.measure('Marketplace Search', duration, 10000)
       
       setSearchResults(res.suppliers || res.results || [])
       setHasSearched(true)
@@ -282,7 +286,7 @@ export default function Home() {
         preferred_currency: request.preferred_currency,
         target_price_total: request.target_price_total ? parseFloat(request.target_price_total) : undefined,
         buyer_note: request.buyer_note,
-        delivery_country: profileData.country === 'Türkiye' ? 'TR' : (profileData.country || 'TR'),
+        delivery_country: (profileData.country === 'Türkiye' || profileData.country === 'Turkey') ? 'TR' : (profileData.country || 'TR'),
         lat: profileData.lat,
         lng: profileData.lng
       };
@@ -414,69 +418,149 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen mesh-bg text-white selection:bg-blue-500/30">
+    <main className="min-h-screen mesh-bg text-[var(--foreground)] selection:bg-blue-500/30">
       <Toaster position="top-right" />
       
-      <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-8 flex items-center justify-between pointer-events-none">
-        <div className="flex items-center gap-4 pointer-events-auto">
-          <button 
-            onClick={() => { setCurrentView('marketplace'); setHasSearched(false); }} 
-            className="group flex items-center gap-3 text-left"
-          >
-             <div className="w-[60px] h-[60px] bg-white/5 rounded-2xl flex items-center justify-center shadow-xl border border-white/10 group-hover:scale-110 transition-all overflow-hidden">
-                <img src="/logo.png" alt="ProcureOS" className="w-12 h-12 object-contain" />
-             </div>
-             <div className="flex flex-col">
-                <span className="text-xl font-black italic tracking-tighter leading-none">PROCUREOS</span>
-                <span className="text-[8px] font-black tracking-[0.3em] text-blue-500 uppercase">Buyer Portal</span>
-             </div>
-          </button>
+      {/* Responsive Navbar */}
+      <nav className="fixed top-0 left-0 right-0 z-[60] p-6 pointer-events-none">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <div className="flex items-center gap-4 pointer-events-auto">
+            <button 
+              onClick={() => { setCurrentView('marketplace'); setHasSearched(false); }} 
+              className="group flex items-center gap-3 text-left"
+            >
+              <div className="w-12 h-12 md:w-[60px] md:h-[60px] bg-[var(--foreground)]/5 rounded-2xl flex items-center justify-center shadow-xl border border-[var(--foreground)]/10 group-hover:scale-110 transition-all overflow-hidden backdrop-blur-md">
+                <img src="/logo.png" alt="ProcureOS" className="w-8 h-8 md:w-12 md:h-12 object-contain" />
+              </div>
+              <div className="hidden sm:flex flex-col">
+                <span className="text-lg md:text-xl font-black italic tracking-tighter leading-none text-[var(--foreground)]">PROCUREOS</span>
+                <span className="text-[7px] md:text-[8px] font-black tracking-[0.3em] text-blue-500 uppercase">{tCommon('buyerPortal')}</span>
+              </div>
+            </button>
+          </div>
+
+          <div className="flex items-center gap-4 pointer-events-auto">
+            {/* Desktop Menu */}
+            <div className="hidden lg:flex items-center gap-6">
+              <Link 
+                href="/how-it-works" 
+                className="px-6 py-2 bg-[var(--foreground)]/5 hover:bg-[var(--foreground)]/10 border border-[var(--foreground)]/10 rounded-full text-[10px] font-black uppercase tracking-[0.2em] text-zinc-500 hover:text-[var(--foreground)] transition-all backdrop-blur-md"
+              >
+                {tCommon('howItWorks')}
+              </Link>
+              <div className="flex items-center gap-3 bg-[var(--foreground)]/5 p-1 rounded-2xl border border-[var(--foreground)]/10 backdrop-blur-md">
+                <ThemeToggle />
+                <LanguageSwitcher />
+              </div>
+              
+              {isLoggedIn ? (
+                <div className="flex items-center gap-3">
+                  <NotificationCenter />
+                  <button 
+                    onClick={() => { setCurrentView('dashboard'); setActiveTab('profile'); }}
+                    className="px-6 py-2 bg-[var(--foreground)]/5 border border-[var(--foreground)]/10 rounded-xl text-[10px] font-black uppercase tracking-widest text-[var(--foreground)] hover:bg-[var(--foreground)]/10 transition-all flex items-center gap-2"
+                  >
+                    <User className="w-3 h-3" />
+                    <span className="max-w-[120px] truncate">{user?.company_name || tCommon('myAccount')}</span>
+                  </button>
+                  <button 
+                    onClick={handleLogout}
+                    className="px-4 py-2 bg-[var(--foreground)]/5 border border-[var(--foreground)]/10 rounded-xl text-[8px] font-black uppercase tracking-widest text-zinc-500 hover:bg-rose-500/10 hover:text-rose-500 transition-all"
+                  >
+                    {tCommon('logout')}
+                  </button>
+                </div>
+              ) : (
+                <div className="flex items-center gap-4">
+                  <Link href="/login" className="text-[10px] font-black uppercase tracking-widest text-zinc-400 hover:text-white transition-colors">{tCommon('login')}</Link>
+                  <Link href="/register" className="px-6 py-2 bg-blue-600 text-white rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/20">{tCommon('register')}</Link>
+                </div>
+              )}
+            </div>
+
+            {/* Mobile Menu Trigger */}
+            <button 
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="lg:hidden w-12 h-12 bg-[var(--foreground)]/5 border border-[var(--foreground)]/10 rounded-2xl flex items-center justify-center text-[var(--foreground)] backdrop-blur-md"
+            >
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
 
-        <div className="absolute left-1/2 -translate-x-1/2 pointer-events-auto flex items-center gap-3">
-          <Link 
-            href="/how-it-works" 
-            className="px-6 py-2 bg-white/[0.03] hover:bg-white/[0.08] border border-white/5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-all backdrop-blur-md"
-          >
-            {tCommon('howItWorks')}
-          </Link>
-        </div>
-        <div className="flex items-center gap-4 pointer-events-auto">
-          <LanguageSwitcher />
-          {isLoggedIn ? (
-            <>
-              <div className="flex items-center gap-4">
-                <NotificationCenter />
-                <button 
-                  onClick={() => { setCurrentView('dashboard'); setActiveTab('requests'); }}
-                  className="text-[10px] font-black uppercase tracking-widest text-zinc-400 hover:text-white transition-colors"
+        {/* Mobile Menu Panel */}
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -20, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -20, scale: 0.95 }}
+              className="absolute top-24 inset-x-6 p-8 bg-[var(--surface)]/90 backdrop-blur-2xl border border-[var(--foreground)]/10 rounded-[2.5rem] shadow-2xl pointer-events-auto lg:hidden flex flex-col gap-8 z-[70]"
+            >
+              <div className="flex flex-col gap-4">
+                <Link 
+                  href="/how-it-works" 
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="flex items-center justify-between p-4 bg-[var(--foreground)]/5 rounded-2xl text-[10px] font-black uppercase tracking-[0.2em] text-[var(--foreground)]"
                 >
-                  {tCommon('myPanel')}
-                </button>
+                  {tCommon('howItWorks')} <ArrowRight className="w-4 h-4" />
+                </Link>
+                <div className="flex items-center justify-between p-4 bg-[var(--foreground)]/5 rounded-2xl">
+                  <span className="text-[10px] font-black uppercase tracking-[0.2em] text-zinc-500">Theme & Lang</span>
+                  <div className="flex items-center gap-2">
+                    <ThemeToggle />
+                    <LanguageSwitcher />
+                  </div>
+                </div>
               </div>
-              <div className="flex items-center gap-4">
-                <button 
-                  onClick={() => { setCurrentView('dashboard'); setActiveTab('profile'); }}
-                  className="px-6 py-2 bg-white/5 border border-white/10 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-white/10 transition-all flex items-center gap-2"
-                >
-                  <User className="w-3 h-3" />
-                  {user?.company_name || tCommon('myAccount')}
-                </button>
-                <button 
-                  onClick={handleLogout}
-                  className="px-4 py-2 bg-white/5 border border-white/10 rounded-xl text-[8px] font-black uppercase tracking-widest hover:bg-rose-500/10 hover:text-rose-500 transition-all"
-                >
-                  {tCommon('logout')}
-                </button>
-              </div>
-            </>
-          ) : (
-            <>
-              <Link href="/login" className="text-[10px] font-black uppercase tracking-widest text-zinc-400 hover:text-white transition-colors">{tCommon('login')}</Link>
-              <Link href="/register" className="px-6 py-2 bg-blue-600 text-white rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/20">{tCommon('register')}</Link>
-            </>
+
+              <div className="h-[1px] bg-[var(--foreground)]/5" />
+
+              {isLoggedIn ? (
+                <div className="flex flex-col gap-4">
+                  <button 
+                    onClick={() => { setCurrentView('dashboard'); setActiveTab('requests'); setIsMobileMenuOpen(false); }}
+                    className="flex items-center justify-between p-4 bg-blue-600/10 text-blue-500 rounded-2xl text-[10px] font-black uppercase tracking-widest"
+                  >
+                    {tCommon('myPanel')} <ArrowRight className="w-4 h-4" />
+                  </button>
+                  <button 
+                    onClick={() => { setCurrentView('dashboard'); setActiveTab('profile'); setIsMobileMenuOpen(false); }}
+                    className="flex items-center justify-between p-4 bg-[var(--foreground)]/5 rounded-2xl text-[10px] font-black uppercase tracking-widest text-[var(--foreground)]"
+                  >
+                    <div className="flex items-center gap-2">
+                      <User className="w-4 h-4" /> {user?.company_name || tCommon('myAccount')}
+                    </div>
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
+                  <button 
+                    onClick={() => { handleLogout(); setIsMobileMenuOpen(false); }}
+                    className="p-4 bg-rose-500/10 text-rose-500 rounded-2xl text-[10px] font-black uppercase tracking-widest text-center"
+                  >
+                    {tCommon('logout')}
+                  </button>
+                </div>
+              ) : (
+                <div className="flex flex-col gap-4">
+                  <Link 
+                    href="/login" 
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="p-4 bg-[var(--foreground)]/5 text-center text-[10px] font-black uppercase tracking-widest rounded-2xl"
+                  >
+                    {tCommon('login')}
+                  </Link>
+                  <Link 
+                    href="/register" 
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="p-4 bg-blue-600 text-white text-center text-[10px] font-black uppercase tracking-widest rounded-2xl shadow-xl shadow-blue-600/20"
+                  >
+                    {tCommon('register')}
+                  </Link>
+                </div>
+              )}
+            </motion.div>
           )}
-        </div>
+        </AnimatePresence>
       </nav>
 
       <div className={`relative z-10 max-w-7xl mx-auto px-6 ${hasSearched ? 'pt-24' : 'pt-24 md:pt-32'} pb-20 transition-all duration-700`}>

@@ -362,19 +362,43 @@ export function ProfileTab({
               </div>
               <div className="space-y-3">
                 <label className="text-[10px] font-black text-zinc-500 uppercase tracking-widest ml-1">{t('fields.preferredCurrency')}</label>
-                <select 
-                  value={profileData?.preferred_currency || 'USD'}
-                  onChange={(e) => {
-                    setProfileData({ ...profileData, preferred_currency: e.target.value });
-                    setIsProfileDirty(true);
-                  }}
-                  className="w-full bg-white/5 border border-white/10 rounded-2xl py-5 px-8 text-white font-black focus:ring-2 focus:ring-blue-500 outline-none transition-all appearance-none cursor-pointer"
-                >
-                  <option value="USD" className="bg-zinc-900 text-white">USD ($)</option>
-                  <option value="EUR" className="bg-zinc-900 text-white">EUR (€)</option>
-                  <option value="TRY" className="bg-zinc-900 text-white">TRY (₺)</option>
-                  <option value="GBP" className="bg-zinc-900 text-white">GBP (£)</option>
-                </select>
+                <div className="flex gap-2">
+                  <select 
+                    value={['USD', 'EUR', 'TRY', 'GBP', 'CNY', 'JPY', 'CAD', 'AUD', 'CHF', 'INR', 'SGD'].includes(profileData?.preferred_currency) ? profileData?.preferred_currency : (profileData?.preferred_currency ? 'OTHER' : 'USD')}
+                    onChange={(e) => {
+                      const val = e.target.value === 'OTHER' ? '' : e.target.value;
+                      setProfileData({ ...profileData, preferred_currency: val });
+                      setIsProfileDirty(true);
+                    }}
+                    className="flex-1 bg-white/5 border border-white/10 rounded-2xl py-5 px-8 text-white font-black focus:ring-2 focus:ring-blue-500 outline-none transition-all appearance-none cursor-pointer"
+                  >
+                    <option value="USD" className="bg-zinc-900 text-white">USD ($)</option>
+                    <option value="EUR" className="bg-zinc-900 text-white">EUR (€)</option>
+                    <option value="TRY" className="bg-zinc-900 text-white">TRY (₺)</option>
+                    <option value="GBP" className="bg-zinc-900 text-white">GBP (£)</option>
+                    <option value="CNY" className="bg-zinc-900 text-white">CNY (¥)</option>
+                    <option value="JPY" className="bg-zinc-900 text-white">JPY (¥)</option>
+                    <option value="CAD" className="bg-zinc-900 text-white">CAD ($)</option>
+                    <option value="AUD" className="bg-zinc-900 text-white">AUD ($)</option>
+                    <option value="CHF" className="bg-zinc-900 text-white">CHF (Fr)</option>
+                    <option value="INR" className="bg-zinc-900 text-white">INR (₹)</option>
+                    <option value="SGD" className="bg-zinc-900 text-white">SGD ($)</option>
+                    <option value="OTHER" className="bg-zinc-900 text-white">{t('fields.otherCurrency')}</option>
+                  </select>
+                  {(!['USD', 'EUR', 'TRY', 'GBP', 'CNY', 'JPY', 'CAD', 'AUD', 'CHF', 'INR', 'SGD'].includes(profileData?.preferred_currency) || profileData?.preferred_currency === '') && (
+                    <input
+                      type="text"
+                      placeholder="---"
+                      className="w-1/3 bg-white/5 border border-white/10 rounded-2xl py-5 px-4 text-white font-black focus:ring-2 focus:ring-blue-500 outline-none uppercase"
+                      value={profileData?.preferred_currency || ''}
+                      onChange={(e) => {
+                        setProfileData({ ...profileData, preferred_currency: e.target.value.toUpperCase() });
+                        setIsProfileDirty(true);
+                      }}
+                      maxLength={3}
+                    />
+                  )}
+                </div>
               </div>
             </div>
           </div>

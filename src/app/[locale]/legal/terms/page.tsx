@@ -9,11 +9,11 @@ export default function TermsOfService() {
 
   return (
     <LegalLayout title={t('title')}>
-      <p>{t('intro')}</p>
+      <p className="mb-8">{t('intro')}</p>
 
       {sections.map((section, index) => (
-        <div key={index}>
-          <h2>{section.title}</h2>
+        <div key={index} className="mb-12">
+          <h2 className="text-xl font-bold mb-4">{section.title}</h2>
           <p>{section.content}</p>
         </div>
       ))}

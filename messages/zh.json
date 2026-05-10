@@ -1,4 +1,36 @@
 {
+  "home": {
+    "protocolNotes": "AIP-103+ 协议 (发行说明)",
+    "defaults": {
+      "paymentTerm": "30天付款期",
+      "supplier": "供应商"
+    },
+    "toasts": {
+      "loginRequired": "请先登录。",
+      "searchFailed": "搜索失败。",
+      "invalidTaxId": "税号无效。请输入 10 或 11 位数字。",
+      "invalidPhone": "电话号码无效。",
+      "profileUpdated": "配置文件更新成功。",
+      "updateFailed": "更新失败。",
+      "needRequestTitle": "请指定您的需求。",
+      "noSuppliersFound": "未找到合适的供应商。",
+      "createIntentFailed": "无法创建请求。",
+      "needDeliveryAddress": "请指定送货地址。",
+      "intentInfoNotFound": "未找到请求信息。请重新搜索。",
+      "requestSent": "请求已成功发送。",
+      "sendFailed": "发送失败: {error}",
+      "unknownError": "未知错误",
+      "offerAccepted": "成功接受报价！",
+      "offerRejected": "已拒绝报价。",
+      "requestNotSelected": "未选择请求。",
+      "noActiveOffers": "未找到可协商的活动报价。",
+      "bulkCounterSent": "已向 {count} 个供应商发送批量反报价。",
+      "counterSent": "反报价已发送。",
+      "counterError": "协商错误。",
+      "supplierAdded": "供应商已添加到收藏夹。"
+    },
+    "differentCompanies": "{count} 家不同的公司"
+  },
   "common": {
     "title": "ProcureOS",
     "buyerPortal": "买家门户",
@@ -36,7 +68,15 @@
       "Health & Medical": "健康与医疗",
       "Energy & Utilities": "能源与公用事业",
       "Professional Services": "专业服务",
-      "General": "一般"
+      "General": "一般",
+      "general": "General",
+      "demir": "Iron / Steel",
+      "iron": "Iron",
+      "metal": "Metal",
+      "regions": "SERVICE REGIONS",
+      "speed": "EXPRESS LOGISTICS",
+      "trusted": "PROTOCOL VERIFIED",
+      "competitive": "COMPETITIVE PRICE"
     },
     "statuses": {
       "preparing": "准备中",
@@ -54,39 +94,42 @@
       "GB": "英国",
       "FR": "法国",
       "CN": "中国",
-      "AE": "Birleşik Arap Emirlikleri",
-      "SA": "Suudi Arabistan",
-      "IT": "İtalya",
-      "ES": "İspanya",
-      "NL": "Hollanda",
-      "BE": "Belçika",
-      "CH": "İsviçre",
-      "AT": "Avusturya",
+      "AE": "United Arab Emirates",
+      "SA": "Saudi Arabia",
+      "IT": "Italy",
+      "ES": "Spain",
+      "NL": "Netherlands",
+      "BE": "Belgium",
+      "CH": "Switzerland",
+      "AT": "Austria",
       "JP": "日本"
     },
     "info": "温馨提示",
-    "close": "关闭"
+    "close": "关闭",
+    "sessionExpired": "Session expired due to inactivity.",
+    "selectLanguage": "Select Language",
+    "locationPlaceholder": "City or Country",
+    "tabs": {
+      "categories": "Categories"
+    }
   },
   "marketplace": {
     "heroTitle": "探索全球供应",
     "heroSubtitle": "操作系统",
     "heroDescription": "通过 ProcureOS Core 连接数千家供应商。",
     "searchPlaceholder": "产品或供应商...",
+    "searchPlaceholderLabel": "WHAT ARE YOU LOOKING FOR?",
+    "categoryLabel": "CATEGORY",
+    "locationLabel": "DESTINATION",
     "locationPlaceholder": "目的地",
     "searchButton": "搜索",
     "allCategories": "所有类别",
+    "differentCompanies": "{count} Different Companies",
     "noResults": "无结果。",
     "supplierNetworkTitle": "加入 ProcureOS 供应商网络",
     "supplierNetworkDescription": "触达数千名企业买家。在几秒钟内对正确的需求进行报价。",
     "startSellingNow": "立即开始销售",
     "registerProductsText": "您是制造商还是批发商？在我们的全球网络中注册您的产品。",
-    "networkPulse": {
-      "label": "AIP-103+ 网络脉搏",
-      "status": "实时连接已激活",
-      "statusLabel": "网络状态",
-      "statusValue": "已优化",
-      "suppliersCount": "{count} Aktif Tedarikçi"
-    },
     "selection": {
       "label": "已选择",
       "compare": "对比",
@@ -101,6 +144,7 @@
       "loginToSeeDetails": "登录查看详情",
       "loginButton": "登录",
       "verified": "已验证",
+      "noRatingYet": "NO RATING YET",
       "scores": {
         "price": "价格",
         "speed": "速度",
@@ -120,7 +164,22 @@
       "serviceRegions": "服务区域",
       "removeFromList": "从列表中移除",
       "bulkQuote": "批量询价 ({count})"
-    }
+    },
+    "networkPulse": {
+      "label": "AIP-103+ 网络脉搏",
+      "status": "实时连接已激活",
+      "statusValue": "已优化",
+      "statusLabel": "网络状态",
+      "suppliersCount": "{count} Active Suppliers"
+    },
+    "filters": {
+      "minTrust90": "Trust 90%+",
+      "minTrust80": "Trust 80%+",
+      "minSpeed80": "Fast Delivery (80%+)",
+      "minRating90": "Rating 90%+",
+      "clear": "Clear Filters"
+    },
+    "aipVerifiedMatches": "Matches Verified by AIP-103 Protocol"
   },
   "dashboard": {
     "sections": {
@@ -145,6 +204,70 @@
       "integrations": "集成",
       "support": "支持",
       "profile": "资料"
+    },
+    "messages": {
+      "noDataToExport": "No data found to export."
+    },
+    "online": "ONLINE",
+    "offline": "OFFLINE",
+    "stats": {
+      "pendingRequests": "待处理请求",
+      "noRequests": "无请求",
+      "active": "活动",
+      "start": "开始",
+      "savings": "节省额",
+      "avgResponse": "平均响应",
+      "responseTimeUnit": "小时",
+      "spendingLimit": "支出限制",
+      "noLimit": "无",
+      "limitSet": "Limit",
+      "limitNotSet": "Limit Not Set"
+    },
+    "requests": {
+      "title": "活动采购请求",
+      "searchPlaceholder": "搜索...",
+      "report": "报告",
+      "emptyTitle": "无请求",
+      "emptyDescription": "Go to the marketplace and create your first request for the product or service you need.",
+      "actionLabel": "前往市场",
+      "offersReceived": "收到报价",
+      "offersUnit": "件",
+      "statusOpen": "开启",
+      "statusCompleted": "已完成",
+      "aiAnalysis": "AI分析"
+    },
+    "orders": {
+      "title": "货物和订单跟踪",
+      "searchPlaceholder": "按供应商名称搜索...",
+      "report": "报告",
+      "emptyTitle": "您还没有订单",
+      "emptyDescription": "当您批准为您的请求收到的报价之一时，您的订单将出现在这里。",
+      "actionLabel": "查看我的请求",
+      "unnamedRequest": "未命名请求",
+      "requestDetail": "请求详情",
+      "totalAmount": "总金额",
+      "currentStatus": "当前状态",
+      "negotiationHistory": "议价历史",
+      "initialOffer": "初次报价",
+      "agreedPrice": "成交价",
+      "netGain": "净收益",
+      "processCompleted": "流程已完成",
+      "initialPriceOrder": "按初始价格创建的订单",
+      "shipmentDetail": "物流详情",
+      "rateExperience": "评价",
+      "deliveryAddress": "收货地址",
+      "registeredAddress": "公司注册地址..."
+    },
+    "status": {
+      "pending": "准备中",
+      "confirmed": "已确认",
+      "shipped": "已发货",
+      "delivered": "已送达",
+      "preparing": "准备中",
+      "warehouse": "在仓库",
+      "customs": "在海关",
+      "local_delivery": "派送中",
+      "completed": "已完成"
     },
     "fxTracking": "汇率追踪",
     "team": {
@@ -176,100 +299,32 @@
       "deliveryAddress": "收货地址",
       "estDelivery": "预计送达",
       "trackingNo": "物流单号",
-      "success": "Profesyonel Excel raporu oluşturuldu.",
-      "error": "Rapor oluşturulamadı.",
+      "success": "Professional Excel report created.",
+      "error": "Failed to create report.",
       "shipmentModal": {
-        "title": "Sevkiyat Detayları",
-        "orderNo": "Sipariş: {no}",
-        "currentStatus": "GÜNCEL DURUM",
-        "onWay": "YOLDA / SEVK EDİLDİ",
-        "shipmentType": "SEVKİYAT TİPİ",
-        "carrier": "TAŞIYICI FİRMA",
-        "trackingNo": "TAKİP NUMARASI",
-        "estDelivery": "TAHMİNİ TESLİMAT",
-        "notes": "SATICI NOTU & EK BİLGİLER",
-        "deliveryPoint": "TESLİMAT NOKTASI",
-        "defaultCompanyAddress": "VARSAYILAN ŞİRKET ADRESİ",
-        "sender": "GÖNDERİCİ",
-        "close": "KAPAT",
-        "notSpecified": "Belirtilmedi",
-        "noNotes": "Herhangi bir ek not iletilmedi.",
+        "title": "Shipment Details",
+        "orderNo": "Order: {no}",
+        "currentStatus": "CURRENT STATUS",
+        "onWay": "ON THE WAY / SHIPPED",
+        "shipmentType": "SHIPMENT TYPE",
+        "carrier": "CARRIER COMPANY",
+        "trackingNo": "TRACKING NUMBER",
+        "estDelivery": "ESTIMATED DELIVERY",
+        "notes": "SELLER NOTES & EXTRA INFO",
+        "deliveryPoint": "DELIVERY POINT",
+        "defaultCompanyAddress": "DEFAULT COMPANY ADDRESS",
+        "sender": "SENDER",
+        "close": "CLOSE",
+        "notSpecified": "Not specified",
+        "noNotes": "No extra notes provided.",
         "types": {
-          "cargo": "Kargo Gönderimi",
-          "logistics": "Lojistik / Ambar",
-          "ownVehicle": "Özmal Araç / Kendi Sevkiyatımız",
-          "customerPickup": "Müşteri Teslim Alacak",
-          "standard": "Standart Sevkiyat"
+          "cargo": "Cargo Shipping",
+          "logistics": "Logistics / Freight",
+          "ownVehicle": "Own Vehicle / Self Delivery",
+          "customerPickup": "Customer Will Pickup",
+          "standard": "Standard Shipment"
         }
       }
-    },
-    "categories": {
-      "general": "通用"
-    },
-    "messages": {
-      "noDataToExport": "Dışa aktarılacak veri bulunamadı."
-    },
-    "online": "AKTİF",
-    "offline": "DEVRE DIŞI",
-    "stats": {
-      "pendingRequests": "待处理请求",
-      "noRequests": "无请求",
-      "active": "活动",
-      "start": "开始",
-      "savings": "节省额",
-      "avgResponse": "平均响应",
-      "responseTimeUnit": "小时",
-      "spendingLimit": "支出限制",
-      "noLimit": "无",
-      "limitSet": "Limit",
-      "limitNotSet": "Limit Belirlenmedi"
-    },
-    "requests": {
-      "title": "活动采购请求",
-      "searchPlaceholder": "搜索...",
-      "report": "报告",
-      "emptyTitle": "无请求",
-      "emptyDescription": "Pazaryerine giderek ihtiyacınız olan ürün veya hizmet için ilk talebinizi oluşturun.",
-      "actionLabel": "前往市场",
-      "offersReceived": "收到报价",
-      "offersUnit": "件",
-      "statusOpen": "开启",
-      "statusCompleted": "已完成",
-      "aiAnalysis": "AI分析"
-    },
-    "orders": {
-      "title": "货物和订单跟踪",
-      "searchPlaceholder": "按供应商名称搜索...",
-      "report": "报告",
-      "emptyTitle": "您还没有订单",
-      "emptyDescription": "当您批准为您的请求收到的报价之一时，您的订单将出现在这里。",
-      "actionLabel": "查看我的请求",
-      "unnamedRequest": "未命名请求",
-      "requestDetail": "请求详情",
-      "totalAmount": "总金额",
-      "currentStatus": "当前状态",
-      "negotiationHistory": "议价历史",
-      "initialOffer": "初次报价",
-      "agreedPrice": "成交价",
-      "netGain": "净收益",
-      "processCompleted": "流程已完成",
-      "initialPriceOrder": "按初始价格创建的订单",
-      "shipmentDetail": "物流详情",
-      "rateExperience": "评价",
-      "deliveryAddress": "收货地址",
-      "registeredAddress": "公司注册地址...",
-      "supplier": "供应商"
-    },
-    "status": {
-      "pending": "准备中",
-      "confirmed": "已确认",
-      "shipped": "已发货",
-      "delivered": "已送达",
-      "preparing": "准备中",
-      "warehouse": "在仓库",
-      "customs": "在海关",
-      "local_delivery": "派送中",
-      "completed": "已完成"
     },
     "profile": {
       "corporateAccount": "企业账户",
@@ -383,142 +438,6 @@
         "sendError": "无法发送消息。"
       }
     },
-    "home": {
-      "protocolNotes": "AIP-103+ PROTOKOLÜ (SÜRÜM NOTLARI)",
-      "toasts": {
-        "loginRequired": "Lütfen önce giriş yapın.",
-        "searchFailed": "Arama başarısız.",
-        "invalidTaxId": "Geçersiz Vergi Numarası. Lütfen 10 veya 11 haneli sayı girin.",
-        "invalidPhone": "Geçersiz Telefon Numarası.",
-        "profileUpdated": "Profiliniz güncellendi.",
-        "updateFailed": "Güncelleme başarısız.",
-        "needRequestTitle": "Lütfen neye ihtiyacınız olduğunu belirtin.",
-        "noSuppliersFound": "Uygun tedarikçi bulunamadı.",
-        "createIntentFailed": "Talep oluşturulamadı.",
-        "needDeliveryAddress": "Lütfen teslimat adresi belirtin.",
-        "intentInfoNotFound": "Talep bilgisi bulunamadı. Lütfen tekrar arama yapın.",
-        "requestSent": "Talep başarıyla iletildi.",
-        "sendFailed": "Gönderim başarısız: {error}",
-        "unknownError": "Bilinmeyen hata",
-        "offerAccepted": "Teklif başarıyla kabul edildi!",
-        "offerRejected": "Teklif reddedildi.",
-        "requestNotSelected": "Talep seçilmedi.",
-        "noActiveOffers": "Pazarlık yapılabilecek aktif teklif bulunamadı.",
-        "bulkCounterSent": "{count} tedarikçiye toplu karşı teklif iletildi.",
-        "counterSent": "Karşı teklif iletildi.",
-        "counterError": "Pazarlık hatası.",
-        "supplierAdded": "Tedarikçi favorilerinize eklendi."
-      },
-      "defaults": {
-        "supplier": "Tedarikçi",
-        "country": "Türkiye",
-        "paymentTerm": "30 Gün Vadeli"
-      }
-    },
-    "rating": {
-      "title": "Tedarikçiyi Değerlendir",
-      "errors": {
-        "overallRating": "Lütfen genel bir puan verin.",
-        "submitFailed": "Değerlendirme gönderilirken bir hata oluştu."
-      },
-      "labels": {
-        "overall": "Genel Memnuniyet",
-        "quality": "Ürün Kalitesi",
-        "delivery": "Teslimat Hızı",
-        "communication": "İletişim ve Destek",
-        "feedback": "Geri Bildiriminiz"
-      },
-      "placeholders": {
-        "feedback": "Deneyiminizi kısaca anlatın..."
-      },
-      "info": "Bu değerlendirme doğrudan tedarikçi ile paylaşılmamakta olup, yalnızca ProcureOS güven endeksi hesaplamaları ve hizmet kalitemizin iyileştirilmesi amacıyla kullanılmaktadır. Görüşleriniz ekosistemimizin şeffaflığı için kritik öneme sahiptir.",
-      "submit": "DEĞERLENDİRMEYİ GÖNDER",
-      "submitting": "Gönderiliyor...",
-      "success": {
-        "title": "Teşekkürler!",
-        "message": "Değerlendirmeniz başarıyla kaydedildi ve tedarikçi puanına yansıtıldı."
-      },
-      "addToFavorites": "TEDARİKÇİYİ FAVORİLERİME EKLE",
-      "messages": {
-        "added": "Tedarikçi favorilerinize eklendi."
-      }
-    },
-    "sourcing": {
-      "steps": {
-        "form": {
-          "title": "创建请求",
-          "subtitle": "您需要什么？",
-          "descriptionSingle": "Seçtiğiniz tedarikçi için ürün detaylarını ve miktarını belirtin, kurumsal şablonda iletelim.",
-          "descriptionMulti": "Ürün özelliklerini ve miktarını belirtin, ProcureOS Core ağı saniyeler içinde en uygun satıcıları lojistik verilerine göre filtrelesin.",
-          "labels": {
-            "title": "描述",
-            "note": "Alıcı Notu / Özel İstekler (Opsiyonel)",
-            "quantity": "数量",
-            "currency": "货币",
-            "paymentTerm": "支付条款"
-          },
-          "placeholders": {
-            "title": "Örn: 100 adet 5 metre boyunda 40mm çapında sanayi tipi metal boru...",
-            "note": "Örn: Teslimatların paletli yapılmasını rica ederiz...",
-            "quantity": "Örn: 500 Adet",
-            "currency": "Örn: AED"
-          },
-          "paymentTerms": {
-            "cash": "Peşin Ödeme",
-            "30days": "30 Gün Vadeli",
-            "60days": "60 Gün Vadeli"
-          },
-          "buttons": {
-            "processing": "İŞLENİYOR...",
-            "prepare": "准备",
-            "listSuppliers": "列出供应商"
-          }
-        },
-        "matches": {
-          "titleReady": "Talebiniz Hazır",
-          "titleMatches": "Eşleşen Tedarikçiler",
-          "descriptionSingle": "{name} için hazırlanan kurumsal satın alma talebini onaylayın.",
-          "descriptionMulti": "Core motoru lojistik ve ürün kategorisine göre en uygun eşleşmeleri buldu.",
-          "back": "Geri Dön",
-          "noSuppliers": "Uygun tedarikçi bulunamadı.",
-          "trustScore": "%{score} GÜVEN SKORU",
-          "officialRequest": "RESMİ SATIN ALMA TALEBİ",
-          "docNo": "DOKÜMAN NO",
-          "targetQuantity": "HEDEF MİKTAR",
-          "targetCurrency": "PARA BİRİMİ",
-          "paymentTerm": "ÖDEME VADESİ",
-          "sendRequest": "KURUMSAL TALEBİ GÖNDER",
-          "sending": "İLETİLİYOR..."
-        },
-        "success": {
-          "title": "发送成功",
-          "message": "请求已发送。",
-          "backToMarketplace": "返回市场",
-          "viewMyRequests": "查看我的请求"
-        }
-      },
-      "errors": {
-        "selectSupplier": "Lütfen teklif gönderilecek en az bir tedarikçi seçin."
-      },
-      "address": {
-        "change": "DEĞİŞTİR",
-        "mainCompany": "Ana Şirket Adresi"
-      },
-      "features": {
-        "global": {
-          "title": "Global Eşleşme",
-          "desc": "Dil bariyeri olmadan, ihtiyacınız dünya pazarına sunulur."
-        },
-        "logistics": {
-          "title": "Lojistik Doğrulama",
-          "desc": "Sadece sizin adresinize gönderim yapabilen satıcılar listelenir."
-        },
-        "standard": {
-          "title": "Kurumsal Standart",
-          "desc": "Tüm yazışmalar profesyonel şablonlar üzerinden yürütülür."
-        }
-      }
-    },
     "requestDetails": {
       "status": {
         "open": "正在收集报价",
@@ -541,6 +460,7 @@
       "details": {
         "title": "请求详情",
         "quickInfo": "快速信息",
+        "locationFallback": "Turkey",
         "quantity": "数量",
         "paymentTerm": "付款条件",
         "currency": "货币",
@@ -554,14 +474,17 @@
         "title": "收到的报价",
         "countSuffix": "个",
         "batchNegotiation": "批量谈判",
+        "batchNoteDefault": "Batch negotiation message to all bidders...",
         "noOffers": "暂无报价。系统正在匹配供应商。",
         "bestMatch": "最佳匹配",
+        "supplierFallback": "SUPPLIER",
         "trust": "信任度",
         "amount": "报价金额",
         "unitPrice": "单价",
         "deliveryTime": "交货时间",
         "workingDays": "工作日",
         "expressDelivery": "特快送货",
+        "statusHeader": "STATUS",
         "negotiation": "谈判",
         "details": "详情",
         "accept": "接受",
@@ -581,6 +504,7 @@
         "singleDesc": "与 {supplier} 就价格和交货时间创建反报价。",
         "targetPrice": "目标单价",
         "targetDays": "要求交货时间（天）",
+        "daysPlaceholder": "DAYS",
         "noteLabel": "谈判备注",
         "notePlaceholder": "提供有关预算限制或交货紧迫性的信息...",
         "cancel": "取消",
@@ -594,6 +518,8 @@
       "aiAnalysis": "AI分析"
     },
     "offerDocument": {
+      "locationFallback": "London",
+      "countryFallback": "United Kingdom",
       "print": "打印 / 下载",
       "officialDoc": "正式报价单",
       "docNo": "文件编号",
@@ -619,9 +545,175 @@
       "supplierFirm": "供应方公司",
       "buyerFirm": "采购方公司"
     },
-    "notifications": {
-      "title": "通知中心"
+    "rating": {
+      "title": "Rate Supplier",
+      "errors": {
+        "overallRating": "Please provide an overall rating.",
+        "submitFailed": "An error occurred while submitting the review."
+      },
+      "labels": {
+        "overall": "Overall Satisfaction",
+        "quality": "Product Quality",
+        "delivery": "Delivery Speed",
+        "communication": "Communication & Support",
+        "feedback": "Your Feedback"
+      },
+      "placeholders": {
+        "feedback": "Briefly describe your experience..."
+      },
+      "info": "This evaluation is not shared directly with the supplier and is used only for ProcureOS trust index calculations and improving our service quality. Your feedback is critical for our ecosystem's transparency.",
+      "submit": "SUBMIT REVIEW",
+      "submitting": "Submitting...",
+      "success": {
+        "title": "Thank You!",
+        "message": "Your review has been successfully recorded and reflected in the supplier's score."
+      },
+      "addToFavorites": "ADD SUPPLIER TO FAVORITES",
+      "messages": {
+        "added": "Supplier added to your favorites."
+      }
+    },
+    "comparison": {
+      "headers": {
+        "supplierProfile": "SUPPLIER PROFILE",
+        "unitPriceOffer": "UNIT PRICE QUOTE",
+        "logisticsTermin": "LOGISTICS / DELIVERY",
+        "supplierSecurity": "SUPPLIER RELIABILITY",
+        "decisionAction": "DECISION ACTION"
+      },
+      "badges": {
+        "mostAdvantageous": "MOST ADVANTAGEOUS (AIP-103)",
+        "cheapest": "Cheapest",
+        "fastest": "Fastest",
+        "belowTarget": "Below Target"
+      },
+      "labels": {
+        "workingDays": "{days} Working Days",
+        "doorToDoor": "Door to Door Delivery",
+        "aiDecisionActive": "AIP-103 DECISION SUPPORT ALGORITHM ACTIVE"
+      },
+      "actions": {
+        "selected": "SELECTED",
+        "selectBest": "SELECT BEST",
+        "accept": "ACCEPT"
+      }
+    },
+    "title": "PROFESSIONAL OPERATION PANEL",
+    "subtitle": "Corporate management modules waiting for you when you log in.",
+    "ops": {
+      "title": "OPERATION CENTER",
+      "desc": "Manage all your active RFQ processes from a single screen.",
+      "f1": "Price Comparison",
+      "f2": "Counter-Offer",
+      "f3": "Purchase Approval"
+    },
+    "log": {
+      "title": "LOGISTICS TRACKING",
+      "desc": "Track your orders from production to delivery at your doorstep.",
+      "f1": "Shipment Details",
+      "f2": "Invoice Tracking",
+      "f3": "Delivery Confirmation"
+    },
+    "team_ext": {
+      "title": "TEAM MANAGEMENT",
+      "desc": "Define and manage your corporate hierarchy in the system.",
+      "f1": "Approval Limits",
+      "f2": "Authority Definition",
+      "f3": "Department Reports"
+    },
+    "erp_ext": {
+      "title": "ERP INTEGRATION",
+      "desc": "Full integration with SAP, Oracle, and MS Dynamics.",
+      "f1": "Automatic Stock Entry",
+      "f2": "API Integration",
+      "f3": "Scheduled Sync"
     }
+  },
+  "sourcing": {
+    "common": {
+      "other": "Other"
+    },
+    "steps": {
+      "form": {
+        "title": "CREATE REQUEST FOR",
+        "subtitle": "What do you need? We'll find it for you.",
+        "descriptionSingle": "为您选择的供应商指定产品详情和数量，我们将按企业模板发送。",
+        "descriptionMulti": "指定产品规格和数量，ProcureOS Core 网络将在几秒钟内根据物流数据筛选出最合适的卖家。",
+        "labels": {
+          "title": "Product or Service Definition",
+          "note": "买家备注 / 特殊要求 (可选)",
+          "quantity": "Quantity Needed",
+          "currency": "Currency",
+          "paymentTerm": "Payment Term",
+          "deliveryAddress": "Delivery Address",
+          "targetPrice": "Target Unit Price (Optional)"
+        },
+        "placeholders": {
+          "title": "例：100根5米长、直径40mm的工业级金属管...",
+          "note": "例：请使用托盘运输...",
+          "quantity": "例：500件",
+          "currency": "例：CNY",
+          "targetPrice": "e.g., 500",
+          "manualAddress": "Enter alternative delivery address..."
+        },
+        "paymentTerms": {
+          "cash": "现金支付",
+          "30days": "30天账期",
+          "60days": "60天账期"
+        },
+        "buttons": {
+          "processing": "处理中...",
+          "prepare": "准备",
+          "listSuppliers": "列出供应商"
+        }
+      },
+      "matches": {
+        "titleReady": "您的请求已就绪",
+        "titleMatches": "匹配的供应商",
+        "descriptionSingle": "确认发送给 {name} 的正式采购请求。",
+        "descriptionMulti": "Core 引擎已根据物流和产品类别找到最佳匹配。",
+        "back": "返回",
+        "noSuppliers": "未找到合适的供应商。",
+        "trustScore": "{score}% 信任度",
+        "officialRequest": "正式采购请求",
+        "docNo": "文档编号",
+        "targetQuantity": "目标数量",
+        "targetCurrency": "货币",
+        "paymentTerm": "付款条件",
+        "sendRequest": "发送企业请求",
+        "sending": "正在发送..."
+      },
+      "success": {
+        "title": "Request Sent!",
+        "message": "Your purchase request has been sent to selected suppliers via the official protocol. You will be notified instantly when offers arrive.",
+        "backToMarketplace": "BACK TO MARKETPLACE",
+        "viewMyRequests": "VIEW MY REQUESTS"
+      }
+    },
+    "errors": {
+      "selectSupplier": "请至少选择一家供应商发送报价请求。"
+    },
+    "address": {
+      "change": "更改",
+      "mainCompany": "公司主地址"
+    },
+    "features": {
+      "global": {
+        "title": "Global Match",
+        "desc": "Your needs are presented to the world market without language barriers."
+      },
+      "logistics": {
+        "title": "Logistics Verification",
+        "desc": "Only sellers capable of shipping to your address are listed."
+      },
+      "standard": {
+        "title": "Corporate Standard",
+        "desc": "All communications are conducted through professional templates."
+      }
+    }
+  },
+  "notifications": {
+    "title": "Notification Center"
   },
   "footer": {
     "poweredBy": "由 AIP-103+ 驱动",
@@ -630,7 +722,9 @@
     "reviews": "评价",
     "terms": "使用条款",
     "privacy": "隐私政策",
-    "cookies": "Cookie 设置"
+    "cookies": "Cookie 设置",
+    "ccpa": "CCPA",
+    "subscription": "SUBSCRIPTION"
   },
   "errors": {
     "404": {
@@ -638,39 +732,6 @@
       "description": "未找到页面。请检查地址或返回首页。",
       "backHome": "返回首页"
     }
-  },
-  "home": {
-    "protocolNotes": "AIP-103+ 协议 (发行说明)",
-    "defaults": {
-      "supplier": "供应商",
-      "country": "中国",
-      "paymentTerm": "30天付款期"
-    },
-    "toasts": {
-      "loginRequired": "请先登录。",
-      "searchFailed": "搜索失败。",
-      "invalidTaxId": "税号无效。请输入 10 或 11 位数字。",
-      "invalidPhone": "电话号码无效。",
-      "profileUpdated": "配置文件更新成功。",
-      "updateFailed": "更新失败。",
-      "needRequestTitle": "请指定您的需求。",
-      "noSuppliersFound": "未找到合适的供应商。",
-      "createIntentFailed": "无法创建请求。",
-      "needDeliveryAddress": "请指定送货地址。",
-      "intentInfoNotFound": "未找到请求信息。请重新搜索。",
-      "requestSent": "请求已成功发送。",
-      "sendFailed": "发送失败: {error}",
-      "unknownError": "未知错误",
-      "offerAccepted": "成功接受报价！",
-      "offerRejected": "已拒绝报价。",
-      "requestNotSelected": "未选择请求。",
-      "noActiveOffers": "未找到可协商的活动报价。",
-      "bulkCounterSent": "已向 {count} 个供应商发送批量反报价。",
-      "counterSent": "反报价已发送。",
-      "counterError": "协商错误。",
-      "supplierAdded": "供应商已添加到收藏夹。"
-    },
-    "differentCompanies": "{count} 家不同的公司"
   },
   "changelog": {
     "title": "AIP 协议发行说明",
@@ -739,15 +800,7 @@
         "title": "智能目录管理",
         "description": "供应商目录和产品数据的数字化。",
         "cat1": "核心",
-        "item1": "基于向量的产品搜索和目录系统。",
-        "item2": "优化了供应商注册和验证流程。"
-      },
-      "AIP-101": {
-        "title": "NLP 引擎与多语言支持",
-        "description": "从原型过渡到第一个生产版本。",
-        "cat1": "基础",
-        "item1": "支持 72 种语言的实时 RFQ 翻译和分析引擎。",
-        "item2": "利用自然语言处理 (NLP) 首次成功实现需求-供应商匹配。"
+        "item1": "基于向量的产品搜索和目录系统。"
       }
     }
   },
@@ -781,6 +834,7 @@
       "locationPlaceholder": "目的地",
       "searchButton": "全球搜索",
       "searching": "正在搜索...",
+      "unit": "unit",
       "exampleScenario": "启动示例场景",
       "scanning": "AIP-103 协议：正在扫描全球网络...",
       "matchedSuppliers": "自主匹配的供应商 ({count})",
@@ -847,38 +901,6 @@
         ]
       }
     },
-    "dashboard": {
-      "title": "专业操作面板",
-      "subtitle": "登录后等待您的企业管理模块。",
-      "ops": {
-        "title": "操作中心",
-        "desc": "从单一屏幕管理所有活跃的 RFQ 流程。",
-        "f1": "价格对比",
-        "f2": "反向报价",
-        "f3": "采购审批"
-      },
-      "log": {
-        "title": "物流跟踪",
-        "desc": "跟踪从生产到送货上门的整个过程。",
-        "f1": "发货详情",
-        "f2": "发票跟踪",
-        "f3": "交付确认"
-      },
-      "team": {
-        "title": "团队管理",
-        "desc": "在系统中定义并管理您的公司层级。",
-        "f1": "审批额度",
-        "f2": "权限定义",
-        "f3": "部门报告"
-      },
-      "erp": {
-        "title": "ERP 集成",
-        "desc": "与 SAP、Oracle 和 MS Dynamics 的全面集成。",
-        "f1": "自动入库",
-        "f2": "API 集成",
-        "f3": "计划同步"
-      }
-    },
     "steps": {
       "step1": {
         "title": "智能搜索与发现",
@@ -919,6 +941,7 @@
     "badge": "USER EXPERIENCES",
     "loading": "Loading Experiences...",
     "back": "Go Back",
+    "anonymousUser": "Anonymous User",
     "ctaTitle": "Become Part of the Autonomous Network",
     "ctaSubtitle": "Register for free now and digitalize your supply chain.",
     "ctaButton": "REGISTER",
@@ -949,130 +972,124 @@
     ]
   },
   "legal": {
-    "lastUpdate": "最后更新：2026年5月3日",
+    "lastUpdate": "Last Updated: May 10, 2026",
     "terms": {
-      "title": "使用条款",
-      "intro": "通过访问 ProcureOS，您同意这些条款。",
+      "title": "Terms of Service & User Agreement",
+      "intro": "Welcome to ProcureOS. These Terms of Service ('Terms') govern your access to and use of the ProcureOS platform, including our website, APIs, and autonomous procurement engine (collectively, the 'Services'). By using our Services, you agree to be bound by these Terms.",
       "sections": [
         {
-          "title": "1. 服务说明",
-          "content": "ProcureOS 是一个促进买家和供应商之间采购的数字平台。"
+          "title": "1. Acceptance of Terms",
+          "content": "By creating an account or accessing the ProcureOS platform, you represent that you have the authority to bind yourself or the legal entity you represent to these Terms. If you do not agree to these Terms, you must not access or use our Services."
         },
         {
-          "title": "2. 账户安全",
-          "content": "您负责维护账户的机密性。"
+          "title": "2. Service Description & AIP Protocol",
+          "content": "ProcureOS provides an autonomous procurement infrastructure leveraging the AIP-103+ protocol to match buyers with suppliers. We act as a technology provider and do not become a party to any commercial contracts formed between users unless explicitly stated."
         },
         {
-          "title": "3. 适用法律",
-          "content": "这些条款受土耳其共和国法律管辖。"
+          "title": "3. User Responsibilities & Account Security",
+          "content": "You are responsible for maintaining the confidentiality of your login credentials. Any activity occurring under your account is your responsibility. You agree to provide accurate, current, and complete information during the registration process."
+        },
+        {
+          "title": "4. Intellectual Property Rights",
+          "content": "All content, features, and functionality on the ProcureOS platform, including but not limited to the AIP-103 protocol logic, algorithms, and UI design, are the exclusive property of ProcureOS and are protected by international copyright and trademark laws."
+        },
+        {
+          "title": "5. Prohibited Activities",
+          "content": "Users are prohibited from: (a) attempting to bypass platform security; (b) using automated systems to scrape data without authorization; (c) submitting fraudulent RFQs or offers; (d) infringing on the intellectual property of others."
+        },
+        {
+          "title": "6. Limitation of Liability",
+          "content": "To the maximum extent permitted by law, ProcureOS shall not be liable for any indirect, incidental, or consequential damages arising from your use of the Services, including but not limited to loss of profits or business interruptions."
+        },
+        {
+          "title": "7. Governing Law & Jurisdiction",
+          "content": "These Terms shall be governed by and construed in accordance with the laws of the Republic of Turkey. Any disputes arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts of Istanbul."
         }
       ]
     },
     "privacy": {
-      "title": "隐私政策",
-      "intro": "我们重视您的数据安全。",
+      "title": "Global Privacy Policy",
+      "intro": "At ProcureOS, we take your data privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal and corporate information in compliance with global standards including GDPR and KVKK.",
       "sections": [
         {
-          "title": "1. 收集的数据",
-          "content": "我们收集姓名、电子邮件和公司信息。"
+          "title": "1. Information We Collect",
+          "content": "We collect information provided during registration (name, email, company details), operational data (RFQs, offers, transaction history), and technical metadata (IP address, browser type) to optimize our autonomous engine."
         },
         {
-          "title": "2. 目的",
-          "content": "我们使用数据来优化我们的服务。"
+          "title": "2. How We Use Your Information",
+          "content": "Data is used to: (a) facilitate the matching process between buyers and suppliers; (b) improve the AIP-103 matching algorithms; (c) ensure platform security; (d) communicate critical system updates."
+        },
+        {
+          "title": "3. Data Sharing & Third Parties",
+          "content": "We do not sell your personal data. Information is shared with counterparties (suppliers or buyers) only as necessary to facilitate the procurement process. We may use third-party sub-processors for infrastructure and analytics."
+        },
+        {
+          "title": "4. Data Security",
+          "content": "We implement industry-standard technical and organizational measures, including end-to-end encryption and strict RLS (Row Level Security) protocols, to protect your data from unauthorized access."
+        },
+        {
+          "title": "5. Your Rights",
+          "content": "You have the right to access, correct, or delete your personal data. You may also object to certain processing activities. Requests can be submitted via our support channel or privacy dashboard."
         }
       ]
     },
     "cookies": {
-      "title": "Cookie 政策",
-      "intro": "我们使用 Cookie 以提供更好的体验。",
+      "title": "Cookie & Tracking Policy",
+      "intro": "ProcureOS uses cookies and similar tracking technologies to enhance your experience and analyze platform performance.",
       "sections": [
         {
-          "title": "1. 什么是 Cookie？",
-          "content": "保存在您设备上的小文本文件。"
+          "title": "1. What are Cookies?",
+          "content": "Cookies are small text files stored on your device when you visit a website. They help us remember your preferences and keep your session secure."
         },
         {
-          "title": "2. 控制",
-          "content": "您可以在浏览器设置中管理 Cookie。"
+          "title": "2. Types of Cookies We Use",
+          "content": "We use: (a) Essential Cookies for core platform functionality; (b) Analytical Cookies to understand usage patterns; (c) Preference Cookies to remember your language and region settings."
+        },
+        {
+          "title": "3. Managing Preferences",
+          "content": "You can control or disable cookies through your browser settings. However, disabling essential cookies may limit your ability to use certain features of the platform."
         }
       ]
-    }
-  },
-  "rating": {
-    "title": "评价供应商",
-    "errors": {
-      "overallRating": "请提供综合评分。",
-      "submitFailed": "提交评价时出错。"
     },
-    "labels": {
-      "overall": "总体满意度",
-      "quality": "产品质量",
-      "delivery": "交货速度",
-      "communication": "沟通与支持",
-      "feedback": "您的反馈"
-    },
-    "placeholders": {
-      "feedback": "简要描述您的体验..."
-    },
-    "info": "此评价不会直接与供应商共享，仅用于 ProcureOS 信任指数计算和改进我们的服务质量。您的意见对于我们生态系统的透明度至关重要。",
-    "submit": "提交评价",
-    "submitting": "正在提交...",
-    "success": {
-      "title": "谢谢！",
-      "message": "您的评价已成功保存并反映在供应商评分中。"
-    },
-    "addToFavorites": "将供应商添加到我的收藏",
-    "messages": {
-      "added": "供应商已添加到收藏夹。"
-    }
-  },
-  "sourcing": {
-    "steps": {
-      "form": {
-        "descriptionSingle": "为您选择的供应商指定产品详情和数量，我们将按企业模板发送。",
-        "descriptionMulti": "指定产品规格和数量，ProcureOS Core 网络将在几秒钟内根据物流数据筛选出最合适的卖家。",
-        "labels": {
-          "note": "买家备注 / 特殊要求 (可选)"
+    "ccpa": {
+      "title": "CCPA Privacy Notice (California)",
+      "intro": "This notice supplements our Global Privacy Policy and applies specifically to residents of the State of California. It describes our information practices and your rights under the California Consumer Privacy Act of 2018 ('CCPA').",
+      "sections": [
+        {
+          "title": "1. Information We Collect",
+          "content": "In the preceding 12 months, we have collected the following categories of personal information: Identifiers (name, email, IP address), Commercial information (transaction history), and Professional/Employment information."
         },
-        "placeholders": {
-          "title": "例：100根5米长、直径40mm的工业级金属管...",
-          "note": "例：请使用托盘运输...",
-          "quantity": "例：500件",
-          "currency": "例：CNY"
+        {
+          "title": "2. Your Rights Under CCPA",
+          "content": "As a California resident, you have the right to: (a) Request to know what personal information we collect and how we use it; (b) Request the deletion of your personal information; (c) Opt-out of the sale of your personal information (note: ProcureOS does not sell personal information)."
         },
-        "paymentTerms": {
-          "cash": "现金支付",
-          "30days": "30天账期",
-          "60days": "60天账期"
-        },
-        "buttons": {
-          "processing": "处理中...",
-          "prepare": "准备",
-          "listSuppliers": "列出供应商"
+        {
+          "title": "3. Exercising Your Rights",
+          "content": "To exercise your rights, please submit a request via our specialized privacy dashboard or email us at privacy@procure-os.com. We will verify your request before processing it."
         }
-      },
-      "matches": {
-        "titleReady": "您的请求已就绪",
-        "titleMatches": "匹配的供应商",
-        "descriptionSingle": "确认发送给 {name} 的正式采购请求。",
-        "descriptionMulti": "Core 引擎已根据物流和产品类别找到最佳匹配。",
-        "back": "返回",
-        "noSuppliers": "未找到合适的供应商。",
-        "trustScore": "{score}% 信任度",
-        "officialRequest": "正式采购请求",
-        "docNo": "文档编号",
-        "targetQuantity": "目标数量",
-        "targetCurrency": "货币",
-        "paymentTerm": "付款条件",
-        "sendRequest": "发送企业请求",
-        "sending": "正在发送..."
-      }
+      ]
     },
-    "errors": {
-      "selectSupplier": "请至少选择一家供应商发送报价请求。"
-    },
-    "address": {
-      "change": "更改",
-      "mainCompany": "公司主地址"
+    "subscription": {
+      "title": "Master Subscription Agreement",
+      "intro": "This Master Subscription Agreement ('Agreement') governs the purchase and use of ProcureOS corporate subscription plans.",
+      "sections": [
+        {
+          "title": "1. Subscription Services",
+          "content": "ProcureOS grants you a non-exclusive, non-transferable right to access and use the platform according to the selected tier and seat count specified in your Order Form."
+        },
+        {
+          "title": "2. Fees & Payment",
+          "content": "Subscription fees are billed in advance according to the billing cycle selected (Monthly/Annually). Failure to pay fees may result in suspension of service."
+        },
+        {
+          "title": "3. Term & Termination",
+          "content": "This Agreement remains in effect until the subscription expires or is terminated. Either party may terminate for material breach with 30 days' written notice."
+        },
+        {
+          "title": "4. Service Level Agreement (SLA)",
+          "content": "ProcureOS aims for 99.9% uptime. Corporate plans include dedicated support and priority resolution for critical system interruptions."
+        }
+      ]
     }
   },
   "auth": {

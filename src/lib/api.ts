@@ -92,8 +92,8 @@ export const procureos = {
     me: () => procureRequest('/public/auth/me') as Promise<{ buyer: Buyer }>,
     
     // 🛡️ Passwords & Recovery
-    forgotPassword: (email: string) => 
-      procureRequest('/public/auth/forgot-password', { method: 'POST', body: { email } }),
+    forgotPassword: (email: string, redirectUrl?: string) => 
+      procureRequest('/public/auth/forgot-password', { method: 'POST', body: { email, redirect_url: redirectUrl } }),
     resetPassword: (data: { token: string, password: string }) => 
       procureRequest('/public/auth/reset-password', { method: 'POST', body: data }),
     changePassword: (data: unknown) =>

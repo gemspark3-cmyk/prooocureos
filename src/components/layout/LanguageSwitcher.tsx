@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Globe, ChevronDown, Check } from 'lucide-react'
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { routing, usePathname, useRouter } from '@/i18n/routing'
 import { useParams } from 'next/navigation'
 
@@ -18,6 +18,7 @@ const LANGUAGES = [
 ]
 
 export function LanguageSwitcher() {
+  const t = useTranslations('common')
   const locale = useLocale()
   const router = useRouter()
   const pathname = usePathname()
@@ -64,7 +65,7 @@ export function LanguageSwitcher() {
             className="absolute right-0 top-full mt-2 w-48 bg-[#09090b] border border-white/10 rounded-2xl shadow-2xl overflow-hidden z-[100] p-1.5 backdrop-blur-xl"
           >
             <div className="py-1 px-3 mb-1">
-              <span className="text-[8px] font-black text-zinc-500 uppercase tracking-[0.2em]">Select Language</span>
+              <span className="text-[8px] font-black text-zinc-500 uppercase tracking-[0.2em]">{t('selectLanguage')}</span>
             </div>
             <div className="space-y-0.5">
               {LANGUAGES.map((lang) => (

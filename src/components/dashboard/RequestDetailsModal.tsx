@@ -210,7 +210,12 @@ export function RequestDetailsModal({
                       </div>
                       <div>
                         <span className="text-[8px] md:text-[9px] font-black text-zinc-600 uppercase block mb-1">{t('details.paymentTerm')}</span>
-                        <span className="text-sm font-black text-white">{request.payment_term || '—'}</span>
+                        <span className="text-sm font-black text-white">
+                          {request.payment_term === 'cash' ? useTranslations('sourcing.steps.form.paymentTerms')('cash') : 
+                           request.payment_term === '30days' ? useTranslations('sourcing.steps.form.paymentTerms')('30days') : 
+                           request.payment_term === '60days' ? useTranslations('sourcing.steps.form.paymentTerms')('60days') : 
+                           (request.payment_term || '—')}
+                        </span>
                       </div>
                       <div>
                         <span className="text-[8px] md:text-[9px] font-black text-zinc-600 uppercase block mb-1">{t('details.currency')}</span>
@@ -236,8 +241,8 @@ export function RequestDetailsModal({
                     {request.status === 'open' && request.offers?.length > 1 && (
                       <button
                         onClick={() => {
-                          setNegotiatingOffer({ id: 'batch', isBatch: true });
-                          setCounterData({ price: '', days: '', note: 'Tüm teklif verenlere toplu pazarlık mesajı...' });
+                          setNegotiatingOffer({ id: 'batch' });
+                          setCounterData({ price: '', days: '', note: t('offers.batchNoteDefault') });
                         }}
                         className="px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white rounded-xl text-[10px] font-black uppercase tracking-widest transition-all shadow-xl shadow-blue-600/20 flex items-center gap-2"
                       >
@@ -312,12 +317,12 @@ export function RequestDetailsModal({
                                 )}
                               </div>
                               <div className="min-w-0">
-                                <h4 className="text-lg md:text-xl font-black text-white italic truncate uppercase tracking-tighter">
-                                  {offer.company?.company_name || `TEDARİKÇİ #${offer.id.slice(0, 4)}`}
+                                <h4 className="font-black text-white italic uppercase tracking-tighter truncate">
+                                  {offer.company?.company_name || `${t('offers.supplierFallback')} #${offer.id.slice(0, 4)}`}
                                 </h4>
                                 <div className="flex flex-wrap items-center gap-3 mt-1.5">
                                   <p className="text-[9px] text-zinc-500 font-bold uppercase tracking-widest flex items-center gap-1.5">
-                                    <MapPin className="w-3 h-3 text-zinc-700" /> {offer.company?.location || 'Türkiye'}
+                                    <MapPin className="w-3 h-3 text-zinc-700" /> {offer.company?.location || t('details.locationFallback')}
                                   </p>
                                   <div className="w-1 h-1 bg-zinc-800 rounded-full" />
                                   <p className="text-[9px] text-emerald-500 font-bold uppercase tracking-widest flex items-center gap-1.5">
@@ -342,7 +347,7 @@ export function RequestDetailsModal({
                                 <p className="text-[8px] text-emerald-500 font-bold uppercase tracking-tighter mt-1">{t('offers.expressDelivery')}</p>
                               </div>
                               <div className="hidden lg:block">
-                                <p className="text-[8px] md:text-[9px] font-black text-zinc-600 uppercase tracking-widest mb-1.5">DURUM</p>
+                                <p className="text-[8px] md:text-[9px] font-black text-zinc-600 uppercase tracking-widest mb-1.5">{t('offers.statusHeader')}</p>
                                 <span className={`px-3 py-1 rounded-full text-[9px] font-black uppercase tracking-widest ${
                                   offer.status === 'accepted' ? 'bg-emerald-600/20 text-emerald-500' :
                                   offer.status === 'rejected' ? 'bg-rose-600/20 text-rose-500' :
@@ -473,7 +478,7 @@ export function RequestDetailsModal({
                       value={counterData.days}
                       onChange={(e) => setCounterData({ ...counterData, days: e.target.value })}
                       className="w-full bg-white/5 border border-white/10 p-4 rounded-2xl text-white font-black focus:border-blue-500 transition-all outline-none"
-                      placeholder="GÜN"
+                      placeholder={t('negotiationModal.daysPlaceholder')}
                     />
                   </div>
                 </div>

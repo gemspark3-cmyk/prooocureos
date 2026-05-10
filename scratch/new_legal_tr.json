@@ -1,0 +1,81 @@
+{
+  "lastUpdate": "Son Güncelleme: 10 Mayıs 2026",
+  "terms": {
+    "title": "Kullanım Koşulları ve Kullanıcı Sözleşmesi",
+    "intro": "ProcureOS'e hoş geldiniz. Bu Kullanım Koşulları ('Koşullar'), ProcureOS platformuna, web sitemize, API'lerimize ve otonom satınalma motorumuza (topluca 'Hizmetler') erişiminizi ve kullanımınızı düzenler. Hizmetlerimizi kullanarak bu Koşullara bağlı kalmayı kabul etmiş sayılırsınız.",
+    "sections": [
+      {
+        "title": "1. Şartların Kabulü",
+        "content": "Bir hesap oluşturarak veya ProcureOS platformuna erişerek, kendinizi veya temsil ettiğiniz tüzel kişiyi bu Koşullara bağlama yetkisine sahip olduğunuzu beyan edersiniz. Bu Koşulları kabul etmiyorsanız, Hizmetlerimize erişmemeli veya kullanmamalısınız."
+      },
+      {
+        "title": "2. Hizmet Tanımı ve AIP Protokolü",
+        "content": "ProcureOS, alıcıları tedarikçilerle eşleştirmek için AIP-103+ protokolünden yararlanan otonom bir satınalma altyapısı sağlar. Açıkça belirtilmediği sürece, bir teknoloji sağlayıcısı olarak hareket ederiz ve kullanıcılar arasında kurulan ticari sözleşmelere taraf olmayız."
+      },
+      {
+        "title": "3. Kullanıcı Sorumlulukları ve Hesap Güvenliği",
+        "content": "Giriş bilgilerinizin gizliliğini korumaktan siz sorumlusunuz. Hesabınız altında gerçekleşen her türlü faaliyet sizin sorumluluğunuzdadır. Kayıt işlemi sırasında doğru, güncel ve eksiksiz bilgi vermeyi kabul edersiniz."
+      },
+      {
+        "title": "4. Fikri Mülkiyet Hakları",
+        "content": "AIP-103 protokol mantığı, algoritmalar ve kullanıcı arayüzü tasarımı dahil ancak bunlarla sınırlı olmamak üzere ProcureOS platformundaki tüm içerik, özellik ve işlevler ProcureOS'in münhasır mülkiyetindedir ve uluslararası telif hakkı ve ticari marka yasalarıyla korunmaktadır."
+      },
+      {
+        "title": "5. Yasaklanmış Faaliyetler",
+        "content": "Kullanıcıların şunları yapması yasaktır: (a) platform güvenliğini aşmaya çalışmak; (b) yetkisiz veri çekmek (scraping) için otomatik sistemler kullanmak; (c) sahte RFQ veya teklif sunmak; (d) başkalarının fikri mülkiyetini ihlal etmek."
+      },
+      {
+        "title": "6. Sorumluluğun Sınırlandırılması",
+        "content": "Yasaların izin verdiği azami ölçüde, ProcureOS, kâr kaybı veya iş kesintileri dahil ancak bunlarla sınırlı olmamak üzere, Hizmetleri kullanımınızdan kaynaklanan dolaylı, arızi veya sonuçsal zararlardan sorumlu olmayacaktır."
+      },
+      {
+        "title": "7. Uygulanacak Hukuk ve Yetki",
+        "content": "Bu Koşullar Türkiye Cumhuriyeti yasalarına tabi olacak ve bu yasalara göre yorumlanacaktır. Bu Koşullardan kaynaklanan veya bu Koşullarla bağlantılı her türlü uyuşmazlık İstanbul mahkemelerinin münhasır yetkisine tabi olacaktır."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Küresel Gizlilik Politikası",
+    "intro": "ProcureOS'te veri gizliliğinizi ciddiye alıyoruz. Bu Gizlilik Politikası, kişisel ve kurumsal bilgilerinizi GDPR ve KVKK dahil olmak üzere küresel standartlara uygun olarak nasıl topladığımızı, kullandığımızı ve koruduğumuzu açıklar.",
+    "sections": [
+      {
+        "title": "1. Topladığımız Bilgiler",
+        "content": "Kayıt sırasında sağlanan bilgileri (ad, e-posta, şirket detayları), operasyonel verileri (RFQ'lar, teklifler, işlem geçmişi) ve otonom motorumuzu optimize etmek için teknik üst verileri (IP adresi, tarayıcı türü) topluyoruz."
+      },
+      {
+        "title": "2. Bilgilerinizi Nasıl Kullanıyoruz",
+        "content": "Veriler şunlar için kullanılır: (a) alıcılar ve tedarikçiler arasındaki eşleştirme sürecini kolaylaştırmak; (b) AIP-103 eşleştirme algoritmalarını geliştirmek; (c) platform güvenliğini sağlamak; (d) kritik sistem güncellemelerini iletmek."
+      },
+      {
+        "title": "3. Veri Paylaşımı ve Üçüncü Taraflar",
+        "content": "Kişisel verilerinizi satmıyoruz. Bilgiler, yalnızca satınalma sürecini kolaylaştırmak için gerekli olduğu ölçüde karşı taraflarla (tedarikçiler veya alıcılar) paylaşılır. Altyapı ve analitik için üçüncü taraf alt işlemciler kullanabiliriz."
+      },
+      {
+        "title": "4. Veri Güvenliği",
+        "content": "Verilerinizi yetkisiz erişime karşı korumak için uçtan uca şifreleme ve katı RLS (Satır Seviyesi Güvenlik) protokolleri dahil olmak üzere endüstri standardı teknik ve organizasyonel önlemler uyguluyoruz."
+      },
+      {
+        "title": "5. Haklarınız",
+        "content": "Kişisel verilerinize erişme, bunları düzeltme veya silme hakkına sahipsiniz. Ayrıca belirli işleme faaliyetlerine itiraz edebilirsiniz. Talepler destek kanalımız veya gizlilik panelimiz aracılığıyla iletilebilir."
+      }
+    ]
+  },
+  "cookies": {
+    "title": "Çerez ve İzleme Politikası",
+    "intro": "ProcureOS, deneyiminizi geliştirmek ve platform performansını analiz etmek için çerezler ve benzer izleme teknolojileri kullanır.",
+    "sections": [
+      {
+        "title": "1. Çerez Nedir?",
+        "content": "Çerezler, bir web sitesini ziyaret ettiğinizde cihazınızda depolanan küçük metin dosyalarıdır. Tercihlerinizi hatırlamamıza ve oturumunuzu güvenli tutmamıza yardımcı olurlar."
+      },
+      {
+        "title": "2. Kullandığımız Çerez Türleri",
+        "content": "Şunları kullanıyoruz: (a) Temel platform işlevselliği için Zorunlu Çerezler; (b) Kullanım modellerini anlamak için Analitik Çerezler; (c) Dil ve bölge ayarlarınızı hatırlamak için Tercih Çerezleri."
+      },
+      {
+        "title": "3. Tercihleri Yönetme",
+        "content": "Çerezleri tarayıcı ayarlarınızdan kontrol edebilir veya devre dışı bırakabilirsiniz. Ancak temel çerezleri devre dışı bırakmak, platformun belirli özelliklerini kullanma yeteneğinizi sınırlayabilir."
+      }
+    ]
+  }
+}

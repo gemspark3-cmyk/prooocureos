@@ -6,28 +6,6 @@ import { motion } from 'framer-motion'
 import { HelpCircle, ChevronDown, Shield, Zap, Target, Search, ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
 
-const faqs = [
-  {
-    question: "ProcureOS üzerinden nasıl satınalma talebi oluştururum?",
-    answer: "Ana sayfada bulunan 'Talep Oluştur' butonuna tıklayarak ihtiyacınızı doğal dille yazabilirsiniz. Yapay zekamız (AIP-103+), talebinizi teknik özelliklere dönüştürecek ve en uygun tedarikçilerle eşleştirecektir.",
-    icon: Search
-  },
-  {
-    question: "Tedarikçiler nasıl doğrulanıyor?",
-    answer: "ProcureOS tedarikçi doğrulama süreci 3 katmanlı bir denetim mekanizmasına dayanır: 1. Kurumsal Doğrulama (KYB): Vergi levhası, ticaret sicili ve imza sirküleri gibi yasal evrakların otonom kontrolü. 2. Finansal & Teknik Skorlama: Tedarikçinin geçmiş sevkiyat performansı, kalite sertifikaları (ISO vb.) ve finansal stabilite endeksleri AI tarafından analiz edilir. 3. Dinamik Güven Skoru: Tedarikçiler her işlem sonrası alıcı geri bildirimi, termin süresine uyum ve teklif tutarlılığına göre gerçek zamanlı puanlanır. Güven skoru kritik eşiğin altına düşen tedarikçiler sistemden otomatik olarak askıya alınır.",
-    icon: Shield
-  },
-  {
-    question: "Ödeme süreçleri nasıl işliyor?",
-    answer: "Şu anki aşamada ödemeler, alıcı ve satıcı arasındaki mevcut ticari anlaşmalar ve bankacılık kanalları üzerinden doğrudan gerçekleşmektedir. ProcureOS, bu süreçte otonom olarak teslimat ve hakediş takibi yaparak süreci kayıt altına alır. Çok yakında, ödemelerin teslimat onayına kadar güvende tutulduğu 'ProcurePay' Escrow özelliğimiz devreye alınacaktır.",
-    icon: Zap
-  },
-  {
-    question: "Global tedarikçilere ulaşabilir miyim?",
-    answer: "Evet, ProcureOS ağı hem yerel hem de global binlerce tedarikçiyi kapsar. Akıllı lojistik motorumuz, mesafe ve maliyet analizini otomatik olarak yaparak size en verimli rotayı sunar.",
-    icon: Target
-  }
-]
 
 import { useTranslations } from 'next-intl'
 

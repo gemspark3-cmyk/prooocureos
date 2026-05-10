@@ -1,8 +1,10 @@
+'use client'
+
 import { useTranslations } from 'next-intl'
 import LegalLayout from '../LegalLayout'
 
-export default function CookiePolicy() {
-  const t = useTranslations('legal.cookies')
+export default function CCPAPrivacy() {
+  const t = useTranslations('legal.ccpa')
   const sections = t.raw('sections') as Array<{ title: string, content: string }>;
 
   return (

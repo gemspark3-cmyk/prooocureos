@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 import { ShieldCheck, Clock, Tag, Trophy, MapPin } from 'lucide-react'
 
 interface ComparisonTableProps {
@@ -12,6 +13,7 @@ interface ComparisonTableProps {
 }
 
 export function ComparisonTable({ offers, onAccept, requestStatus, targetPrice }: ComparisonTableProps) {
+  const t = useTranslations('dashboard.comparison');
   if (!offers || offers.length === 0) return null;
 
   // 🏆 Analiz: En iyileri bul
@@ -19,11 +21,11 @@ export function ComparisonTable({ offers, onAccept, requestStatus, targetPrice }
   const minDelivery = Math.min(...offers.map(o => o.delivery_days));
   const maxReliability = Math.max(...offers.map(o => o.company?.reliability_score || 0));
 
-  // 🧠 AIP-103 Uyumlu Ağırlıklı Puanlama (Weighted Scoring)
-  // Fiyat: %70 | Hız: %20 | Güven: %10
+  // 🧠 AIP-103 Compliant Weighted Scoring
+  // Price: 70% | Speed: 20% | Trust: 10%
   const valueScores = offers.map(o => {
-    const priceScore = minPrice / o.price; // 1.0 (en ucuz) -> 0.x
-    const deliveryScore = minDelivery / (o.delivery_days || 1); // 1.0 (en hızlı) -> 0.x
+    const priceScore = minPrice / o.price; // 1.0 (cheapest) -> 0.x
+    const deliveryScore = minDelivery / (o.delivery_days || 1); // 1.0 (fastest) -> 0.x
     const reliabilityScore = (o.company?.reliability_score || 0) / 100; // 0.x
 
     const totalScore = (priceScore * 0.7) + (deliveryScore * 0.2) + (reliabilityScore * 0.1);
@@ -38,11 +40,11 @@ export function ComparisonTable({ offers, onAccept, requestStatus, targetPrice }
         <div className="min-w-[1000px] grid grid-cols-[240px_repeat(auto-fit,minmax(220px,1fr))] gap-6">
           {/* Header Column */}
           <div className="space-y-4 pt-24 sticky left-0 bg-[#09090b] z-10 pr-4">
-            <div className="h-20 flex items-center text-[10px] font-black text-zinc-600 uppercase tracking-[0.2em] border-b border-white/5">Tedarikçi Profil</div>
-            <div className="h-16 flex items-center text-[10px] font-black text-zinc-600 uppercase tracking-[0.2em] border-b border-white/5">Birim Fiyat Teklifi</div>
-            <div className="h-16 flex items-center text-[10px] font-black text-zinc-600 uppercase tracking-[0.2em] border-b border-white/5">Lojistik / Termin</div>
-            <div className="h-16 flex items-center text-[10px] font-black text-zinc-600 uppercase tracking-[0.2em] border-b border-white/5">Tedarikçi Güvenliği</div>
-            <div className="h-16 flex items-center text-[10px] font-black text-zinc-600 uppercase tracking-[0.2em]">Karar Aksiyonu</div>
+            <div className="h-20 flex items-center text-[10px] font-black text-zinc-600 uppercase tracking-[0.2em] border-b border-white/5">{t('headers.supplierProfile')}</div>
+            <div className="h-16 flex items-center text-[10px] font-black text-zinc-600 uppercase tracking-[0.2em] border-b border-white/5">{t('headers.unitPriceOffer')}</div>
+            <div className="h-16 flex items-center text-[10px] font-black text-zinc-600 uppercase tracking-[0.2em] border-b border-white/5">{t('headers.logisticsTermin')}</div>
+            <div className="h-16 flex items-center text-[10px] font-black text-zinc-600 uppercase tracking-[0.2em] border-b border-white/5">{t('headers.supplierSecurity')}</div>
+            <div className="h-16 flex items-center text-[10px] font-black text-zinc-600 uppercase tracking-[0.2em]">{t('headers.decisionAction')}</div>
           </div>
 
           {/* Offer Columns */}
@@ -70,23 +72,23 @@ export function ComparisonTable({ offers, onAccept, requestStatus, targetPrice }
                       animate={{ y: 0, opacity: 1 }}
                       className="bg-blue-600 text-white text-[8px] font-black px-3 py-1 rounded-full w-fit uppercase tracking-widest flex items-center gap-1.5 shadow-lg shadow-blue-600/20 border border-blue-400/30"
                     >
-                      <Trophy className="w-3 h-3" /> EN AVANTAJLI (AIP-103)
+                      <Trophy className="w-3 h-3" /> {t('badges.mostAdvantageous')}
                     </motion.span>
                   )}
                   <div className="flex flex-wrap gap-1">
                      {isBestPrice && (
                        <span className="bg-emerald-500/20 text-emerald-500 border border-emerald-500/30 text-[7px] font-black px-2 py-0.5 rounded-full w-fit uppercase tracking-tighter flex items-center gap-1">
-                         <Tag className="w-2.5 h-2.5" /> En Ucuz
+                         <Tag className="w-2.5 h-2.5" /> {t('badges.cheapest')}
                        </span>
                      )}
                      {isBestDelivery && (
                        <span className="bg-amber-500/20 text-amber-500 border border-amber-500/30 text-[7px] font-black px-2 py-0.5 rounded-full w-fit uppercase tracking-tighter flex items-center gap-1">
-                         <Clock className="w-2.5 h-2.5" /> En Hızlı
+                         <Clock className="w-2.5 h-2.5" /> {t('badges.fastest')}
                        </span>
                      )}
                      {offer.price <= (targetPrice || 0) && targetPrice && (
                        <span className="bg-blue-500/20 text-blue-400 border border-blue-500/30 text-[7px] font-black px-2 py-0.5 rounded-full w-fit uppercase tracking-tighter flex items-center gap-1">
-                         <ShieldCheck className="w-2.5 h-2.5" /> Hedef Altı
+                         <ShieldCheck className="w-2.5 h-2.5" /> {t('badges.belowTarget')}
                        </span>
                      )}
                   </div>
@@ -96,7 +98,7 @@ export function ComparisonTable({ offers, onAccept, requestStatus, targetPrice }
                 <div className="h-20 flex flex-col justify-center border-b border-white/5">
                   <div className="font-black text-white italic truncate text-base tracking-tight uppercase">{offer.company?.company_name}</div>
                   <div className="text-[9px] text-zinc-500 font-bold flex items-center gap-1 uppercase tracking-widest mt-1">
-                    <MapPin className="w-3 h-3" /> {offer.company?.location || 'Türkiye'}
+                    <MapPin className="w-3 h-3" /> {offer.company?.location || 'Turkey'}
                   </div>
                 </div>
 
@@ -109,9 +111,9 @@ export function ComparisonTable({ offers, onAccept, requestStatus, targetPrice }
                 <div className="h-16 flex items-center border-b border-white/5">
                   <div className="flex flex-col">
                      <span className={`text-sm font-black ${isBestDelivery ? 'text-amber-400' : 'text-zinc-300'}`}>
-                       {offer.delivery_days} İş Günü
+                       {t('labels.workingDays', { days: offer.delivery_days })}
                      </span>
-                     <span className="text-[8px] font-bold text-zinc-600 uppercase tracking-tighter">Kapıdan Kapıya Teslim</span>
+                     <span className="text-[8px] font-bold text-zinc-600 uppercase tracking-tighter">{t('labels.doorToDoor')}</span>
                   </div>
                 </div>
 
@@ -137,7 +139,7 @@ export function ComparisonTable({ offers, onAccept, requestStatus, targetPrice }
                         : 'bg-white text-black hover:bg-blue-600 hover:text-white shadow-xl hover:shadow-blue-600/20 disabled:opacity-30 active:scale-95'
                     }`}
                   >
-                    {offer.status === 'accepted' ? 'SEÇİLDİ' : (isBestValue ? 'EN İYİSİNİ SEÇ' : 'KABUL ET')}
+                    {offer.status === 'accepted' ? t('actions.selected') : (isBestValue ? t('actions.selectBest') : t('actions.accept'))}
                   </button>
                 </div>
               </motion.div>
@@ -147,7 +149,7 @@ export function ComparisonTable({ offers, onAccept, requestStatus, targetPrice }
       </div>
       <div className="mt-4 flex items-center gap-2 text-zinc-500">
          <div className="w-1.5 h-1.5 bg-blue-500 rounded-full animate-pulse" />
-         <p className="text-[8px] font-black uppercase tracking-widest">AIP-103 Karar Destek Algoritması Aktif</p>
+         <p className="text-[8px] font-black uppercase tracking-widest">{t('labels.aiDecisionActive')}</p>
       </div>
     </div>
   );

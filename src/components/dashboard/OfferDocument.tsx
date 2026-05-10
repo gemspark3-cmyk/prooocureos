@@ -14,6 +14,7 @@ interface OfferDocumentProps {
 
 export function OfferDocument({ offer, request, onClose }: OfferDocumentProps) {
   const t = useTranslations('dashboard.offerDocument');
+  const tp = useTranslations('sourcing.steps.form.paymentTerms');
   const locale = useLocale();
   if (!offer || !request) return null;
 
@@ -103,7 +104,7 @@ export function OfferDocument({ offer, request, onClose }: OfferDocumentProps) {
             <div className="text-right">
                <p className="text-[10px] text-zinc-400 font-black uppercase tracking-widest">{t('docNo')}</p>
                <p className="text-lg font-black text-zinc-900">OFF-{offer.id.slice(0,8).toUpperCase()}</p>
-               <p className="text-[9px] text-zinc-500 font-bold mt-1 uppercase">{formatDate(new Date(), locale)} / İSTANBUL</p>
+               <p className="text-[9px] text-zinc-500 font-bold mt-1 uppercase">{formatDate(new Date(), locale)} / {t('locationFallback')}</p>
             </div>
          </div>
 
@@ -125,7 +126,7 @@ export function OfferDocument({ offer, request, onClose }: OfferDocumentProps) {
                         {t('taxNo')}: {offer.company?.tax_number || 'TR 0000000000'}
                      </p>
                      <p className="text-[9px] text-zinc-500 font-medium uppercase leading-tight">
-                        {offer.company?.billing_address || offer.company?.address || 'Türkiye'}
+                        {offer.company?.billing_address || offer.company?.address || t('countryFallback')}
                      </p>
                      <div className="flex flex-wrap gap-x-4 gap-y-1 pt-1 border-t border-zinc-50 mt-2">
                         <p className="text-[8px] text-zinc-400 font-bold uppercase">📞 {offer.company?.contact_phone || offer.company?.phone || '-'}</p>
@@ -197,8 +198,16 @@ export function OfferDocument({ offer, request, onClose }: OfferDocumentProps) {
          <div className="grid grid-cols-2 gap-12 pt-10 border-t border-zinc-100">
             <div className="space-y-4">
                <p className="text-[10px] text-zinc-400 font-black uppercase tracking-widest">{t('paymentTerms')}</p>
-               <div className="space-y-2 text-[10px] text-zinc-600 font-medium uppercase">
-                  <p className="flex justify-between"><span>{t('paymentTermLabel')}:</span> <span className="font-black text-zinc-900">{request.payment_term || t('cash')}</span></p>
+                <div className="space-y-2 text-[10px] text-zinc-600 font-medium uppercase">
+                  <p className="flex justify-between">
+                    <span>{t('paymentTermLabel')}:</span> 
+                    <span className="font-black text-zinc-900">
+                      {request.payment_term === 'cash' ? tp('cash') : 
+                       request.payment_term === '30days' ? tp('30days') : 
+                       request.payment_term === '60days' ? tp('60days') : 
+                       (request.payment_term || t('cash'))}
+                    </span>
+                  </p>
                   <p className="flex justify-between"><span>{t('deliveryTermLabel')}:</span> <span className="font-black text-emerald-600">{offer.delivery_days} {t('workingDays')}</span></p>
                   {offer.metadata?.note && (
                      <div className="mt-4 p-4 bg-zinc-50 border-l-4 border-zinc-900 italic lowercase first-letter:uppercase">

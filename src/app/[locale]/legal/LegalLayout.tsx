@@ -7,7 +7,7 @@ import { ArrowLeft } from 'lucide-react'
 
 export default function LegalLayout({ children, title }: { children: React.ReactNode, title: string }) {
   return (
-    <main className="min-h-screen bg-[#050505] text-white font-sans selection:bg-blue-500/30">
+    <main className="min-h-screen mesh-bg text-[var(--foreground)] font-sans selection:bg-blue-500/30">
       <div className="max-w-4xl mx-auto pt-24 pb-32 px-6">
         <Link href="/" className="inline-flex items-center gap-2 text-zinc-500 hover:text-white transition-colors mb-12 text-sm font-semibold tracking-tight">
           <ArrowLeft className="w-4 h-4" /> Back to Marketplace

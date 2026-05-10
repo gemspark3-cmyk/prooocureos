@@ -1,0 +1,42 @@
+{
+  "ccpa": {
+    "title": "CCPA Gizlilik Bildirimi (Kaliforniya)",
+    "intro": "Bu bildirim, Küresel Gizlilik Politikamızı tamamlar ve özellikle Kaliforniya eyaleti sakinleri için geçerlidir. Bilgi uygulamalarımızı ve 2018 Kaliforniya Tüketici Gizliliği Yasası ('CCPA') kapsamındaki haklarınızı açıklar.",
+    "sections": [
+      {
+        "title": "1. Topladığımız Bilgiler",
+        "content": "Son 12 ay içinde şu kategorilerde kişisel bilgiler topladık: Tanımlayıcılar (ad, e-posta, IP adresi), Ticari bilgiler (işlem geçmişi) ve Mesleki/İstihdam bilgileri."
+      },
+      {
+        "title": "2. CCPA Kapsamındaki Haklarınız",
+        "content": "Kaliforniya sakini olarak şu haklara sahipsiniz: (a) Hangi kişisel bilgileri topladığımızı ve nasıl kullandığımızı bilme talebi; (b) Kişisel bilgilerinizin silinmesini talpe etme; (c) Kişisel bilgilerinizin satılmasından vazgeçme (not: ProcureOS kişisel bilgileri satmaz)."
+      },
+      {
+        "title": "3. Haklarınızı Kullanma",
+        "content": "Haklarınızı kullanmak için lütfen özel gizlilik panelimiz üzerinden talep gönderin veya privacy@procure-os.com adresine e-posta gönderin. İşleme koymadan önce talebinizi doğrulayacağız."
+      }
+    ]
+  },
+  "subscription": {
+    "title": "Ana Abonelik Sözleşmesi",
+    "intro": "Bu Ana Abonelik Sözleşmesi ('Sözleşme'), ProcureOS kurumsal abonelik planlarının satın alınmasını ve kullanılmasını düzenler.",
+    "sections": [
+      {
+        "title": "1. Abonelik Hizmetleri",
+        "content": "ProcureOS, Sipariş Formunuzda belirtilen kademe ve koltuk sayısına göre platforma erişim ve kullanım hakkını münhasır olmayan, devredilemez bir şekilde size verir."
+      },
+      {
+        "title": "2. Ücretler ve Ödeme",
+        "content": "Abonelik ücretleri, seçilen fatura döngüsüne (Aylık/Yıllık) göre peşin olarak faturalandırılır. Ücretlerin ödenmemesi hizmetin askıya alınmasına neden olabilir."
+      },
+      {
+        "title": "3. Süre ve Fesih",
+        "content": "Bu Sözleşme, abonelik süresi dolana veya feshedilene kadar yürürlükte kalır. Her iki taraf da 30 günlük yazılı bildirimle önemli ihlaller nedeniyle fesih yoluna gidebilir."
+      },
+      {
+        "title": "4. Hizmet Seviyesi Anlaşması (SLA)",
+        "content": "ProcureOS %99,9 çalışma süresi (uptime) hedeflemektedir. Kurumsal planlar, kritik sistem kesintileri için özel destek ve öncelikli çözüm içerir."
+      }
+    ]
+  }
+}

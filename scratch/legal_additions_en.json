@@ -1,0 +1,42 @@
+{
+  "ccpa": {
+    "title": "CCPA Privacy Notice (California)",
+    "intro": "This notice supplements our Global Privacy Policy and applies specifically to residents of the State of California. It describes our information practices and your rights under the California Consumer Privacy Act of 2018 ('CCPA').",
+    "sections": [
+      {
+        "title": "1. Information We Collect",
+        "content": "In the preceding 12 months, we have collected the following categories of personal information: Identifiers (name, email, IP address), Commercial information (transaction history), and Professional/Employment information."
+      },
+      {
+        "title": "2. Your Rights Under CCPA",
+        "content": "As a California resident, you have the right to: (a) Request to know what personal information we collect and how we use it; (b) Request the deletion of your personal information; (c) Opt-out of the sale of your personal information (note: ProcureOS does not sell personal information)."
+      },
+      {
+        "title": "3. Exercising Your Rights",
+        "content": "To exercise your rights, please submit a request via our specialized privacy dashboard or email us at privacy@procure-os.com. We will verify your request before processing it."
+      }
+    ]
+  },
+  "subscription": {
+    "title": "Master Subscription Agreement",
+    "intro": "This Master Subscription Agreement ('Agreement') governs the purchase and use of ProcureOS corporate subscription plans.",
+    "sections": [
+      {
+        "title": "1. Subscription Services",
+        "content": "ProcureOS grants you a non-exclusive, non-transferable right to access and use the platform according to the selected tier and seat count specified in your Order Form."
+      },
+      {
+        "title": "2. Fees & Payment",
+        "content": "Subscription fees are billed in advance according to the billing cycle selected (Monthly/Annually). Failure to pay fees may result in suspension of service."
+      },
+      {
+        "title": "3. Term & Termination",
+        "content": "This Agreement remains in effect until the subscription expires or is terminated. Either party may terminate for material breach with 30 days' written notice."
+      },
+      {
+        "title": "4. Service Level Agreement (SLA)",
+        "content": "ProcureOS aims for 99.9% uptime. Corporate plans include dedicated support and priority resolution for critical system interruptions."
+      }
+    ]
+  }
+}

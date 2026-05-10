@@ -40,7 +40,7 @@ const SearchSimulator = () => {
     speed: sup.speed,
     rating: [4.8, 4.5, 4.2, 4.7][idx],
     match: ['98%', '92%', '85%', '90%'][idx],
-    price: idx === 0 ? '$120/birim' : idx === 1 ? '$115/birim' : idx === 2 ? '$105/birim' : '$110/birim'
+    price: idx === 0 ? `$120/${t('unit')}` : idx === 1 ? `$115/${t('unit')}` : idx === 2 ? `$105/${t('unit')}` : `$110/${t('unit')}`
   }));
 
   const handleSearch = (e?: React.FormEvent) => {
@@ -293,7 +293,7 @@ const SearchSimulator = () => {
 }
 
 const DashboardExplanation = () => {
-  const t = useTranslations('howItWorks.dashboard')
+  const t = useTranslations('dashboard')
   const tabs = [
     {
       id: 'ops',
@@ -311,17 +311,17 @@ const DashboardExplanation = () => {
     },
     {
       id: 'team',
-      title: t('team.title'),
-      desc: t('team.desc'),
+      title: t('team_ext.title'),
+      desc: t('team_ext.desc'),
       icon: <Users className="w-5 h-5" />,
-      features: [t('team.f1'), t('team.f2'), t('team.f3')]
+      features: [t('team_ext.f1'), t('team_ext.f2'), t('team_ext.f3')]
     },
     {
       id: 'erp',
-      title: t('erp.title'),
-      desc: t('erp.desc'),
+      title: t('erp_ext.title'),
+      desc: t('erp_ext.desc'),
       icon: <Cpu className="w-5 h-5" />,
-      features: [t('erp.f1'), t('erp.f2'), t('erp.f3')]
+      features: [t('erp_ext.f1'), t('erp_ext.f2'), t('erp_ext.f3')]
     }
   ];
 
@@ -329,7 +329,7 @@ const DashboardExplanation = () => {
     <div className="py-32 space-y-20">
       <div className="text-center space-y-4">
         <h2 className="text-4xl font-black italic tracking-tighter uppercase leading-none">{t('title').split(' ').map((word, i) => (
-           <span key={i} className={word === 'OPERASYON' || word === 'OPERATION' || word === 'PANELİ' || word === 'PANEL' ? "text-blue-500" : ""}>{word} </span>
+           <span key={i} className={['OPERASYON', 'OPERATION', 'PANELİ', 'PANEL'].includes(word.toUpperCase()) ? "text-blue-500" : ""}>{word} </span>
         ))}</h2>
         <p className="text-zinc-500 text-lg max-w-2xl mx-auto font-medium">{t('subtitle')}</p>
       </div>

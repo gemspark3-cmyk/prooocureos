@@ -1,4 +1,36 @@
 {
+  "home": {
+    "protocolNotes": "AIP-103+ PROTOKOLL (RELEASE NOTES)",
+    "defaults": {
+      "paymentTerm": "30 Tage Zahlungsziel",
+      "supplier": "Lieferant"
+    },
+    "toasts": {
+      "loginRequired": "Bitte loggen Sie sich zuerst ein.",
+      "searchFailed": "Suche fehlgeschlagen.",
+      "invalidTaxId": "Ungültige Steuernummer. Bitte geben Sie 10 oder 11 Ziffern ein.",
+      "invalidPhone": "Ungültige Telefonnummer.",
+      "profileUpdated": "Profil erfolgreich aktualisiert.",
+      "updateFailed": "Aktualisierung fehlgeschlagen.",
+      "needRequestTitle": "Bitte geben Sie an, was Sie benötigen.",
+      "noSuppliersFound": "Keine passenden Lieferanten gefunden.",
+      "createIntentFailed": "Anfrage konnte nicht erstellt werden.",
+      "needDeliveryAddress": "Bitte geben Sie eine Lieferadresse an.",
+      "intentInfoNotFound": "Anfrageinformationen nicht gefunden. Bitte suchen Sie erneut.",
+      "requestSent": "Anfrage erfolgreich gesendet.",
+      "sendFailed": "Versand fehlgeschlagen: {error}",
+      "unknownError": "Unbekannter Fehler",
+      "offerAccepted": "Angebot erfolgreich angenommen!",
+      "offerRejected": "Angebot abgelehnt.",
+      "requestNotSelected": "Anfrage nicht ausgewählt.",
+      "noActiveOffers": "Keine aktiven Angebote für Verhandlungen gefunden.",
+      "bulkCounterSent": "Sammel-Gegenangebot an {count} Lieferanten gesendet.",
+      "counterSent": "Gegenangebot gesendet.",
+      "counterError": "Verhandlungsfehler.",
+      "supplierAdded": "Lieferant zu Favoriten hinzugefügt."
+    },
+    "differentCompanies": "{count} Verschiedene Firmen"
+  },
   "common": {
     "title": "ProcureOS",
     "buyerPortal": "Käuferportal",
@@ -36,7 +68,15 @@
       "Health & Medical": "Gesundheit & Medizin",
       "Energy & Utilities": "Energie & Versorgung",
       "Professional Services": "Professionelle Dienstleistungen",
-      "General": "Sonstiges / Allgemein"
+      "General": "Sonstiges / Allgemein",
+      "general": "General",
+      "demir": "Iron / Steel",
+      "iron": "Iron",
+      "metal": "Metal",
+      "regions": "SERVICE REGIONS",
+      "speed": "EXPRESS LOGISTICS",
+      "trusted": "PROTOCOL VERIFIED",
+      "competitive": "COMPETITIVE PRICE"
     },
     "statuses": {
       "preparing": "In Vorbereitung",
@@ -65,28 +105,31 @@
       "JP": "Japan"
     },
     "info": "INFORMATION",
-    "close": "SCHLIESSEN"
+    "close": "SCHLIESSEN",
+    "sessionExpired": "Session expired due to inactivity.",
+    "selectLanguage": "Select Language",
+    "locationPlaceholder": "City or Country",
+    "tabs": {
+      "categories": "Categories"
+    }
   },
   "marketplace": {
     "heroTitle": "Globalen Einkauf entdecken",
     "heroSubtitle": "Betriebssystem",
     "heroDescription": "Verbinden Sie sich über die ProcureOS Core-Infrastruktur auf Protokollebene mit Tausenden von verifizierten Herstellern.",
     "searchPlaceholder": "Produkt oder Hersteller...",
+    "searchPlaceholderLabel": "WHAT ARE YOU LOOKING FOR?",
+    "categoryLabel": "CATEGORY",
+    "locationLabel": "DESTINATION",
     "locationPlaceholder": "Bestimmungsort",
     "searchButton": "SUCHEN",
     "allCategories": "ALLE KATEGORIEN",
+    "differentCompanies": "{count} Different Companies",
     "noResults": "Keine Ergebnisse für Ihre Kriterien gefunden.",
     "supplierNetworkTitle": "Treten Sie dem ProcureOS Lieferantennetzwerk bei",
     "supplierNetworkDescription": "Erreichen Sie Tausende von Unternehmenskäufern. Geben Sie in Sekundenschnelle Angebote für die richtigen Anfragen ab.",
     "startSellingNow": "JETZT MIT DEM VERKAUF BEGINNEN",
     "registerProductsText": "Sind Sie Hersteller oder Großhändler? Registrieren Sie Ihre Produkte in unserem globalen Netzwerk.",
-    "networkPulse": {
-      "label": "AIP-103+ Netznabz",
-      "status": "Echtzeitverbindung Aktiv",
-      "statusLabel": "Netzwerkstatus",
-      "statusValue": "Optimiert",
-      "suppliersCount": "{count} aktive Lieferanten"
-    },
     "selection": {
       "label": "FIRMA/EN AUSGEWÄHLT",
       "compare": "VERGLEICHEN",
@@ -101,10 +144,11 @@
       "loginToSeeDetails": "Anmelden für Details",
       "loginButton": "ANMELDEN",
       "verified": "VERIFIZIERT",
+      "noRatingYet": "NO RATING YET",
       "scores": {
         "price": "PREIS",
         "speed": "TERMIN",
-        "trust": "GÜVEN"
+        "trust": "TRUST"
       },
       "protocolCategory": "PROTOKOLLKATEGORIE",
       "generalSupplier": "ALLGEMEINER LIEFERANT",
@@ -120,7 +164,22 @@
       "serviceRegions": "Dienstleistungsregionen",
       "removeFromList": "Entfernen",
       "bulkQuote": "Sammelangebot ({count})"
-    }
+    },
+    "networkPulse": {
+      "label": "AIP-103+ Netznabz",
+      "status": "Echtzeitverbindung Aktiv",
+      "statusValue": "Optimiert",
+      "statusLabel": "Netzwerkstatus",
+      "suppliersCount": "{count} aktive Lieferanten"
+    },
+    "filters": {
+      "minTrust90": "Trust 90%+",
+      "minTrust80": "Trust 80%+",
+      "minSpeed80": "Fast Delivery (80%+)",
+      "minRating90": "Rating 90%+",
+      "clear": "Clear Filters"
+    },
+    "aipVerifiedMatches": "Matches Verified by AIP-103 Protocol"
   },
   "dashboard": {
     "sections": {
@@ -145,66 +204,6 @@
       "integrations": "INTEGRATIONEN",
       "support": "SUPPORT",
       "profile": "PROFIL"
-    },
-    "fxTracking": "WÄHRUNGS-TRACKING",
-    "team": {
-      "title": "Team-Management",
-      "roadmap": "Roadmap",
-      "description": "Laden Sie Ihr Team zu ProcureOS ein. Definieren Sie abteilungsbezogene Budgets, legen Sie Ausgabenlimits fest und übernehmen Sie die Kontrolle, indem Sie Ihre mehrstufige Genehmigungshierarchie digitalisieren.",
-      "multiUser": "MEHRBENUTZER",
-      "workflows": "WORKFLOWS"
-    },
-    "integrations": {
-      "title": "Unternehmens-ERP-Integration",
-      "roadmap": "Ökosystem-Erweiterungsphase",
-      "description": "Gekaufte Produkte werden bei Lieferung automatisch in Ihren Bestand eingebucht. Beenden Sie die manuelle Dateneingabe durch vollständige Synchronisation mit Systemen wie SAP, Oracle und Logo."
-    },
-    "export": {
-      "id": "ID",
-      "date": "DATUM",
-      "title": "TITEL",
-      "category": "KATEGORIE",
-      "quantity": "MENGE",
-      "status": "STATUS",
-      "offersCount": "ANGEBOTE",
-      "bestOffer": "BESTES ANGEBOT",
-      "targetPrice": "ZIELPREIS",
-      "savings": "EINSPARUNG (%)",
-      "orderNo": "BESTELL-NR",
-      "supplier": "LIEFERANT",
-      "amount": "BETRAG",
-      "deliveryAddress": "LIEFERADRESSE",
-      "estDelivery": "LIEFERTERMIN",
-      "trackingNo": "TRACKING-NR",
-      "success": "Excel-Bericht erstellt.",
-      "error": "Fehler beim Erstellen.",
-      "shipmentModal": {
-        "title": "Versanddetails",
-        "orderNo": "Bestellung: {no}",
-        "currentStatus": "AKTUELLER STATUS",
-        "onWay": "UNTERWEGS",
-        "shipmentType": "VERSANDART",
-        "carrier": "SPEDITEUR",
-        "trackingNo": "TRACKING-NR",
-        "estDelivery": "LIEFERTERMIN",
-        "notes": "HINWEISE",
-        "deliveryPoint": "LIEFERORT",
-        "defaultCompanyAddress": "STANDARD-ADRESSE",
-        "sender": "ABSENDER",
-        "close": "SCHLIESSEN",
-        "notSpecified": "Nicht angegeben",
-        "noNotes": "Keine Hinweise.",
-        "types": {
-          "cargo": "Fracht",
-          "logistics": "Logistik",
-          "ownVehicle": "Eigenes Fahrzeug",
-          "customerPickup": "Abholung",
-          "standard": "Standard"
-        }
-      }
-    },
-    "categories": {
-      "general": "ALLGEMEIN"
     },
     "messages": {
       "noDataToExport": "Keine Daten zum Exportieren."
@@ -270,6 +269,63 @@
       "local_delivery": "In Zustellung",
       "completed": "Abgeschlossen"
     },
+    "fxTracking": "WÄHRUNGS-TRACKING",
+    "team": {
+      "title": "Team-Management",
+      "roadmap": "Roadmap",
+      "description": "Laden Sie Ihr Team zu ProcureOS ein. Definieren Sie abteilungsbezogene Budgets, legen Sie Ausgabenlimits fest und übernehmen Sie die Kontrolle, indem Sie Ihre mehrstufige Genehmigungshierarchie digitalisieren.",
+      "multiUser": "MEHRBENUTZER",
+      "workflows": "WORKFLOWS"
+    },
+    "integrations": {
+      "title": "Unternehmens-ERP-Integration",
+      "roadmap": "Ökosystem-Erweiterungsphase",
+      "description": "Gekaufte Produkte werden bei Lieferung automatisch in Ihren Bestand eingebucht. Beenden Sie die manuelle Dateneingabe durch vollständige Synchronisation mit Systemen wie SAP, Oracle und Logo."
+    },
+    "export": {
+      "id": "ID",
+      "date": "DATUM",
+      "title": "TITEL",
+      "category": "KATEGORIE",
+      "quantity": "MENGE",
+      "status": "STATUS",
+      "offersCount": "ANGEBOTE",
+      "bestOffer": "BESTES ANGEBOT",
+      "targetPrice": "ZIELPREIS",
+      "savings": "EINSPARUNG (%)",
+      "orderNo": "BESTELL-NR",
+      "supplier": "LIEFERANT",
+      "amount": "BETRAG",
+      "deliveryAddress": "LIEFERADRESSE",
+      "estDelivery": "LIEFERTERMIN",
+      "trackingNo": "TRACKING-NR",
+      "success": "Excel-Bericht erstellt.",
+      "error": "Fehler beim Erstellen.",
+      "shipmentModal": {
+        "title": "Versanddetails",
+        "orderNo": "Bestellung: {no}",
+        "currentStatus": "AKTUELLER STATUS",
+        "onWay": "UNTERWEGS",
+        "shipmentType": "VERSANDART",
+        "carrier": "SPEDITEUR",
+        "trackingNo": "TRACKING-NR",
+        "estDelivery": "LIEFERTERMIN",
+        "notes": "HINWEISE",
+        "deliveryPoint": "LIEFERORT",
+        "defaultCompanyAddress": "STANDARD-ADRESSE",
+        "sender": "ABSENDER",
+        "close": "SCHLIESSEN",
+        "notSpecified": "Nicht angegeben",
+        "noNotes": "Keine Hinweise.",
+        "types": {
+          "cargo": "Fracht",
+          "logistics": "Logistik",
+          "ownVehicle": "Eigenes Fahrzeug",
+          "customerPickup": "Abholung",
+          "standard": "Standard"
+        }
+      }
+    },
     "profile": {
       "corporateAccount": "FIRMENKONTO",
       "aipVerified": "AIP-103 VERIFIZIERT",
@@ -294,7 +350,7 @@
         "country": "Land",
         "postalCode": "PLZ",
         "contactPerson": "Kontakt",
-        "phone": "Telefon",
+        "phone": "Phone",
         "approvalLimit": "Limit (USD)",
         "preferredCurrency": "Währung",
         "warehouseName": "Lagername"
@@ -328,10 +384,10 @@
       "subtitle": "Favoriten und Partnerfirmen",
       "searchPlaceholder": "Suche nach Lieferantenname...",
       "emptyState": "Noch keine registrierten Lieferanten",
-      "removed": "Tedarikçi çıkarıldı.",
-      "error": "Hata oluştu.",
-      "trustedPartner": "GÜVENİLİR PARTNER",
-      "generalSupplier": "Genel Tedarikçi"
+      "removed": "Supplier removed.",
+      "error": "An error occurred.",
+      "trustedPartner": "TRUSTED PARTNER",
+      "generalSupplier": "General Supplier"
     },
     "support": {
       "title": "SUPPORT CENTER",
@@ -382,150 +438,13 @@
         "sendError": "Nachricht konnte nicht gesendet werden."
       }
     },
-    "home": {
-      "protocolNotes": "AIP-103+ PROTOKOLÜ (SÜRÜM NOTLARI)",
-      "toasts": {
-        "loginRequired": "Lütfen önce giriş yapın.",
-        "searchFailed": "Arama başarısız.",
-        "invalidTaxId": "Geçersiz Vergi Numarası. Lütfen 10 veya 11 haneli sayı girin.",
-        "invalidPhone": "Geçersiz Telefon Numarası.",
-        "profileUpdated": "Profiliniz güncellendi.",
-        "updateFailed": "Güncelleme başarısız.",
-        "needRequestTitle": "Lütfen neye ihtiyacınız olduğunu belirtin.",
-        "noSuppliersFound": "Uygun tedarikçi bulunamadı.",
-        "createIntentFailed": "Talep oluşturulamadı.",
-        "needDeliveryAddress": "Lütfen teslimat adresi belirtin.",
-        "intentInfoNotFound": "Talep bilgisi bulunamadı. Lütfen tekrar arama yapın.",
-        "requestSent": "Talep başarıyla iletildi.",
-        "sendFailed": "Gönderim başarısız: {error}",
-        "unknownError": "Bilinmeyen hata",
-        "offerAccepted": "Teklif başarıyla kabul edildi!",
-        "offerRejected": "Teklif reddedildi.",
-        "requestNotSelected": "Talep seçilmedi.",
-        "noActiveOffers": "Pazarlık yapılabilecek aktif teklif bulunamadı.",
-        "bulkCounterSent": "{count} tedarikçiye toplu karşı teklif iletildi.",
-        "counterSent": "Karşı teklif iletildi.",
-        "counterError": "Pazarlık hatası.",
-        "supplierAdded": "Tedarikçi favorilerinize eklendi."
-      },
-      "defaults": {
-        "supplier": "Tedarikçi",
-        "country": "Türkiye",
-        "paymentTerm": "30 Gün Vadeli"
-      }
-    },
-    "rating": {
-      "title": "Lieferanten bewerten",
-      "errors": {
-        "overallRating": "Lütfen genel bir puan verin.",
-        "submitFailed": "Değerlendirme gönderilirken bir hata oluştu."
-      },
-      "labels": {
-        "overall": "Genel Memnuniyet",
-        "quality": "Ürün Kalitesi",
-        "delivery": "Teslimat Hızı",
-        "communication": "İletişim ve Destek",
-        "feedback": "Geri Bildiriminiz"
-      },
-      "placeholders": {
-        "feedback": "Deneyiminizi kısaca anlatın..."
-      },
-      "info": "Bu değerlendirme doğrudan tedarikçi ile paylaşılmamakta olup, yalnızca ProcureOS güven endeksi hesaplamaları ve hizmet kalitemizin iyileştirilmesi amacıyla kullanılmaktadır. Görüşleriniz ekosistemimizin şeffaflığı için kritik öneme sahiptir.",
-      "submit": "BEWERTUNG SENDEN",
-      "submitting": "Gönderiliyor...",
-      "success": {
-        "title": "Teşekkürler!",
-        "message": "Değerlendirmeniz başarıyla kaydedildi ve tedarikçi puanına yansıtıldı."
-      },
-      "addToFavorites": "TEDARİKÇİYİ FAVORİLERİME EKLE",
-      "messages": {
-        "added": "Tedarikçi favorilerinize eklendi."
-      }
-    },
-    "sourcing": {
-      "steps": {
-        "form": {
-          "title": "ANFRAGE FÜR",
-          "subtitle": "Was benötigen Sie?",
-          "descriptionSingle": "Details für den gewählten Lieferanten.",
-          "descriptionMulti": "Suchen Sie im Netzwerk.",
-          "labels": {
-            "title": "Beschreibung",
-            "note": "Hinweis",
-            "quantity": "Menge",
-            "currency": "Währung",
-            "paymentTerm": "Zahlung"
-          },
-          "placeholders": {
-            "title": "Z.B. 100 Rohre...",
-            "note": "Hinweis...",
-            "quantity": "Z.B. 500",
-            "currency": "AED"
-          },
-          "paymentTerms": {
-            "cash": "Bar",
-            "30days": "30 Tage",
-            "60days": "60 Tage"
-          },
-          "buttons": {
-            "processing": "LÄDT...",
-            "prepare": "VORBEREITEN",
-            "listSuppliers": "LIEFERANTEN LISTE"
-          }
-        },
-        "matches": {
-          "titleReady": "Bereit",
-          "titleMatches": "Treffer",
-          "descriptionSingle": "Bestätigen.",
-          "descriptionMulti": "Gefunden.",
-          "back": "Zurück",
-          "noSuppliers": "Keine Treffer.",
-          "trustScore": "{score} VERTRAUEN",
-          "officialRequest": "OFFIZIELLE ANFRAGE",
-          "docNo": "DOK-NR",
-          "targetQuantity": "MENGE",
-          "targetCurrency": "WÄHRUNG",
-          "paymentTerm": "ZAHLUNG",
-          "sendRequest": "SENDEN",
-          "sending": "SENDET...",
-          "title": "GEEIGNETE LIEFERANTEN GEFUNDEN"
-        },
-        "success": {
-          "title": "Gesendet!",
-          "message": "Anfrage erfolgreich übermittelt.",
-          "backToMarketplace": "ZUM MARKTPLATZ",
-          "viewMyRequests": "MEINE ANFRAGEN"
-        }
-      },
-      "errors": {
-        "selectSupplier": "Wählen Sie einen Lieferanten."
-      },
-      "address": {
-        "change": "ÄNDERN",
-        "mainCompany": "Hauptadresse"
-      },
-      "features": {
-        "global": {
-          "title": "Global",
-          "desc": "Weltweit suchen."
-        },
-        "logistics": {
-          "title": "Logistik",
-          "desc": "Verifizierter Versand."
-        },
-        "standard": {
-          "title": "Standard",
-          "desc": "Professionell."
-        }
-      }
-    },
     "requestDetails": {
       "status": {
         "open": "ANGEBOTE SAMMELN",
         "completed": "ABGESCHLOSSEN"
       },
       "tabs": {
-        "list": "Liste",
+        "list": "List",
         "compare": "Vergleichen",
         "audit": "Prüfung"
       },
@@ -541,6 +460,7 @@
       "details": {
         "title": "ANFRAGEDETAILS",
         "quickInfo": "SCHNELLINFOS",
+        "locationFallback": "Turkey",
         "quantity": "MENGE",
         "paymentTerm": "ZAHLUNGSZIEL",
         "currency": "WÄHRUNG",
@@ -554,14 +474,17 @@
         "title": "ERHALTENE ANGEBOTE",
         "countSuffix": "STÜCK",
         "batchNegotiation": "SAMMELVERHANDLUNG",
+        "batchNoteDefault": "Batch negotiation message to all bidders...",
         "noOffers": "NOCH KEINE ANGEBOTE. SYSTEM GLEICHT MIT LIEFERANTEN AB.",
         "bestMatch": "BESTE ÜBEREINSTIMMUNG",
+        "supplierFallback": "SUPPLIER",
         "trust": "VERTRAUEN",
         "amount": "ANGEBOTSSUMME",
         "unitPrice": "EINZELPREIS",
         "deliveryTime": "LIEFERZEIT",
         "workingDays": "WERKTAGE",
         "expressDelivery": "EXPRESSLIEFERUNG",
+        "statusHeader": "STATUS",
         "negotiation": "VERHANDELN",
         "details": "DETAILS",
         "accept": "ANNEHMEN",
@@ -581,6 +504,7 @@
         "singleDesc": "ERSTELLEN SIE EIN GEGENANGEBOT ZU PREIS UND LIEFERZEIT MIT {supplier}.",
         "targetPrice": "ZIEL-EINZELPREIS",
         "targetDays": "GEWÜNSCHTE LIEFERUNG (TAGE)",
+        "daysPlaceholder": "DAYS",
         "noteLabel": "VERHANDLUNGSNOTIZ",
         "notePlaceholder": "Infos zu Budgetbeschränkungen oder Lieferdringlichkeit...",
         "cancel": "ABBRECHEN",
@@ -594,6 +518,8 @@
       "aiAnalysis": "AI-Analyse"
     },
     "offerDocument": {
+      "locationFallback": "London",
+      "countryFallback": "United Kingdom",
       "print": "DRUCKEN / HERUNTERLADEN",
       "officialDoc": "OFFIZIELLES ANGEBOTSDOKUMENT",
       "docNo": "DOKUMENTEN-NR.",
@@ -619,9 +545,175 @@
       "supplierFirm": "LIEFERANTENFIRMA",
       "buyerFirm": "KÄUFERFIRMA"
     },
-    "notifications": {
-      "title": "Benachrichtigungszentrum"
+    "rating": {
+      "title": "Lieferanten bewerten",
+      "errors": {
+        "overallRating": "Please provide an overall rating.",
+        "submitFailed": "An error occurred while submitting the review."
+      },
+      "labels": {
+        "overall": "Overall Satisfaction",
+        "quality": "Product Quality",
+        "delivery": "Delivery Speed",
+        "communication": "Communication & Support",
+        "feedback": "Your Feedback"
+      },
+      "placeholders": {
+        "feedback": "Briefly describe your experience..."
+      },
+      "info": "This evaluation is not shared directly with the supplier and is used only for ProcureOS trust index calculations and improving our service quality. Your feedback is critical for our ecosystem's transparency.",
+      "submit": "BEWERTUNG SENDEN",
+      "submitting": "Submitting...",
+      "success": {
+        "title": "Thank You!",
+        "message": "Your review has been successfully recorded and reflected in the supplier's score."
+      },
+      "addToFavorites": "ADD SUPPLIER TO FAVORITES",
+      "messages": {
+        "added": "Supplier added to your favorites."
+      }
+    },
+    "comparison": {
+      "headers": {
+        "supplierProfile": "SUPPLIER PROFILE",
+        "unitPriceOffer": "UNIT PRICE QUOTE",
+        "logisticsTermin": "LOGISTICS / DELIVERY",
+        "supplierSecurity": "SUPPLIER RELIABILITY",
+        "decisionAction": "DECISION ACTION"
+      },
+      "badges": {
+        "mostAdvantageous": "MOST ADVANTAGEOUS (AIP-103)",
+        "cheapest": "Cheapest",
+        "fastest": "Fastest",
+        "belowTarget": "Below Target"
+      },
+      "labels": {
+        "workingDays": "{days} Working Days",
+        "doorToDoor": "Door to Door Delivery",
+        "aiDecisionActive": "AIP-103 DECISION SUPPORT ALGORITHM ACTIVE"
+      },
+      "actions": {
+        "selected": "SELECTED",
+        "selectBest": "SELECT BEST",
+        "accept": "ACCEPT"
+      }
+    },
+    "title": "PROFESSIONAL OPERATION PANEL",
+    "subtitle": "Corporate management modules waiting for you when you log in.",
+    "ops": {
+      "title": "OPERATION CENTER",
+      "desc": "Manage all your active RFQ processes from a single screen.",
+      "f1": "Price Comparison",
+      "f2": "Counter-Offer",
+      "f3": "Purchase Approval"
+    },
+    "log": {
+      "title": "LOGISTICS TRACKING",
+      "desc": "Track your orders from production to delivery at your doorstep.",
+      "f1": "Shipment Details",
+      "f2": "Invoice Tracking",
+      "f3": "Delivery Confirmation"
+    },
+    "team_ext": {
+      "title": "TEAM MANAGEMENT",
+      "desc": "Define and manage your corporate hierarchy in the system.",
+      "f1": "Approval Limits",
+      "f2": "Authority Definition",
+      "f3": "Department Reports"
+    },
+    "erp_ext": {
+      "title": "ERP INTEGRATION",
+      "desc": "Full integration with SAP, Oracle, and MS Dynamics.",
+      "f1": "Automatic Stock Entry",
+      "f2": "API Integration",
+      "f3": "Scheduled Sync"
     }
+  },
+  "sourcing": {
+    "common": {
+      "other": "Other"
+    },
+    "steps": {
+      "form": {
+        "title": "CREATE REQUEST FOR",
+        "subtitle": "What do you need? We'll find it for you.",
+        "descriptionSingle": "Specify the product details and quantity for your selected supplier, and we'll send it in an official template.",
+        "descriptionMulti": "Specify product features and quantity, and ProcureOS Core network will filter the most suitable sellers based on logistics data in seconds.",
+        "labels": {
+          "title": "Product or Service Definition",
+          "note": "Buyer Note / Special Requests (Optional)",
+          "quantity": "Quantity Needed",
+          "currency": "Currency",
+          "paymentTerm": "Payment Term",
+          "deliveryAddress": "Delivery Address",
+          "targetPrice": "Target Unit Price (Optional)"
+        },
+        "placeholders": {
+          "title": "e.g., 100 pieces of 5m long 40mm diameter industrial metal pipe...",
+          "note": "e.g., We request delivery on pallets...",
+          "quantity": "e.g., 500 Units",
+          "currency": "e.g., AED",
+          "targetPrice": "e.g., 500",
+          "manualAddress": "Enter alternative delivery address..."
+        },
+        "paymentTerms": {
+          "cash": "Cash Payment",
+          "30days": "30 Days Credit",
+          "60days": "60 Days Credit"
+        },
+        "buttons": {
+          "processing": "PROCESSING...",
+          "prepare": "PREPARE REQUEST AND PROCEED",
+          "listSuppliers": "LIST SUITABLE SUPPLIERS"
+        }
+      },
+      "matches": {
+        "titleReady": "Your Request is Ready",
+        "titleMatches": "Matching Suppliers",
+        "descriptionSingle": "Approve the official purchase request prepared for {name}.",
+        "descriptionMulti": "Core engine found the best matches based on logistics and product category.",
+        "back": "Back",
+        "noSuppliers": "No suitable suppliers found.",
+        "trustScore": "%{score} TRUST SCORE",
+        "officialRequest": "OFFICIAL PURCHASE REQUEST",
+        "docNo": "DOCUMENT NO",
+        "targetQuantity": "TARGET QUANTITY",
+        "targetCurrency": "CURRENCY",
+        "paymentTerm": "PAYMENT TERM",
+        "sendRequest": "SEND OFFICIAL REQUEST",
+        "sending": "SENDING..."
+      },
+      "success": {
+        "title": "Request Sent!",
+        "message": "Your purchase request has been sent to selected suppliers via the official protocol. You will be notified instantly when offers arrive.",
+        "backToMarketplace": "BACK TO MARKETPLACE",
+        "viewMyRequests": "VIEW MY REQUESTS"
+      }
+    },
+    "errors": {
+      "selectSupplier": "Please select at least one supplier to send a quote request."
+    },
+    "address": {
+      "change": "CHANGE",
+      "mainCompany": "Main Company Address"
+    },
+    "features": {
+      "global": {
+        "title": "Global Match",
+        "desc": "Your needs are presented to the world market without language barriers."
+      },
+      "logistics": {
+        "title": "Logistics Verification",
+        "desc": "Only sellers capable of shipping to your address are listed."
+      },
+      "standard": {
+        "title": "Corporate Standard",
+        "desc": "All communications are conducted through professional templates."
+      }
+    }
+  },
+  "notifications": {
+    "title": "Notification Center"
   },
   "footer": {
     "poweredBy": "Powered by AIP-103+",
@@ -630,7 +722,9 @@
     "reviews": "BEWERTUNGEN",
     "terms": "NUTZUNGSBEDINGUNGEN",
     "privacy": "DATENSCHUTZERKLÄRUNG",
-    "cookies": "COOKIES"
+    "cookies": "COOKIES",
+    "ccpa": "CCPA",
+    "subscription": "SUBSCRIPTION"
   },
   "errors": {
     "404": {
@@ -638,39 +732,6 @@
       "description": "Seite nicht gefunden.",
       "backHome": "ZURÜCK"
     }
-  },
-  "home": {
-    "protocolNotes": "AIP-103+ PROTOKOLL (RELEASE NOTES)",
-    "defaults": {
-      "supplier": "Lieferant",
-      "country": "Deutschland",
-      "paymentTerm": "30 Tage Zahlungsziel"
-    },
-    "toasts": {
-      "loginRequired": "Bitte loggen Sie sich zuerst ein.",
-      "searchFailed": "Suche fehlgeschlagen.",
-      "invalidTaxId": "Ungültige Steuernummer. Bitte geben Sie 10 oder 11 Ziffern ein.",
-      "invalidPhone": "Ungültige Telefonnummer.",
-      "profileUpdated": "Profil erfolgreich aktualisiert.",
-      "updateFailed": "Aktualisierung fehlgeschlagen.",
-      "needRequestTitle": "Bitte geben Sie an, was Sie benötigen.",
-      "noSuppliersFound": "Keine passenden Lieferanten gefunden.",
-      "createIntentFailed": "Anfrage konnte nicht erstellt werden.",
-      "needDeliveryAddress": "Bitte geben Sie eine Lieferadresse an.",
-      "intentInfoNotFound": "Anfrageinformationen nicht gefunden. Bitte suchen Sie erneut.",
-      "requestSent": "Anfrage erfolgreich gesendet.",
-      "sendFailed": "Versand fehlgeschlagen: {error}",
-      "unknownError": "Unbekannter Fehler",
-      "offerAccepted": "Angebot erfolgreich angenommen!",
-      "offerRejected": "Angebot abgelehnt.",
-      "requestNotSelected": "Anfrage nicht ausgewählt.",
-      "noActiveOffers": "Keine aktiven Angebote für Verhandlungen gefunden.",
-      "bulkCounterSent": "Sammel-Gegenangebot an {count} Lieferanten gesendet.",
-      "counterSent": "Gegenangebot gesendet.",
-      "counterError": "Verhandlungsfehler.",
-      "supplierAdded": "Lieferant zu Favoriten hinzugefügt."
-    },
-    "differentCompanies": "{count} Verschiedene Firmen"
   },
   "changelog": {
     "title": "AIP Protokoll Versionshinweise",
@@ -739,15 +800,7 @@
         "title": "Smart Catalog Management",
         "description": "Digitization of supplier catalogs and product data.",
         "cat1": "Core",
-        "item1": "Vector-based product search and cataloging.",
-        "item2": "Optimized registration flows."
-      },
-      "AIP-101": {
-        "title": "NLP Engine & Multi-Language Support",
-        "description": "RFQ translation and analysis in 72 languages.",
-        "cat1": "Foundation",
-        "item1": "Successful demand-supplier matching with NLP.",
-        "item2": "Successful demand-supplier matching with NLP."
+        "item1": "Vector-based product search and cataloging."
       }
     }
   },
@@ -781,6 +834,7 @@
       "locationPlaceholder": "Zielort",
       "searchButton": "GLOBALE SUCHE",
       "searching": "SUCHE LÄUFT...",
+      "unit": "unit",
       "exampleScenario": "Beispielszenario Starten",
       "scanning": "AIP-103 Protokoll: Globales Netzwerk wird gescannt...",
       "matchedSuppliers": "AUTONOM ABGEGLICHENE LIEFERANTEN ({count})",
@@ -847,38 +901,6 @@
         ]
       }
     },
-    "dashboard": {
-      "title": "PROFESSIONELLES OPERATIONSPANEL",
-      "subtitle": "Unternehmensmanagement-Module, die nach dem Login auf Sie warten.",
-      "ops": {
-        "title": "OPERATIONSZENTRUM",
-        "desc": "Verwalten Sie alle aktiven RFQ-Prozesse über einen einzigen Bildschirm.",
-        "f1": "Preisvergleich",
-        "f2": "Gegenangebot",
-        "f3": "Kaufgenehmigung"
-      },
-      "log": {
-        "title": "LOGISTIK-TRACKING",
-        "desc": "Verfolgen Sie den gesamten Prozess von der Produktion bis zur Lieferung.",
-        "f1": "Versanddetails",
-        "f2": "Rechnungsverfolgung",
-        "f3": "Lieferbestätigung"
-      },
-      "team": {
-        "title": "TEAM-MANAGEMENT",
-        "desc": "Definieren und verwalten Sie Ihre Unternehmenshierarchie im System.",
-        "f1": "Genehmigungslimits",
-        "f2": "Autoritätsdefinition",
-        "f3": "Abteilungsberichte"
-      },
-      "erp": {
-        "title": "ERP-INTEGRATION",
-        "desc": "Vollständige Integration mit SAP, Oracle und MS Dynamics.",
-        "f1": "Automatische Lagerbuchung",
-        "f2": "API-Integration",
-        "f3": "Geplante Synchronisation"
-      }
-    },
     "steps": {
       "step1": {
         "title": "Intelligente Suche & Entdeckung",
@@ -919,6 +941,7 @@
     "badge": "USER EXPERIENCES",
     "loading": "Loading Experiences...",
     "back": "Go Back",
+    "anonymousUser": "Anonymous User",
     "ctaTitle": "Become Part of the Autonomous Network",
     "ctaSubtitle": "Register for free now and digitalize your supply chain.",
     "ctaButton": "REGISTER",
@@ -949,80 +972,124 @@
     ]
   },
   "legal": {
-    "lastUpdate": "Zuletzt aktualisiert: 3. Mai 2026",
+    "lastUpdate": "Last Updated: May 10, 2026",
     "terms": {
-      "title": "Nutzungsbedingungen",
-      "intro": "Durch den Zugriff auf ProcureOS stimmen Sie diesen Bedingungen zu.",
+      "title": "Terms of Service & User Agreement",
+      "intro": "Welcome to ProcureOS. These Terms of Service ('Terms') govern your access to and use of the ProcureOS platform, including our website, APIs, and autonomous procurement engine (collectively, the 'Services'). By using our Services, you agree to be bound by these Terms.",
       "sections": [
         {
-          "title": "1. Leistungsbeschreibung",
-          "content": "ProcureOS ist eine digitale Plattform, die die Beschaffung zwischen Käufern und Lieferanten erleichtert."
+          "title": "1. Acceptance of Terms",
+          "content": "By creating an account or accessing the ProcureOS platform, you represent that you have the authority to bind yourself or the legal entity you represent to these Terms. If you do not agree to these Terms, you must not access or use our Services."
         },
         {
-          "title": "2. Kontosicherheit",
-          "content": "Sie sind für die Vertraulichkeit Ihres Kontos verantwortlich."
+          "title": "2. Service Description & AIP Protocol",
+          "content": "ProcureOS provides an autonomous procurement infrastructure leveraging the AIP-103+ protocol to match buyers with suppliers. We act as a technology provider and do not become a party to any commercial contracts formed between users unless explicitly stated."
         },
         {
-          "title": "3. Anwendbares Recht",
-          "content": "Diese Bedingungen unterliegen den Gesetzen der Republik Türkei."
+          "title": "3. User Responsibilities & Account Security",
+          "content": "You are responsible for maintaining the confidentiality of your login credentials. Any activity occurring under your account is your responsibility. You agree to provide accurate, current, and complete information during the registration process."
+        },
+        {
+          "title": "4. Intellectual Property Rights",
+          "content": "All content, features, and functionality on the ProcureOS platform, including but not limited to the AIP-103 protocol logic, algorithms, and UI design, are the exclusive property of ProcureOS and are protected by international copyright and trademark laws."
+        },
+        {
+          "title": "5. Prohibited Activities",
+          "content": "Users are prohibited from: (a) attempting to bypass platform security; (b) using automated systems to scrape data without authorization; (c) submitting fraudulent RFQs or offers; (d) infringing on the intellectual property of others."
+        },
+        {
+          "title": "6. Limitation of Liability",
+          "content": "To the maximum extent permitted by law, ProcureOS shall not be liable for any indirect, incidental, or consequential damages arising from your use of the Services, including but not limited to loss of profits or business interruptions."
+        },
+        {
+          "title": "7. Governing Law & Jurisdiction",
+          "content": "These Terms shall be governed by and construed in accordance with the laws of the Republic of Turkey. Any disputes arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts of Istanbul."
         }
       ]
     },
     "privacy": {
-      "title": "Datenschutzrichtlinie",
-      "intro": "Wir legen Wert auf Ihre Datensicherheit.",
+      "title": "Global Privacy Policy",
+      "intro": "At ProcureOS, we take your data privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal and corporate information in compliance with global standards including GDPR and KVKK.",
       "sections": [
         {
-          "title": "1. Erhobene Daten",
-          "content": "Wir sammeln Name, E-Mail und Unternehmensinformationen."
+          "title": "1. Information We Collect",
+          "content": "We collect information provided during registration (name, email, company details), operational data (RFQs, offers, transaction history), and technical metadata (IP address, browser type) to optimize our autonomous engine."
         },
         {
-          "title": "2. Zweck",
-          "content": "Wir nutzen Daten zur Optimierung unserer Dienste."
+          "title": "2. How We Use Your Information",
+          "content": "Data is used to: (a) facilitate the matching process between buyers and suppliers; (b) improve the AIP-103 matching algorithms; (c) ensure platform security; (d) communicate critical system updates."
+        },
+        {
+          "title": "3. Data Sharing & Third Parties",
+          "content": "We do not sell your personal data. Information is shared with counterparties (suppliers or buyers) only as necessary to facilitate the procurement process. We may use third-party sub-processors for infrastructure and analytics."
+        },
+        {
+          "title": "4. Data Security",
+          "content": "We implement industry-standard technical and organizational measures, including end-to-end encryption and strict RLS (Row Level Security) protocols, to protect your data from unauthorized access."
+        },
+        {
+          "title": "5. Your Rights",
+          "content": "You have the right to access, correct, or delete your personal data. You may also object to certain processing activities. Requests can be submitted via our support channel or privacy dashboard."
         }
       ]
     },
     "cookies": {
-      "title": "Cookie-Richtlinie",
-      "intro": "Wir verwenden Cookies für ein besseres Erlebnis.",
+      "title": "Cookie & Tracking Policy",
+      "intro": "ProcureOS uses cookies and similar tracking technologies to enhance your experience and analyze platform performance.",
       "sections": [
         {
-          "title": "1. Was ist ein Cookie?",
-          "content": "Kleine Textdateien, die auf Ihrem Gerät gespeichert werden."
+          "title": "1. What are Cookies?",
+          "content": "Cookies are small text files stored on your device when you visit a website. They help us remember your preferences and keep your session secure."
         },
         {
-          "title": "2. Kontrolle",
-          "content": "Sie können Cookies in den Browsereinstellungen verwalten."
+          "title": "2. Types of Cookies We Use",
+          "content": "We use: (a) Essential Cookies for core platform functionality; (b) Analytical Cookies to understand usage patterns; (c) Preference Cookies to remember your language and region settings."
+        },
+        {
+          "title": "3. Managing Preferences",
+          "content": "You can control or disable cookies through your browser settings. However, disabling essential cookies may limit your ability to use certain features of the platform."
         }
       ]
-    }
-  },
-  "rating": {
-    "title": "Lieferanten bewerten",
-    "errors": {
-      "overallRating": "Bitte geben Sie eine Gesamtbewertung ab.",
-      "submitFailed": "Fehler beim Senden der Bewertung."
     },
-    "labels": {
-      "overall": "Gesamtzufriedenheit",
-      "quality": "Produktqualität",
-      "delivery": "Liefergeschwindigkeit",
-      "communication": "Kommunikation & Support",
-      "feedback": "Ihr Feedback"
+    "ccpa": {
+      "title": "CCPA Privacy Notice (California)",
+      "intro": "This notice supplements our Global Privacy Policy and applies specifically to residents of the State of California. It describes our information practices and your rights under the California Consumer Privacy Act of 2018 ('CCPA').",
+      "sections": [
+        {
+          "title": "1. Information We Collect",
+          "content": "In the preceding 12 months, we have collected the following categories of personal information: Identifiers (name, email, IP address), Commercial information (transaction history), and Professional/Employment information."
+        },
+        {
+          "title": "2. Your Rights Under CCPA",
+          "content": "As a California resident, you have the right to: (a) Request to know what personal information we collect and how we use it; (b) Request the deletion of your personal information; (c) Opt-out of the sale of your personal information (note: ProcureOS does not sell personal information)."
+        },
+        {
+          "title": "3. Exercising Your Rights",
+          "content": "To exercise your rights, please submit a request via our specialized privacy dashboard or email us at privacy@procure-os.com. We will verify your request before processing it."
+        }
+      ]
     },
-    "placeholders": {
-      "feedback": "Beschreiben Sie kurz Ihre Erfahrung..."
-    },
-    "info": "Diese Bewertung wird nicht direkt an den Lieferanten weitergegeben, sondern dient nur zur Berechnung des ProcureOS-Vertrauensindex und zur Verbesserung unserer Servicequalität. Ihre Meinungen sind entscheidend für die Transparenz unseres Ökosystems.",
-    "submit": "BEWERTUNG SENDEN",
-    "submitting": "Wird gesendet...",
-    "success": {
-      "title": "Vielen Dank!",
-      "message": "Ihre Bewertung wurde erfolgreich gespeichert und in der Lieferantenbewertung berücksichtigt."
-    },
-    "addToFavorites": "LIEFERANT ZU MEINEN FAVORITEN HINZUFÜGEN",
-    "messages": {
-      "added": "Lieferant zu Ihren Favoriten hinzugefügt."
+    "subscription": {
+      "title": "Master Subscription Agreement",
+      "intro": "This Master Subscription Agreement ('Agreement') governs the purchase and use of ProcureOS corporate subscription plans.",
+      "sections": [
+        {
+          "title": "1. Subscription Services",
+          "content": "ProcureOS grants you a non-exclusive, non-transferable right to access and use the platform according to the selected tier and seat count specified in your Order Form."
+        },
+        {
+          "title": "2. Fees & Payment",
+          "content": "Subscription fees are billed in advance according to the billing cycle selected (Monthly/Annually). Failure to pay fees may result in suspension of service."
+        },
+        {
+          "title": "3. Term & Termination",
+          "content": "This Agreement remains in effect until the subscription expires or is terminated. Either party may terminate for material breach with 30 days' written notice."
+        },
+        {
+          "title": "4. Service Level Agreement (SLA)",
+          "content": "ProcureOS aims for 99.9% uptime. Corporate plans include dedicated support and priority resolution for critical system interruptions."
+        }
+      ]
     }
   },
   "auth": {

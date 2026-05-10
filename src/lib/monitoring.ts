@@ -19,10 +19,16 @@ export const monitoring = {
     const message = typeof error === 'string' ? error : error.message;
     console.error(`[MONITORING ERROR] ${message}`, context);
     
-    // TODO: Initialize Sentry and call Sentry.captureException(error)
     if (process.env.NEXT_PUBLIC_SENTRY_DSN) {
       // Sentry.captureException(error, { extra: context });
     }
+  },
+
+  /**
+   * ⚠️ Log Warning (Performance, Non-critical issues)
+   */
+  warn: (message: string, context?: any) => {
+    console.warn(`[MONITORING WARN] ${message}`, context);
   },
 
   /**
@@ -31,7 +37,6 @@ export const monitoring = {
   event: (name: EventName, properties?: Record<string, any>) => {
     console.log(`[ANALYTICS EVENT] ${name}`, properties);
 
-    // TODO: Initialize PostHog and call posthog.capture(name, properties)
     if (process.env.NEXT_PUBLIC_POSTHOG_KEY) {
       // posthog.capture(name, properties);
     }
@@ -45,7 +50,7 @@ export const monitoring = {
     console.log(`[PERFORMANCE] ${label}: ${durationMs}ms`);
     
     if (durationMs > thresholdMs) {
-      monitoring.error(`Slow Operation: ${label}`, { durationMs, threshold: thresholdMs });
+      monitoring.warn(`Slow Operation: ${label}`, { durationMs, threshold: thresholdMs });
     }
   }
 };

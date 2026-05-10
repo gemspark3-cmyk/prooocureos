@@ -69,7 +69,7 @@ export async function POST(req: Request) {
     const containsBlocked = BLOCKED_KEYWORDS.some(k => cleanEndpoint.toLowerCase().includes(k))
 
     if (!isAllowed || containsBlocked) {
-      console.warn(`[SECURITY] Blocked suspicious proxy attempt: ${method} ${cleanEndpoint}`)
+      console.warn(`[SECURITY] Blocked suspicious proxy attempt: ${method} ${cleanEndpoint} (Allowed: ${isAllowed}, Blocked Keyword: ${containsBlocked})`)
       return NextResponse.json({ 
         error: 'FORBIDDEN_ENDPOINT', 
         message: 'This proxy only allows access to public marketplace endpoints.' 
@@ -77,13 +77,14 @@ export async function POST(req: Request) {
     }
 
     if (cleanEndpoint.includes('@') || cleanEndpoint.includes('://') || cleanEndpoint.includes('..')) {
+      console.warn(`[SECURITY] Blocked invalid endpoint characters: ${cleanEndpoint}`)
       return NextResponse.json({ error: 'INVALID_ENDPOINT' }, { status: 400 })
     }
 
     // 🛡️ SECURITY: CSRF Protection (Check for custom header)
     const requestedWith = req.headers.get('x-requested-with')
     if (method !== 'GET' && requestedWith !== 'XMLHttpRequest' && requestedWith !== 'ProcureOS-Client') {
-      console.warn(`[SECURITY] Potential CSRF attempt blocked: ${method} ${cleanEndpoint}`)
+      console.warn(`[SECURITY] Potential CSRF attempt blocked: ${method} ${cleanEndpoint} (requested-with: ${requestedWith})`)
       return NextResponse.json({ error: 'CSRF_PROTECTION_TRIGGERED', message: 'Security verification failed.' }, { status: 403 })
     }
 
@@ -138,8 +139,11 @@ export async function POST(req: Request) {
           location: s.location,
           rating: s.rating,
           verified: s.verified,
+          price_score: s.price_score,
+          speed_score: s.speed_score,
+          trust_score: s.trust_score,
           // Explicitly omit phone, email, tax_id in public search
-       }));
+        }));
     }
 
     if (response.status >= 500) {

@@ -149,7 +149,7 @@ export function SourcingFlow({
                   </div>
 
                   <div className="space-y-4">
-                    <label className="text-[10px] font-black text-zinc-500 uppercase tracking-widest ml-1">Teslimat Adresi</label>
+                    <label className="text-[10px] font-black text-zinc-500 uppercase tracking-widest ml-1 min-h-[32px] flex items-end">{t('steps.form.labels.deliveryAddress')}</label>
                     <div className="relative">
                       <button 
                         type="button"
@@ -214,7 +214,7 @@ export function SourcingFlow({
                     </div>
                     {request.addressType === 'manual' && (
                       <textarea 
-                        placeholder="Alternatif Teslimat Adresi..."
+                        placeholder={t('steps.form.placeholders.manualAddress')}
                         className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-6 text-sm text-white outline-none focus:ring-2 focus:ring-blue-500 mt-2 min-h-[80px] resize-none"
                         value={request.newAddress}
                         onChange={e => setRequest({...request, newAddress: e.target.value})}
@@ -225,7 +225,7 @@ export function SourcingFlow({
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   <div className="space-y-4">
-                    <label className="text-[10px] font-black text-zinc-500 uppercase tracking-widest ml-1">{t('steps.form.labels.quantity')}</label>
+                    <label className="text-[10px] font-black text-zinc-500 uppercase tracking-widest ml-1 min-h-[32px] flex items-end">{t('steps.form.labels.quantity')}</label>
                     <input 
                       type="text"
                       placeholder={t('steps.form.placeholders.quantity')}
@@ -236,11 +236,11 @@ export function SourcingFlow({
                     />
                   </div>
                   <div className="space-y-4">
-                    <label className="text-[10px] font-black text-zinc-500 uppercase tracking-widest ml-1">Para Birimi</label>
+                    <label className="text-[10px] font-black text-zinc-500 uppercase tracking-widest ml-1 min-h-[32px] flex items-end">{t('steps.form.labels.currency')}</label>
                     <div className="flex gap-2">
                       <select 
                         className="flex-1 bg-white/5 border border-white/10 rounded-2xl py-4 px-6 text-sm text-zinc-400 outline-none focus:ring-2 focus:ring-blue-500 appearance-none"
-                        value={['USD', 'EUR', 'TRY', 'GBP', 'CNY', 'JPY', 'CAD', 'AUD', 'CHF', 'INR', 'SGD'].includes(request.preferred_currency) ? request.preferred_currency : 'OTHER'}
+                        value={['USD', 'EUR', 'TRY', 'GBP', 'CNY', 'JPY', 'CAD', 'AUD', 'CHF', 'INR', 'SGD'].includes(request.preferred_currency) ? request.preferred_currency : (request.preferred_currency ? 'OTHER' : 'USD')}
                         onChange={e => {
                           if (e.target.value === 'OTHER') {
                             setRequest({...request, preferred_currency: ''});
@@ -260,14 +260,14 @@ export function SourcingFlow({
                         <option value="CHF" className="bg-zinc-900 text-white">CHF (Fr)</option>
                         <option value="INR" className="bg-zinc-900 text-white">INR (₹)</option>
                         <option value="SGD" className="bg-zinc-900 text-white">SGD ($)</option>
-                        <option value="OTHER" className="bg-zinc-900 text-white">{t('common.other') || 'Other'}</option>
+                        <option value="OTHER" className="bg-zinc-900 text-white">{t('common.other')}</option>
                       </select>
-                      {!['USD', 'EUR', 'TRY', 'GBP', 'CNY', 'JPY', 'CAD', 'AUD', 'CHF', 'INR', 'SGD'].includes(request.preferred_currency) && (
+                      {(!['USD', 'EUR', 'TRY', 'GBP', 'CNY', 'JPY', 'CAD', 'AUD', 'CHF', 'INR', 'SGD'].includes(request.preferred_currency) || request.preferred_currency === '') && (
                         <input
                           type="text"
-                          placeholder={t('steps.form.placeholders.currency')}
+                          placeholder="---"
                           className="w-1/2 bg-white/5 border border-white/10 rounded-2xl py-4 px-4 text-sm text-white outline-none focus:ring-2 focus:ring-blue-500 uppercase"
-                          value={request.preferred_currency === 'OTHER' ? '' : request.preferred_currency}
+                          value={request.preferred_currency || ''}
                           onChange={e => setRequest({...request, preferred_currency: e.target.value.toUpperCase()})}
                           maxLength={3}
                         />
@@ -276,26 +276,26 @@ export function SourcingFlow({
                   </div>
 
                   <div className="space-y-4">
-                    <label className="text-[10px] font-black text-zinc-500 uppercase tracking-widest ml-1">Hedef Birim Fiyat (Opsiyonel)</label>
+                    <label className="text-[10px] font-black text-zinc-500 uppercase tracking-widest ml-1 min-h-[32px] flex items-end">{t('steps.form.labels.targetPrice')}</label>
                     <input 
                       type="number"
-                      placeholder="Örn: 500"
+                      placeholder={t('steps.form.placeholders.targetPrice')}
                       className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-6 text-sm text-white outline-none focus:ring-2 focus:ring-blue-500 font-black italic"
                       value={request.target_price_total || ''}
                       onChange={e => setRequest({...request, target_price_total: e.target.value})}
                     />
                   </div>
                   <div className="space-y-4">
-                    <label className="text-[10px] font-black text-zinc-500 uppercase tracking-widest ml-1">{t('steps.form.labels.paymentTerm')}</label>
-                    <select 
-                      className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-6 text-sm text-zinc-400 outline-none"
-                      value={request.payment_term}
-                      onChange={e => setRequest({...request, payment_term: e.target.value})}
-                    >
-                      <option value="Peşin">{t('steps.form.paymentTerms.cash')}</option>
-                      <option value="30 Gün Vadeli">{t('steps.form.paymentTerms.30days')}</option>
-                      <option value="60 Gün Vadeli">{t('steps.form.paymentTerms.60days')}</option>
-                    </select>
+                    <label className="text-[10px] font-black text-zinc-500 uppercase tracking-widest ml-1 min-h-[32px] flex items-end">{t('steps.form.labels.paymentTerm')}</label>
+                      <select 
+                        className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-6 text-sm text-zinc-400 outline-none"
+                        value={request.payment_term}
+                        onChange={e => setRequest({...request, payment_term: e.target.value})}
+                      >
+                        <option value="cash">{t('steps.form.paymentTerms.cash')}</option>
+                        <option value="30days">{t('steps.form.paymentTerms.30days')}</option>
+                        <option value="60days">{t('steps.form.paymentTerms.60days')}</option>
+                      </select>
                   </div>
                 </div>
 
@@ -411,7 +411,12 @@ export function SourcingFlow({
                     </div>
                     <div>
                       <p className="text-[10px] text-zinc-400 font-black uppercase tracking-widest">{t('steps.matches.paymentTerm')}</p>
-                      <p className="text-xl font-black text-blue-600 uppercase">{request.payment_term}</p>
+                      <p className="text-xl font-black text-blue-600 uppercase">
+                      {request.payment_term === 'cash' ? t('steps.form.paymentTerms.cash') : 
+                       request.payment_term === '30days' ? t('steps.form.paymentTerms.30days') : 
+                       request.payment_term === '60days' ? t('steps.form.paymentTerms.60days') : 
+                       request.payment_term}
+                    </p>
                     </div>
                  </div>
               </div>

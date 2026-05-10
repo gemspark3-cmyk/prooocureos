@@ -1,0 +1,81 @@
+{
+  "lastUpdate": "Last Updated: May 10, 2026",
+  "terms": {
+    "title": "Terms of Service & User Agreement",
+    "intro": "Welcome to ProcureOS. These Terms of Service ('Terms') govern your access to and use of the ProcureOS platform, including our website, APIs, and autonomous procurement engine (collectively, the 'Services'). By using our Services, you agree to be bound by these Terms.",
+    "sections": [
+      {
+        "title": "1. Acceptance of Terms",
+        "content": "By creating an account or accessing the ProcureOS platform, you represent that you have the authority to bind yourself or the legal entity you represent to these Terms. If you do not agree to these Terms, you must not access or use our Services."
+      },
+      {
+        "title": "2. Service Description & AIP Protocol",
+        "content": "ProcureOS provides an autonomous procurement infrastructure leveraging the AIP-103+ protocol to match buyers with suppliers. We act as a technology provider and do not become a party to any commercial contracts formed between users unless explicitly stated."
+      },
+      {
+        "title": "3. User Responsibilities & Account Security",
+        "content": "You are responsible for maintaining the confidentiality of your login credentials. Any activity occurring under your account is your responsibility. You agree to provide accurate, current, and complete information during the registration process."
+      },
+      {
+        "title": "4. Intellectual Property Rights",
+        "content": "All content, features, and functionality on the ProcureOS platform, including but not limited to the AIP-103 protocol logic, algorithms, and UI design, are the exclusive property of ProcureOS and are protected by international copyright and trademark laws."
+      },
+      {
+        "title": "5. Prohibited Activities",
+        "content": "Users are prohibited from: (a) attempting to bypass platform security; (b) using automated systems to scrape data without authorization; (c) submitting fraudulent RFQs or offers; (d) infringing on the intellectual property of others."
+      },
+      {
+        "title": "6. Limitation of Liability",
+        "content": "To the maximum extent permitted by law, ProcureOS shall not be liable for any indirect, incidental, or consequential damages arising from your use of the Services, including but not limited to loss of profits or business interruptions."
+      },
+      {
+        "title": "7. Governing Law & Jurisdiction",
+        "content": "These Terms shall be governed by and construed in accordance with the laws of the Republic of Turkey. Any disputes arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts of Istanbul."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Global Privacy Policy",
+    "intro": "At ProcureOS, we take your data privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal and corporate information in compliance with global standards including GDPR and KVKK.",
+    "sections": [
+      {
+        "title": "1. Information We Collect",
+        "content": "We collect information provided during registration (name, email, company details), operational data (RFQs, offers, transaction history), and technical metadata (IP address, browser type) to optimize our autonomous engine."
+      },
+      {
+        "title": "2. How We Use Your Information",
+        "content": "Data is used to: (a) facilitate the matching process between buyers and suppliers; (b) improve the AIP-103 matching algorithms; (c) ensure platform security; (d) communicate critical system updates."
+      },
+      {
+        "title": "3. Data Sharing & Third Parties",
+        "content": "We do not sell your personal data. Information is shared with counterparties (suppliers or buyers) only as necessary to facilitate the procurement process. We may use third-party sub-processors for infrastructure and analytics."
+      },
+      {
+        "title": "4. Data Security",
+        "content": "We implement industry-standard technical and organizational measures, including end-to-end encryption and strict RLS (Row Level Security) protocols, to protect your data from unauthorized access."
+      },
+      {
+        "title": "5. Your Rights",
+        "content": "You have the right to access, correct, or delete your personal data. You may also object to certain processing activities. Requests can be submitted via our support channel or privacy dashboard."
+      }
+    ]
+  },
+  "cookies": {
+    "title": "Cookie & Tracking Policy",
+    "intro": "ProcureOS uses cookies and similar tracking technologies to enhance your experience and analyze platform performance.",
+    "sections": [
+      {
+        "title": "1. What are Cookies?",
+        "content": "Cookies are small text files stored on your device when you visit a website. They help us remember your preferences and keep your session secure."
+      },
+      {
+        "title": "2. Types of Cookies We Use",
+        "content": "We use: (a) Essential Cookies for core platform functionality; (b) Analytical Cookies to understand usage patterns; (c) Preference Cookies to remember your language and region settings."
+      },
+      {
+        "title": "3. Managing Preferences",
+        "content": "You can control or disable cookies through your browser settings. However, disabling essential cookies may limit your ability to use certain features of the platform."
+      }
+    ]
+  }
+}

@@ -73,7 +73,7 @@ export function RequestsTab({
   return (
     <div className="space-y-6">
       <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
-        <h3 className="text-xl font-black text-white italic uppercase tracking-tighter">{t('title')}</h3>
+        <h3 className="text-xl font-black text-[var(--foreground)] italic uppercase tracking-tighter">{t('title')}</h3>
         <div className="flex items-center gap-4 flex-1 max-w-2xl">
           <div className="relative flex-1">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" />
@@ -83,12 +83,12 @@ export function RequestsTab({
               value={requestsSearch}
               onChange={(e) => setRequestsSearch(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && fetchRequests(1, requestsSearch)}
-              className="w-full bg-white/5 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-[10px] text-white font-bold uppercase tracking-widest focus:ring-2 focus:ring-blue-500/50 outline-none transition-all"
+              className="w-full bg-[var(--foreground)]/5 border border-[var(--foreground)]/10 rounded-xl py-3 pl-12 pr-4 text-[10px] text-[var(--foreground)] font-bold uppercase tracking-widest focus:ring-2 focus:ring-blue-500/50 outline-none transition-all"
             />
           </div>
           <button 
             onClick={() => exportData('requests')}
-            className="px-4 py-3 bg-white/5 hover:bg-white/10 text-zinc-400 hover:text-white rounded-xl text-[10px] font-black uppercase tracking-widest border border-white/5 transition-all flex items-center gap-2 shrink-0"
+            className="px-4 py-3 bg-[var(--foreground)]/5 hover:bg-[var(--foreground)]/10 text-zinc-500 hover:text-[var(--foreground)] rounded-xl text-[10px] font-black uppercase tracking-widest border border-[var(--foreground)]/5 transition-all flex items-center gap-2 shrink-0"
           >
             <Download className="w-3.5 h-3.5" /> {t('report')}
           </button>
@@ -109,7 +109,7 @@ export function RequestsTab({
               <div 
                 key={req.id} 
                 onClick={() => onSelectRequest(req)}
-                className="p-6 bg-white/[0.03] border border-white/5 rounded-[2rem] hover:bg-white/[0.06] transition-all group cursor-pointer flex flex-col gap-4"
+                className="p-6 bg-[var(--foreground)]/[0.02] border border-[var(--foreground)]/5 rounded-[2rem] hover:bg-[var(--foreground)]/[0.04] transition-all group cursor-pointer flex flex-col gap-4"
               >
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
                   <div className="flex items-center gap-6">
@@ -117,7 +117,7 @@ export function RequestsTab({
                       <Search className="w-6 h-6" />
                     </div>
                     <div>
-                      <h4 className="text-lg font-black text-white italic uppercase tracking-tighter">{req.title}</h4>
+                      <h4 className="text-lg font-black text-[var(--foreground)] italic uppercase tracking-tighter">{req.title}</h4>
                       <div className="flex items-center gap-3 mt-1">
                         <span className="text-[9px] text-zinc-500 font-bold uppercase tracking-widest">{req.category}</span>
                         <div className="w-1 h-1 bg-zinc-800 rounded-full" />
@@ -128,7 +128,7 @@ export function RequestsTab({
                   <div className="flex items-center gap-8">
                     <div className="text-right">
                       <p className="text-[8px] font-black text-zinc-600 uppercase tracking-widest mb-1">{t('offersReceived')}</p>
-                      <p className="text-sm font-black text-white">{req.offers?.length || 0} {t('offersUnit')}</p>
+                      <p className="text-sm font-black text-[var(--foreground)]">{req.offers?.length || 0} {t('offersUnit')}</p>
                     </div>
                     <div className={`px-4 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest ${
                       req.status === 'open' ? 'bg-blue-600/10 text-blue-500 border border-blue-500/20' : 

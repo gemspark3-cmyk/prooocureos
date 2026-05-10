@@ -27,6 +27,8 @@ export const Footer = () => {
             <Link href="/legal/terms" className="text-zinc-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest">{t('terms')}</Link>
             <Link href="/legal/privacy" className="text-zinc-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest">{t('privacy')}</Link>
             <Link href="/legal/cookies" className="text-zinc-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest">{t('cookies')}</Link>
+            <Link href="/legal/ccpa" className="text-zinc-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest">{t('ccpa')}</Link>
+            <Link href="/legal/subscription" className="text-zinc-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest">{t('subscription')}</Link>
             <div className="w-[1px] h-4 bg-white/10 hidden md:block" />
             <a 
               href={`${process.env.NEXT_PUBLIC_PROCUREOS_WEB_URL || "https://procure-os.com"}/signup?referred_by=${process.env.NEXT_PUBLIC_PARTNER_ID}`} 

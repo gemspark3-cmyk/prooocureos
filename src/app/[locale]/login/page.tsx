@@ -2,7 +2,7 @@
 
 import React, { Suspense, useState } from 'react';
 import Link from 'next/link';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useRouter, useSearchParams, useParams } from 'next/navigation';
 import { procureos } from '@/lib/api';
 import { 
   Mail, 
@@ -61,6 +61,9 @@ function LoginForm() {
     }
   };
 
+  const params = useParams();
+  const locale = params.locale as string;
+  
   const [showForgotModal, setShowForgotModal] = React.useState(false)
   const [forgotEmail, setForgotEmail] = React.useState('')
   const [forgotLoading, setForgotLoading] = React.useState(false)
@@ -71,7 +74,8 @@ function LoginForm() {
     
     setForgotLoading(true)
     try {
-      await procureos.auth.forgotPassword(forgotEmail);
+      const redirectUrl = `${window.location.origin}/${locale}/reset-password`;
+      await procureos.auth.forgotPassword(forgotEmail, redirectUrl);
       toast.success(tf('success'))
       setShowForgotModal(false)
     } catch (err: any) {
@@ -82,32 +86,32 @@ function LoginForm() {
   }
 
   return (
-    <div className="min-h-screen bg-[#050505] flex items-center justify-center p-6 relative overflow-hidden font-sans">
+    <div className="min-h-screen mesh-bg flex items-center justify-center p-6 relative overflow-hidden font-sans text-[var(--foreground)]">
       <Toaster position="top-center" />
       
       {/* Forgot Password Modal */}
       {showForgotModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-6 bg-black/80 backdrop-blur-sm">
-          <div className="w-full max-w-md bg-zinc-900 border border-white/10 rounded-[2.5rem] p-10 relative shadow-2xl">
+          <div className="w-full max-w-md bg-[var(--surface)] border border-[var(--foreground)]/10 rounded-[2.5rem] p-10 relative shadow-2xl">
             <button 
               onClick={() => setShowForgotModal(false)}
-              className="absolute top-6 right-6 text-zinc-500 hover:text-white transition-colors"
+              className="absolute top-6 right-6 text-zinc-500 hover:text-[var(--foreground)] transition-colors"
             >
               <X className="w-6 h-6" />
             </button>
-            <h3 className="text-2xl font-black text-white uppercase tracking-tighter mb-2">{tf('title')}</h3>
+            <h3 className="text-2xl font-black text-[var(--foreground)] uppercase tracking-tighter mb-2">{tf('title')}</h3>
             <p className="text-zinc-500 text-xs font-bold uppercase tracking-widest mb-8">{tf('subtitle')}</p>
             
             <form onSubmit={handleForgotPassword} className="space-y-6">
               <div className="space-y-2">
                 <label className="text-[10px] font-black text-zinc-500 uppercase tracking-widest px-1">{t('emailLabel')}</label>
                 <div className="relative group">
-                  <Mail className="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-600 group-focus-within:text-blue-500 transition-colors" />
+                  <Mail className="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 group-focus-within:text-blue-500 transition-colors" />
                   <input 
                     required
                     type="email"
                     placeholder={t('emailPlaceholder')}
-                    className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-14 pr-6 text-sm text-white outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                    className="w-full bg-[var(--foreground)]/5 border border-[var(--foreground)]/10 rounded-2xl py-4 pl-14 pr-6 text-sm text-[var(--foreground)] outline-none focus:ring-2 focus:ring-blue-500 transition-all placeholder:text-zinc-500"
                     value={forgotEmail}
                     onChange={(e) => setForgotEmail(e.target.value)}
                   />
@@ -126,8 +130,8 @@ function LoginForm() {
       )}
 
       {/* Background Orbs */}
-      <div className="absolute top-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-600/10 blur-[120px] rounded-full" />
-      <div className="absolute bottom-[-10%] left-[-10%] w-[40%] h-[40%] bg-indigo-600/10 blur-[120px] rounded-full" />
+      <div className="absolute top-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-600/5 blur-[120px] rounded-full" />
+      <div className="absolute bottom-[-10%] left-[-10%] w-[40%] h-[40%] bg-indigo-600/5 blur-[120px] rounded-full" />
       
       <div className="w-full max-w-md relative z-10">
         <div className="glass-premium p-12 rounded-[3rem] shadow-2xl">
@@ -138,7 +142,7 @@ function LoginForm() {
           </div>
           
           <div className="text-center mb-10">
-            <h1 className="text-3xl font-black italic tracking-tighter uppercase mb-2">{t('title')}</h1>
+            <h1 className="text-3xl font-black italic tracking-tighter uppercase mb-2 text-[var(--foreground)]">{t('title')}</h1>
             <p className="text-xs text-zinc-500 font-bold uppercase tracking-[0.2em]">{t('subtitle')}</p>
           </div>
 
@@ -160,12 +164,12 @@ function LoginForm() {
             <div className="space-y-2">
               <label className="text-[10px] font-black text-zinc-500 uppercase tracking-widest ml-1">{t('emailLabel')}</label>
               <div className="relative group">
-                <Mail className="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-600 group-focus-within:text-blue-500 transition-colors" />
+                <Mail className="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 group-focus-within:text-blue-500 transition-colors" />
                 <input 
                   required
                   type="email"
                   placeholder={t('emailPlaceholder')}
-                  className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-14 pr-6 text-sm text-white outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                  className="w-full bg-[var(--foreground)]/5 border border-[var(--foreground)]/10 rounded-2xl py-4 pl-14 pr-6 text-sm text-[var(--foreground)] outline-none focus:ring-2 focus:ring-blue-500 transition-all placeholder:text-zinc-500"
                   value={formData.email}
                   onChange={(e) => setFormData({...formData, email: e.target.value})}
                 />
@@ -184,12 +188,12 @@ function LoginForm() {
                 </button>
               </div>
               <div className="relative group">
-                <Lock className="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-600 group-focus-within:text-blue-500 transition-colors" />
+                <Lock className="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 group-focus-within:text-blue-500 transition-colors" />
                 <input 
                   required
                   type="password"
                   placeholder={t('passwordPlaceholder')}
-                  className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-14 pr-6 text-sm text-white outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                  className="w-full bg-[var(--foreground)]/5 border border-[var(--foreground)]/10 rounded-2xl py-4 pl-14 pr-6 text-sm text-[var(--foreground)] outline-none focus:ring-2 focus:ring-blue-500 transition-all placeholder:text-zinc-500"
                   value={formData.password}
                   onChange={(e) => setFormData({...formData, password: e.target.value})}
                 />
@@ -210,8 +214,8 @@ function LoginForm() {
 
             <p className="text-[9px] text-zinc-600 font-bold uppercase tracking-[0.1em] text-center px-4 leading-relaxed mt-4">
               {t.rich('termsText', {
-                terms: (chunks) => <Link href="/legal/terms" className="text-zinc-500 hover:text-white transition-colors underline underline-offset-4">{chunks}</Link>,
-                privacy: (chunks) => <Link href="/legal/privacy" className="text-zinc-500 hover:text-white transition-colors underline underline-offset-4">{chunks}</Link>
+                terms: (chunks) => <Link href="/legal/terms" className="text-zinc-500 hover:text-[var(--foreground)] transition-colors underline underline-offset-4">{chunks}</Link>,
+                privacy: (chunks) => <Link href="/legal/privacy" className="text-zinc-500 hover:text-[var(--foreground)] transition-colors underline underline-offset-4">{chunks}</Link>
               })}
             </p>
 

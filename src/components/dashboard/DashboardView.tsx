@@ -206,14 +206,14 @@ export function DashboardView({
     >
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div>
-          <h1 className="text-4xl font-black tracking-tighter uppercase italic text-white flex items-center gap-4">
+          <h1 className="text-4xl font-black tracking-tighter uppercase italic text-[var(--foreground)] flex items-center gap-4">
              <div className="w-2 h-10 bg-blue-600 rounded-full" />
              {activeTab === 'requests' ? t('sections.opsCenter') : 
               activeTab === 'orders' ? t('sections.logistics') : 
               activeTab === 'team' ? t('sections.team') : 
               activeTab === 'integrations' ? t('sections.erp') : t('sections.identity')}
              
-             <div className="flex items-center gap-2 ml-4 px-3 py-1 bg-white/5 rounded-full border border-white/5">
+             <div className="flex items-center gap-2 ml-4 px-3 py-1 bg-[var(--foreground)]/5 rounded-full border border-[var(--foreground)]/5">
                 <div className={`w-1.5 h-1.5 rounded-full ${isOnline ? 'bg-emerald-500 animate-pulse' : 'bg-rose-500'}`} />
                 <span className="text-[8px] font-black uppercase tracking-widest text-zinc-500">
                   AIP CORE {isOnline ? (t('online') || 'ONLINE') : (t('offline') || 'OFFLINE')}
@@ -228,7 +228,7 @@ export function DashboardView({
              t('descriptions.identity')}
           </p>
         </div>
-        <div className="flex flex-wrap bg-white/5 p-1 rounded-2xl border border-white/5 gap-1 self-start md:self-auto backdrop-blur-md">
+        <div className="flex flex-wrap bg-[var(--foreground)]/5 p-1 rounded-2xl border border-[var(--foreground)]/10 gap-1 self-start md:self-auto backdrop-blur-md">
           {[
             { id: 'requests', label: t('tabs.requests') },
             { id: 'orders', label: t('tabs.orders') },
@@ -239,7 +239,7 @@ export function DashboardView({
             <button 
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`px-6 py-2 rounded-xl text-[10px] font-black transition-all ${activeTab === tab.id ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/20' : 'text-zinc-500 hover:text-white'}`}
+              className={`px-6 py-2 rounded-xl text-[10px] font-black transition-all ${activeTab === tab.id ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/20' : 'text-zinc-500 hover:text-[var(--foreground)]'}`}
             >
               {tab.label}
             </button>
@@ -264,7 +264,7 @@ export function DashboardView({
           >
             {t('tabs.profile')} {isProfileDirty && <span className="ml-1 w-1.5 h-1.5 bg-rose-500 rounded-full animate-pulse" />}
           </button>
-          <button onClick={onRefresh} className="p-3 text-zinc-500 hover:text-white transition-colors">
+          <button onClick={onRefresh} className="p-3 text-zinc-500 hover:text-[var(--foreground)] transition-colors">
              <Clock className="w-4 h-4" />
           </button>
         </div>
@@ -327,13 +327,13 @@ export function DashboardView({
 
           {activeTab === 'team' && (
             <motion.div key="team" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 20 }} className="space-y-8">
-               <div className="p-12 text-center border-2 border-dashed border-white/5 rounded-[4rem] bg-white/[0.01] relative overflow-hidden">
+               <div className="p-12 text-center border-2 border-dashed border-[var(--foreground)]/5 rounded-[4rem] bg-[var(--foreground)]/[0.01] relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-b from-blue-600/5 to-transparent pointer-events-none" />
                   <div className="w-20 h-20 bg-blue-600/10 rounded-3xl flex items-center justify-center mx-auto mb-8 border border-blue-500/20 relative z-10">
                      <Users className="w-10 h-10 text-blue-500" />
                   </div>
                   <div className="relative z-10">
-                    <h3 className="text-3xl font-black text-white italic uppercase tracking-tighter mb-4">{t('team.title')}</h3>
+                    <h3 className="text-3xl font-black text-[var(--foreground)] italic uppercase tracking-tighter mb-4">{t('team.title')}</h3>
                     <p className="text-[10px] font-black text-blue-500 uppercase tracking-[0.3em] mb-6">{t('team.roadmap')}</p>
                     <p className="text-zinc-500 max-w-lg mx-auto font-medium leading-relaxed italic mb-8 text-sm">
                       {t('team.description')}
@@ -349,13 +349,13 @@ export function DashboardView({
 
           {activeTab === 'integrations' && (
             <motion.div key="integrations" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 20 }} className="space-y-12">
-               <div className="p-16 text-center border-2 border-dashed border-white/5 rounded-[4rem] bg-white/[0.01] relative overflow-hidden">
+               <div className="p-16 text-center border-2 border-dashed border-[var(--foreground)]/5 rounded-[4rem] bg-[var(--foreground)]/[0.01] relative overflow-hidden">
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-indigo-600/5 blur-[100px] -mt-48 rounded-full" />
                   <div className="w-24 h-24 bg-indigo-600/10 rounded-[2rem] flex items-center justify-center mx-auto mb-10 relative z-10 border border-indigo-500/10">
                      <Cpu className="w-12 h-12 text-indigo-500" />
                   </div>
                   <div className="relative z-10 max-w-2xl mx-auto">
-                    <h3 className="text-4xl font-black text-white italic uppercase tracking-tighter mb-4">{t('integrations.title')}</h3>
+                    <h3 className="text-4xl font-black text-[var(--foreground)] italic uppercase tracking-tighter mb-4">{t('integrations.title')}</h3>
                     <p className="text-[10px] font-black text-indigo-500 uppercase tracking-[0.3em] mb-8">{t('integrations.roadmap')}</p>
                     <p className="text-zinc-400 font-medium leading-relaxed mb-12 italic text-lg">
                       {t('integrations.description')}

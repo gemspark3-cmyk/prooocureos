@@ -64,10 +64,10 @@ export default function RegisterPage() {
   };
 
   return (
-    <div className="min-h-screen mesh-bg text-white flex items-center justify-center p-6 relative overflow-hidden">
+    <div className="min-h-screen mesh-bg text-[var(--foreground)] flex items-center justify-center p-6 relative overflow-hidden">
       {/* Dynamic Background Elements */}
-      <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-600/10 blur-[120px] rounded-full" />
-      <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-indigo-600/10 blur-[120px] rounded-full" />
+      <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-600/5 blur-[120px] rounded-full" />
+      <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-indigo-600/5 blur-[120px] rounded-full" />
       
       <div className="w-full max-w-xl relative z-10">
         <div className="glass-premium p-12 rounded-[3rem] shadow-2xl">
@@ -78,7 +78,7 @@ export default function RegisterPage() {
           </div>
           
           <div className="text-center mb-10">
-            <h1 className="text-3xl font-black italic tracking-tighter uppercase mb-2">{t('title')}</h1>
+            <h1 className="text-3xl font-black italic tracking-tighter uppercase mb-2 text-[var(--foreground)]">{t('title')}</h1>
             <p className="text-xs text-zinc-500 font-bold uppercase tracking-[0.2em]">{t('subtitle')}</p>
           </div>
 
@@ -94,12 +94,12 @@ export default function RegisterPage() {
               <div className="space-y-2">
                 <label className="text-[10px] font-black text-zinc-500 uppercase tracking-widest ml-1">{t('companyNameLabel')}</label>
                 <div className="relative group">
-                  <Building2 className="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-600 group-focus-within:text-blue-500 transition-colors" />
+                  <Building2 className="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 group-focus-within:text-blue-500 transition-colors" />
                   <input 
                     required
                     type="text"
                     placeholder={t('companyNamePlaceholder')}
-                    className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-14 pr-6 text-sm text-white outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                    className="w-full bg-[var(--foreground)]/5 border border-[var(--foreground)]/10 rounded-2xl py-4 pl-14 pr-6 text-sm text-[var(--foreground)] outline-none focus:ring-2 focus:ring-blue-500 transition-all placeholder:text-zinc-500"
                     value={formData.company_name}
                     onChange={(e) => setFormData({...formData, company_name: e.target.value})}
                   />
@@ -109,12 +109,12 @@ export default function RegisterPage() {
               <div className="space-y-2">
                 <label className="text-[10px] font-black text-zinc-500 uppercase tracking-widest ml-1">{t('contactPersonLabel')}</label>
                 <div className="relative group">
-                  <ShieldCheck className="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-600 group-focus-within:text-blue-500 transition-colors" />
+                  <ShieldCheck className="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 group-focus-within:text-blue-500 transition-colors" />
                   <input 
                     required
                     type="text"
                     placeholder={t('contactPersonPlaceholder')}
-                    className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-14 pr-6 text-sm text-white outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                    className="w-full bg-[var(--foreground)]/5 border border-[var(--foreground)]/10 rounded-2xl py-4 pl-14 pr-6 text-sm text-[var(--foreground)] outline-none focus:ring-2 focus:ring-blue-500 transition-all placeholder:text-zinc-500"
                     value={formData.contact_person}
                     onChange={(e) => setFormData({...formData, contact_person: e.target.value})}
                   />
@@ -124,12 +124,12 @@ export default function RegisterPage() {
               <div className="space-y-2">
                 <label className="text-[10px] font-black text-zinc-500 uppercase tracking-widest ml-1">{t('phoneLabel')}</label>
                 <div className="relative group">
-                  <Phone className="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-600 group-focus-within:text-blue-500 transition-colors" />
+                  <Phone className="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 group-focus-within:text-blue-500 transition-colors" />
                   <input 
                     required
                     type="tel"
                     placeholder={t('phonePlaceholder')}
-                    className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-14 pr-6 text-sm text-white outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                    className="w-full bg-[var(--foreground)]/5 border border-[var(--foreground)]/10 rounded-2xl py-4 pl-14 pr-6 text-sm text-[var(--foreground)] outline-none focus:ring-2 focus:ring-blue-500 transition-all placeholder:text-zinc-500"
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
                   />
@@ -140,12 +140,12 @@ export default function RegisterPage() {
             <div className="space-y-2">
               <label className="text-[10px] font-black text-zinc-500 uppercase tracking-widest ml-1">{t('emailLabel')}</label>
               <div className="relative group">
-                <Mail className="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-600 group-focus-within:text-blue-500 transition-colors" />
+                <Mail className="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 group-focus-within:text-blue-500 transition-colors" />
                 <input 
                   required
                   type="email"
                   placeholder={t('emailPlaceholder')}
-                  className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-14 pr-6 text-sm text-white outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                  className="w-full bg-[var(--foreground)]/5 border border-[var(--foreground)]/10 rounded-2xl py-4 pl-14 pr-6 text-sm text-[var(--foreground)] outline-none focus:ring-2 focus:ring-blue-500 transition-all placeholder:text-zinc-500"
                   value={formData.email}
                   onChange={(e) => setFormData({...formData, email: e.target.value})}
                 />
@@ -156,12 +156,12 @@ export default function RegisterPage() {
               <div className="space-y-2">
                 <label className="text-[10px] font-black text-zinc-500 uppercase tracking-widest ml-1">{t('passwordLabel')}</label>
                 <div className="relative group">
-                  <Lock className="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-600 group-focus-within:text-blue-500 transition-colors" />
+                  <Lock className="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 group-focus-within:text-blue-500 transition-colors" />
                   <input 
                     required
                     type="password"
                     placeholder={t('passwordPlaceholder')}
-                    className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-14 pr-6 text-sm text-white outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                    className="w-full bg-[var(--foreground)]/5 border border-[var(--foreground)]/10 rounded-2xl py-4 pl-14 pr-6 text-sm text-[var(--foreground)] outline-none focus:ring-2 focus:ring-blue-500 transition-all placeholder:text-zinc-500"
                     value={formData.password}
                     onChange={(e) => setFormData({...formData, password: e.target.value})}
                   />
@@ -171,12 +171,12 @@ export default function RegisterPage() {
               <div className="space-y-2">
                 <label className="text-[10px] font-black text-zinc-500 uppercase tracking-widest ml-1">{t('confirmPasswordLabel')}</label>
                 <div className="relative group">
-                  <Lock className="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-600 group-focus-within:text-blue-500 transition-colors" />
+                  <Lock className="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 group-focus-within:text-blue-500 transition-colors" />
                   <input 
                     required
                     type="password"
                     placeholder={t('confirmPasswordPlaceholder')}
-                    className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-14 pr-6 text-sm text-white outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                    className="w-full bg-[var(--foreground)]/5 border border-[var(--foreground)]/10 rounded-2xl py-4 pl-14 pr-6 text-sm text-[var(--foreground)] outline-none focus:ring-2 focus:ring-blue-500 transition-all placeholder:text-zinc-500"
                     value={formData.confirm_password}
                     onChange={(e) => setFormData({...formData, confirm_password: e.target.value})}
                   />
@@ -196,7 +196,7 @@ export default function RegisterPage() {
               )}
             </button>
 
-            <div className="pt-6 text-center border-t border-white/5">
+            <div className="pt-6 text-center border-t border-[var(--foreground)]/10">
               <p className="text-zinc-500 text-[10px] font-bold uppercase tracking-widest">
                 {t('haveAccount')}{' '}
                 <Link href="/login" className="text-blue-500 hover:text-blue-400 transition-colors">
@@ -207,8 +207,8 @@ export default function RegisterPage() {
 
             <p className="text-[9px] text-zinc-600 font-bold uppercase tracking-[0.1em] text-center px-4 leading-relaxed mt-4">
               {t.rich('termsText', {
-                terms: (chunks) => <Link href="/legal/terms" className="text-zinc-500 hover:text-white transition-colors underline underline-offset-4">{chunks}</Link>,
-                privacy: (chunks) => <Link href="/legal/privacy" className="text-zinc-500 hover:text-white transition-colors underline underline-offset-4">{chunks}</Link>
+                terms: (chunks) => <Link href="/legal/terms" className="text-zinc-500 hover:text-[var(--foreground)] transition-colors underline underline-offset-4">{chunks}</Link>,
+                privacy: (chunks) => <Link href="/legal/privacy" className="text-zinc-500 hover:text-[var(--foreground)] transition-colors underline underline-offset-4">{chunks}</Link>
               })}
             </p>
           </form>
