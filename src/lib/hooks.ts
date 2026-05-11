@@ -33,9 +33,9 @@ export function useSystemHealth() {
 /**
  * 📦 Dashboard Data Hook
  */
-export function useDashboardInit(page = 1, limit = 5) {
+export function useDashboardInit(page = 1, limit = 5, enabled = true) {
   const { data, error, mutate } = useSWR(
-    JSON.stringify(['getDashboardInit', page, limit]),
+    enabled ? JSON.stringify(['getDashboardInit', page, limit]) : null,
     sdkFetcher,
     { 
       revalidateOnFocus: true, 
@@ -56,9 +56,9 @@ export function useDashboardInit(page = 1, limit = 5) {
 /**
  * 📋 RFQ List Hook
  */
-export function useRequests(page = 1, limit = 5, search = '') {
+export function useRequests(page = 1, limit = 5, search = '', enabled = true) {
   const { data, error, mutate } = useSWR(
-    JSON.stringify(['listRequests', page, limit, search]),
+    enabled ? JSON.stringify(['listRequests', page, limit, search]) : null,
     sdkFetcher,
     { 
       revalidateOnFocus: true, 
@@ -80,9 +80,9 @@ export function useRequests(page = 1, limit = 5, search = '') {
 /**
  * 📦 Purchase Order List Hook
  */
-export function useOrders(page = 1, limit = 5, search = '') {
+export function useOrders(page = 1, limit = 5, search = '', enabled = true) {
   const { data, error, mutate } = useSWR(
-    JSON.stringify(['listOrders', page, limit, search]),
+    enabled ? JSON.stringify(['listOrders', page, limit, search]) : null,
     sdkFetcher,
     { 
       revalidateOnFocus: true, 
@@ -104,9 +104,9 @@ export function useOrders(page = 1, limit = 5, search = '') {
 /**
  * 🏢 Registered Suppliers Hook
  */
-export function useRegisteredSuppliers(page = 1, limit = 10) {
+export function useRegisteredSuppliers(page = 1, limit = 10, enabled = true) {
   const { data, error, mutate } = useSWR(
-    JSON.stringify(['listRegisteredSuppliers', page, limit]),
+    enabled ? JSON.stringify(['listRegisteredSuppliers', page, limit]) : null,
     sdkFetcher,
     { 
       revalidateOnFocus: false, 
@@ -127,9 +127,9 @@ export function useRegisteredSuppliers(page = 1, limit = 10) {
 /**
  * 🏠 Warehouses Hook
  */
-export function useWarehouses() {
+export function useWarehouses(enabled = true) {
   const { data, error, mutate } = useSWR(
-    JSON.stringify(['listWarehouses']),
+    enabled ? JSON.stringify(['listWarehouses']) : null,
     sdkFetcher,
     { 
       revalidateOnFocus: false,

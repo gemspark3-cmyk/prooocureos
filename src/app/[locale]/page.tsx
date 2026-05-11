@@ -47,7 +47,12 @@ export default function Home() {
   const { getErrorMessage } = systemError;
   const [step, setStep] = useState(1)
   const [loading, setLoading] = useState(false)
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [isLoggedIn, setIsLoggedIn] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return !!localStorage.getItem('procureos_user')
+    }
+    return false
+  })
   const [user, setUser] = useState<Buyer | null>(null)
   const [currentView, setCurrentView] = useState<'marketplace' | 'sourcing' | 'dashboard'>('marketplace')
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -67,32 +72,32 @@ export default function Home() {
     total: swrRequestsTotal, 
     isLoading: isRequestsLoading,
     mutate: mutateRequests 
-  } = useRequests(requestsPage, 5, requestsSearch);
+  } = useRequests(requestsPage, 5, requestsSearch, isLoggedIn);
 
   const { 
     orders: swrOrders, 
     total: swrOrdersTotal, 
     isLoading: isOrdersLoading,
     mutate: mutateOrders 
-  } = useOrders(ordersPage, 5, ordersSearch);
+  } = useOrders(ordersPage, 5, ordersSearch, isLoggedIn);
 
   const { 
     suppliers: swrSuppliers, 
     total: swrSuppliersTotal, 
     isLoading: isSuppliersLoading,
     mutate: mutateSuppliers 
-  } = useRegisteredSuppliers(suppliersPage, 10);
+  } = useRegisteredSuppliers(suppliersPage, 10, isLoggedIn);
 
   const { 
     dashboard: swrDashboard, 
     isLoading: isDashboardLoading,
     mutate: mutateDashboard 
-  } = useDashboardInit(1, 5);
+  } = useDashboardInit(1, 5, isLoggedIn);
 
   const { 
     warehouses: swrWarehouses, 
     mutate: mutateWarehouses 
-  } = useWarehouses();
+  } = useWarehouses(isLoggedIn);
 
   // Search/Marketplace State
   const [searchQuery, setSearchQuery] = useState('')

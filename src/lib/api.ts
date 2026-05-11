@@ -37,10 +37,14 @@ export async function procureRequest(endpoint: string, options: ApiOptions = {})
   })
 
   // 🛡️ AIP-103: Handle Session Expiration
-  if (response.status === 401 && !endpoint.includes('/auth/login') && !endpoint.includes('/auth/me')) {
+  if (response.status === 401 && endpoint.includes('/auth/') && !endpoint.includes('/auth/login') && !endpoint.includes('/auth/me')) {
     if (typeof window !== 'undefined') {
+      console.warn('[SDK] Session expired or unauthorized access to:', endpoint);
       localStorage.removeItem('procureos_user');
-      window.location.href = '/login?session_expired=true';
+      // Only redirect if we are not already on the login page to avoid loops
+      if (!window.location.pathname.includes('/login')) {
+        window.location.href = '/login?session_expired=true';
+      }
     }
   }
 
