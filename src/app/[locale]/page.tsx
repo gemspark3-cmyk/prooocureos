@@ -161,12 +161,6 @@ export default function Home() {
   const handleMarketplaceSearch = async (e?: React.FormEvent) => {
     if (e) e.preventDefault()
     
-    if (!isLoggedIn) {
-      toast.error(tHome('toasts.loginRequired'))
-      router.push('/login')
-      return
-    }
-
     if (!searchQuery && !searchLocation) return
     setIsSearching(true)
     const startTime = Date.now()
